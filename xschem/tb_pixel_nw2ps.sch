@@ -5,6 +5,27 @@ V {}
 S {}
 F {}
 E {}
+B 2 1130 40 1930 440 {flags=graph
+y1=-0.89
+y2=-0.88
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=2e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=out
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N 640 -200 640 -100 {lab=VDD}
 N 540 -200 540 -190 {lab=VDD}
 N 540 -200 640 -200 {lab=VDD}
@@ -67,12 +88,13 @@ tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {simulator_commands_shown.sym} -120 140 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -120 80 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
 .control
 op
+tran 100p 200n
 save all
 write tb_pixel_nw2ps.raw
 .endc
