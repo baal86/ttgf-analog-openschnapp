@@ -61,7 +61,7 @@ set XSCHEM_START_WINDOW {tests/0_top.sch}
 ###########################################################################
 #### If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
 # set netlist_dir $env(HOME)/.xschem/simulations
-
+set local_netlist_dir 1
 ###########################################################################
 #### NETLIST AND HIERARCHICAL PRINT EXCLUDE PATTERNS
 ###########################################################################
