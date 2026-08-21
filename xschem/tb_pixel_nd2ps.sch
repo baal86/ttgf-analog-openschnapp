@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 1130 40 1930 440 {flags=graph
-y1=-0.89
-y2=-0.88
+y1=-0.82
+y2=-0.39
 ypos1=0
 ypos2=2
 divy=5
@@ -85,7 +85,7 @@ tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {simulator_commands_shown.sym} -120 80 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -120 130 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -93,9 +93,9 @@ value="
 op
 tran 100p 200n
 save all
-write tb_pixel_nw2ps.raw
+write tb_pixel_nd2ps.raw
 .endc
 "}
-C {ip_pixel_nw2ps.sym} 660 0 0 0 {name=x1}
 C {lab_wire.sym} 550 -20 0 0 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 550 20 0 0 {name=p3 sig_type=std_logic lab=VDD}
+C {ip_pixel_nd2ps.sym} 660 0 0 0 {name=x1}
