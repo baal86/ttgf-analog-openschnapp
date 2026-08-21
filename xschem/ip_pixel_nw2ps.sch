@@ -82,3 +82,4 @@ model=diode_nd2ps_03v3
 r_w=12u
 r_l=10u
 m=1}
+C {lab_wire.sym} 280 20 0 0 {name=p8 sig_type=std_logic lab=sfout}
