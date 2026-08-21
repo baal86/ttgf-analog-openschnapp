@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -45,8 +45,8 @@ N 420 -0 480 0 {lab=INJ}
 N 420 130 420 140 {lab=GND}
 N 540 -130 540 -120 {lab=GND}
 N 770 -130 770 -120 {lab=GND}
-N 550 -20 560 -20 {lab=VSS}
-N 550 20 560 20 {lab=VSS}
+N 550 -20 560 -20 {lab=VDD}
+N 550 20 560 20 {lab=VDD}
 N 840 -0 930 0 {lab=OUT}
 C {devices/launcher.sym} -45 -105 0 0 {name=h1
 descr="Load Waveforms"
@@ -58,13 +58,12 @@ C {devices/code_shown.sym} -120 320 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::GF180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {ip_pixel_nw2ps.sym} 660 0 0 0 {name=x1}
 C {vsource.sym} 540 -160 0 0 {name=V1 value=3.3 savecurrent=false}
 C {vsource.sym} 770 -160 0 0 {name=V2 value=3.3 savecurrent=false}
 C {vsource.sym} 600 150 0 0 {name=V3 value=0 savecurrent=false}
@@ -80,8 +79,6 @@ C {isource.sym} 930 100 0 0 {name=I0 value=100u}
 C {gnd.sym} 930 140 0 0 {name=l4 lab=GND}
 C {isource.sym} 420 100 0 0 {name=I1 value=1n}
 C {gnd.sym} 420 140 0 0 {name=l5 lab=GND}
-C {lab_wire.sym} 550 20 0 0 {name=p3 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 550 -20 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/launcher.sym} -45 -65 0 0 {name=h2
 descr="Annotate"
 tclcommand="
@@ -99,3 +96,6 @@ save all
 write tb_pixel_nw2ps.raw
 .endc
 "}
+C {ip_pixel_nw2ps.sym} 660 0 0 0 {name=x1}
+C {lab_wire.sym} 550 -20 0 0 {name=p5 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 550 20 0 0 {name=p3 sig_type=std_logic lab=VDD}
