@@ -1,6 +1,6 @@
 set layout [readnet spice $project.lvs.spice]
 set source [readnet spice /dev/null]
-readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.tech/ngspice/sm141064.spice $source
+readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.tech/ngspice/sm141064.spice $layout
 
 # top level GL verilog
 # readnet verilog ../src/project.v $source

@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787305712
+timestamp 1787314852
 << pwell >>
 rect 1356 -1927 1441 -1799
 rect 1542 -1927 1622 -1797
@@ -127,18 +127,18 @@ transform 0 1 2625 -1 0 -1989
 box -284 -222 284 222
 << labels >>
 flabel metal1 980 240 1180 440 0 FreeSans 1600 0 0 0 siminj
-port 3 nsew
-flabel metal1 3453 -1959 3651 -1760 0 FreeSans 160 0 0 0 VSS
 port 6 nsew
 flabel metal1 780 -2140 980 -1940 0 FreeSans 480 0 0 0 reset
-port 2 nsew
-flabel metal1 795 -1862 993 -1662 0 FreeSans 480 0 0 0 VRESET
-port 1 nsew
-flabel metal1 1850 -2403 2050 -2203 0 FreeSans 480 0 0 0 VDD
-port 0 nsew
-flabel metal1 2891 -2271 3091 -2071 0 FreeSans 480 0 0 0 read
 port 5 nsew
-flabel metal1 3078 -1961 3278 -1761 0 FreeSans 480 0 0 0 cl
+flabel metal1 2891 -2271 3091 -2071 0 FreeSans 480 0 0 0 read
 port 4 nsew
+flabel metal1 3078 -1961 3278 -1761 0 FreeSans 480 0 0 0 cl
+port 3 nsew
 flabel metal1 2141 -2249 2469 -2149 0 FreeSans 160 0 0 0 sfout
+flabel metal1 795 -1862 993 -1662 0 FreeSans 480 0 0 0 vreset
+port 2 nsew
+flabel metal1 1850 -2403 2050 -2203 0 FreeSans 480 0 0 0 vdd
+port 1 nsew
+flabel space 3430 -1960 3670 -1760 0 FreeSans 480 0 0 0 vss
+port 8 nsew
 << end >>
