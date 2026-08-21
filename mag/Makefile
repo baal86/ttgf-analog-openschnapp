@@ -1,7 +1,7 @@
-PROJECT_NAME ?= tt_um_magic_challenge
-MAGIC_RC := $(PDK_ROOT)/sky130A/libs.tech/magic/sky130A.magicrc
-TEMPLATE_FILE := tt_analog_1x2.def
-#TEMPLATE_FILE := tt_analog_1x2_3v3.def
+PROJECT_NAME ?= tt_um_baal86_openschnapp
+MAGIC_RC := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
+#TEMPLATE_FILE := tt_analog_1x2.def
+TEMPLATE_FILE := tt_analog_1x2_3v3.def
 
 .PHONY: lvs magic start
 

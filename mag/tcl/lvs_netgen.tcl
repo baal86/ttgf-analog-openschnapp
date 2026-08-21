@@ -1,6 +1,6 @@
 set layout [readnet spice $project.lvs.spice]
 set source [readnet spice /dev/null]
-readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice $source
+readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice $source
 
 # top level GL verilog
 readnet verilog ../src/project.v $source
@@ -11,4 +11,4 @@ readnet verilog ../src/project.v $source
 # add any spice files of your analog blocks:
 readnet spice ../xschem/simulation/$project.spice $source
 
-lvs "$layout $project" "$source $project" $::env(PDK_ROOT)/sky130A/libs.tech/netgen/sky130A_setup.tcl lvs.report -blackbox
+lvs "$layout $project" "$source $project" $::env(PDK_ROOT)/$::env(PDK)/libs.tech/netgen/gf180mcuD_setup.tcl lvs.report -blackbox
