@@ -15,8 +15,8 @@ N 60 -80 100 -80 {lab=vsubs}
 N 60 -30 160 -30 {lab=siminj}
 N 200 -30 230 -30 {lab=vsubs}
 N 200 -190 200 -60 {lab=vdd}
-N 200 -0 200 20 {lab=#net1}
-N 200 20 340 20 {lab=#net1}
+N 200 -0 200 20 {lab=sfout}
+N 200 20 340 20 {lab=sfout}
 N 400 20 440 20 {lab=cl}
 N -80 80 370 80 {lab=read}
 N 370 60 370 80 {lab=read}
@@ -77,9 +77,9 @@ C {opin.sym} 440 20 0 0 {name=p7 lab=cl
 C {lab_wire.sym} 240 -30 0 0 {name=p9 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 100 -80 0 0 {name=p10 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 370 -30 3 0 {name=p11 sig_type=std_logic lab=vsubs}
-C {diode_nd2ps_03v3.sym} 60 30 2 0 {name=D1
+C {lab_wire.sym} 280 20 0 0 {name=p8 sig_type=std_logic lab=sfout}
+C {symbols/diode_nd2ps_03v3.sym} 60 30 2 0 {name=D1
 model=diode_nd2ps_03v3
 r_w=12u
 r_l=10u
 m=1}
-C {lab_wire.sym} 280 20 0 0 {name=p8 sig_type=std_logic lab=sfout}
