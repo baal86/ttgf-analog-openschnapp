@@ -19,8 +19,9 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=out
-color=4
+node="out
+out_parax"
+color="4 7"
 dataset=-1
 unitx=1
 logx=0
@@ -48,6 +49,21 @@ N 770 -130 770 -120 {lab=GND}
 N 550 -20 560 -20 {lab=VDD}
 N 550 20 560 20 {lab=VDD}
 N 840 -0 930 0 {lab=OUT}
+N 660 -710 660 -610 {lab=VDD}
+N 560 -710 660 -710 {lab=VDD}
+N 700 -710 700 -610 {lab=VRESET}
+N 700 -710 790 -710 {lab=VRESET}
+N 620 -330 620 -310 {lab=VSS}
+N 620 -310 680 -310 {lab=VSS}
+N 680 -410 680 -310 {lab=VSS}
+N 500 -510 580 -510 {lab=INJ}
+N 770 -510 860 -510 {lab=OUT_PARAX}
+N 950 -510 950 -440 {lab=OUT_PARAX}
+N 950 -380 950 -370 {lab=GND}
+N 440 -510 500 -510 {lab=INJ}
+N 570 -530 580 -530 {lab=VDD}
+N 570 -490 580 -490 {lab=VDD}
+N 860 -510 950 -510 {lab=OUT_PARAX}
 C {devices/launcher.sym} -45 -105 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -99,3 +115,16 @@ write tb_pixel_nd2ps.raw
 C {lab_wire.sym} 550 -20 0 0 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 550 20 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} 660 0 0 0 {name=x1}
+C {lab_wire.sym} 760 -710 0 0 {name=p7 sig_type=std_logic lab=VRESET}
+C {lab_wire.sym} 600 -710 0 0 {name=p9 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 630 -310 2 0 {name=p10 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 460 -510 0 0 {name=p11 sig_type=std_logic lab=INJ}
+C {lab_wire.sym} 880 -510 0 0 {name=p12 sig_type=std_logic lab=OUT_PARAX}
+C {isource.sym} 950 -410 0 0 {name=I2 value=100u}
+C {gnd.sym} 950 -370 0 0 {name=l9 lab=GND}
+C {lab_wire.sym} 570 -530 0 0 {name=p13 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 570 -490 0 0 {name=p14 sig_type=std_logic lab=VDD}
+C {ip_pixel_nd2ps.sym} 680 -510 0 0 {name=x2
+schematic=../mag/ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ../mag/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ../mag/ip_pixel_nd2ps.sim.spice]"}
