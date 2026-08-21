@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787315846
+timestamp 1787323275
 << pwell >>
 rect 1356 -1927 1441 -1799
 rect 1542 -1927 1622 -1797
@@ -121,7 +121,7 @@ timestamp 1787304231
 transform 0 1 2625 -1 0 -1989
 box -284 -222 284 222
 << labels >>
-flabel metal1 980 240 1180 440 0 FreeSans 1600 0 0 0 siminj
+flabel metal1 980 240 1180 440 0 FreeSans 480 0 0 0 siminj
 port 2 nsew
 flabel metal1 2891 -2271 3091 -2071 0 FreeSans 480 0 0 0 read
 port 4 nsew
