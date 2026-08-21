@@ -30,8 +30,8 @@ C {ipin.sym} -80 -30 0 0 {name=p3 lab=siminj}
 C {ipin.sym} -80 -80 0 0 {name=p4 lab=reset}
 C {ipin.sym} -80 80 0 0 {name=p5 lab=read}
 C {symbols/nfet_03v3.sym} 40 -80 0 0 {name=M1
-L=0.28u
-W=0.22u
+L=0.3u
+W=0.3u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -45,8 +45,8 @@ spiceprefix=X
 }
 C {iopin.sym} -80 -160 2 0 {name=p6 lab=vreset}
 C {symbols/nfet_03v3.sym} 180 -30 0 0 {name=M2
-L=0.28u
-W=0.22u
+L=0.3u
+W=0.3u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -59,8 +59,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 370 40 3 0 {name=M3
-L=0.28u
-W=0.22u
+L=0.3u
+W=0.3u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
