@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -77,8 +77,8 @@ C {opin.sym} 440 20 0 0 {name=p7 lab=cl
 C {lab_wire.sym} 240 -30 0 0 {name=p9 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 100 -80 0 0 {name=p10 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 370 -30 3 0 {name=p11 sig_type=std_logic lab=VSS}
-C {symbols/diode_nw2ps_03v3.sym} 60 30 2 0 {name=D2
-model=diode_nw2ps_03v3
+C {diode_nd2ps_03v3.sym} 60 30 2 0 {name=D1
+model=diode_nd2ps_03v3
 r_w=12u
 r_l=10u
 m=1}
