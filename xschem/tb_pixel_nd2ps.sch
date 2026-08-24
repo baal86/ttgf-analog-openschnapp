@@ -31,8 +31,8 @@ hilight_wave=0
 x2=2.13m
 sim_type=tran}
 B 2 1040 0 1840 400 {flags=graph,unlocked
-y1=-0.24
-y2=2.7
+y1=-0.007
+y2=3.3
 ypos1=0
 ypos2=2
 divy=5
@@ -55,8 +55,8 @@ logx=0
 logy=0
 sim_type=tran}
 B 2 1040 -440 1840 -40 {flags=graph,unlocked
-y1=-0.007
-y2=3.4
+y1=-0.0021
+y2=3.3
 ypos1=0
 ypos2=2
 divy=5
@@ -118,7 +118,7 @@ N 660 200 900 200 {lab=VSS}
 N 900 160 900 200 {lab=VSS}
 N 790 -200 900 -200 {lab=VDD}
 N 900 -200 900 40 {lab=VDD}
-C {devices/launcher.sym} -435 -65 0 0 {name=h1
+C {devices/launcher.sym} -435 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
@@ -147,7 +147,7 @@ C {lab_wire.sym} 300 0 0 0 {name=p6 sig_type=std_logic lab=INJ}
 C {lab_wire.sym} 820 0 0 0 {name=p8 sig_type=std_logic lab=OUT}
 C {isource.sym} 270 320 0 0 {name=I1 value=\{iphoto\}}
 C {gnd.sym} 270 360 0 0 {name=l5 lab=GND}
-C {devices/launcher.sym} -435 -25 0 0 {name=h2
+C {devices/launcher.sym} -435 -55 0 0 {name=h2
 descr="Annotate"
 tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
