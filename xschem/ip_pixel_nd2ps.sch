@@ -45,8 +45,8 @@ spiceprefix=X
 }
 C {iopin.sym} -80 -160 2 0 {name=p6 lab=vreset}
 C {symbols/nfet_03v3.sym} 180 -30 0 0 {name=M2
-L=0.3u
-W=0.3u
+L=2u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
