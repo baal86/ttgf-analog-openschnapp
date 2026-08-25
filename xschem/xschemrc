@@ -344,3 +344,4 @@ if { [info exists ::env(XSCHEM_USER_LIBRARY_PATH) ] } {
 
 set xschem_execute_scripts yes
 set local_netlist_dir 1
+set graph_use_ctrl_key 1
