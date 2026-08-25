@@ -1,27 +1,38 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787639933
+timestamp 1787644845
 << pwell >>
+rect 830 -1600 900 600
 rect 1190 -1650 1260 -1480
-rect 830 -1690 900 -1670
+rect 3430 -1590 3500 600
+rect 3420 -1600 3500 -1590
+rect 830 -1690 960 -1670
 rect 1190 -1690 1540 -1650
-rect 3420 -1690 3500 -1590
+rect 2100 -1690 3500 -1600
 rect 800 -2090 3530 -1690
 rect 2989 -2106 2990 -2090
 << psubdiff >>
+rect 3430 -1590 3500 600
+rect 3420 -1595 3500 -1590
 rect 830 -1980 900 -1670
-rect 3420 -1980 3500 -1590
+rect 2100 -1810 2210 -1600
+rect 3420 -1980 3500 -1600
 rect 830 -2060 3500 -1980
 << metal1 >>
+rect 830 520 3500 600
+rect 830 -1600 900 520
 rect 980 240 1180 440
 rect 1190 -1650 1260 -1480
+rect 3430 -1600 3500 520
 rect 830 -1760 960 -1670
 rect 1190 -1730 1540 -1650
+rect 2100 -1690 3500 -1600
 rect 830 -1810 1080 -1760
 rect 1190 -1810 1260 -1730
 rect 1620 -1810 1760 -1750
-rect 1870 -1810 2070 -1690
+rect 1870 -1810 2030 -1710
+rect 2100 -1810 2210 -1690
 rect 1620 -1820 1710 -1810
 rect 1330 -1860 1450 -1820
 rect 830 -1930 1170 -1860
@@ -49,15 +60,18 @@ transform -1 0 1816 0 -1 -1815
 box -146 -125 146 125
 << labels >>
 flabel metal1 980 240 1180 440 0 FreeSans 480 0 0 0 siminj
-port 2 nsew
-flabel metal1 830 -1810 960 -1670 0 FreeSans 480 0 0 0 vreset
-port 4 nsew
-flabel metal1 830 -1970 960 -1860 0 FreeSans 480 0 0 0 reset
-port 6 nsew
-flabel metal1 1230 -1970 1370 -1860 0 FreeSans 480 0 0 0 vdd
-port 7 nsew
+port 0 nsew
 flabel metal1 1920 -1970 2070 -1860 0 FreeSans 480 0 0 0 read
 port 8 nsew
-flabel metal1 1950 -1810 2070 -1690 0 FreeSans 480 0 0 0 vsubs
-port 10 nsew
+flabel metal1 1620 -1890 1710 -1750 0 FreeSans 320 0 0 0 sfout
+flabel metal1 2100 -1810 2210 -1710 0 FreeSans 320 0 0 0 vsubs
+port 11 nsew
+flabel metal1 1950 -1810 2030 -1710 0 FreeSans 480 0 0 0 cl
+port 4 nsew
+flabel metal1 830 -1970 960 -1860 0 FreeSans 480 0 0 0 reset
+port 3 nsew
+flabel metal1 830 -1810 960 -1670 0 FreeSans 320 0 0 0 vreset
+port 13 nsew
+flabel metal1 1230 -1970 1370 -1860 0 FreeSans 320 0 0 0 vdd
+port 14 nsew
 << end >>
