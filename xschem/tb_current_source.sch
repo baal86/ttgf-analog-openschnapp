@@ -7,7 +7,7 @@ F {}
 E {}
 B 2 290 -80 1090 320 {flags=graph
 y1=0
-y2=100e-6
+y2=100u
 ypos1=0
 ypos2=2
 divy=5
@@ -24,10 +24,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
+hilight_wave=-1
 color="4 7"
-node="i(vref)
-i(vmir)"
-hilight_wave=-1}
+node="Reference;i(v1) -1 *
+Mirror;i(v3) -1 *"}
 N 100 -100 180 -100 {lab=vref}
 N 100 200 100 250 {lab=vsubs}
 N 100 250 180 250 {lab=vsubs}

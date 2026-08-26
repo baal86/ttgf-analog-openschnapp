@@ -93,7 +93,7 @@ value="
 	shell rm -f tb_pixel_nd2ps_noise.raw
 	set appendwrite
 	
-	foreach bias 2.5 2.0 1.5 1.0
+	foreach bias 2.5 2.0 1.5
 		alterparam bias = $bias
 		reset
 		destroy all
