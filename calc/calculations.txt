@@ -1,34 +1,54 @@
-'Unit definitions'
+'<h3>Calculations</h3>'
+'Use this file with Calcpad 7.1.9'
+
+'<h4>Unit Definitions</h4>'
+'We operate in the low current domain so we define fX units.
 .ec = 1.602176634*10^-19*C
 .fA = 0.001pA
 .fC = 0.001pC
 .fF = 0.001pF
 
-'Desired full-well size'
+'<h4>Photo Current Calculation</h4>'
+'The desired full-well capacity is defined. All calculations in electrons since QE cannot be estimated and will be poor due to <i>metal5</i> and lack of AR-coating and passivation.'
 N_WELL = 200000
 C_WELL = N_WELL*1ec|fC
-
-'Typical integration time to fill the well'
+'Typical integration time to fill the well from experience with similar test setups.'
 t_MAX = 1s
-
-'Resulting photo current'
+'Resulting photo current for full well within one second:'
 I_PHOTO = C_WELL/t_MAX|fA
 
-'Diode capacitance'
+'<h4>Diode Voltage and Sensitivity</h4>'
+'Diode capacitance based on size.'
 CJ_ND2PS = 1fF/μm^2
 W_D = 12μm
 L_D = 10μm
 C_D = CJ_ND2PS*W_D*L_D|fF
-
-'Diode voltage at full well'
+'Resulting diode voltage at full well.'
 V_D = I_PHOTO/C_D*t_MAX|V
-
-'Sensitivity assuming unity gain'
+'Sensitivity assuming unity gain source follower.'
 B = V_D/C_WELL|μV/ec
-
-'Noise estimation'
+'Noise estimation from source follower simulation.'
 V_N = 35μV
 N_N = V_N/B|ec
 
-
-
+'<h4>Dark current estimate</h4>'
+'Diffusion method only valid around room temperature'
+kB = 1.380649*10^-23*J/K|eV/K
+T_OP = 293.15K
+T_REF = 298.15K
+'Reference temperature from GF180 spice model.'
+'Area and perimeter dependent current. Parameters frm GF180 diode spice model'
+I_SA = 2.2959*10^-7A/m^2
+A = W_D*L_D
+J_SW = 2.1207*10^-13A/m
+P = 2*W_D + 2*L_D
+'Total base current.'
+I_S = I_SA*A + J_SW*P
+'Exponential parameters'
+XTI = 3
+N = 1.01
+EA = 1.17eV
+'Resulting dark-current according to diffusion method:'
+I_DARK_DIFF(T) = I_S*(T/T_REF)^(XTI/N)*e^(EA/(N*kB*T)*(T/T_REF - 1))
+I_DARK_DIFF(T_OP)|fA
+I_DARK_DIFF(T_OP)|ec/s
