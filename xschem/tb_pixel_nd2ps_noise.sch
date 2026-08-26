@@ -28,7 +28,6 @@ logx=1
 logy=1
 sim_type=noise
 sweep=frequency}
-T {Total RMS Noise = 66.4 uV} 360 690 0 0 0.5 0.5 {name=noise_rms}
 N 320 -200 320 -100 {lab=VDD}
 N 420 -200 420 -190 {lab=VDD}
 N 320 -200 420 -200 {lab=VDD}
@@ -55,15 +54,13 @@ N 470 70 470 80 {lab=OUT}
 N 530 70 530 80 {lab=VDD}
 N 530 -200 530 10 {lab=VDD}
 N 530 10 530 70 {lab=VDD}
-N 470 50 470 70 {lab=OUT}
-N 470 10 470 50 {lab=OUT}
+N 470 10 470 70 {lab=OUT}
 C {devices/launcher.sym} -515 215 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 set v [xschem raw value total_rms_noise 0]
-xschem setprop text noise_rms txt_ptr [format \{Total RMS Noise = %.4g uV\} $v]
-xschem redraw
+puts [format \{Total RMS Noise = %.4g uV\} $v]
 "
 }
 C {devices/code_shown.sym} -570 740 0 0 {name=MODELS only_toplevel=true

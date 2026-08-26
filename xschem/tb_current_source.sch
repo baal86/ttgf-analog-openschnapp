@@ -7,7 +7,7 @@ F {}
 E {}
 B 2 290 -80 1090 320 {flags=graph
 y1=0
-y2=30e-6
+y2=100e-6
 ypos1=0
 ypos2=2
 divy=5
@@ -28,18 +28,24 @@ color="4 7"
 node="i(vref)
 i(vmir)"
 hilight_wave=-1}
-N 100 -10 180 -10 {lab=vdd}
+N 100 -100 180 -100 {lab=vref}
 N 100 200 100 250 {lab=vsubs}
 N 100 250 180 250 {lab=vsubs}
 N 180 150 180 160 {lab=GND}
-N 180 80 180 90 {lab=GND}
-N 180 -10 180 20 {lab=vdd}
+N 180 -10 180 0 {lab=GND}
+N 180 -100 180 -70 {lab=vref}
 N 180 220 180 250 {lab=vsubs}
-N 40 60 40 80 {lab=#net1}
-N 40 -10 40 -0 {lab=vdd}
-N 40 -10 100 -10 {lab=vdd}
-N 100 -10 100 -0 {lab=vdd}
-N 100 60 100 80 {lab=#net2}
+N 40 60 40 80 {lab=vmir}
+N 40 -100 40 -90 {lab=vmir}
+N 100 -100 100 -90 {lab=vref}
+N 100 60 100 80 {lab=vref}
+N 40 -30 40 60 {lab=vmir}
+N 100 -30 100 60 {lab=vref}
+N -60 -20 -60 -10 {lab=GND}
+N -60 -100 -60 -80 {lab=vmir}
+N -60 -100 40 -100 {lab=vmir}
+N 100 -90 100 -30 {lab=vref}
+N 40 -90 40 -30 {lab=vmir}
 C {devices/launcher.sym} -595 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -67,6 +73,7 @@ simulator=ngspice
 only_toplevel=false 
 value="
 .control
+	reset
 	op
 	tran 1n 100u 50u
 	save all
@@ -75,11 +82,12 @@ value="
 .endc
 "}
 C {ip_current_source.sym} 70 140 0 0 {name=x1}
-C {vsource.sym} 180 50 0 0 {name=V1 value=3.3 savecurrent=false}
+C {vsource.sym} 180 -40 0 0 {name=V1 value=3.3 savecurrent=false}
 C {vsource.sym} 180 190 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 180 150 2 0 {name=l8 lab=GND}
-C {gnd.sym} 180 90 0 0 {name=l1 lab=GND}
-C {ammeter.sym} 40 30 0 0 {name=Vmir savecurrent=true spice_ignore=0}
+C {gnd.sym} 180 0 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} 160 250 0 0 {name=p1 sig_type=std_logic lab=vsubs}
-C {lab_wire.sym} 160 -10 0 0 {name=p2 sig_type=std_logic lab=vdd}
-C {ammeter.sym} 100 30 0 0 {name=Vref savecurrent=true spice_ignore=0}
+C {lab_wire.sym} 140 -100 0 0 {name=p2 sig_type=std_logic lab=vref}
+C {vsource.sym} -60 -50 0 0 {name=V3 value=1.5 savecurrent=false}
+C {gnd.sym} -60 -10 0 0 {name=l2 lab=GND}
+C {lab_wire.sym} 0 -100 0 0 {name=p3 sig_type=std_logic lab=vmir}

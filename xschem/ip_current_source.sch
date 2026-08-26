@@ -37,7 +37,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 130 -100 0 0 {name=M2
-L=2u
+L=4u
 W=0.3u
 nf=1
 m=1
