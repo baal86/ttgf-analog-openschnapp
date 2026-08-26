@@ -5,22 +5,22 @@ V {}
 S {}
 F {}
 E {}
-B 2 630 20 1430 420 {flags=graph
-y1=-8
-y2=-4
+B 2 360 280 1160 680 {flags=graph
+y1=-7.7
+y2=-4.6
 ypos1=0
 ypos2=2
 divy=5
 subdivy=8
 unity=1
 x1=-1
-x2=7
+x2=5.699
 divx=5
 subdivx=8
 xlabmag=1.0
 ylabmag=1.0
 legendmag=1.0
-node=onoise_spectrum
+node="onoise_spectrum % -1"
 color=4
 dataset=-1
 unitx=1
@@ -28,7 +28,7 @@ logx=1
 logy=1
 sim_type=noise
 sweep=frequency}
-T {Total RMS Noise = 67.46 uV} 630 430 0 0 0.5 0.5 {name=noise_rms}
+T {Total RMS Noise = 66.4 uV} 360 690 0 0 0.5 0.5 {name=noise_rms}
 N 320 -200 320 -100 {lab=VDD}
 N 420 -200 420 -190 {lab=VDD}
 N 320 -200 420 -200 {lab=VDD}
@@ -51,10 +51,13 @@ N 0 0 -0 110 {lab=INJ}
 N 0 200 160 200 {lab=VSS}
 N 420 -200 530 -200 {lab=VDD}
 N 470 -0 470 10 {lab=OUT}
-N 470 70 470 80 {lab=#net1}
-N 530 70 530 80 {lab=#net2}
+N 470 70 470 80 {lab=OUT}
+N 530 70 530 80 {lab=VDD}
 N 530 -200 530 10 {lab=VDD}
-C {devices/launcher.sym} -515 -15 0 0 {name=h1
+N 530 10 530 70 {lab=VDD}
+N 470 50 470 70 {lab=OUT}
+N 470 10 470 50 {lab=OUT}
+C {devices/launcher.sym} -515 215 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
@@ -63,7 +66,7 @@ xschem setprop text noise_rms txt_ptr [format \{Total RMS Noise = %.4g uV\} $v]
 xschem redraw
 "
 }
-C {devices/code_shown.sym} -580 480 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -570 740 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -84,36 +87,33 @@ C {lab_wire.sym} 380 -200 0 1 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 170 200 2 0 {name=p4 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 30 0 0 0 {name=p6 sig_type=std_logic lab=INJ}
 C {lab_wire.sym} 430 0 0 1 {name=p8 sig_type=std_logic lab=OUT}
-C {devices/launcher.sym} -515 25 0 0 {name=h2
-descr="Annotate"
-tclcommand="
-xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
-"
-}
-C {simulator_commands_shown.sym} -580 130 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -580 310 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+.param bias=1.5
 .control
 	shell rm -f tb_pixel_nd2ps_noise.raw
-	reset
-	set sparse
-	save currents
-	save all
-	op
-	noise V(out) V4 dec 1000 0.1 500e3
-	setplot noise1
-	let manual_integral = integ(onoise_spectrum * onoise_spectrum)
-	let total_rms_noise = sqrt(manual_integral[length(manual_integral)-1])*1e6
-	write tb_pixel_nd2ps_noise.raw
-	print total_rms_noise
+	set appendwrite
+	
+	foreach bias 2.5 2.0 1.5 1.0
+		alterparam bias = $bias
+		reset
+		destroy all
+		print @V4[dc]
+		set sparse
+		noise V(out) V4 dec 1000 0.1 500e3
+		setplot noise1
+		let manual_integral = integ(onoise_spectrum * onoise_spectrum)
+		let total_rms_noise = sqrt(manual_integral[length(manual_integral)-1])*1e6
+		save all
+		write tb_pixel_nd2ps_noise.raw
+	end
 	quit
 .endc
 "}
 C {ip_pixel_nd2ps.sym} 290 0 0 0 {name=x1}
 C {lab_wire.sym} 160 -20 0 0 {name=p3 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 160 20 0 0 {name=p5 sig_type=std_logic lab=VDD}
-C {vsource.sym} 0 140 0 1 {name=V4 value="DC 2.6 AC 1" savecurrent=false}
+C {vsource.sym} 0 140 0 1 {name=V4 value="DC \{bias\} AC 1" savecurrent=false}
 C {ip_current_source.sym} 500 140 0 0 {name=x2}
-C {ammeter.sym} 470 40 0 0 {name=viload savecurrent=true spice_ignore=0}
-C {ammeter.sym} 530 40 0 0 {name=viref savecurrent=true spice_ignore=0}
