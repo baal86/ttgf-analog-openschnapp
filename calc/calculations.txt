@@ -1,0 +1,34 @@
+'Unit definitions'
+.ec = 1.602176634*10^-19*C
+.fA = 0.001pA
+.fC = 0.001pC
+.fF = 0.001pF
+
+'Desired full-well size'
+N_WELL = 200000
+C_WELL = N_WELL*1ec|fC
+
+'Typical integration time to fill the well'
+t_MAX = 1s
+
+'Resulting photo current'
+I_PHOTO = C_WELL/t_MAX|fA
+
+'Diode capacitance'
+CJ_ND2PS = 1fF/μm^2
+W_D = 12μm
+L_D = 10μm
+C_D = CJ_ND2PS*W_D*L_D|fF
+
+'Diode voltage at full well'
+V_D = I_PHOTO/C_D*t_MAX|V
+
+'Sensitivity assuming unity gain'
+B = V_D/C_WELL|μV/ec
+
+'Noise estimation'
+V_N = 35μV
+N_N = V_N/B|ec
+
+
+
