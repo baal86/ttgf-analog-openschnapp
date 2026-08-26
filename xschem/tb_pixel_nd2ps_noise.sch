@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 630 20 1430 420 {flags=graph
-y1=-7.6
-y2=-3.7
+y1=-8
+y2=-4
 ypos1=0
 ypos2=2
 divy=5
@@ -28,6 +28,7 @@ logx=1
 logy=1
 sim_type=noise
 sweep=frequency}
+T {Total RMS Noise = 67.46 uV} 630 430 0 0 0.5 0.5 {name=noise_rms}
 N 320 -200 320 -100 {lab=VDD}
 N 420 -200 420 -190 {lab=VDD}
 N 320 -200 420 -200 {lab=VDD}
@@ -57,9 +58,12 @@ C {devices/launcher.sym} -515 -15 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+set v [xschem raw value total_rms_noise 0]
+xschem setprop text noise_rms txt_ptr [format \{Total RMS Noise = %.4g uV\} $v]
+xschem redraw
 "
 }
-C {devices/code_shown.sym} -580 430 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -580 480 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -97,9 +101,12 @@ value="
 	save currents
 	save all
 	op
-	noise V(out) V4 dec 1000 0.1 10e6
+	noise V(out) V4 dec 1000 0.1 500e3
 	setplot noise1
+	let manual_integral = integ(onoise_spectrum * onoise_spectrum)
+	let total_rms_noise = sqrt(manual_integral[length(manual_integral)-1])*1e6
 	write tb_pixel_nd2ps_noise.raw
+	print total_rms_noise
 	quit
 .endc
 "}
