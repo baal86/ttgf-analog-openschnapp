@@ -161,15 +161,14 @@ value="
 .param int_time=1m
 .param iphoto=10p
 .control
-	shell rm -f tb_pixel_nd2ps_tran.raw
-	set appendwrite
-	foreach iphoto 0f 10f 100f 1p 10p 100p
+	foreach iphoto 0p 8p 16p 28p 32p
 		alterparam iphoto = $iphoto
 		reset
 		op
 		tran 25n 2.2m
 		save all
 		write tb_pixel_nd2ps_tran.raw
+		set appendwrite
 	end
 	quit
 .endc
