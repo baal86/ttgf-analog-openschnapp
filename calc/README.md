@@ -1,13 +1,12 @@
-<h3>Calculations</h3> 
-<p>Use this file with Calcpad 7.1.9 </p>
-<p>&nbsp;</p>
+<h3>Pixel Calculations</h3> 
+<p>Generated from calculations.cpd sheet. Use with calcpadCE. </p>
+<span style="color: red">WARNING! Export to .md does not support rendering of fractions yet. Check original file.</span> 
 <h4>Unit Definitions</h4> 
 <p>We operate in the low current domain so we define fX units. </p>
 <p><span class="eq"><i>ec</i> = 1.6 · 10<sup>-19</sup> <i>C</i> = 1.6×10<sup>-19</sup> <i>C</i></span></p>
 <p><span class="eq"><i>fA</i> = 0.001 <i>pA</i></span></p>
 <p><span class="eq"><i>fC</i> = 0.001 <i>pC</i></span></p>
 <p><span class="eq"><i>fF</i> = 0.001 <i>pF</i></span></p>
-<p>&nbsp;</p>
 <h4>Photo Current Calculation</h4> 
 <p>The desired full-well capacity is defined. All calculations in electrons since QE cannot be estimated and will be poor due to <i>metal5</i> and lack of AR-coating and passivation. </p>
 <p><span class="eq"><var>N</var><sub>WELL</sub> = 200000</span></p>
@@ -16,7 +15,6 @@
 <p><span class="eq"><var>t</var><sub>MAX</sub> = 1 <i>s</i></span></p>
 <p>Resulting photo current for full well within one second: </p>
 <p><span class="eq"><var>I</var><sub>PHOTO</sub> = <span class="dvc"><var>C</var><sub>WELL</sub><span class="dvl"></span><var>t</var><sub>MAX</sub></span> = <span class="dvc">32.04 <i>fC</i><span class="dvl"></span>1 <i>s</i></span> = 32.04 <i>fA</i></span></p>
-<p>&nbsp;</p>
 <h4>Diode Voltage and Sensitivity</h4> 
 <p>Diode capacitance based on size. </p>
 <p><span class="eq"><var>CJ</var><sub>ND2PS</sub> = 1 <span class="dvc"><i>fF</i><span class="dvl"></span><i>μm</i><sup class="unit">2</sup></span></span></p>
@@ -30,7 +28,6 @@
 <p>Noise estimation from source follower simulation. </p>
 <p><span class="eq"><var>V</var><sub>N</sub> = 35 <i>μV</i></span></p>
 <p><span class="eq"><var>N</var><sub>N</sub> = <span class="dvc"><var>V</var><sub>N</sub><span class="dvl"></span><var>B</var></span> = <span class="dvc">35 <i>μV</i><span class="dvl"></span>1.34 <i>μV</i><i class="unit"> ∕ </i><i>ec</i></span> = 26.21 <i>ec</i></span></p>
-<p>&nbsp;</p>
 <h4>Dark current estimate</h4> 
 <p>Diffusion method only valid around room temperature </p>
 <p><span class="eq"><var>kB</var> = 1.38 · 10<sup>-23</sup> <span class="dvc"><i>J</i><span class="dvl"></span><i>K</i></span> = 8.62×10<sup>-5</sup> <i>eV</i><i class="unit"> ∕ </i><i>K</i></span></p>

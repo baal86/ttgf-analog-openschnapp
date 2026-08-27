@@ -1,13 +1,12 @@
-'<h3>Calculations</h3>'
-'Use this file with Calcpad 7.1.9'
-
+'<h3>Pixel Calculations</h3>'
+'Generated from calculations.cpd sheet. Use with calcpadCE.'
+'<span style="color: red">WARNING! Export to .md does not support rendering of fractions yet. Check original file.</span>'
 '<h4>Unit Definitions</h4>'
 'We operate in the low current domain so we define fX units.
 .ec = 1.602176634*10^-19*C
 .fA = 0.001pA
 .fC = 0.001pC
 .fF = 0.001pF
-
 '<h4>Photo Current Calculation</h4>'
 'The desired full-well capacity is defined. All calculations in electrons since QE cannot be estimated and will be poor due to <i>metal5</i> and lack of AR-coating and passivation.'
 N_WELL = 200000
@@ -16,7 +15,6 @@ C_WELL = N_WELL*1ec|fC
 t_MAX = 1s
 'Resulting photo current for full well within one second:'
 I_PHOTO = C_WELL/t_MAX|fA
-
 '<h4>Diode Voltage and Sensitivity</h4>'
 'Diode capacitance based on size.'
 CJ_ND2PS = 1fF/μm^2
@@ -30,7 +28,6 @@ B = V_D/C_WELL|μV/ec
 'Noise estimation from source follower simulation.'
 V_N = 35μV
 N_N = V_N/B|ec
-
 '<h4>Dark current estimate</h4>'
 'Diffusion method only valid around room temperature'
 kB = 1.380649*10^-23*J/K|eV/K
