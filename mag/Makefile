@@ -17,6 +17,8 @@ tt_analog_1x2_3v3.def:
 start: $(TEMPLATE_FILE)
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/tt-analog-draw.tcl $(TEMPLATE_FILE) $(PROJECT_NAME)
 
+parax: clean $(PROJECT_NAME).sim.spice
+
 $(PROJECT_NAME).lvs.spice: $(PROJECT_NAME).mag
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_lvs.tcl $(PROJECT_NAME)
 	rm -f *.ext
