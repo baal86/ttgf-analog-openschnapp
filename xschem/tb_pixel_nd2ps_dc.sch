@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 640 -200 1440 200 {flags=graph
-y1=-5.5e-09
-y2=9.8e-05
+y1=0
+y2=75u
 ypos1=0
 ypos2=2
 divy=5
