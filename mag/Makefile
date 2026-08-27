@@ -1,5 +1,5 @@
 PROJECT_NAME ?= tt_um_baal86_openschnapp
-MAGIC_RC := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
+MAGIC_RC := .magicrc
 #TEMPLATE_FILE := tt_analog_1x2.def
 TEMPLATE_FILE := tt_analog_1x2_3v3.def
 
