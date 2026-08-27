@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 0 260 800 660 {flags=graph
-y1=5.2
-y2=8.1
+y1=5.1
+y2=9
 ypos1=0
 ypos2=2
 divy=5
@@ -70,15 +70,13 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -660 110 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -660 330 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice statistical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
-* .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
+.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {devices/launcher.sym} -595 -245 0 0 {name=h2
 descr="Annotate"
@@ -90,12 +88,23 @@ C {simulator_commands_shown.sym} -660 -130 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+# Global parameters typically sourced from design.ngspice
+.param sw_stat_global   = 1
+.param sw_stat_mismatch = 1
+.param mc_skew          = 1
+.param res_mc_skew=3
+.param cap_mc_skew=3
+.param fnoicor=0
+
 .control
-	reset
-	op
-	ac dec 1000 0.01 100Meg
 	save all
-	write tb_current_source_ac.raw
+	repeat 25
+		mc_source
+		ac dec 1000 0.01 100Meg
+		write tb_current_source_ac.raw
+		set appendwrite
+		reset
+	end
 	quit
 .endc
 "}
