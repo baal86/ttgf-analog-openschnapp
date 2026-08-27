@@ -8,8 +8,7 @@ E {}
 N -40 -100 0 -100 {lab=vsubs}
 N 150 -100 210 -100 {lab=vsubs}
 N 0 -840 290 -840 {lab=vdd}
-N 150 -330 290 -330 {lab=src}
-N 150 -270 210 -270 {lab=vsubs}
+N 150 -430 290 -430 {lab=src}
 N 70 -160 70 -100 {lab=#net1}
 N 150 -0 290 -0 {lab=vsubs}
 N 150 -70 150 -0 {lab=vsubs}
@@ -23,7 +22,7 @@ N -0 -180 -0 -160 {lab=#net1}
 N -70 -350 -30 -350 {lab=vsubs}
 N -30 -350 -20 -350 {lab=vsubs}
 N 150 -240 150 -130 {lab=#net2}
-N 150 -330 150 -300 {lab=src}
+N 150 -430 150 -400 {lab=src}
 N -0 -320 -0 -180 {lab=#net1}
 N -0 -270 110 -270 {lab=#net1}
 N -70 -420 -30 -420 {lab=vsubs}
@@ -42,6 +41,19 @@ N -30 -760 -20 -760 {lab=vsubs}
 N 0 -730 0 -720 {lab=#net6}
 N 0 -660 0 -650 {lab=#net7}
 N -0 -840 0 -790 {lab=vdd}
+N 150 -220 260 -220 {lab=#net2}
+N 260 -240 260 -220 {lab=#net2}
+N 150 -320 150 -300 {lab=src}
+N 150 -320 260 -320 {lab=src}
+N 260 -320 260 -300 {lab=src}
+N 100 -270 100 -250 {lab=#net1}
+N 100 -250 220 -250 {lab=#net1}
+N 220 -270 220 -250 {lab=#net1}
+N 150 -280 150 -270 {lab=#net8}
+N 150 -280 260 -280 {lab=#net8}
+N 260 -280 260 -270 {lab=#net8}
+N 260 -270 350 -270 {lab=#net8}
+N 150 -400 150 -320 {lab=src}
 C {symbols/nfet_03v3.sym} 20 -100 0 1 {name=M1
 L=1u
 W=5u
@@ -74,13 +86,12 @@ C {lab_wire.sym} -40 -100 0 1 {name=p1 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 170 -100 0 1 {name=p2 sig_type=std_logic lab=vsubs}
 C {iopin.sym} 290 -840 2 1 {name=p3 lab=vdd}
 C {iopin.sym} 290 0 2 1 {name=p4 lab=vsubs}
-C {ipin.sym} 290 -330 0 1 {name=p5 lab=src}
-C {lab_wire.sym} 170 -270 0 1 {name=p6 sig_type=std_logic lab=vsubs}
+C {ipin.sym} 290 -430 0 1 {name=p5 lab=src}
 C {symbols/nfet_03v3.sym} 130 -270 0 0 {name=M3
 L=0.5u
 W=5u
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -132,3 +143,18 @@ spiceprefix=X
 m=1}
 C {lab_wire.sym} -70 -690 0 1 {name=p11 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} -70 -760 0 1 {name=p12 sig_type=std_logic lab=vsubs}
+C {symbols/nfet_03v3.sym} 240 -270 0 0 {name=M4
+L=0.5u
+W=5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {lab_wire.sym} 280 -270 0 1 {name=p6 sig_type=std_logic lab=vsubs}
