@@ -45,8 +45,8 @@ spiceprefix=X
 }
 C {iopin.sym} -80 -160 2 0 {name=p6 lab=vreset}
 C {symbols/nfet_03v3.sym} 180 -30 0 0 {name=M2
-L=2u
-W=2u
+L=1u	
+W=1.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -80,6 +80,7 @@ C {lab_wire.sym} 370 -30 3 0 {name=p11 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 280 20 0 0 {name=p8 sig_type=std_logic lab=sfout}
 C {symbols/diode_nd2ps_03v3.sym} 60 30 2 0 {name=D1
 model=diode_nd2ps_03v3
-r_w=12u
-r_l=10u
+r_w=13.5u
+r_l=13.5u
+area=0.166n
 m=1}
