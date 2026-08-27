@@ -1,5 +1,5 @@
 PROJECT_NAME ?= tt_um_baal86_openschnapp
-MAGIC_RC := .magicrc
+MAGIC_RC := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
 #TEMPLATE_FILE := tt_analog_1x2.def
 TEMPLATE_FILE := tt_analog_1x2_3v3.def
 
@@ -27,7 +27,7 @@ antenna:
 
 drc:
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/drc.tcl $(PROJECT_NAME)
-	
+
 $(PROJECT_NAME).sim.spice: $(PROJECT_NAME).mag
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_sim.tcl $(PROJECT_NAME)
 	rm -f *.ext
