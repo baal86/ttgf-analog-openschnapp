@@ -28,7 +28,8 @@ color="4 5"
 node="imir; i(v3) -1 * %-1
 iref; i(v1) -1 * %-1"
 dataset=-1
-sweep=1}
+sweep=1
+mode=Line}
 N 100 -100 180 -100 {lab=vref}
 N 100 200 100 250 {lab=vsubs}
 N 100 250 180 250 {lab=vsubs}
@@ -53,7 +54,7 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -670 500 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -660 450 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 
@@ -82,7 +83,7 @@ value="
 
 .control
 	save all
-	repeat 100
+	repeat 20
 		mc_source
 		dc v3 0.0 3.3 0.01	
 		write tb_current_source_dc.raw
