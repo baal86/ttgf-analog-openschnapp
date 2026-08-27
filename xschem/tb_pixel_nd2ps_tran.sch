@@ -84,12 +84,9 @@ sim_type=tran}
 T {Reset behavior, qualifying reset FET voltage drop} 1040 -470 0 0 0.4 0.4 {}
 T {Integration time} 1040 -30 0 0 0.4 0.4 {}
 T {Readout phase} 1040 410 0 0 0.4 0.4 {}
-N 690 -200 690 -100 {lab=VDD}
+N 660 -200 660 -100 {lab=VDD}
 N 790 -200 790 -190 {lab=VDD}
 N 690 -200 790 -200 {lab=VDD}
-N 630 -200 630 -100 {lab=VRESET}
-N 540 -200 630 -200 {lab=VRESET}
-N 540 -200 540 -190 {lab=VRESET}
 N 600 180 600 200 {lab=VSS}
 N 600 200 660 200 {lab=VSS}
 N 660 100 660 200 {lab=VSS}
@@ -98,7 +95,6 @@ N 480 -0 560 -0 {lab=INJ}
 N 750 0 840 0 {lab=OUT}
 N 270 350 270 360 {lab=GND}
 N 790 -130 790 -120 {lab=GND}
-N 540 -130 540 -120 {lab=GND}
 N 550 -20 560 -20 {lab=RESET}
 N 550 20 560 20 {lab=READ}
 N 270 -0 440 -0 {lab=INJ}
@@ -118,6 +114,7 @@ N 660 200 900 200 {lab=VSS}
 N 900 160 900 200 {lab=VSS}
 N 790 -200 900 -200 {lab=VDD}
 N 900 -200 900 40 {lab=VDD}
+N 660 -200 690 -200 {lab=VDD}
 C {devices/launcher.sym} -435 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -135,12 +132,9 @@ value="
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {vsource.sym} 790 -160 0 1 {name=V1 value=3.3 savecurrent=false}
-C {vsource.sym} 540 -160 0 1 {name=V2 value=3.3 savecurrent=false}
 C {vsource.sym} 600 150 0 0 {name=V3 value=0 savecurrent=false}
 C {gnd.sym} 790 -120 0 1 {name=l1 lab=GND}
 C {gnd.sym} 600 110 2 0 {name=l2 lab=GND}
-C {gnd.sym} 540 -120 0 1 {name=l3 lab=GND}
-C {lab_wire.sym} 570 -200 0 1 {name=p1 sig_type=std_logic lab=VRESET}
 C {lab_wire.sym} 750 -200 0 1 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 610 200 2 0 {name=p4 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 300 0 0 0 {name=p6 sig_type=std_logic lab=INJ}

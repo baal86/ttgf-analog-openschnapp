@@ -28,18 +28,14 @@ logx=0
 logy=0
 }
 T {DC Transfer Function} 140 120 0 0 0.4 0.4 {}
-N 320 -400 320 -300 {lab=VDD}
+N 290 -400 290 -300 {lab=VDD}
 N 420 -400 420 -390 {lab=VDD}
 N 320 -400 420 -400 {lab=VDD}
-N 260 -400 260 -300 {lab=VRESET}
-N 170 -400 260 -400 {lab=VRESET}
-N 170 -400 170 -390 {lab=VRESET}
 N 160 -20 160 0 {lab=VSS}
 N 290 -100 290 0 {lab=VSS}
 N 160 -90 160 -80 {lab=GND}
 N 380 -200 470 -200 {lab=OUT}
 N 420 -330 420 -320 {lab=GND}
-N 170 -330 170 -320 {lab=GND}
 N 130 -220 190 -220 {lab=VSS}
 N 130 -180 190 -180 {lab=VDD}
 N 290 0 530 0 {lab=VSS}
@@ -53,6 +49,7 @@ N 470 -200 470 -190 {lab=OUT}
 N 470 -130 470 -120 {lab=#net1}
 N 530 -130 530 -120 {lab=#net2}
 N 530 -400 530 -190 {lab=VDD}
+N 290 -400 320 -400 {lab=VDD}
 C {devices/launcher.sym} -435 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -68,12 +65,9 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {vsource.sym} 420 -360 0 1 {name=V1 value=3.3 savecurrent=false}
-C {vsource.sym} 170 -360 0 1 {name=V2 value=3.3 savecurrent=false}
 C {vsource.sym} 160 -50 0 0 {name=V3 value=0 savecurrent=false}
 C {gnd.sym} 420 -320 0 1 {name=l1 lab=GND}
 C {gnd.sym} 160 -90 2 0 {name=l2 lab=GND}
-C {gnd.sym} 170 -320 0 1 {name=l3 lab=GND}
-C {lab_wire.sym} 200 -400 0 1 {name=p1 sig_type=std_logic lab=VRESET}
 C {lab_wire.sym} 380 -400 0 1 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 170 0 2 0 {name=p4 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 30 -200 0 0 {name=p6 sig_type=std_logic lab=INJ}

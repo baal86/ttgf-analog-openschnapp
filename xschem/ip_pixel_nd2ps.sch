@@ -9,8 +9,7 @@ N -80 -80 20 -80 {lab=reset}
 N 60 60 60 120 {lab=vsubs}
 N 60 -50 60 0 {lab=siminj}
 N -80 -30 60 -30 {lab=siminj}
-N -80 -160 60 -160 {lab=vreset}
-N 60 -160 60 -110 {lab=vreset}
+N 60 -160 60 -110 {lab=vdd}
 N 60 -80 100 -80 {lab=vsubs}
 N 60 -30 160 -30 {lab=siminj}
 N 200 -30 230 -30 {lab=vsubs}
@@ -24,6 +23,7 @@ N 370 -30 370 20 {lab=vsubs}
 N 230 -30 240 -30 {lab=vsubs}
 N -80 120 60 120 {lab=vsubs}
 N -80 -190 200 -190 {lab=vdd}
+N 60 -190 60 -160 {lab=vdd}
 C {iopin.sym} -80 -190 2 0 {name=p1 lab=vdd}
 C {iopin.sym} -80 120 2 0 {name=p2 lab=vsubs}
 C {ipin.sym} -80 -30 0 0 {name=p3 lab=siminj}
@@ -43,7 +43,6 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {iopin.sym} -80 -160 2 0 {name=p6 lab=vreset}
 C {symbols/nfet_03v3.sym} 180 -30 0 0 {name=M2
 L=1u	
 W=1.5u
