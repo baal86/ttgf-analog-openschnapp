@@ -49,10 +49,10 @@ N 260 -320 260 -300 {lab=src}
 N 100 -270 100 -250 {lab=#net1}
 N 100 -250 220 -250 {lab=#net1}
 N 220 -270 220 -250 {lab=#net1}
-N 150 -280 150 -270 {lab=#net8}
-N 150 -280 260 -280 {lab=#net8}
-N 260 -280 260 -270 {lab=#net8}
-N 260 -270 350 -270 {lab=#net8}
+N 150 -280 150 -270 {lab=vsubs}
+N 150 -280 260 -280 {lab=vsubs}
+N 260 -280 260 -270 {lab=vsubs}
+N 260 -270 350 -270 {lab=vsubs}
 N 150 -400 150 -320 {lab=src}
 C {symbols/nfet_03v3.sym} 20 -100 0 1 {name=M1
 L=1u
@@ -158,3 +158,4 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {lab_wire.sym} 280 -270 0 1 {name=p6 sig_type=std_logic lab=vsubs}
+C {lab_wire.sym} 50 -270 0 0 {name=p13 sig_type=std_logic lab=refin}

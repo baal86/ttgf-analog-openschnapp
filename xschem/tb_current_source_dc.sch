@@ -6,28 +6,29 @@ S {}
 F {}
 E {}
 B 2 290 -80 1090 320 {flags=graph
-y1=0
-y2=100u
+y1=1.1e-08
+y2=6.9e-05
 ypos1=0
 ypos2=2
-divy=5
+divy=10
 subdivy=1
 unity=1
-x1=5.000028e-05
-x2=0.0001
+x1=0
+x2=3.3
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 legendmag=1.0
-dataset=-1
 unitx=1
 logx=0
 logy=0
 hilight_wave=-1
-color="4 7"
-node="Reference;i(v1) -1 *
-Mirror;i(v3) -1 *"}
+color="4 5"
+node="imir; i(v3) -1 * %-1
+iref; i(v1) -1 * %-1"
+dataset=-1
+sweep=1}
 N 100 -100 180 -100 {lab=vref}
 N 100 200 100 250 {lab=vsubs}
 N 100 250 180 250 {lab=vsubs}
@@ -52,15 +53,14 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -660 280 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -670 500 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+
+.lib $::180MCU_MODELS/sm141064.ngspice statistical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
-* .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
+.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {devices/launcher.sym} -595 -55 0 0 {name=h2
 descr="Annotate"
@@ -68,16 +68,27 @@ tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {simulator_commands_shown.sym} -640 40 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -660 30 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+# Global parameters typically sourced from design.ngspice
+.param sw_stat_global   = 1
+.param sw_stat_mismatch = 1
+.param mc_skew          = 1
+.param res_mc_skew=3
+.param cap_mc_skew=3
+.param fnoicor=0
+
 .control
-	reset
-	op
-	tran 1n 100u 50u
 	save all
-	write tb_current_source.raw
+	repeat 100
+		mc_source
+		dc v3 0.0 3.3 0.01	
+		write tb_current_source_dc.raw
+		set appendwrite
+		reset
+	end
 	quit
 .endc
 "}
