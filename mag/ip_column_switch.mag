@@ -1,0 +1,82 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1787903108
+<< pwell >>
+rect 0 280 1500 400
+rect 0 270 280 280
+rect 320 270 1500 280
+rect 0 230 1500 270
+rect 0 220 280 230
+rect 320 220 1500 230
+rect 0 150 1500 220
+rect 0 100 1510 150
+<< psubdiff >>
+rect 0 390 1500 400
+rect 0 360 80 390
+rect 1420 360 1500 390
+rect 0 350 1500 360
+rect 0 330 50 350
+rect 0 170 10 330
+rect 40 170 50 330
+rect 0 150 50 170
+rect 0 140 1510 150
+rect 0 110 70 140
+rect 1420 110 1510 140
+rect 0 100 1510 110
+<< psubdiffcont >>
+rect 80 360 1420 390
+rect 10 170 40 330
+rect 70 110 1420 140
+<< metal1 >>
+rect 10 390 40 400
+rect 0 360 80 390
+rect 1420 360 1500 390
+rect 10 330 40 360
+rect 80 320 260 330
+rect 80 290 90 320
+rect 130 290 260 320
+rect 80 280 140 290
+rect 330 270 380 280
+rect 280 230 340 270
+rect 370 230 380 270
+rect 330 220 380 230
+rect 80 210 140 220
+rect 80 180 90 210
+rect 130 180 260 210
+rect 80 170 260 180
+rect 10 140 40 170
+rect 300 140 380 180
+rect 10 110 70 140
+rect 1420 110 1510 140
+<< via1 >>
+rect 90 290 130 320
+rect 340 230 370 270
+rect 90 180 130 210
+<< metal2 >>
+rect 80 320 140 330
+rect 80 290 90 320
+rect 130 290 140 320
+rect 80 280 140 290
+rect 330 270 380 280
+rect 330 230 340 270
+rect 370 230 380 270
+rect 330 220 380 230
+rect 80 210 140 220
+rect 80 180 90 210
+rect 130 180 140 210
+rect 80 170 140 180
+use nfet_03v3_K4EN95  nfet_03v3_K4EN95_0
+timestamp 1787902964
+transform 0 1 226 -1 0 251
+box -81 -96 81 96
+<< labels >>
+flabel metal2 80 280 140 330 0 FreeSans 160 0 0 0 cl
+port 1 nsew
+flabel metal2 80 170 140 220 0 FreeSans 160 0 0 0 bus
+port 2 nsew
+flabel metal2 330 220 380 280 0 FreeSans 160 0 0 0 en
+port 4 nsew
+flabel metal1 300 140 380 180 0 FreeSans 160 0 0 0 vsubs
+port 6 nsew
+<< end >>
