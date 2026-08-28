@@ -1,0 +1,85 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1787924423
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_0
+timestamp 1784019974
+transform 1 0 -3257 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_1
+timestamp 1784019974
+transform 1 0 -2607 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_2
+timestamp 1784019974
+transform 1 0 -1957 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_3
+timestamp 1784019974
+transform 1 0 -1307 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_4
+timestamp 1784019974
+transform -1 0 -2641 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_5
+timestamp 1784019974
+transform -1 0 -1991 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_6
+timestamp 1784019974
+transform -1 0 -1341 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_7
+timestamp 1784019974
+transform -1 0 -691 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_8
+timestamp 1784019974
+transform 1 0 -157 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_9
+timestamp 1784019974
+transform 1 0 493 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_10
+timestamp 1784019974
+transform 1 0 1143 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_11
+timestamp 1784019974
+transform 1 0 1793 0 1 -5
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_12
+timestamp 1784019974
+transform -1 0 459 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_13
+timestamp 1784019974
+transform -1 0 1109 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_14
+timestamp 1784019974
+transform -1 0 1759 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__and4_1  gf180mcu_fd_sc_mcu9t5v0__and4_1_15
+timestamp 1784019974
+transform -1 0 2409 0 -1 1049
+box -43 -45 659 549
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_0
+timestamp 1784019974
+transform 1 0 -657 0 1 -5
+box -43 -45 267 549
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_1
+timestamp 1784019974
+transform 1 0 -407 0 1 -5
+box -43 -45 267 549
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_2
+timestamp 1784019974
+transform -1 0 -433 0 -1 1049
+box -43 -45 267 549
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_3
+timestamp 1784019974
+transform -1 0 -183 0 -1 1049
+box -43 -45 267 549
+<< end >>

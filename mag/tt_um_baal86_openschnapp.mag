@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1787903657
+timestamp 1787922347
 << error_s >>
 rect 2150 5500 2200 5513
 rect 3650 5500 3700 5513
@@ -80,6 +80,10 @@ use ip_current_source  ip_current_source_0
 timestamp 1787812053
 transform 0 1 1100 -1 0 3000
 box 845 900 2000 2550
+use ip_line_mux  ip_line_mux_0
+timestamp 1787922285
+transform 1 0 5255 0 1 20015
+box -3300 -50 2452 1094
 use ip_pixel_nd2ps  ip_pixel_nd2ps_0
 timestamp 1787895578
 transform 1 0 1600 0 1 3500
