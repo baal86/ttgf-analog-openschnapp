@@ -1,6 +1,6 @@
 # PL_TARGET_DENSITY - You can increase this if Global Placement fails with error GPL-0302.
 # Users have reported that values up to 0.8 worked well for them.
-set ::env(PL_TARGET_DENSITY) 0.6
+set ::env(PL_TARGET_DENSITY) 0.8
 
 # CLOCK_PERIOD - Increase this in case you are getting setup time violations.
 # The value is in nanoseconds, so 10ns == 100MHz.
@@ -35,12 +35,14 @@ set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Reduce wasted space
+#set ::env(FP_CORE_MARGIN) 1
+
 set ::env(TOP_MARGIN_MULT) 1
 set ::env(BOTTOM_MARGIN_MULT) 1
 set ::env(LEFT_MARGIN_MULT) 6
 set ::env(RIGHT_MARGIN_MULT) 6
 
-# Absolute die size
+# Die size
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 100 25"
 
@@ -57,5 +59,3 @@ set ::env(CLOCK_PORT) {clk}
 # Don't use power rings or met5 layer
 set ::env(DESIGN_IS_CORE) 0
 set ::env(RT_MAX_LAYER) {Metal4}
-
-set ::env(FP_CORE_MARGIN) 2
