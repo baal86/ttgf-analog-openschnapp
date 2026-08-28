@@ -1,6 +1,6 @@
 magic
 tech gf180mcuD
-timestamp 1787835050
+timestamp 1787893670
 << pwell >>
 rect -140 -180 160 120
 << psubdiff >>
@@ -24,7 +24,8 @@ rect 10 -170 150 -160
 << ndiodec >>
 rect 20 -160 40 -140
 << metal1 >>
-rect -138 112 -120 118
+rect -138 118 -132 120
+rect -140 112 -120 118
 rect 150 112 160 118
 rect -138 100 -132 112
 rect 17 -140 43 -137
