@@ -6,18 +6,17 @@ S {}
 F {}
 E {}
 B 2 440 -400 1240 0 {flags=graph
-y2=-0.83
+y2=1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=8
 unity=1
 x1=0
-x2=8
 divx=5
 subdivx=8
 xlabmag=1.0
-ylabmag=1.0
+ylabmag=1.0`
 legendmag=1.0
 node="MC;bus %-1
 OFF;bus % 0
@@ -28,10 +27,11 @@ unitx=1
 logx=1
 logy=1
 sim_type=ac
-y1=-11
+y1=-10
 vlegend=0
 legend=1
-linewidth_mult=0.5}
+linewidth_mult=0.5
+x2=8}
 N 100 -30 160 -30 {lab=column}
 N 100 40 260 40 {lab=bus}
 N -180 20 -100 20 {lab=en}
@@ -92,20 +92,20 @@ C {vsource.sym} 0 -180 0 0 {name=V2 value=3.3 savecurrent=false}
 C {gnd.sym} 0 -140 0 0 {name=l4 lab=GND}
 C {vsource.sym} -180 210 0 0 {name=V3 value=\{ven\} savecurrent=false}
 C {gnd.sym} -180 250 0 0 {name=l5 lab=GND}
-C {vsource.sym} -160 -210 0 0 {name=V4 value="DC=2.4 AC=1" savecurrent=false}
+C {vsource.sym} -160 -210 0 0 {name=V4 value="DC=2.0 AC=1" savecurrent=false}
 C {gnd.sym} -160 -160 0 0 {name=l6 lab=GND}
 C {lab_wire.sym} -100 -270 0 0 {name=p1 sig_type=std_logic lab=in}
 C {lab_wire.sym} 160 -340 1 0 {name=p3 sig_type=std_logic lab=column
 }
 C {lab_wire.sym} 230 40 0 0 {name=p2 sig_type=std_logic lab=bus}
 C {lab_wire.sym} -130 20 0 0 {name=p5 sig_type=std_logic lab=en}
-C {devices/launcher.sym} -1045 -455 0 0 {name=h1
+C {devices/launcher.sym} -795 -535 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -1100 220 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -850 140 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .lib $::180MCU_MODELS/sm141064.ngspice statistical
@@ -113,13 +113,13 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {devices/launcher.sym} -1045 -415 0 0 {name=h2
+C {devices/launcher.sym} -795 -495 0 0 {name=h2
 descr="Annotate"
 tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {simulator_commands_shown.sym} -1110 -300 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -860 -380 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
