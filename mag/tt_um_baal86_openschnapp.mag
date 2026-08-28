@@ -1,9 +1,14 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1787302159
-<< checkpaint >>
-rect -900 -500 1900 23076
+timestamp 1787895663
+<< error_s >>
+rect 2150 5500 2200 5513
+rect 3650 5500 3700 5513
+rect 5150 5500 5200 5513
+rect 2150 4000 2200 4013
+rect 3650 4000 3700 4013
+rect 5150 4000 5200 4013
 << metal4 >>
 rect 1503 22476 1533 22576
 rect 1779 22476 1809 22576
@@ -59,6 +64,46 @@ rect 7821 0 7911 100
 rect 9753 0 9843 100
 rect 11685 0 11775 100
 rect 13617 0 13707 100
+use ip_current_source  ip_current_source_0
+timestamp 1787812053
+transform 0 1 1100 -1 0 3000
+box 845 900 2000 2550
+use ip_pixel_nd2ps  ip_pixel_nd2ps_0
+timestamp 1787895578
+transform 1 0 1600 0 1 3500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_1
+timestamp 1787895578
+transform 1 0 3100 0 1 3500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_2
+timestamp 1787895578
+transform 1 0 4600 0 1 3500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_3
+timestamp 1787895578
+transform 1 0 1600 0 1 5000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_4
+timestamp 1787895578
+transform 1 0 3100 0 1 5000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_5
+timestamp 1787895578
+transform 1 0 4600 0 1 5000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_6
+timestamp 1787895578
+transform 1 0 1600 0 1 6500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_7
+timestamp 1787895578
+transform 1 0 3100 0 1 6500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  ip_pixel_nd2ps_8
+timestamp 1787895578
+transform 1 0 4600 0 1 6500
+box 400 -1000 1900 500
 << labels >>
 flabel metal4 s 12819 22476 12849 22576 0 FreeSans 224 90 0 0 clk
 port 0 nsew signal input
