@@ -44,7 +44,7 @@ set ::env(RIGHT_MARGIN_MULT) 6
 
 # Die size
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 100 25"
+set ::env(DIE_AREA) "0 0 100 24"
 
 set ::env(PL_BASIC_PLACEMENT) {0}
 set ::env(GRT_ALLOW_CONGESTION) "1"
