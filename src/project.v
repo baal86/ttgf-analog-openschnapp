@@ -19,5 +19,36 @@ module tt_um_baal86_openschnapp (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+    wire column[6:0];
+    wire bus;
+    wire reset;
+    wire acol[6:0];
+    wire arow[9:0];
+
+    ip_pixel_nd2ps pixel_0_0(
+        .VDD(VDPWR),
+        .VSUBS(VGND),
+        .reset(reset),
+        .read(arow[0]),
+        .cl(column[0])
+    );
+
+    ip_current_source current_source(
+        .VDD(VDPWR),
+        .VSUBS(VGND),
+        .src(bus)
+    );
+
+    ip_column_switch cswitch_0(
+        .VSUBS(VGND),
+        .bus(bus),
+        .cl(column[0]),
+        .en(acol[0])
+    );
+
+    ip_line_mux rowmux(
+        .A(ui_in[3:0]),
+        .Y(arow[6:0])
+    );
 
 endmodule

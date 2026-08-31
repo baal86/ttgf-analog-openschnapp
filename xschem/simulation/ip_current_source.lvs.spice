@@ -1,0 +1,18 @@
+** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_current_source.sch
+.subckt ip_current_source vdd src vsubs
+*.PININFO vdd:B vsubs:B src:I
+XM1 refin refin vsubs vsubs nfet_03v3 L=1u W=5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM2 net1 refin vsubs vsubs nfet_03v3 L=5u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM3 src refin net1 vsubs nfet_03v3 L=0.5u W=5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XR1 refin net3 vsubs ppolyf_u_1k r_width=1e-6 r_length=6e-6
+XR2 net3 net2 vsubs ppolyf_u_1k r_width=1e-6 r_length=6e-6
+XR3 net2 net4 vsubs ppolyf_u_1k r_width=1e-6 r_length=6e-6
+XR4 net4 net6 vsubs ppolyf_u_1k r_width=1e-6 r_length=6e-6
+XR5 net6 net5 vsubs ppolyf_u_1k r_width=1e-6 r_length=6e-6
+XR6 net5 vdd vsubs ppolyf_u_1k r_width=1e-6 r_length=6e-6
+XM4 src refin net1 vsubs nfet_03v3 L=0.5u W=5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends

@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788153372
+timestamp 1788182316
 << metal4 >>
 rect 1503 22476 1533 22576
 rect 1779 22476 1809 22576
@@ -57,61 +57,21 @@ rect 7821 0 7911 100
 rect 9753 0 9843 100
 rect 11685 0 11775 100
 rect 13617 0 13707 100
-use ip_column_switch  ip_column_switch_0
+use ip_column_switch  cswitch0
 timestamp 1787903605
 transform 1 0 2000 0 1 2100
 box 0 100 1500 400
-use ip_column_switch  ip_column_switch_1
-timestamp 1787903605
-transform 1 0 3500 0 1 2100
-box 0 100 1500 400
-use ip_column_switch  ip_column_switch_2
-timestamp 1787903605
-transform 1 0 5000 0 1 2100
-box 0 100 1500 400
-use ip_current_source  ip_current_source_0
+use ip_current_source  current_source
 timestamp 1787812053
 transform 0 1 1100 -1 0 3000
 box 845 900 2000 2550
 use ip_line_mux  ip_line_mux_0
-timestamp 1788153271
+timestamp 1788181793
 transform 1 0 1755 0 1 19165
-box 293 0 9675 2400
-use ip_pixel_nd2ps  ip_pixel_nd2ps_0
+box 13 0 7435 2500
+use ip_pixel_nd2ps  pixel_0_0
 timestamp 1788153359
 transform 1 0 1600 0 1 3500
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_1
-timestamp 1788153359
-transform 1 0 3100 0 1 3500
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_2
-timestamp 1788153359
-transform 1 0 4600 0 1 3500
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_3
-timestamp 1788153359
-transform 1 0 1600 0 1 5000
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_4
-timestamp 1788153359
-transform 1 0 3100 0 1 5000
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_5
-timestamp 1788153359
-transform 1 0 4600 0 1 5000
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_6
-timestamp 1788153359
-transform 1 0 1600 0 1 6500
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_7
-timestamp 1788153359
-transform 1 0 3100 0 1 6500
-box 400 -1000 1900 500
-use ip_pixel_nd2ps  ip_pixel_nd2ps_8
-timestamp 1788153359
-transform 1 0 4600 0 1 6500
 box 400 -1000 1900 500
 << labels >>
 flabel metal4 s 12819 22476 12849 22576 0 FreeSans 224 90 0 0 clk
