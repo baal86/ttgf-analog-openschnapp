@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "Openschnapp"      # Project title
-  author:       ""      # Your name
+  author:       "baal86"      # Your name
   discord:      "baal86" # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "3T CMOS Image Sensor" # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
@@ -25,14 +25,14 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "Row 0"
+  ui[1]: "Row 1"
+  ui[2]: "Row 2"
+  ui[3]: "Col 0"
+  ui[4]: "Col 1"
+  ui[5]: "Col 2"
+  ui[6]: "Col 3"
+  ui[7]: "Reset"
 
   # Outputs
   uo[0]: ""
@@ -55,8 +55,8 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
+  ua[0]: "Analog Out"
+  ua[1]: "Analog Out (Buffered)"
   ua[2]: ""
   ua[3]: ""
   ua[4]: ""

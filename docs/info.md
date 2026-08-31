@@ -9,11 +9,17 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated.
 
 ## How to test
 
-Explain how to use your project
+For simple uncorrelated readout:
+
+- Pulse reset high to reset the array
+- Wait for your desired integration time
+- Read out the image sensor:
+    - Address the pixel by row and column number.
+    - After settling (~100us), sample the analog output.
 
 ## External hardware
 
