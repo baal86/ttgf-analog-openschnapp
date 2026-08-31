@@ -93,7 +93,7 @@ only_toplevel=false
 value="
 astim [A3 A2 A1 A0 ] stim
 .model stim d_source input_file=\\"../stim.txt\\"
-adut [ A3 A2 A1 A0 ] [Y15 Y14 Y13 Y12 Y11 Y10 Y9 Y8 Y7 Y6 Y5 Y4 Y3 Y2 Y1 Y0] dut
+adut [ A3 A2 A1 A0 ] [Y15 Y14 Y13 Y12 Y11 Y10 Y9 Y8 Y7 Y6 Y5 Y4 Y3 Y2 Y1 Y0] null dut
 .model dut d_cosim simulation=\\"../../verilog/rtl/ip_line_mux.so\\"
 .param VDD=3.3
 ra3 A3 0 100k
