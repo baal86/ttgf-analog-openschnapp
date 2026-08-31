@@ -7,7 +7,7 @@ set source [readnet spice /dev/null]
 readnet verilog ../src/project.v $source
 
 # add an GL verilog of any digital blocks:
-readnet verilog ../verilog/gl/ip_line_mux.v $source
+# readnet verilog ../verilog/gl/ip_line_mux.v $source
 
 # add any spice files of your analog blocks:
 readnet spice ../xschem/simulation/$project.lvs.spice $source

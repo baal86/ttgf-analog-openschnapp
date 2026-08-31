@@ -7,5 +7,5 @@ XM2 vdd siminj sfout vsubs nfet_03v3 L=1u W=2.5u nf=1 ad='int((nf+1)/2) * W/nf *
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
 XM3 sfout read cl vsubs nfet_03v3 L=0.3u W=0.3u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-D1 vsubs siminj diode_nd2ps_03v3 area='13.5u * 13.5u ' pj='2*13.5u + 2*13.5u '
+D1 vsubs siminj diode_nd2ps_03v3 area=0.166n pj='2*13.5u + 2*13.5u '
 .ends
