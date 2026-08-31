@@ -1,0 +1,4 @@
+0.0s	0s	1s 	0s	1s
+100.0us	1s	1s	0s	1s
+200.0us	1s	0s	1s 	0s
+300.0us	1s	1s	1s 	1s
