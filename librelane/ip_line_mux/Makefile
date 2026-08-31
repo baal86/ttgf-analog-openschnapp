@@ -1,7 +1,7 @@
 PROJECT_NAME := ip_line_mux
 harden:
 	mkdir -p runs/latest
-	librelane --overwrite --force-run-dir runs/latest config.tcl
+	librelane --overwrite --force-run-dir runs/latest config.yaml
 
 update_files:
 	cp runs/latest/final/mag/$(PROJECT_NAME).mag ../../mag/$(PROJECT_NAME).mag
