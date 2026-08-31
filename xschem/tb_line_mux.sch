@@ -13,8 +13,8 @@ ypos2=0.01
 divy=5
 subdivy=1
 unity=1
-x1=0.00071441095
-x2=0.001500843
+x1=0.0007930542
+x2=0.0015794862
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -96,10 +96,10 @@ astim [A3 A2 A1 A0 ] stim
 adut [ A3 A2 A1 A0 ] [Y15 Y14 Y13 Y12 Y11 Y10 Y9 Y8 Y7 Y6 Y5 Y4 Y3 Y2 Y1 Y0] dut
 .model dut d_cosim simulation=\\"../../verilog/rtl/ip_line_mux.so\\"
 .param VDD=3.3
-r3 A3 0 100k
-r2 A2 0 100k
-r1 A1 0 100k
-r0 A0 0 100k
+ra3 A3 0 100k
+ra2 A2 0 100k
+ra1 A1 0 100k
+ra0 A0 0 100k
 
 ry15 Y15 0 100k
 ry14 Y14 0 100k
@@ -120,8 +120,7 @@ ry0 Y0 0 100k
 
 .control
 	reset
-	tran 25n 1.6m
-	save currents
+	tran 1u 1.6m
 	save all
 	write tb_line_mux.raw
 	quit
