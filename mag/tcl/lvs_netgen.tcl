@@ -5,6 +5,7 @@ set source [readnet spice /dev/null]
 
 # top level GL verilog
 readnet verilog ../src/project.v $source
+readnet verilog ../src/column.v $source
 
 # add an GL verilog of any digital blocks:
 # readnet verilog ../verilog/gl/ip_line_mux.v $source
