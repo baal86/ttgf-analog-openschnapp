@@ -23,7 +23,7 @@ module tt_um_baal86_openschnapp (
     wire bus;
     wire reset;
     wire acol[6:0];
-    wire arow[9:0];
+    wire arow[11:0];
 
     ip_pixel_nd2ps pixel_0_0(
         .VDD(VDPWR),
@@ -50,5 +50,11 @@ module tt_um_baal86_openschnapp (
         .A(ui_in[2:0]),
         .Y(arow[6:0])
     );
+
+    ip_row_mux rowmux(
+        .A(ui_in[6:3]),
+        .Y(arow[11:0])
+    );
+
 
 endmodule

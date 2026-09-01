@@ -23,3 +23,7 @@ test/gate_level_netlist.v
 /verilog/rtl/ip_column_mux/*.xml
 /verilog/rtl/ip_line_mux/*.so
 /verilog/rtl/ip_line_mux/*.xml
+/verilog/rtl/ip_row_mux/ip_row_mux_obj_dir
+/verilog/rtl/ip_row_mux/sim_build
+/verilog/rtl/ip_row_mux/*.so
+/verilog/rtl/ip_row_mux/*.xml

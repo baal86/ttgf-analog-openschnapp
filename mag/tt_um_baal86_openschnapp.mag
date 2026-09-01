@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788248201
+timestamp 1788248864
 << metal4 >>
 rect 1503 22476 1533 22576
 rect 1779 22476 1809 22576
@@ -65,9 +65,13 @@ timestamp 1787812053
 transform 0 1 1100 -1 0 3000
 box 845 900 2000 2550
 use ip_column_mux  ip_column_mux_0
-timestamp 1788248201
-transform 1 0 4992 0 1 19485
+timestamp 1788248864
+transform 1 0 9317 0 1 19485
 box 13 0 2451 2500
+use ip_row_mux  ip_row_mux_0
+timestamp 1788248864
+transform 1 0 3747 0 1 19565
+box 13 0 3963 2500
 use ip_pixel_nd2ps  pixel_0_0
 timestamp 1788153359
 transform 1 0 1600 0 1 3500
