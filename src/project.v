@@ -47,12 +47,12 @@ module tt_um_baal86_openschnapp (
     );
 
     ip_column_mux columnmux(
-        .A(ui_in[2:0]),
+        .A(ui_in[6:4]),
         .Y(arow[6:0])
     );
 
     ip_row_mux rowmux(
-        .A(ui_in[6:3]),
+        .A(ui_in[3:0]),
         .Y(arow[11:0])
     );
 
