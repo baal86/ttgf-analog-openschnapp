@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788254240
+timestamp 1788255129
 << metal4 >>
 rect 3006 45150 3066 45152
 rect 3558 45150 3618 45152
@@ -93,33 +93,101 @@ use ip_current_source  current_source
 timestamp 1787812053
 transform 0 1 2200 -1 0 5000
 box 1690 1800 4000 5100
-use diode_nd2ps_03v3_CUSTOM  D1
-timestamp 1788252946
-transform 1 0 5400 0 1 5800
-box -1400 -1800 1600 1200
 use ip_column_mux  ip_column_mux_0
 timestamp 1788248864
 transform 1 0 11974 0 1 39000
 box 26 0 4902 5000
+use ip_pixel_nd2ps  pixel_1_02
+timestamp 1788254223
+transform 1 0 6200 0 1 12000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_03
+timestamp 1788254223
+transform 1 0 6200 0 1 15000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_04
+timestamp 1788254223
+transform 1 0 6200 0 1 18000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_05
+timestamp 1788254223
+transform 1 0 6200 0 1 21000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_06
+timestamp 1788254223
+transform 1 0 6200 0 1 24000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_07
+timestamp 1788254223
+transform 1 0 6200 0 1 27000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_08
+timestamp 1788254223
+transform 1 0 6200 0 1 30000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_09
+timestamp 1788254223
+transform 1 0 6200 0 1 33000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_10
+timestamp 1788254223
+transform 1 0 6200 0 1 36000
+box 800 -2000 3800 1000
 use ip_row_mux  ip_row_mux_0
 timestamp 1788248864
 transform 1 0 17974 0 1 39000
 box 26 0 7926 5000
-use ip_pixel_nd2ps  pixel_0_0
+use ip_pixel_nd2ps  pixel_0_00
 timestamp 1788254223
 transform 1 0 3200 0 1 6000
 box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_0_1
+use ip_pixel_nd2ps  pixel_0_01
 timestamp 1788254223
-transform 1 0 3200 0 1 9000
+transform 1 0 6200 0 1 9000
 box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_1_0
+use ip_pixel_nd2ps  pixel_0_02
+timestamp 1788254223
+transform 1 0 3200 0 1 12000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_03
+timestamp 1788254223
+transform 1 0 3200 0 1 15000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_04
+timestamp 1788254223
+transform 1 0 3200 0 1 18000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_05
+timestamp 1788254223
+transform 1 0 3200 0 1 21000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_06
+timestamp 1788254223
+transform 1 0 3200 0 1 24000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_07
+timestamp 1788254223
+transform 1 0 3200 0 1 27000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_08
+timestamp 1788254223
+transform 1 0 3200 0 1 30000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_09
+timestamp 1788254223
+transform 1 0 3200 0 1 33000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_0_10
+timestamp 1788254223
+transform 1 0 3200 0 1 36000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_1_00
 timestamp 1788254223
 transform 1 0 6200 0 1 6000
 box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_1_1
+use ip_pixel_nd2ps  pixel_1_01
 timestamp 1788254223
-transform 1 0 6200 0 1 9000
+transform 1 0 3200 0 1 9000
 box 800 -2000 3800 1000
 << labels >>
 flabel metal4 s 25638 44952 25698 45152 0 FreeSans 448 90 0 0 clk
