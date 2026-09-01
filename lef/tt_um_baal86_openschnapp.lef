@@ -433,15 +433,15 @@ MACRO tt_um_baal86_openschnapp
   END VGND
   OBS
       LAYER Nwell ;
-        RECT 20.000 10.000 289.500 305.030 ;
+        RECT 20.000 10.000 320.000 315.030 ;
       LAYER Metal1 ;
-        RECT 20.000 10.000 289.070 304.900 ;
+        RECT 20.000 10.000 320.000 314.900 ;
       LAYER Metal2 ;
-        RECT 20.000 25.100 288.510 310.000 ;
+        RECT 20.000 25.100 320.000 320.000 ;
       LAYER Metal3 ;
-        RECT 20.100 25.000 286.740 309.500 ;
+        RECT 20.000 25.000 320.000 319.500 ;
       LAYER Metal4 ;
-        RECT 20.000 25.100 270.850 304.900 ;
+        RECT 20.000 25.100 320.000 314.900 ;
   END
 END tt_um_baal86_openschnapp
 END LIBRARY
