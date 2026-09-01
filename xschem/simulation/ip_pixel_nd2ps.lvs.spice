@@ -1,6 +1,6 @@
 ** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_pixel_nd2ps.sch
-.subckt ip_pixel_nd2ps vdd reset siminj read vsubs cl
-*.PININFO vdd:B vsubs:B siminj:I reset:I read:I cl:O
+.subckt ip_pixel_nd2ps vdd reset read vsubs cl
+*.PININFO vdd:B vsubs:B reset:I read:I cl:O
 XM1 vdd reset siminj vsubs nfet_03v3 L=0.3u W=0.3u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
 XM2 vdd siminj sfout vsubs nfet_03v3 L=1u W=2.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
