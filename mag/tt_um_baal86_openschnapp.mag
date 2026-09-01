@@ -1,7 +1,10 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788263679
+timestamp 1788265532
+<< error_s >>
+rect 6500 26522 6528 26528
+rect 6478 26500 6528 26522
 << metal4 >>
 rect 3261 32436 3291 32536
 rect 3989 32436 4019 32536
@@ -56,21 +59,289 @@ rect 19478 0 19778 100
 rect 23846 0 24146 100
 rect 28214 0 28514 100
 rect 32582 0 32882 100
-use ip_column_mux  ip_column_mux_0
-timestamp 1788248864
-transform 1 0 20987 0 1 28500
-box 13 0 2451 2500
-use ip_current_source  ip_current_source_0
+use ip_column_switch  cswitch_00
+timestamp 1788259661
+transform 1 0 2000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_01
+timestamp 1788259661
+transform 1 0 3500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_02
+timestamp 1788259661
+transform 1 0 5000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_03
+timestamp 1788259661
+transform 1 0 6500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_04
+timestamp 1788259661
+transform 1 0 8000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_05
+timestamp 1788259661
+transform 1 0 9500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_06
+timestamp 1788259661
+transform 1 0 11000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_07
+timestamp 1788259661
+transform 1 0 12500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_08
+timestamp 1788259661
+transform 1 0 14000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_09
+timestamp 1788259661
+transform 1 0 15500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_10
+timestamp 1788259661
+transform 1 0 17000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_11
+timestamp 1788259661
+transform 1 0 18500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_12
+timestamp 1788259661
+transform 1 0 20000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_13
+timestamp 1788259661
+transform 1 0 21500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_14
+timestamp 1788259661
+transform 1 0 23000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_15
+timestamp 1788259661
+transform 1 0 24500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_16
+timestamp 1788259661
+transform 1 0 26000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_17
+timestamp 1788259661
+transform 1 0 27500 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_18
+timestamp 1788259661
+transform 1 0 29000 0 1 26350
+box 0 150 1500 400
+use ip_column_switch  cswitch_19
+timestamp 1788259661
+transform 1 0 30500 0 1 26350
+box 0 150 1500 400
+use ip_current_source  current_source
 timestamp 1787812053
 transform 0 1 1100 -1 0 3000
 box 845 900 2000 2550
+use ip_column_mux  ip_column_mux_0
+timestamp 1788265532
+transform 1 0 16492 0 1 28500
+box 13 0 6987 2500
 use ip_row_mux  ip_row_mux_0
-timestamp 1788248864
+timestamp 1788265532
 transform 1 0 24987 0 1 28500
-box 13 0 3963 2500
-use ip_pixel_nd2ps  pixel_0_00
+box 13 0 5979 2500
+use ip_pixel_nd2ps  pixel_00_00
 timestamp 1788254223
 transform 1 0 1600 0 1 3500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_01
+timestamp 1788254223
+transform 1 0 1600 0 1 5000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_02
+timestamp 1788254223
+transform 1 0 1600 0 1 6500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_03
+timestamp 1788254223
+transform 1 0 1600 0 1 8000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_04
+timestamp 1788254223
+transform 1 0 1600 0 1 9500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_05
+timestamp 1788254223
+transform 1 0 1600 0 1 11000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_06
+timestamp 1788254223
+transform 1 0 1600 0 1 12500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_07
+timestamp 1788254223
+transform 1 0 1600 0 1 14000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_08
+timestamp 1788254223
+transform 1 0 1600 0 1 15500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_09
+timestamp 1788254223
+transform 1 0 1600 0 1 17000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_10
+timestamp 1788254223
+transform 1 0 1600 0 1 18500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_11
+timestamp 1788254223
+transform 1 0 1600 0 1 20000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_12
+timestamp 1788254223
+transform 1 0 1600 0 1 21500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_13
+timestamp 1788254223
+transform 1 0 1600 0 1 23000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_14
+timestamp 1788254223
+transform 1 0 1600 0 1 24500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_00_15
+timestamp 1788254223
+transform 1 0 1600 0 1 26000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_00
+timestamp 1788254223
+transform 1 0 3100 0 1 3500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_01
+timestamp 1788254223
+transform 1 0 3100 0 1 5000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_02
+timestamp 1788254223
+transform 1 0 3100 0 1 6500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_03
+timestamp 1788254223
+transform 1 0 3100 0 1 8000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_04
+timestamp 1788254223
+transform 1 0 3100 0 1 9500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_05
+timestamp 1788254223
+transform 1 0 3100 0 1 11000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_06
+timestamp 1788254223
+transform 1 0 3100 0 1 12500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_07
+timestamp 1788254223
+transform 1 0 3100 0 1 14000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_08
+timestamp 1788254223
+transform 1 0 3100 0 1 15500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_09
+timestamp 1788254223
+transform 1 0 3100 0 1 17000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_10
+timestamp 1788254223
+transform 1 0 3100 0 1 18500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_11
+timestamp 1788254223
+transform 1 0 3100 0 1 20000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_12
+timestamp 1788254223
+transform 1 0 3100 0 1 21500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_13
+timestamp 1788254223
+transform 1 0 3100 0 1 23000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_14
+timestamp 1788254223
+transform 1 0 3100 0 1 24500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_01_15
+timestamp 1788254223
+transform 1 0 3100 0 1 26000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_00
+timestamp 1788254223
+transform 1 0 4600 0 1 3500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_01
+timestamp 1788254223
+transform 1 0 4600 0 1 5000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_02
+timestamp 1788254223
+transform 1 0 4600 0 1 6500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_03
+timestamp 1788254223
+transform 1 0 4600 0 1 8000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_04
+timestamp 1788254223
+transform 1 0 4600 0 1 9500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_05
+timestamp 1788254223
+transform 1 0 4600 0 1 11000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_06
+timestamp 1788254223
+transform 1 0 4600 0 1 12500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_07
+timestamp 1788254223
+transform 1 0 4600 0 1 14000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_08
+timestamp 1788254223
+transform 1 0 4600 0 1 15500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_09
+timestamp 1788254223
+transform 1 0 4600 0 1 17000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_10
+timestamp 1788254223
+transform 1 0 4600 0 1 18500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_11
+timestamp 1788254223
+transform 1 0 4600 0 1 20000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_12
+timestamp 1788254223
+transform 1 0 4600 0 1 21500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_13
+timestamp 1788254223
+transform 1 0 4600 0 1 23000
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_14
+timestamp 1788254223
+transform 1 0 4600 0 1 24500
+box 400 -1000 1900 500
+use ip_pixel_nd2ps  pixel_02_15
+timestamp 1788254223
+transform 1 0 4600 0 1 26000
 box 400 -1000 1900 500
 << labels >>
 flabel metal4 s 33109 32436 33139 32536 0 FreeSans 224 90 0 0 clk

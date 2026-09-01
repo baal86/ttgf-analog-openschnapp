@@ -22,14 +22,14 @@ async def apply_and_check(dut, sel: int):
 @cocotb.test()
 async def test_all_codes_enabled(dut):
     """Exhaustively check all 16 select codes with enable asserted."""
-    for sel in range(7):
+    for sel in range(20):
         await apply_and_check(dut, sel)
 
 
 @cocotb.test()
 async def test_only_one_bit_set(dut):
     """Sanity check: whenever enabled, exactly one output bit is high."""
-    for sel in range(7):
+    for sel in range(20):
         dut.A.value = sel
         await Timer(SETTLE_TIME, unit="ns")
 
@@ -37,5 +37,5 @@ async def test_only_one_bit_set(dut):
         popcount = bin(y).count("1")
         assert popcount == 1, (
             f"sel={sel}: expected exactly one bit set, "
-            f"got 0b{y:016b} ({popcount} bits set)"
+            f"got 0b{y:020b} ({popcount} bits set)"
         )
