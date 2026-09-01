@@ -62,8 +62,11 @@ module tt_um_baal86_openschnapp (
         .Y(arow[19:0])
     );
 
-    assign uo_out  = 8'b0;
-    assign uio_out = 8'b0;
-    assign uio_oe  = 8'b0;
+    // UO not used
+    assign uo_out  = 8'b00000000;
+    // UIO never used as outputs
+    assign uio_out = 8'b00000000;
+    // UIO are always inputs
+    assign uio_oe  = 8'b00000000;
 
 endmodule
