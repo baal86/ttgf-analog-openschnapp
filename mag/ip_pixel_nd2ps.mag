@@ -70,5 +70,4 @@ flabel metal1 1130 -1540 1260 -1510 0 FreeSans 320 0 0 0 sfout
 flabel metal1 1040 -1830 1160 -1800 0 FreeSans 320 0 0 0 cl
 port 6 nsew
 flabel metal1 1890 -1630 1940 -1580 0 FreeSans 320 0 0 0 siminj
-port 8 nsew
 << end >>
