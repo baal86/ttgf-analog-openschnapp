@@ -1,0 +1,29 @@
+DESIGN_NAME: ip_column_mux
+VERILOG_FILES: dir::../../verilog/rtl/ip_column_mux/ip_column_mux.v
+IO_PIN_ORDER_CFG: dir::pin_order.cfg
+
+VDD_NETS:
+- VDD
+GND_NETS:
+- VSS
+
+FP_SIZING: absolute
+DIE_AREA: 
+  - 0 
+  - 0 
+  - 60
+  - 25
+
+PL_TARGET_DENSITY_PCT: 80
+GRT_ALLOW_CONGESTION: true
+
+PDN_MULTILAYER: false
+RT_MAX_LAYER: Metal4
+
+TOP_MARGIN_MULT:    1
+BOTTOM_MARGIN_MULT: 1
+LEFT_MARGIN_MULT:   1
+RIGHT_MARGIN_MULT:  1
+
+IO_PIN_MIN_DISTANCE_IN_TRACKS: true
+FP_IO_MIN_DISTANCE: 1

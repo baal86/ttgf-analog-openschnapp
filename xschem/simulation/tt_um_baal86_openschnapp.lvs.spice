@@ -1,4 +1,4 @@
 .include ip_column_switch.lvs.spice
 .include ip_current_source.lvs.spice
 .include ip_pixel_nd2ps.lvs.spice
-.include ip_line_mux.lvs.spice
+.include ip_column_mux.lvs.spice

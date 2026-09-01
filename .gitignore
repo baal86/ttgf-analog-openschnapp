@@ -15,3 +15,11 @@ test/gate_level_netlist.v
 /xschem/simulation/tb_*.spice
 /mag/ip_*.txt
 /mag/tt_um_baal86_openschnapp.fb.txt
+/verilog/rtl/ip_column_mux/ip_column_mux_obj_dir
+/verilog/rtl/ip_column_mux/sim_build
+/verilog/rtl/ip_line_mux/ip_line_mux_obj_dir
+/verilog/rtl/ip_line_mux/sim_build
+/verilog/rtl/ip_column_mux/*.so
+/verilog/rtl/ip_column_mux/*.xml
+/verilog/rtl/ip_line_mux/*.so
+/verilog/rtl/ip_line_mux/*.xml
