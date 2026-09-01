@@ -137,7 +137,7 @@ C {gnd.sym} 790 -120 0 1 {name=l1 lab=GND}
 C {gnd.sym} 600 110 2 0 {name=l2 lab=GND}
 C {lab_wire.sym} 750 -200 0 1 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 610 200 2 0 {name=p4 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 300 0 0 0 {name=p6 sig_type=std_logic lab=INJ}
+C {lab_wire.sym} 540 0 0 0 {name=p6 sig_type=std_logic lab=INJ}
 C {lab_wire.sym} 820 0 0 0 {name=p8 sig_type=std_logic lab=OUT}
 C {isource.sym} 270 320 0 0 {name=I1 value=\{iphoto\}}
 C {gnd.sym} 270 360 0 0 {name=l5 lab=GND}
@@ -151,6 +151,7 @@ C {simulator_commands_shown.sym} -510 100 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+V_INJ INJ X1.siminj 0
 .param pixel_time=10u
 .param int_time=1m
 .param iphoto=10p
@@ -167,7 +168,7 @@ value="
 	quit
 .endc
 "}
-C {lab_wire.sym} 430 -20 0 0 {name=p5 sig_type=std_logic lab=RESET}
+C {lab_wire.sym} 540 -20 0 0 {name=p5 sig_type=std_logic lab=RESET}
 C {vsource.sym} 370 240 0 0 {name=V4 
 value="PULSE(0 3.3 \{pixel_time\} 10n 10n \{pixel_time\} \{int_time+10*pixel_time\})" 
 savecurrent=false}

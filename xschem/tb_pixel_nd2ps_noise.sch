@@ -60,7 +60,7 @@ set v [xschem raw value total_rms_noise 0]
 puts [format \{Total RMS Noise = %.4g uV\} $v]
 "
 }
-C {devices/code_shown.sym} -570 740 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -570 790 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -76,12 +76,13 @@ C {gnd.sym} 420 -120 0 1 {name=l1 lab=GND}
 C {gnd.sym} 160 110 2 0 {name=l2 lab=GND}
 C {lab_wire.sym} 380 -200 0 1 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 170 200 2 0 {name=p4 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 30 0 0 0 {name=p6 sig_type=std_logic lab=INJ}
+C {lab_wire.sym} 160 0 0 0 {name=p6 sig_type=std_logic lab=INJ}
 C {lab_wire.sym} 430 0 0 1 {name=p8 sig_type=std_logic lab=OUT}
 C {simulator_commands_shown.sym} -580 310 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+V_INJ INJ X1.siminj 0
 .param bias=1.5
 .control
 	shell rm -f tb_pixel_nd2ps_noise.raw

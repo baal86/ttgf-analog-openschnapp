@@ -38,7 +38,6 @@ N 420 -330 420 -320 {lab=GND}
 N 130 -220 190 -220 {lab=VSS}
 N 130 -180 190 -180 {lab=VDD}
 N 290 0 530 0 {lab=VSS}
-N 0 -200 190 -200 {lab=INJ}
 N 0 -30 0 0 {lab=VSS}
 N 160 0 290 0 {lab=VSS}
 N 0 -200 0 -90 {lab=INJ}
@@ -50,6 +49,7 @@ N 530 -130 530 -120 {lab=#net2}
 N 530 -400 530 -190 {lab=VDD}
 N 290 -400 320 -400 {lab=VDD}
 N 390 -200 470 -200 {lab=OUT}
+N 0 -200 190 -200 {lab=INJ}
 C {devices/launcher.sym} -435 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -70,7 +70,7 @@ C {gnd.sym} 420 -320 0 1 {name=l1 lab=GND}
 C {gnd.sym} 160 -90 2 0 {name=l2 lab=GND}
 C {lab_wire.sym} 380 -400 0 1 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 170 0 2 0 {name=p4 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 30 -200 0 0 {name=p6 sig_type=std_logic lab=INJ}
+C {lab_wire.sym} 160 -200 0 0 {name=p6 sig_type=std_logic lab=INJ}
 C {lab_wire.sym} 430 -200 0 1 {name=p8 sig_type=std_logic lab=OUT}
 C {devices/launcher.sym} -435 -55 0 0 {name=h2
 descr="Annotate"
@@ -82,6 +82,7 @@ C {simulator_commands_shown.sym} -510 100 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+V_INJ INJ X1.siminj 0
 # Global parameters typically sourced from design.ngspice
 .param sw_stat_global   = 1
 .param sw_stat_mismatch = 1

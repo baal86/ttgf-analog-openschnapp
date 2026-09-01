@@ -26,7 +26,6 @@ N -80 -190 200 -190 {lab=vdd}
 N 60 -190 60 -160 {lab=vdd}
 C {iopin.sym} -80 -190 2 0 {name=p1 lab=vdd}
 C {iopin.sym} -80 120 2 0 {name=p2 lab=vsubs}
-C {ipin.sym} -80 -30 0 0 {name=p3 lab=siminj}
 C {ipin.sym} -80 -80 0 0 {name=p4 lab=reset}
 C {ipin.sym} -80 80 0 0 {name=p5 lab=read}
 C {symbols/nfet_03v3.sym} 40 -80 0 0 {name=M1
@@ -83,3 +82,4 @@ r_w=13.5u
 r_l=13.5u
 area=0.166n
 m=1}
+C {lab_wire.sym} -20 -30 0 0 {name=p6 sig_type=std_logic lab=siminj}
