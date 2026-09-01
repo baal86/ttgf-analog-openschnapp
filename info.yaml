@@ -20,6 +20,7 @@ project:
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
     - "project.v"
+    - "column.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
@@ -28,11 +29,11 @@ pinout:
   ui[0]: "Row 0"
   ui[1]: "Row 1"
   ui[2]: "Row 2"
-  ui[3]: "Col 0"
-  ui[4]: "Col 1"
-  ui[5]: "Col 2"
-  ui[6]: "Col 3"
-  ui[7]: "Reset"
+  ui[3]: "Row 3"
+  ui[4]: "Row 4"
+  ui[5]: "Reset"
+  ui[6]: ""
+  ui[7]: ""
 
   # Outputs
   uo[0]: ""
@@ -45,11 +46,11 @@ pinout:
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
+  uio[0]: "Col 0"
+  uio[1]: "Col 1"
+  uio[2]: "Col 2"
+  uio[3]: "Col 3"
+  uio[4]: "Col 4"
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
