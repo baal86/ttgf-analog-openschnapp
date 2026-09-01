@@ -6,13 +6,13 @@ MACRO tt_um_baal86_openschnapp
   CLASS BLOCK ;
   FOREIGN tt_um_baal86_openschnapp ;
   ORIGIN 0.000 0.000 ;
-  SIZE 145.360 BY 225.760 ;
+  SIZE 346.640 BY 325.360 ;
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 128.190 224.760 128.490 225.760 ;
+        RECT 331.090 324.360 331.390 325.360 ;
     END
   END clk
   PIN ena
@@ -20,7 +20,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 130.950 224.760 131.250 225.760 ;
+        RECT 338.370 324.360 338.670 325.360 ;
     END
   END ena
   PIN rst_n
@@ -28,7 +28,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 125.430 224.760 125.730 225.760 ;
+        RECT 323.810 324.360 324.110 325.360 ;
     END
   END rst_n
   PIN ua[0]
@@ -36,7 +36,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 136.170 0.000 137.070 1.000 ;
+        RECT 325.820 0.000 328.820 1.000 ;
     END
   END ua[0]
   PIN ua[1]
@@ -44,7 +44,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 116.850 0.000 117.750 1.000 ;
+        RECT 282.140 0.000 285.140 1.000 ;
     END
   END ua[1]
   PIN ua[2]
@@ -52,7 +52,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 97.530 0.000 98.430 1.000 ;
+        RECT 238.460 0.000 241.460 1.000 ;
     END
   END ua[2]
   PIN ua[3]
@@ -60,7 +60,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 78.210 0.000 79.110 1.000 ;
+        RECT 194.780 0.000 197.780 1.000 ;
     END
   END ua[3]
   PIN ua[4]
@@ -68,7 +68,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 58.890 0.000 59.790 1.000 ;
+        RECT 151.100 0.000 154.100 1.000 ;
     END
   END ua[4]
   PIN ua[5]
@@ -76,7 +76,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 39.570 0.000 40.470 1.000 ;
+        RECT 107.420 0.000 110.420 1.000 ;
     END
   END ua[5]
   PIN ua[6]
@@ -84,7 +84,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 20.250 0.000 21.150 1.000 ;
+        RECT 63.740 0.000 66.740 1.000 ;
     END
   END ua[6]
   PIN ua[7]
@@ -92,7 +92,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 0.930 0.000 1.830 1.000 ;
+        RECT 20.060 0.000 23.060 1.000 ;
     END
   END ua[7]
   PIN ui_in[0]
@@ -100,7 +100,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 122.670 224.760 122.970 225.760 ;
+        RECT 316.530 324.360 316.830 325.360 ;
     END
   END ui_in[0]
   PIN ui_in[1]
@@ -108,7 +108,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 119.910 224.760 120.210 225.760 ;
+        RECT 309.250 324.360 309.550 325.360 ;
     END
   END ui_in[1]
   PIN ui_in[2]
@@ -116,7 +116,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 117.150 224.760 117.450 225.760 ;
+        RECT 301.970 324.360 302.270 325.360 ;
     END
   END ui_in[2]
   PIN ui_in[3]
@@ -124,7 +124,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 114.390 224.760 114.690 225.760 ;
+        RECT 294.690 324.360 294.990 325.360 ;
     END
   END ui_in[3]
   PIN ui_in[4]
@@ -132,7 +132,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 111.630 224.760 111.930 225.760 ;
+        RECT 287.410 324.360 287.710 325.360 ;
     END
   END ui_in[4]
   PIN ui_in[5]
@@ -140,7 +140,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 108.870 224.760 109.170 225.760 ;
+        RECT 280.130 324.360 280.430 325.360 ;
     END
   END ui_in[5]
   PIN ui_in[6]
@@ -148,7 +148,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 106.110 224.760 106.410 225.760 ;
+        RECT 272.850 324.360 273.150 325.360 ;
     END
   END ui_in[6]
   PIN ui_in[7]
@@ -156,7 +156,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 103.350 224.760 103.650 225.760 ;
+        RECT 265.570 324.360 265.870 325.360 ;
     END
   END ui_in[7]
   PIN uio_in[0]
@@ -164,7 +164,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 100.590 224.760 100.890 225.760 ;
+        RECT 258.290 324.360 258.590 325.360 ;
     END
   END uio_in[0]
   PIN uio_in[1]
@@ -172,7 +172,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 97.830 224.760 98.130 225.760 ;
+        RECT 251.010 324.360 251.310 325.360 ;
     END
   END uio_in[1]
   PIN uio_in[2]
@@ -180,7 +180,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 95.070 224.760 95.370 225.760 ;
+        RECT 243.730 324.360 244.030 325.360 ;
     END
   END uio_in[2]
   PIN uio_in[3]
@@ -188,7 +188,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 92.310 224.760 92.610 225.760 ;
+        RECT 236.450 324.360 236.750 325.360 ;
     END
   END uio_in[3]
   PIN uio_in[4]
@@ -196,7 +196,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 89.550 224.760 89.850 225.760 ;
+        RECT 229.170 324.360 229.470 325.360 ;
     END
   END uio_in[4]
   PIN uio_in[5]
@@ -204,7 +204,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 86.790 224.760 87.090 225.760 ;
+        RECT 221.890 324.360 222.190 325.360 ;
     END
   END uio_in[5]
   PIN uio_in[6]
@@ -212,7 +212,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 84.030 224.760 84.330 225.760 ;
+        RECT 214.610 324.360 214.910 325.360 ;
     END
   END uio_in[6]
   PIN uio_in[7]
@@ -220,7 +220,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 81.270 224.760 81.570 225.760 ;
+        RECT 207.330 324.360 207.630 325.360 ;
     END
   END uio_in[7]
   PIN uio_oe[0]
@@ -228,7 +228,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 34.350 224.760 34.650 225.760 ;
+        RECT 83.570 324.360 83.870 325.360 ;
     END
   END uio_oe[0]
   PIN uio_oe[1]
@@ -236,7 +236,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 31.590 224.760 31.890 225.760 ;
+        RECT 76.290 324.360 76.590 325.360 ;
     END
   END uio_oe[1]
   PIN uio_oe[2]
@@ -244,7 +244,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 28.830 224.760 29.130 225.760 ;
+        RECT 69.010 324.360 69.310 325.360 ;
     END
   END uio_oe[2]
   PIN uio_oe[3]
@@ -252,7 +252,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 26.070 224.760 26.370 225.760 ;
+        RECT 61.730 324.360 62.030 325.360 ;
     END
   END uio_oe[3]
   PIN uio_oe[4]
@@ -260,7 +260,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 23.310 224.760 23.610 225.760 ;
+        RECT 54.450 324.360 54.750 325.360 ;
     END
   END uio_oe[4]
   PIN uio_oe[5]
@@ -268,7 +268,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 20.550 224.760 20.850 225.760 ;
+        RECT 47.170 324.360 47.470 325.360 ;
     END
   END uio_oe[5]
   PIN uio_oe[6]
@@ -276,7 +276,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 17.790 224.760 18.090 225.760 ;
+        RECT 39.890 324.360 40.190 325.360 ;
     END
   END uio_oe[6]
   PIN uio_oe[7]
@@ -284,7 +284,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 15.030 224.760 15.330 225.760 ;
+        RECT 32.610 324.360 32.910 325.360 ;
     END
   END uio_oe[7]
   PIN uio_out[0]
@@ -292,7 +292,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 56.430 224.760 56.730 225.760 ;
+        RECT 141.810 324.360 142.110 325.360 ;
     END
   END uio_out[0]
   PIN uio_out[1]
@@ -300,7 +300,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 53.670 224.760 53.970 225.760 ;
+        RECT 134.530 324.360 134.830 325.360 ;
     END
   END uio_out[1]
   PIN uio_out[2]
@@ -308,7 +308,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 50.910 224.760 51.210 225.760 ;
+        RECT 127.250 324.360 127.550 325.360 ;
     END
   END uio_out[2]
   PIN uio_out[3]
@@ -316,7 +316,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 48.150 224.760 48.450 225.760 ;
+        RECT 119.970 324.360 120.270 325.360 ;
     END
   END uio_out[3]
   PIN uio_out[4]
@@ -324,7 +324,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 45.390 224.760 45.690 225.760 ;
+        RECT 112.690 324.360 112.990 325.360 ;
     END
   END uio_out[4]
   PIN uio_out[5]
@@ -332,7 +332,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 42.630 224.760 42.930 225.760 ;
+        RECT 105.410 324.360 105.710 325.360 ;
     END
   END uio_out[5]
   PIN uio_out[6]
@@ -340,7 +340,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 39.870 224.760 40.170 225.760 ;
+        RECT 98.130 324.360 98.430 325.360 ;
     END
   END uio_out[6]
   PIN uio_out[7]
@@ -348,7 +348,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 37.110 224.760 37.410 225.760 ;
+        RECT 90.850 324.360 91.150 325.360 ;
     END
   END uio_out[7]
   PIN uo_out[0]
@@ -356,7 +356,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 78.510 224.760 78.810 225.760 ;
+        RECT 200.050 324.360 200.350 325.360 ;
     END
   END uo_out[0]
   PIN uo_out[1]
@@ -364,7 +364,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 75.750 224.760 76.050 225.760 ;
+        RECT 192.770 324.360 193.070 325.360 ;
     END
   END uo_out[1]
   PIN uo_out[2]
@@ -372,7 +372,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 72.990 224.760 73.290 225.760 ;
+        RECT 185.490 324.360 185.790 325.360 ;
     END
   END uo_out[2]
   PIN uo_out[3]
@@ -380,7 +380,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 70.230 224.760 70.530 225.760 ;
+        RECT 178.210 324.360 178.510 325.360 ;
     END
   END uo_out[3]
   PIN uo_out[4]
@@ -388,7 +388,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 67.470 224.760 67.770 225.760 ;
+        RECT 170.930 324.360 171.230 325.360 ;
     END
   END uo_out[4]
   PIN uo_out[5]
@@ -396,7 +396,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 64.710 224.760 65.010 225.760 ;
+        RECT 163.650 324.360 163.950 325.360 ;
     END
   END uo_out[5]
   PIN uo_out[6]
@@ -404,7 +404,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 61.950 224.760 62.250 225.760 ;
+        RECT 156.370 324.360 156.670 325.360 ;
     END
   END uo_out[6]
   PIN uo_out[7]
@@ -412,7 +412,7 @@ MACRO tt_um_baal86_openschnapp
     USE SIGNAL ;
     PORT
       LAYER Metal4 ;
-        RECT 59.190 224.760 59.490 225.760 ;
+        RECT 149.090 324.360 149.390 325.360 ;
     END
   END uo_out[7]
   PIN VDPWR
@@ -433,66 +433,15 @@ MACRO tt_um_baal86_openschnapp
   END VGND
   OBS
       LAYER Nwell ;
-        RECT 20.000 5.000 129.500 215.030 ;
+        RECT 20.000 10.000 289.500 305.030 ;
       LAYER Metal1 ;
-        RECT 20.000 5.000 129.070 214.900 ;
+        RECT 20.000 10.000 289.070 304.900 ;
       LAYER Metal2 ;
-        RECT 20.000 20.100 128.510 220.000 ;
+        RECT 20.000 25.100 288.510 310.000 ;
       LAYER Metal3 ;
-        RECT 20.000 20.000 126.740 219.500 ;
+        RECT 20.100 25.000 286.740 309.500 ;
       LAYER Metal4 ;
-        RECT 84.030 225.760 84.330 225.765 ;
-        RECT 103.000 225.760 104.000 226.000 ;
-        RECT 106.000 225.760 107.000 226.000 ;
-        RECT 108.500 225.760 109.500 226.000 ;
-        RECT 111.500 225.760 112.500 226.000 ;
-        RECT 114.000 225.760 115.000 226.000 ;
-        RECT 117.000 225.760 118.000 226.000 ;
-        RECT 119.500 225.760 120.500 226.000 ;
-        RECT 122.500 225.760 123.500 226.000 ;
-        RECT 6.000 224.460 14.730 225.760 ;
-        RECT 15.630 224.460 17.490 225.760 ;
-        RECT 18.390 224.460 20.250 225.760 ;
-        RECT 21.150 224.460 23.010 225.760 ;
-        RECT 23.910 224.460 25.770 225.760 ;
-        RECT 26.670 224.460 28.530 225.760 ;
-        RECT 29.430 224.460 31.290 225.760 ;
-        RECT 32.190 224.460 34.050 225.760 ;
-        RECT 34.950 224.460 36.810 225.760 ;
-        RECT 37.710 224.460 39.570 225.760 ;
-        RECT 40.470 224.460 42.330 225.760 ;
-        RECT 43.230 224.460 45.090 225.760 ;
-        RECT 45.990 224.460 47.850 225.760 ;
-        RECT 48.750 224.460 50.610 225.760 ;
-        RECT 51.510 224.460 53.370 225.760 ;
-        RECT 54.270 224.460 56.130 225.760 ;
-        RECT 57.030 224.460 58.890 225.760 ;
-        RECT 59.790 224.460 61.650 225.760 ;
-        RECT 62.550 224.460 64.410 225.760 ;
-        RECT 65.310 224.460 67.170 225.760 ;
-        RECT 68.070 224.460 69.930 225.760 ;
-        RECT 70.830 224.460 72.690 225.760 ;
-        RECT 73.590 224.460 75.450 225.760 ;
-        RECT 76.350 224.460 78.210 225.760 ;
-        RECT 79.110 224.460 80.970 225.760 ;
-        RECT 81.870 224.460 83.730 225.760 ;
-        RECT 84.630 224.460 86.490 225.760 ;
-        RECT 87.390 224.460 89.250 225.760 ;
-        RECT 90.150 224.460 92.010 225.760 ;
-        RECT 92.910 224.460 94.770 225.760 ;
-        RECT 95.670 224.460 97.530 225.760 ;
-        RECT 98.430 224.460 100.290 225.760 ;
-        RECT 101.190 224.460 103.050 225.760 ;
-        RECT 103.950 224.460 105.810 225.760 ;
-        RECT 106.710 224.460 108.570 225.760 ;
-        RECT 109.470 224.460 111.330 225.760 ;
-        RECT 112.230 224.460 114.090 225.760 ;
-        RECT 114.990 224.460 116.850 225.760 ;
-        RECT 117.750 224.460 119.610 225.760 ;
-        RECT 120.510 224.460 122.370 225.760 ;
-        RECT 123.270 224.460 125.000 225.760 ;
-        RECT 6.000 221.060 125.000 224.460 ;
-        RECT 6.300 20.100 125.000 221.060 ;
+        RECT 20.000 25.100 270.850 304.900 ;
   END
 END tt_um_baal86_openschnapp
 END LIBRARY

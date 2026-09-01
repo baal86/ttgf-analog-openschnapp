@@ -1,9 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788263032
-<< checkpaint >>
-rect -900 -500 1600 23076
+timestamp 1788263679
 << metal4 >>
 rect 3261 32436 3291 32536
 rect 3989 32436 4019 32536
@@ -58,6 +56,22 @@ rect 19478 0 19778 100
 rect 23846 0 24146 100
 rect 28214 0 28514 100
 rect 32582 0 32882 100
+use ip_column_mux  ip_column_mux_0
+timestamp 1788248864
+transform 1 0 20987 0 1 28500
+box 13 0 2451 2500
+use ip_current_source  ip_current_source_0
+timestamp 1787812053
+transform 0 1 1100 -1 0 3000
+box 845 900 2000 2550
+use ip_row_mux  ip_row_mux_0
+timestamp 1788248864
+transform 1 0 24987 0 1 28500
+box 13 0 3963 2500
+use ip_pixel_nd2ps  pixel_0_00
+timestamp 1788254223
+transform 1 0 1600 0 1 3500
+box 400 -1000 1900 500
 << labels >>
 flabel metal4 s 33109 32436 33139 32536 0 FreeSans 224 90 0 0 clk
 port 0 nsew signal input
