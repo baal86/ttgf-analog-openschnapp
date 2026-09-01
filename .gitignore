@@ -9,3 +9,9 @@ test/sim_build
 test/__pycache__/
 test/results.xml
 test/gate_level_netlist.v
+/verilog/rtl/ip_line_mux_obj_dir
+/xschem/simulation/*.raw
+/mag/core.*
+/xschem/simulation/tb_*.spice
+/mag/ip_*.txt
+/mag/tt_um_baal86_openschnapp.fb.txt
