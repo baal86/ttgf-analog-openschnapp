@@ -1,7 +1,11 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788255791
+timestamp 1788256395
+<< error_s >>
+rect 4561 38254 4607 38350
+rect 4284 38223 4300 38240
+rect 4330 38177 4346 38223
 << metal4 >>
 rect 3006 45150 3066 45152
 rect 3558 45150 3618 45152
@@ -86,9 +90,9 @@ rect 19506 0 19686 200
 rect 23370 0 23550 200
 rect 27234 0 27414 200
 use ip_column_switch  cswitch0
-timestamp 1787903605
+timestamp 1788256236
 transform 1 0 4000 0 1 37800
-box 0 200 3000 800
+box 0 300 3000 800
 use ip_current_source  current_source
 timestamp 1787812053
 transform 0 1 2200 -1 0 5000
@@ -97,50 +101,6 @@ use ip_column_mux  ip_column_mux_0
 timestamp 1788248864
 transform 1 0 11974 0 1 39000
 box 26 0 4902 5000
-use ip_pixel_nd2ps  pixel_3_00
-timestamp 1788254223
-transform 1 0 12200 0 1 6000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_01
-timestamp 1788254223
-transform 1 0 12200 0 1 9000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_02
-timestamp 1788254223
-transform 1 0 12200 0 1 12000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_03
-timestamp 1788254223
-transform 1 0 12200 0 1 15000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_04
-timestamp 1788254223
-transform 1 0 12200 0 1 18000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_05
-timestamp 1788254223
-transform 1 0 12200 0 1 21000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_06
-timestamp 1788254223
-transform 1 0 12200 0 1 24000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_07
-timestamp 1788254223
-transform 1 0 12200 0 1 27000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_08
-timestamp 1788254223
-transform 1 0 12200 0 1 30000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_09
-timestamp 1788254223
-transform 1 0 12200 0 1 33000
-box 800 -2000 3800 1000
-use ip_pixel_nd2ps  pixel_3_10
-timestamp 1788254223
-transform 1 0 12200 0 1 36000
-box 800 -2000 3800 1000
 use ip_row_mux  ip_row_mux_0
 timestamp 1788248864
 transform 1 0 17974 0 1 39000
@@ -276,6 +236,50 @@ box 800 -2000 3800 1000
 use ip_pixel_nd2ps  pixel_2_10
 timestamp 1788254223
 transform 1 0 9200 0 1 36000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_00
+timestamp 1788254223
+transform 1 0 12200 0 1 6000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_01
+timestamp 1788254223
+transform 1 0 12200 0 1 9000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_02
+timestamp 1788254223
+transform 1 0 12200 0 1 12000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_03
+timestamp 1788254223
+transform 1 0 12200 0 1 15000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_04
+timestamp 1788254223
+transform 1 0 12200 0 1 18000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_05
+timestamp 1788254223
+transform 1 0 12200 0 1 21000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_06
+timestamp 1788254223
+transform 1 0 12200 0 1 24000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_07
+timestamp 1788254223
+transform 1 0 12200 0 1 27000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_08
+timestamp 1788254223
+transform 1 0 12200 0 1 30000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_09
+timestamp 1788254223
+transform 1 0 12200 0 1 33000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_3_10
+timestamp 1788254223
+transform 1 0 12200 0 1 36000
 box 800 -2000 3800 1000
 use ip_pixel_nd2ps  pixel_4_00
 timestamp 1788254223
