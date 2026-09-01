@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788248066
+timestamp 1788248201
 << metal1 >>
 rect 56 1973 2408 1990
 rect 56 1947 1953 1973
@@ -848,176 +848,176 @@ rect 1980 378 2004 406
 rect 2032 378 2056 406
 rect 2084 378 2098 406
 rect 1938 362 2098 378
-use gf180mcu_fd_sc_mcu7t5v0__clkinv_1  _03_
-timestamp 1486834041
+use gf180mcu_fd_sc_mcu7t5v0__clkinv_1  _03_ $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1785844050
 transform -1 0 2296 0 1 392
 box -43 -43 267 435
 use gf180mcu_fd_sc_mcu7t5v0__clkinv_1  _04_
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 2296 0 -1 1960
 box -43 -43 267 435
 use gf180mcu_fd_sc_mcu7t5v0__clkinv_1  _05_
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 168 0 -1 1960
 box -43 -43 267 435
-use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _06_
-timestamp 1486834041
+use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _06_ $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1785844050
 transform -1 0 784 0 1 1176
 box -43 -43 491 435
 use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _07_
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 560 0 -1 1176
 box -43 -43 491 435
 use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _08_
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 504 0 1 392
 box -43 -43 491 435
 use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _09_
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1400 0 1 392
 box -43 -43 491 435
 use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _10_
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1512 0 -1 1176
 box -43 -43 491 435
 use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _11_
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 1400 0 1 392
 box -43 -43 491 435
 use gf180mcu_fd_sc_mcu7t5v0__nor3_1  _12_
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1008 0 -1 1176
 box -43 -43 491 435
-use gf180mcu_fd_sc_mcu7t5v0__fill_2  FILLER_0_32
-timestamp 1486834041
+use gf180mcu_fd_sc_mcu7t5v0__fill_2  FILLER_0_32 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1785844050
 transform 1 0 1848 0 1 392
 box -43 -43 155 435
-use gf180mcu_fd_sc_mcu7t5v0__fill_1  FILLER_1_2
-timestamp 1486834041
+use gf180mcu_fd_sc_mcu7t5v0__fill_1  FILLER_1_2 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1785844050
 transform 1 0 168 0 -1 1176
 box -43 -43 99 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_1  FILLER_1_25
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1456 0 -1 1176
 box -43 -43 99 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_2  FILLER_2_2
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 168 0 1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_1  FILLER_2_4
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 280 0 1 1176
 box -43 -43 99 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_1  FILLER_2_13
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 784 0 1 1176
 box -43 -43 99 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_2  FILLER_2_32
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1848 0 1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_1  FILLER_2_34
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1960 0 1 1176
 box -43 -43 99 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_2  FILLER_2_37
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 2128 0 1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_1  FILLER_2_39
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 2240 0 1 1176
 box -43 -43 99 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_2  FILLER_3_18
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1064 0 -1 1960
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__fill_2  FILLER_3_26
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1512 0 -1 1960
 box -43 -43 155 435
-use gf180mcu_fd_sc_mcu7t5v0__buf_1  input1
-timestamp 1486834041
+use gf180mcu_fd_sc_mcu7t5v0__buf_1  input1 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1785844050
 transform -1 0 1960 0 -1 1960
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  input2
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1176 0 -1 1960
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  input3
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 392 0 -1 1960
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  output4
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 1064 0 -1 1960
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  output5
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 224 0 -1 1176
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  output6
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 168 0 1 392
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  output7
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 1512 0 1 1176
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  output8
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 1848 0 1 1176
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  output9
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 2296 0 -1 1176
 box -43 -43 379 435
 use gf180mcu_fd_sc_mcu7t5v0__buf_1  output10
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 840 0 1 1176
 box -43 -43 379 435
-use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_0_Left_4
-timestamp 1486834041
+use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_0_Left_4 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1785844050
 transform 1 0 56 0 1 392
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_0_Right_0
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 2408 0 1 392
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_1_Left_5
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 56 0 -1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_1_Right_1
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 2408 0 -1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_2_Left_6
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 56 0 1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_2_Right_2
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 2408 0 1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_3_Left_7
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 56 0 -1 1960
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__endcap  PHY_EDGE_ROW_3_Right_3
-timestamp 1486834041
+timestamp 1785844050
 transform -1 0 2408 0 -1 1960
 box -43 -43 155 435
-use gf180mcu_fd_sc_mcu7t5v0__filltie  TAP_TAPCELL_ROW_0_8
-timestamp 1486834041
+use gf180mcu_fd_sc_mcu7t5v0__filltie  TAP_TAPCELL_ROW_0_8 $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1785844050
 transform 1 0 1960 0 1 392
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__filltie  TAP_TAPCELL_ROW_2_9
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 2016 0 1 1176
 box -43 -43 155 435
 use gf180mcu_fd_sc_mcu7t5v0__filltie  TAP_TAPCELL_ROW_3_10
-timestamp 1486834041
+timestamp 1785844050
 transform 1 0 1960 0 -1 1960
 box -43 -43 155 435
 << labels >>

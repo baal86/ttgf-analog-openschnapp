@@ -46,8 +46,8 @@ module tt_um_baal86_openschnapp (
         .en(acol[0])
     );
 
-    ip_line_mux rowmux(
-        .A(ui_in[3:0]),
+    ip_column_mux columnmux(
+        .A(ui_in[2:0]),
         .Y(arow[6:0])
     );
 
