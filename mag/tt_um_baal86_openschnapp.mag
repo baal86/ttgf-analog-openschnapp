@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788253328
+timestamp 1788253569
 << metal4 >>
 rect 3006 45150 3066 45152
 rect 3558 45150 3618 45152
@@ -106,19 +106,19 @@ timestamp 1788248864
 transform 1 0 17974 0 1 39000
 box 26 0 7926 5000
 use ip_pixel_nd2ps  pixel_0_0
-timestamp 1788253307
+timestamp 1788253526
 transform 1 0 3200 0 1 6000
 box 800 -2000 3800 1000
 use ip_pixel_nd2ps  pixel_0_1
-timestamp 1788253307
+timestamp 1788253526
 transform 1 0 3200 0 1 9000
 box 800 -2000 3800 1000
 use ip_pixel_nd2ps  pixel_1_0
-timestamp 1788253307
+timestamp 1788253526
 transform 1 0 6200 0 1 6000
 box 800 -2000 3800 1000
 use ip_pixel_nd2ps  pixel_1_1
-timestamp 1788253307
+timestamp 1788253526
 transform 1 0 6200 0 1 9000
 box 800 -2000 3800 1000
 << labels >>
