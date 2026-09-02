@@ -18,11 +18,11 @@ module tt_um_baal86_openschnapp (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
-    wire column[19:0];
-    wire bus;
-    wire reset;
-    wire acol[19:0];
-    wire arow[16:0];
+    wire [19:0] column;
+    wire        bus;
+    wire        reset;
+    wire [19:0] acol;
+    wire [16:0] arow;
 
     ip_column column00( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 0]),   .bus(bus)   );
     ip_column column01( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 1]),   .bus(bus)   );
