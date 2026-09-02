@@ -238,7 +238,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 83.570 324.360 83.870 325.360 ;
@@ -247,7 +246,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 76.290 324.360 76.590 325.360 ;
@@ -256,7 +254,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 69.010 324.360 69.310 325.360 ;
@@ -265,7 +262,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 61.730 324.360 62.030 325.360 ;
@@ -274,7 +270,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 54.450 324.360 54.750 325.360 ;
@@ -283,7 +278,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 47.170 324.360 47.470 325.360 ;
@@ -292,7 +286,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 39.890 324.360 40.190 325.360 ;
@@ -301,7 +294,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_oe[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 32.610 324.360 32.910 325.360 ;
@@ -310,7 +302,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 141.810 324.360 142.110 325.360 ;
@@ -319,7 +310,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 134.530 324.360 134.830 325.360 ;
@@ -328,7 +318,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 127.250 324.360 127.550 325.360 ;
@@ -337,7 +326,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 119.970 324.360 120.270 325.360 ;
@@ -346,7 +334,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 112.690 324.360 112.990 325.360 ;
@@ -355,7 +342,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 105.410 324.360 105.710 325.360 ;
@@ -364,7 +350,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 98.130 324.360 98.430 325.360 ;
@@ -373,7 +358,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 90.850 324.360 91.150 325.360 ;
@@ -382,7 +366,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 200.050 324.360 200.350 325.360 ;
@@ -391,7 +374,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 192.770 324.360 193.070 325.360 ;
@@ -400,7 +382,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 185.490 324.360 185.790 325.360 ;
@@ -409,7 +390,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 178.210 324.360 178.510 325.360 ;
@@ -418,7 +398,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 170.930 324.360 171.230 325.360 ;
@@ -427,7 +406,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 163.650 324.360 163.950 325.360 ;
@@ -436,7 +414,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 156.370 324.360 156.670 325.360 ;
@@ -445,7 +422,6 @@ MACRO tt_um_baal86_openschnapp
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 5558.667969 ;
     PORT
       LAYER Metal4 ;
         RECT 149.090 324.360 149.390 325.360 ;
