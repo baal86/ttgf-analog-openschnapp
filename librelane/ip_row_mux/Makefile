@@ -6,7 +6,6 @@ harden:
 update_files:
 	cp runs/latest/final/mag/$(PROJECT_NAME).mag ../../mag/$(PROJECT_NAME).mag
 	cp runs/latest/final/pnl/$(PROJECT_NAME).pnl.v ../../verilog/gl/$(PROJECT_NAME).v
-	cp runs/latest/final/spice/${PROJECT_NAME}.spice ../../xschem/simulation/${PROJECT_NAME}.lvs.spice
 
 view:
 	magic runs/latest/final/mag/$(PROJECT_NAME).mag
