@@ -32,7 +32,7 @@ module ip_column (
         .VSUBS(VGND),
         .bus(bus),
         .cl(column),
-        .en(acol[0])
+        .en(enable)
     );
 
 
