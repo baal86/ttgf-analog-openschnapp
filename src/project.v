@@ -24,6 +24,8 @@ module tt_um_baal86_openschnapp (
     wire [20:0] acol;
     wire [16:0] arow;
 
+    assign ui_in[5] = reset;
+
     ip_column column00( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 0]),   .bus(bus)   );
     ip_column column01( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 1]),   .bus(bus)   );
     ip_column column02( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 2]),   .bus(bus)   );
