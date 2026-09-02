@@ -1,7 +1,10 @@
 # Load the cell
 set project [lindex $argv $argc-1]
 box 0 0 0 0
+
 load $project.mag
+#gds read ../gds/$project.gds
+
 extract do local
 extract unique notopports
 extract all
