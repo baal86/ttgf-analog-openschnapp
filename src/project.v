@@ -18,10 +18,10 @@ module tt_um_baal86_openschnapp (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
-    wire [19:0] column;
+    wire [20:0] column;
     wire        bus;
     wire        reset;
-    wire [19:0] acol;
+    wire [20:0] acol;
     wire [16:0] arow;
 
     ip_column column00( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 0]),   .bus(bus)   );
@@ -44,6 +44,7 @@ module tt_um_baal86_openschnapp (
     ip_column column17( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[17]),   .bus(bus)   );
     ip_column column18( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[18]),   .bus(bus)   );
     ip_column column19( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[19]),   .bus(bus)   );
+    ip_column column20( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[20]),   .bus(bus)   );
 
 
     ip_current_source current_source(
@@ -54,7 +55,7 @@ module tt_um_baal86_openschnapp (
 
     ip_column_mux columnmux(
         .A(ui_in[4:0]),
-        .Y(acol[19:0])
+        .Y(acol[20:0])
     );
 
     ip_row_mux rowmux(
