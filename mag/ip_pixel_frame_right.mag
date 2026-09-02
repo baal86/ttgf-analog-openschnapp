@@ -1,0 +1,85 @@
+magic
+tech gf180mcuD
+timestamp 1788356578
+<< pwell >>
+rect 380 -200 430 100
+<< psubdiff >>
+rect 380 90 430 100
+rect 380 52 390 90
+rect 380 36 382 52
+rect 388 36 390 52
+rect 380 22 390 36
+rect 420 52 430 90
+rect 420 36 422 52
+rect 428 36 430 52
+rect 420 22 430 36
+rect 380 20 430 22
+rect 380 -118 390 20
+rect 420 -118 430 20
+rect 380 -120 430 -118
+rect 380 -132 390 -120
+rect 380 -150 382 -132
+rect 388 -150 390 -132
+rect 380 -190 390 -150
+rect 420 -132 430 -120
+rect 420 -150 422 -132
+rect 428 -150 430 -132
+rect 420 -190 430 -150
+rect 380 -200 430 -190
+<< psubdiffcont >>
+rect 382 36 388 52
+rect 422 36 428 52
+rect 390 22 420 28
+rect 390 -126 420 -120
+rect 382 -150 388 -132
+rect 422 -150 428 -132
+<< metal1 >>
+rect 382 98 428 100
+rect 380 92 428 98
+rect 382 52 388 92
+rect 400 36 410 80
+rect 422 52 428 92
+rect 382 28 388 36
+rect 422 28 428 36
+rect 382 22 390 28
+rect 420 22 428 28
+rect 382 -120 388 22
+rect 422 -120 428 22
+rect 382 -126 390 -120
+rect 420 -126 428 -120
+rect 382 -132 388 -126
+rect 422 -132 428 -126
+rect 382 -192 388 -150
+rect 400 -180 410 -134
+rect 422 -192 428 -150
+rect 382 -200 428 -192
+<< metal4 >>
+rect 380 90 388 96
+rect 382 80 430 90
+rect 382 -190 430 -180
+rect 382 -192 388 -190
+rect 380 -198 388 -192
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_0
+timestamp 1788344901
+transform 1 0 400 0 1 -180
+box 0 0 10 10
+use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_0
+timestamp 1788344860
+transform 1 0 400 0 1 70
+box 0 0 10 10
+use diode_nd2ps_03v3_E2JMKK  diode_nd2ps_03v3_E2JMKK_0
+timestamp 1788355942
+transform 1 0 405 0 1 41
+box -21 -21 21 21
+use diode_nd2ps_03v3_E2JMKK  diode_nd2ps_03v3_E2JMKK_1
+timestamp 1788355942
+transform 1 0 405 0 1 -139
+box -21 -21 21 21
+<< labels >>
+flabel metal4 400 80 410 90 0 FreeSans 32 0 0 0 reset
+port 1 nsew
+flabel metal4 400 -190 410 -180 0 FreeSans 32 0 0 0 read
+port 2 nsew
+flabel metal1 382 -118 388 20 0 FreeSans 32 0 0 0 vsubst
+port 3 nsew
+<< end >>
