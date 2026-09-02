@@ -25,6 +25,7 @@ module tt_um_baal86_openschnapp (
     wire [16:0] arow;
 
     assign ui_in[5] = reset;
+    assign ua[0] = bus;
 
     ip_column column00( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 0]),   .bus(bus)   );
     ip_column column01( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 1]),   .bus(bus)   );
@@ -58,14 +59,14 @@ module tt_um_baal86_openschnapp (
     ip_column_mux columnmux(
 	.VDD(VDPWR),
 	.VSS(VGND),
-        .A(ui_in[4:0]),
+        .A(uio_in[4:0]),
         .Y(acol[20:0])
     );
 
     ip_row_mux rowmux(
 	.VDD(VDPWR),
 	.VSS(VGND),
-        .A(uio_in[4:0]),
+        .A(ui_in[4:0]),
         .Y(arow[16:0])
     );
 
