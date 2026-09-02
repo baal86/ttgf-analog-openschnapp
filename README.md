@@ -4,6 +4,8 @@
 - [Read the documentation for project](docs/info.md)
 - [Check the GDS viewer for the current project state](https://baal86.github.io/ttgf-analog-openschnapp/)
 
+Mixed signal design of freely addressable photo diode array. Made as a learning project in the Zero2Asic analog course.
+
 ![Die Snapshot](DieSnapshot.png)
 
 ## What is Tiny Tapeout?
