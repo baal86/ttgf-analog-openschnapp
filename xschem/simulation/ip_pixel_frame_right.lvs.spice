@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_pixel_frame_right.sch
+.subckt ip_pixel_frame_right read reset vsubs
+*.PININFO read:I reset:I vsubs:B
+D1 vsubs reset diode_nd2ps_03v3 area='5u * 5u ' pj='2*5u + 2*5u '
+D2 vsubs read diode_nd2ps_03v3 area='5u * 5u ' pj='2*5u + 2*5u '
+.ends

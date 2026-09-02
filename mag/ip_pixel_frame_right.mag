@@ -80,6 +80,6 @@ flabel metal4 400 80 410 90 0 FreeSans 32 0 0 0 reset
 port 1 nsew
 flabel metal4 400 -190 410 -180 0 FreeSans 32 0 0 0 read
 port 2 nsew
-flabel metal1 382 -118 388 20 0 FreeSans 32 0 0 0 vsubst
+flabel metal1 382 -118 388 20 0 FreeSans 32 0 0 0 vsubs
 port 3 nsew
 << end >>

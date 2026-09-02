@@ -27,6 +27,25 @@ module tt_um_baal86_openschnapp (
     assign ui_in[5] = reset;
     assign ua[0] = bus;
 
+    ip_pixel_frame_right frame00(.read(arow[ 0]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame01(.read(arow[ 1]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame02(.read(arow[ 2]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame03(.read(arow[ 3]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame04(.read(arow[ 4]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame05(.read(arow[ 5]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame06(.read(arow[ 6]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame07(.read(arow[ 7]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame08(.read(arow[ 8]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame09(.read(arow[ 9]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame10(.read(arow[10]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame11(.read(arow[11]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame12(.read(arow[12]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame13(.read(arow[13]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame14(.read(arow[14]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame15(.read(arow[15]), .reset(reset), .VSUBS(VGND));
+    ip_pixel_frame_right frame16(.read(arow[16]), .reset(reset), .VSUBS(VGND));
+
+
     ip_column column00( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 0]),   .bus(bus)   );
     ip_column column01( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 1]),   .bus(bus)   );
     ip_column column02( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[ 2]),   .bus(bus)   );
