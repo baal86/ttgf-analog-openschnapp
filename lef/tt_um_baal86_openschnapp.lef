@@ -454,7 +454,7 @@ MACRO tt_um_baal86_openschnapp
     USE POWER ;
     PORT
       LAYER Metal4 ;
-        RECT 1.000 5.000 3.000 220.760 ;
+        RECT 1.000 5.000 3.000 325.000 ;
     END
   END VDPWR
   PIN VGND
@@ -462,7 +462,7 @@ MACRO tt_um_baal86_openschnapp
     USE GROUND ;
     PORT
       LAYER Metal4 ;
-        RECT 4.000 5.000 6.000 220.760 ;
+        RECT 4.000 5.000 6.000 325.000 ;
     END
   END VGND
   OBS
@@ -475,7 +475,7 @@ MACRO tt_um_baal86_openschnapp
       LAYER Metal3 ;
         RECT 1.000 19.000 331.900 317.840 ;
       LAYER Metal4 ;
-        RECT 1.000 324.060 32.310 325.050 ;
+        RECT 6.300 324.060 32.310 325.050 ;
         RECT 33.210 324.060 39.590 325.050 ;
         RECT 40.490 324.060 46.870 325.050 ;
         RECT 47.770 324.060 54.150 325.050 ;
@@ -517,10 +517,7 @@ MACRO tt_um_baal86_openschnapp
         RECT 309.850 324.060 316.230 325.050 ;
         RECT 317.130 324.060 323.510 325.050 ;
         RECT 324.410 324.060 330.790 325.050 ;
-        RECT 1.000 221.060 331.430 324.060 ;
-        RECT 1.000 220.760 3.000 221.060 ;
-        RECT 3.300 25.100 3.700 221.060 ;
-        RECT 6.300 25.100 331.430 221.060 ;
+        RECT 6.300 25.100 331.430 324.060 ;
   END
 END tt_um_baal86_openschnapp
 END LIBRARY
