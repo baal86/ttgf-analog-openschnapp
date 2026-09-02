@@ -1,0 +1,41 @@
+magic
+tech gf180mcuD
+timestamp 1788332876
+<< pwell >>
+rect -140 -180 160 120
+<< psubdiff >>
+rect -140 118 160 120
+rect -140 112 -120 118
+rect 150 112 160 118
+rect -140 110 160 112
+rect -140 100 -130 110
+rect -140 -170 -138 100
+rect -132 -170 -130 100
+rect -140 -180 -130 -170
+<< psubdiffcont >>
+rect -120 112 150 118
+rect -138 -170 -132 100
+<< nndiode >>
+rect -116 -120 146 96
+rect 10 -134 146 -120
+rect 10 -140 16 -134
+rect 22 -140 146 -134
+rect 10 -166 146 -140
+<< nndiodec >>
+rect 16 -140 22 -134
+<< metal1 >>
+rect -138 118 -132 120
+rect -140 112 -120 118
+rect 150 112 160 118
+rect -138 100 -132 112
+rect 14 -134 24 -132
+rect 14 -140 16 -134
+rect 22 -140 24 -134
+rect 14 -142 24 -140
+rect -138 -180 -132 -170
+<< properties >>
+string FIXED_BBOX -140 -180 160 120
+string gencell diode_nw2ps_03v3
+string library gf180mcu
+string parameters w 13.1 l 13.1 area 157.1 peri 52.4 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 1 erc 1 etc 1 ebc 0 doverlap 0 full_metal 0 compatible {diode_nw2ps_03v3 diode_nw2ps_06v0}
+<< end >>
