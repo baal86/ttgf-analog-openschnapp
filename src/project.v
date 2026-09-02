@@ -54,12 +54,12 @@ module tt_um_baal86_openschnapp (
 
     ip_column_mux columnmux(
         .A(ui_in[4:0]),
-        .Y(arow[16:0])
+        .Y(acol[19:0])
     );
 
     ip_row_mux rowmux(
         .A(uio_in[4:0]),
-        .Y(arow[19:0])
+        .Y(arow[16:0])
     );
 
     // UO not used
