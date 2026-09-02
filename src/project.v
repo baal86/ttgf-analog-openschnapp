@@ -69,12 +69,32 @@ module tt_um_baal86_openschnapp (
         .A(ui_in[4:0]),
         .Y(arow[16:0])
     );
+    
+    assign uo_out[0] = VGND;
+    assign uo_out[1] = VGND;
+    assign uo_out[2] = VGND;
+    assign uo_out[3] = VGND;
+    assign uo_out[4] = VGND;
+    assign uo_out[5] = VGND;
+    assign uo_out[6] = VGND;
+    assign uo_out[7] = VGND;
 
-    // UO not used
-    assign uo_out  = 8'b00000000;
-    // UIO never used as outputs
-    assign uio_out = 8'b00000000;
-    // UIO are always inputs
-    assign uio_oe  = 8'b00000000;
+    assign uio_out[0] = VGND;
+    assign uio_out[1] = VGND;
+    assign uio_out[2] = VGND;
+    assign uio_out[3] = VGND;
+    assign uio_out[4] = VGND;
+    assign uio_out[5] = VGND;
+    assign uio_out[6] = VGND;
+    assign uio_out[7] = VGND;
+
+    assign uio_oe[0] = VGND;
+    assign uio_oe[1] = VGND;
+    assign uio_oe[2] = VGND;
+    assign uio_oe[3] = VGND;
+    assign uio_oe[4] = VGND;
+    assign uio_oe[5] = VGND;
+    assign uio_oe[6] = VGND;
+    assign uio_oe[7] = VGND;
 
 endmodule
