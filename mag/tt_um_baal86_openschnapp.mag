@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788347442
+timestamp 1788349130
 << metal1 >>
 rect 14600 57400 49600 57500
 rect 51500 57400 53700 57500
@@ -11,7 +11,7 @@ rect 8600 57000 48200 57100
 rect 52800 57000 59700 57100
 rect 5600 56800 47600 56900
 rect 50600 56800 50900 56900
-rect 53400 56800 62300 56900
+rect 53400 56800 62700 56900
 rect 2600 56600 46800 56700
 rect 47600 56600 50200 56700
 rect 800 53080 2100 53100
@@ -78,6 +78,12 @@ rect 800 8080 2400 8100
 rect 800 7920 820 8080
 rect 1180 7920 2400 8080
 rect 800 7900 2400 7920
+rect 65700 5100 65800 59400
+rect 65900 8100 66000 59400
+rect 66100 11100 66200 59400
+rect 66300 14100 66400 59400
+rect 66500 17100 66600 59400
+rect 66700 20100 66800 59400
 rect 800 5080 2100 5100
 rect 800 4920 820 5080
 rect 1180 4920 2100 5080
@@ -214,6 +220,12 @@ rect 800 23080 1200 23100
 rect 800 22920 820 23080
 rect 1180 22920 1200 23080
 rect 1700 23080 1900 23200
+rect 65700 23100 65800 59400
+rect 65900 26100 66000 59400
+rect 66100 29100 66200 59400
+rect 66300 32100 66400 59400
+rect 66500 35100 66600 59400
+rect 66700 38100 66800 59400
 rect 1700 23020 2000 23080
 rect 800 22900 1200 22920
 rect 200 20380 1900 20400
@@ -455,6 +467,11 @@ rect 800 4920 820 5080
 rect 1180 4920 1200 5080
 rect 800 4900 1200 4920
 rect 1600 3800 1800 56270
+rect 65700 41100 65800 59400
+rect 65900 44100 66000 59400
+rect 66100 47100 66200 59400
+rect 66300 50100 66400 59400
+rect 66500 53100 66600 59400
 << via3 >>
 rect 220 53220 580 53380
 rect 820 52920 1180 53080
@@ -670,54 +687,73 @@ rect 53400 56800 53500 59600
 rect 53600 56100 53700 57500
 rect 56600 56100 56700 57300
 rect 59600 56100 59700 57100
+rect 62600 56100 62700 56900
+rect 65100 53100 65700 53200
+rect 65800 53100 66600 53200
 rect 800 52920 820 53080
 rect 1180 52920 1200 53080
 rect 800 50080 1200 52920
+rect 65100 50100 66400 50200
 rect 800 49920 820 50080
 rect 1180 49920 1200 50080
 rect 800 47080 1200 49920
+rect 65100 47100 66200 47200
 rect 800 46920 820 47080
 rect 1180 46920 1200 47080
 rect 800 44080 1200 46920
+rect 65100 44100 66000 44200
 rect 800 43920 820 44080
 rect 1180 43920 1200 44080
 rect 800 41080 1200 43920
+rect 65100 41100 65800 41200
 rect 800 40920 820 41080
 rect 1180 40920 1200 41080
 rect 800 38080 1200 40920
+rect 65100 38100 66800 38200
 rect 800 37920 820 38080
 rect 1180 37920 1200 38080
 rect 800 35080 1200 37920
+rect 65100 35100 66600 35200
 rect 800 34920 820 35080
 rect 1180 34920 1200 35080
 rect 800 32080 1200 34920
+rect 65100 32100 66400 32200
 rect 800 31920 820 32080
 rect 1180 31920 1200 32080
 rect 800 29080 1200 31920
+rect 65100 29100 66200 29200
 rect 800 28920 820 29080
 rect 1180 28920 1200 29080
 rect 800 26080 1200 28920
+rect 65100 26100 66000 26200
 rect 800 25920 820 26080
 rect 1180 25920 1200 26080
 rect 800 23080 1200 25920
+rect 65100 23100 65800 23200
 rect 800 22920 820 23080
 rect 1180 22920 1200 23080
 rect 800 20080 1200 22920
+rect 65100 20100 66800 20200
 rect 800 19920 820 20080
 rect 1180 19920 1200 20080
 rect 800 17080 1200 19920
+rect 65100 17100 66600 17200
 rect 800 16920 820 17080
 rect 1180 16920 1200 17080
 rect 800 14080 1200 16920
+rect 65100 14100 66400 14200
 rect 800 13920 820 14080
 rect 1180 13920 1200 14080
 rect 800 11080 1200 13920
+rect 65100 11100 66200 11200
 rect 800 10920 820 11080
 rect 1180 10920 1200 11080
 rect 800 8080 1200 10920
+rect 65100 8100 66000 8200
 rect 800 7920 820 8080
 rect 1180 7920 1200 8080
 rect 800 5080 1200 7920
+rect 65100 5100 65800 5200
 rect 800 4920 820 5080
 rect 1180 4920 1200 5080
 rect 800 1000 1200 4920
@@ -729,6 +765,74 @@ rect 38956 0 39556 200
 rect 47692 0 48292 200
 rect 56428 0 57028 200
 rect 65164 0 65764 200
+use aux_pixel_frame_right  aux_pixel_frame_right_0
+timestamp 1788348382
+transform 1 0 61200 0 1 7000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_1
+timestamp 1788348382
+transform 1 0 61200 0 1 10000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_2
+timestamp 1788348382
+transform 1 0 61200 0 1 13000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_3
+timestamp 1788348382
+transform 1 0 61200 0 1 16000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_4
+timestamp 1788348382
+transform 1 0 61200 0 1 19000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_5
+timestamp 1788348382
+transform 1 0 61200 0 1 22000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_6
+timestamp 1788348382
+transform 1 0 61200 0 1 25000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_7
+timestamp 1788348382
+transform 1 0 61200 0 1 28000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_8
+timestamp 1788348382
+transform 1 0 61200 0 1 31000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_9
+timestamp 1788348382
+transform 1 0 61200 0 1 34000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_10
+timestamp 1788348382
+transform 1 0 61200 0 1 37000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_11
+timestamp 1788348382
+transform 1 0 61200 0 1 40000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_12
+timestamp 1788348382
+transform 1 0 61200 0 1 43000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_13
+timestamp 1788348382
+transform 1 0 61200 0 1 46000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_14
+timestamp 1788348382
+transform 1 0 61200 0 1 49000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_15
+timestamp 1788348382
+transform 1 0 61200 0 1 52000
+box 3800 -2000 3900 1000
+use aux_pixel_frame_right  aux_pixel_frame_right_16
+timestamp 1788348382
+transform 1 0 61200 0 1 55000
+box 3800 -2000 3900 1000
 use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_0
 timestamp 1788344901
 transform 1 0 2600 0 1 56600
@@ -813,6 +917,34 @@ use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_20
 timestamp 1788344901
 transform 1 0 59600 0 1 57000
 box 0 0 100 100
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_21
+timestamp 1788344901
+transform 1 0 62600 0 1 56800
+box 0 0 100 100
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_22
+timestamp 1788344901
+transform 1 0 65700 0 1 5100
+box 0 0 100 100
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_23
+timestamp 1788344901
+transform 1 0 65900 0 1 8100
+box 0 0 100 100
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_24
+timestamp 1788344901
+transform 1 0 66100 0 1 11100
+box 0 0 100 100
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_25
+timestamp 1788344901
+transform 1 0 66300 0 1 14100
+box 0 0 100 100
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_26
+timestamp 1788344901
+transform 1 0 66500 0 1 17100
+box 0 0 100 100
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_27
+timestamp 1788344901
+transform 1 0 66700 0 1 20100
+box 0 0 100 100
 use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_0
 timestamp 1788344860
 transform 1 0 17600 0 1 56600
@@ -853,6 +985,30 @@ use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_9
 timestamp 1788344860
 transform 1 0 46100 0 1 57400
 box 0 0 100 100
+use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_10
+timestamp 1788344860
+transform 1 0 65700 0 1 23100
+box 0 0 100 100
+use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_11
+timestamp 1788344860
+transform 1 0 65900 0 1 26100
+box 0 0 100 100
+use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_12
+timestamp 1788344860
+transform 1 0 66100 0 1 29100
+box 0 0 100 100
+use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_13
+timestamp 1788344860
+transform 1 0 66300 0 1 32100
+box 0 0 100 100
+use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_14
+timestamp 1788344860
+transform 1 0 66500 0 1 35100
+box 0 0 100 100
+use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_15
+timestamp 1788344860
+transform 1 0 66700 0 1 38100
+box 0 0 100 100
 use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_0
 timestamp 1788344730
 transform 1 0 32600 0 1 56600
@@ -892,6 +1048,26 @@ box 0 0 100 100
 use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_9
 timestamp 1788344730
 transform 1 0 44600 0 1 57400
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_10
+timestamp 1788344730
+transform 1 0 65700 0 1 41100
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_11
+timestamp 1788344730
+transform 1 0 65900 0 1 44100
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_12
+timestamp 1788344730
+transform 1 0 66100 0 1 47100
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_13
+timestamp 1788344730
+transform 1 0 66300 0 1 50100
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_14
+timestamp 1788344730
+transform 1 0 66500 0 1 53100
 box 0 0 100 100
 use ip_column_mux *columnmux
 timestamp 1788346460
@@ -976,6 +1152,10 @@ box 0 300 3000 800
 use ip_column_switch  cswitch_19
 timestamp 1788259661
 transform 1 0 59000 0 1 55700
+box 0 300 3000 800
+use ip_column_switch  cswitch_20
+timestamp 1788259661
+transform 1 0 62000 0 1 55700
 box 0 300 3000 800
 use ip_current_source  current_source
 timestamp 1787812053
@@ -2340,6 +2520,74 @@ box 800 -2000 3800 1000
 use ip_pixel_nd2ps  pixel_19_16
 timestamp 1788271869
 transform 1 0 58200 0 1 55000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_00
+timestamp 1788271869
+transform 1 0 61200 0 1 7000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_01
+timestamp 1788271869
+transform 1 0 61200 0 1 10000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_02
+timestamp 1788271869
+transform 1 0 61200 0 1 13000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_03
+timestamp 1788271869
+transform 1 0 61200 0 1 16000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_04
+timestamp 1788271869
+transform 1 0 61200 0 1 19000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_05
+timestamp 1788271869
+transform 1 0 61200 0 1 22000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_06
+timestamp 1788271869
+transform 1 0 61200 0 1 25000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_07
+timestamp 1788271869
+transform 1 0 61200 0 1 28000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_08
+timestamp 1788271869
+transform 1 0 61200 0 1 31000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_09
+timestamp 1788271869
+transform 1 0 61200 0 1 34000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_10
+timestamp 1788271869
+transform 1 0 61200 0 1 37000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_11
+timestamp 1788271869
+transform 1 0 61200 0 1 40000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_12
+timestamp 1788271869
+transform 1 0 61200 0 1 43000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_13
+timestamp 1788271869
+transform 1 0 61200 0 1 46000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_14
+timestamp 1788271869
+transform 1 0 61200 0 1 49000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_15
+timestamp 1788271869
+transform 1 0 61200 0 1 52000
+box 800 -2000 3800 1000
+use ip_pixel_nd2ps  pixel_20_16
+timestamp 1788271869
+transform 1 0 61200 0 1 55000
 box 800 -2000 3800 1000
 use ip_row_mux *rowmux
 timestamp 1788269952
