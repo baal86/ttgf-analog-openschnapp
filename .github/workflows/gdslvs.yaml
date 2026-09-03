@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: hpretl/iic-osic-tools:2026.08
-      options: --user root --entrypoint ""
+      options: --user root
 
     steps:
       - name: checkout repo
