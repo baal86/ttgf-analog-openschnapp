@@ -1,8 +1,11 @@
 magic
 tech gf180mcuD
-timestamp 1788356578
+timestamp 1788414925
 << pwell >>
-rect 380 -200 430 100
+rect 380 78 430 100
+rect 380 72 402 78
+rect 408 72 430 78
+rect 380 -200 430 72
 << psubdiff >>
 rect 380 90 430 100
 rect 380 52 390 90
@@ -37,7 +40,10 @@ rect 422 -150 428 -132
 rect 382 98 428 100
 rect 380 92 428 98
 rect 382 52 388 92
-rect 400 36 410 80
+rect 400 78 410 80
+rect 400 72 402 78
+rect 408 72 410 78
+rect 400 36 410 72
 rect 422 52 428 92
 rect 382 28 388 36
 rect 422 28 428 36
@@ -63,8 +69,8 @@ use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_0
 timestamp 1788344901
 transform 1 0 400 0 1 -180
 box 0 0 10 10
-use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_0
-timestamp 1788344860
+use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_1
+timestamp 1788344901
 transform 1 0 400 0 1 70
 box 0 0 10 10
 use diode_nd2ps_03v3_E2JMKK  diode_nd2ps_03v3_E2JMKK_0
