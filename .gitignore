@@ -27,3 +27,5 @@ test/gate_level_netlist.v
 /verilog/rtl/ip_row_mux/sim_build
 /verilog/rtl/ip_row_mux/*.so
 /verilog/rtl/ip_row_mux/*.xml
+*.lyrdb
+/mag/*.report
