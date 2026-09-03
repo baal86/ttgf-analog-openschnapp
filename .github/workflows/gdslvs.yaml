@@ -1,0 +1,23 @@
+name: gdslvs
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  lvs:
+    runs-on: ubuntu-latest
+    container:
+      image: hpretl/iic-osic-tools:2026.08
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Run LVS
+        shell: bash
+        run: |
+          sak-pdk gf180mcuD
+          cd mag
+          make gdslvs
