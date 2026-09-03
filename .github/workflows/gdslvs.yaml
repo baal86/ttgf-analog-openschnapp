@@ -4,10 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  lvs:
+  gdslvs:
     runs-on: ubuntu-latest
     container:
       image: hpretl/iic-osic-tools:2026.08
+      options: --user root --entrypoint ""
 
     steps:
       - name: checkout repo
