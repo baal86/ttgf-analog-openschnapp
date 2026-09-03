@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788259661
+timestamp 1788427935
 << pwell >>
 rect 0 220 1500 400
 rect 0 215 130 220
@@ -19,7 +19,7 @@ rect 0 350 1500 360
 rect 0 330 50 350
 rect 0 170 10 330
 rect 40 170 50 330
-rect 490 300 570 350
+rect 650 300 730 350
 rect 0 150 50 170
 << psubdiffcont >>
 rect 80 360 1420 390
@@ -33,9 +33,10 @@ rect 100 320 140 325
 rect 100 290 105 320
 rect 135 315 140 320
 rect 135 290 260 315
-rect 490 300 570 360
 rect 100 285 140 290
-rect 285 225 350 275
+rect 450 275 500 320
+rect 650 300 730 360
+rect 285 225 500 275
 rect 100 210 140 215
 rect 310 210 350 225
 rect 100 180 105 210
@@ -89,17 +90,21 @@ rect 310 210 350 215
 rect 310 180 315 210
 rect 345 180 350 210
 rect 310 175 350 180
+use diode_nd2ps_03v3_E2JMKK  diode_nd2ps_03v3_E2JMKK_0
+timestamp 1788427860
+transform 1 0 475 0 1 295
+box -105 -105 105 105
 use nfet_03v3_K4EN95  M1
 timestamp 1787902964
 transform 0 1 226 -1 0 251
 box -81 -96 81 96
 << labels >>
-flabel metal1 490 300 570 350 0 FreeSans 160 0 0 0 vsubs
-port 5 nsew
 flabel metal3 100 175 140 215 0 FreeSans 160 0 0 0 cl
 port 6 nsew
 flabel metal3 100 285 140 325 0 FreeSans 160 0 0 0 bus
 port 7 nsew
 flabel metal4 310 175 350 215 0 FreeSans 160 0 0 0 en
 port 9 nsew
+flabel metal1 650 300 730 350 0 FreeSans 160 0 0 0 vsubs
+port 5 nsew
 << end >>
