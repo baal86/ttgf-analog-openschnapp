@@ -6,7 +6,7 @@
 
 Mixed signal design of freely addressable photo diode array. Made as a learning project in the Zero2Asic analog course.
 
-![Die Snapshot](DieSnapshot.png)
+![Die Snapshot](docs/snapshot.png)
 
 ## What is Tiny Tapeout?
 
