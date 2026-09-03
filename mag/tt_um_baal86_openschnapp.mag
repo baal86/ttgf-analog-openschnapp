@@ -1,9 +1,20 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788414944
+timestamp 1788425548
 << pwell >>
+rect 65000 56480 65500 56500
+rect 64980 56420 65500 56480
+rect 65000 56000 65500 56420
+rect 65020 5000 65480 5040
+rect 65000 4900 65500 5000
 rect 2900 3400 3100 3600
+<< psubdiff >>
+rect 65000 56480 65500 56500
+rect 64980 56420 65500 56480
+rect 65000 56000 65500 56420
+rect 65020 5000 65480 5040
+rect 65000 4900 65500 5000
 << metal1 >>
 rect 54400 60100 54500 64700
 rect 54400 60000 67000 60100
@@ -24,6 +35,8 @@ rect 50600 56800 50900 56900
 rect 53400 56800 62700 56900
 rect 2600 56600 46800 56700
 rect 47600 56600 50200 56700
+rect 64980 56420 65480 56480
+rect 65020 56000 65480 56420
 rect 800 53080 2100 53100
 rect 800 52920 820 53080
 rect 1180 52920 2100 53080
@@ -98,6 +111,8 @@ rect 66900 7800 67000 60000
 rect 800 5080 2100 5100
 rect 800 4920 820 5080
 rect 1180 4920 2100 5080
+rect 65020 4980 65480 5040
+rect 65000 4920 65480 4980
 rect 800 4900 2100 4920
 rect 800 3500 2100 3600
 rect 800 2400 900 3500
@@ -1047,6 +1062,90 @@ rect 38956 0 39556 200
 rect 47692 0 48292 200
 rect 56428 0 57028 200
 rect 65164 0 65764 200
+use aux_frame_bottom  aux_frame_bottom_0
+timestamp 1788425406
+transform 1 0 1200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_1
+timestamp 1788425406
+transform 1 0 4200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_2
+timestamp 1788425406
+transform 1 0 7200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_3
+timestamp 1788425406
+transform 1 0 10200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_4
+timestamp 1788425406
+transform 1 0 13200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_5
+timestamp 1788425406
+transform 1 0 16200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_6
+timestamp 1788425406
+transform 1 0 19200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_7
+timestamp 1788425406
+transform 1 0 22200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_8
+timestamp 1788425406
+transform 1 0 25200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_9
+timestamp 1788425406
+transform 1 0 28200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_10
+timestamp 1788425406
+transform 1 0 31200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_11
+timestamp 1788425406
+transform 1 0 34200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_12
+timestamp 1788425406
+transform 1 0 37200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_13
+timestamp 1788425406
+transform 1 0 40200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_14
+timestamp 1788425406
+transform 1 0 43200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_15
+timestamp 1788425406
+transform 1 0 46200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_16
+timestamp 1788425406
+transform 1 0 49200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_17
+timestamp 1788425406
+transform 1 0 52200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_18
+timestamp 1788425406
+transform 1 0 55200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_19
+timestamp 1788425406
+transform 1 0 58200 0 1 7000
+box 800 -2100 3800 -2000
+use aux_frame_bottom  aux_frame_bottom_20
+timestamp 1788425406
+transform 1 0 61200 0 1 7000
+box 800 -2100 3800 -2000
 use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_0
 timestamp 1788344901
 transform 1 0 2600 0 1 56600
