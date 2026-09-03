@@ -33,20 +33,19 @@ N -30 -640 210 -640 {lab=VDD}
 N 210 -640 210 -500 {lab=VDD}
 N 210 -330 210 -300 {lab=0}
 N 60 -440 90 -440 {lab=#net1}
-N 370 -540 370 -420 {lab=OUT}
 N 330 -420 370 -420 {lab=OUT}
 N 370 -420 480 -420 {lab=OUT}
-N -170 -440 -170 -390 {lab=#net2}
+N -170 -440 -170 -390 {lab=#net1}
 N -170 -330 -170 -300 {lab=0}
-N -170 -440 -70 -440 {lab=#net2}
-N -10 -440 60 -440 {lab=#net1}
-N 180 -540 370 -540 {lab=OUT}
-N 40 -540 120 -540 {lab=#net1}
-N 40 -540 40 -440 {lab=#net1}
-N 40 -400 90 -400 {lab=#net3}
-N 40 -400 40 -380 {lab=#net3}
-N 40 -380 40 -370 {lab=#net3}
+N -170 -440 -70 -440 {lab=#net1}
+N 40 -400 90 -400 {lab=#net2}
+N 40 -400 40 -380 {lab=#net2}
+N 40 -380 40 -370 {lab=#net2}
 N 40 -310 40 -290 {lab=0}
+N 480 -420 510 -420 {lab=OUT}
+N 510 -420 510 -380 {lab=OUT}
+N 510 -320 510 -300 {lab=0}
+N -70 -440 60 -440 {lab=#net1}
 C {vsource.sym} -410 -280 0 0 {name=V1 value=3.3 savecurrent=false}
 C {gnd.sym} -410 -200 0 0 {name=l3 lab=0}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
@@ -87,15 +86,11 @@ C {gnd.sym} 210 -300 0 0 {name=l1 lab=0}
 C {lab_wire.sym} 430 -420 0 0 {name=p1 sig_type=std_logic lab=OUT}
 C {vsource.sym} -170 -360 0 0 {name=V2 value=2.0 savecurrent=false}
 C {gnd.sym} -170 -300 0 0 {name=l2 lab=0}
-C {res.sym} -40 -440 1 0 {name=R1
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 150 -540 1 0 {name=R2
-value=30k
-footprint=1206
-device=resistor
-m=1}
-C {vsource.sym} 40 -340 0 0 {name=V3 value=2.0 savecurrent=false}
+C {vsource.sym} 40 -340 0 0 {name=V3 value=1.8 savecurrent=false}
 C {gnd.sym} 40 -290 0 0 {name=l4 lab=0}
+C {res.sym} 510 -350 2 0 {name=R3
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} 510 -300 0 0 {name=l5 lab=0}
