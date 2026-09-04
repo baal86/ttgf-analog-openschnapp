@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 140 160 940 560 {flags=graph
-y1=8.9e-10
-y2=2
+y1=1e-14
+y2=2.1
 ypos1=0
 ypos2=2
 divy=5
@@ -22,6 +22,28 @@ ylabmag=1.0
 legendmag=1.0
 node=out
 color=7
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 130 -890 930 -490 {flags=graph
+y1=1e-14
+y2=1.2e-06
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=3.3
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+node=i(viload)
+color=4
 dataset=-1
 unitx=1
 logx=0
