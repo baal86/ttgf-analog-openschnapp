@@ -76,15 +76,17 @@ module tt_um_baal86_openschnapp (
     );
 
     ip_column_mux columnmux(
-	.VDD(VDPWR),
-	.VSS(VGND),
+	    .VDD(VDPWR),
+	    .VSS(VGND),
+        .clk(clk),
         .A(uio_in[4:0]),
         .Y(acol[20:0])
     );
 
     ip_row_mux rowmux(
-	.VDD(VDPWR),
-	.VSS(VGND),
+        .VDD(VDPWR),
+        .VSS(VGND),
+        .clk(clk),
         .A(ui_in[4:0]),
         .Y(arow[16:0])
     );

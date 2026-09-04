@@ -1,8 +1,10 @@
 module ip_column_mux (
+    input  wire clk,
     input  wire [4:0]  A,
-    output wire [20:0] Y
+    output reg  [20:0] Y
 );
-
-    assign Y = 21'b1 << A;
+    always @(posedge clk) begin
+        Y <= 21'b1 << A; 
+    end
 
 endmodule
