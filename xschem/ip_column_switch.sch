@@ -39,6 +39,6 @@ C {iopin.sym} -140 260 2 0 {name=p8 lab=vsubs}
 C {opin.sym} 140 0 0 0 {name=p9 lab=bus}
 C {symbols/diode_nd2ps_03v3.sym} 0 180 2 0 {name=D1
 model=diode_nd2ps_03v3
-r_w=0.5
-r_l=0.5
+r_w=0.5u
+r_l=0.5u
 m=1}

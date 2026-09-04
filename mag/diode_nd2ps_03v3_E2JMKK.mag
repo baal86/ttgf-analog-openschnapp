@@ -23,5 +23,5 @@ rect 37 -37 48 37
 string FIXED_BBOX -148 -148 148 148
 string gencell diode_nd2ps_03v3
 string library gf180mcu
-string parameters w 0.5 l 0.5 area 250.0m peri 2.0 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 0 erc 0 etc 0 ebc 0 doverlap 0 full_metal 0 compatible {diode_nd2ps_03v3 diode_nd2ps_06v0}
+string parameters w 0.5 l 0.5 area 0.25 peri 2.0 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 0 erc 0 etc 0 ebc 0 doverlap 0 full_metal 0 compatible {diode_nd2ps_03v3 diode_nd2ps_06v0}
 << end >>

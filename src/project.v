@@ -24,7 +24,6 @@ module tt_um_baal86_openschnapp (
     wire [20:0] acol;
     wire [16:0] arow;
 
-    assign ui_in[5] = reset;
     assign ua[0] = bus;
 
     ip_pixel_frame_right frame00(.read(arow[ 0]), .reset(reset), .VSUBS(VGND));
@@ -90,7 +89,15 @@ module tt_um_baal86_openschnapp (
         .A(ui_in[4:0]),
         .Y(arow[16:0])
     );
-    
+
+    ip_reset_latch reset_latch(
+        .VDD(VDPWR),
+        .VSS(VGND),
+        .clk(clk),
+        .A(ui_in[5]),
+        .Y(reset),
+    );
+
     assign uo_out[0] = VGND;
     assign uo_out[1] = VGND;
     assign uo_out[2] = VGND;
