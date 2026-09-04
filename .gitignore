@@ -29,3 +29,7 @@ test/gate_level_netlist.v
 /verilog/rtl/ip_row_mux/*.xml
 *.lyrdb
 /mag/*.report
+/verilog/rtl/ip_reset_latch/*.so
+/verilog/rtl/ip_reset_latch/ip_reset_latch_obj_dir
+/verilog/rtl/ip_reset_latch/sim_build
+/verilog/rtl/ip_reset_latch/*.xml
