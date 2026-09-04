@@ -10,9 +10,6 @@ SIM_ARGS += --trace
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
 # sim is included from cocotb
-plot:
-	$(MAKE) sim COCOTB_TESTCASE='test_make_plot'
-
 build:
 	ngspice vlnggen $(PWD)/ip_row_mux.v
 

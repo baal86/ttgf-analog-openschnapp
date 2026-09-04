@@ -24,12 +24,3 @@ async def test_only_one_bit_set(dut,a):
     y = await apply_and_clock(dut,a)
     popcount = bin(y).count("1")
     assert popcount == 1
-
-@cocotb.test()
-async def test_make_plot(dut):
-    await Timer(CLOCK_PERIOD*3, unit="ns")
-    for a in range(YLENGTH):
-        await apply_and_clock(dut,a)
-    await Timer(CLOCK_PERIOD*3, unit="ns")
-    dut.clk.value = 0
-    await Timer(CLOCK_PERIOD*1, unit="ns")
