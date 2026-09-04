@@ -2,7 +2,12 @@ PROJECT_NAME ?= tt_um_baal86_openschnapp
 MAGIC_RC := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
 TEMPLATE_FILE := tt_analog_1x2.def
 
-.PHONY: gdslvs lvs magic start
+.PHONY: gdslvs lvs magic start png
+
+png:
+	klayout -b -r tcl/gds2png.py -rd gdsfile=../gds/tt_um_baal86_openschnapp.gds -rd output=temp.png
+	cp temp.png ../docs/snapshot.png
+	rm -f temp.png
 
 magic:
 	magic -rcfile $(MAGIC_RC) $(PROJECT_NAME).mag
