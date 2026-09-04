@@ -75,27 +75,27 @@ module tt_um_baal86_openschnapp (
     );
 
     ip_column_mux columnmux(
+        .clk(clk),
 	    .VDD(VDPWR),
 	    .VSS(VGND),
-        .clk(clk),
         .A(uio_in[4:0]),
         .Y(acol[20:0])
     );
 
     ip_row_mux rowmux(
+        .clk(clk),
         .VDD(VDPWR),
         .VSS(VGND),
-        .clk(clk),
         .A(ui_in[4:0]),
         .Y(arow[16:0])
     );
 
     ip_reset_latch reset_latch(
-        .VDD(VDPWR),
-        .VSS(VGND),
-        .clk(clk),
         .A(ui_in[5]),
         .Y(reset),
+        .clk(clk),
+        .VDD(VDPWR),
+        .VSS(VGND),
     );
 
     assign uo_out[0] = VGND;
