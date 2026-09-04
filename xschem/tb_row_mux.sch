@@ -13,8 +13,8 @@ ypos2=0.01
 divy=5
 subdivy=1
 unity=1
-x1=0.0007930542
-x2=0.0015794862
+x1=0
+x2=0.0017
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,8 +27,8 @@ logy=0
 sim_type=tran
 digital=1
 color="7 4"
-node="A[3:0];a3,a2,a1,a0
-Y[15:0];y15,y14,y13,y12,y11,y10,y9,y8,y7,y6,y5,y4,y3,y2,y1,y0"}
+node="A[4:0];a4,a3,a2,a1,a0
+Y[16:0];y16,y15,y14,y13,y12,y11,y10,y9,y8,y7,y6,y5,y4,y3,y2,y1,y0"}
 B 2 560 -240 1450 160 {flags=graph
 y1=0
 y2=3.3
@@ -38,13 +38,14 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0016
+x2=0.0017
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 legendmag=1.0
-node="y15
+node="y16
+y15
 y14
 y13
 y12
@@ -60,7 +61,7 @@ y3
 y2
 y1
 y0"
-color="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19"
+color="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"
 dataset=-1
 unitx=1
 logx=0
@@ -91,16 +92,18 @@ C {simulator_commands_shown.sym} -150 -340 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
-astim [A3 A2 A1 A0 ] stim
+astim [A4 A3 A2 A1 A0 ] stim
 .model stim d_source input_file=\\"../stim.txt\\"
-adut [ A3 A2 A1 A0 ] [Y15 Y14 Y13 Y12 Y11 Y10 Y9 Y8 Y7 Y6 Y5 Y4 Y3 Y2 Y1 Y0] null dut
-.model dut d_cosim simulation=\\"../../verilog/rtl/ip_line_mux.so\\"
+adut [A4 A3 A2 A1 A0 ] [Y16 Y15 Y14 Y13 Y12 Y11 Y10 Y9 Y8 Y7 Y6 Y5 Y4 Y3 Y2 Y1 Y0] null dut
+.model dut d_cosim simulation=\\"../../verilog/rtl/ip_row_mux/ip_row_mux.so\\"
 .param VDD=3.3
+ra4 A4 0 100k
 ra3 A3 0 100k
 ra2 A2 0 100k
 ra1 A1 0 100k
 ra0 A0 0 100k
 
+ry16 Y16 0 100k
 ry15 Y15 0 100k
 ry14 Y14 0 100k
 ry13 Y13 0 100k
@@ -120,9 +123,9 @@ ry0 Y0 0 100k
 
 .control
 	reset
-	tran 1u 1.6m
+	tran 1u 1.7m
 	save all
-	write tb_line_mux.raw
+	write tb_row_mux.raw
 	quit
 .endc
 "}
