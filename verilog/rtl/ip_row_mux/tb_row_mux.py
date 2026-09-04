@@ -1,41 +1,35 @@
 import cocotb
 from cocotb.triggers import Timer
 
-SETTLE_TIME = 1  # ns, allow combinational logic to settle
+CLOCK_PERIOD = 10000    # ns
+YLENGTH = 17
 
-def expected_y(sel: int) -> int:
-    """Reference model: golden one-hot output for a given sel/en."""
-    return 1 << sel
-
-async def apply_and_check(dut, sel: int):
+async def apply_and_clock(dut, sel: int) -> int:
+    dut.clk.value = 0
     dut.A.value = sel
-    await Timer(SETTLE_TIME, unit="ns")
-
-    actual = int(dut.Y.value)
-    expect = expected_y(sel)
-
-    assert actual == expect, (
-        f"sel={sel}: got y=0b{actual:016b}, "
-        f"expected 0b{expect:016b}"
-    )
+    await Timer(CLOCK_PERIOD/2, unit="ns")
+    dut.clk.value = 1
+    await Timer(CLOCK_PERIOD/2, unit="ns")
+    return dut.Y.value
 
 @cocotb.test()
-async def test_all_codes_enabled(dut):
-    """Exhaustively check all 16 select codes with enable asserted."""
-    for sel in range(11):
-        await apply_and_check(dut, sel)
-
+@cocotb.parametrize(a=range(YLENGTH))
+async def test_all_codes_enabled(dut,a):
+    y = await apply_and_clock(dut,a)
+    assert y == 1 << a
 
 @cocotb.test()
-async def test_only_one_bit_set(dut):
-    """Sanity check: whenever enabled, exactly one output bit is high."""
-    for sel in range(11):
-        dut.A.value = sel
-        await Timer(SETTLE_TIME, unit="ns")
+@cocotb.parametrize(a=range(YLENGTH))
+async def test_only_one_bit_set(dut,a):
+    y = await apply_and_clock(dut,a)
+    popcount = bin(y).count("1")
+    assert popcount == 1
 
-        y = int(dut.Y.value)
-        popcount = bin(y).count("1")
-        assert popcount == 1, (
-            f"sel={sel}: expected exactly one bit set, "
-            f"got 0b{y:016b} ({popcount} bits set)"
-        )
+@cocotb.test()
+async def test_make_plot(dut):
+    await Timer(CLOCK_PERIOD*3, unit="ns")
+    for a in range(YLENGTH):
+        await apply_and_clock(dut,a)
+    await Timer(CLOCK_PERIOD*3, unit="ns")
+    dut.clk.value = 0
+    await Timer(CLOCK_PERIOD*1, unit="ns")
