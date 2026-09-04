@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788522326
+timestamp 1788523772
 << pwell >>
 rect 65000 56420 65500 56500
 rect 64980 56400 65500 56420
@@ -1428,10 +1428,6 @@ use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_3
 timestamp 1788344860
 transform 1 0 23800 0 1 57000
 box 0 0 100 100
-use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_4
-timestamp 1788344860
-transform 1 0 29200 0 1 56800
-box 0 0 100 100
 use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_5
 timestamp 1788344860
 transform 1 0 53200 0 1 57000
@@ -1492,10 +1488,6 @@ use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_19
 timestamp 1788344860
 transform 1 0 27800 0 1 56800
 box 0 0 100 100
-use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_20
-timestamp 1788344860
-transform 1 0 25200 0 1 57000
-box 0 0 100 100
 use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_21
 timestamp 1788344860
 transform 1 0 23600 0 1 57400
@@ -1504,25 +1496,13 @@ use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_22
 timestamp 1788344860
 transform 1 0 65600 0 1 800
 box 0 0 100 100
-use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_23
-timestamp 1788344860
-transform 1 0 21100 0 1 57200
-box 0 0 100 100
 use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_24
 timestamp 1788344860
 transform 1 0 19800 0 1 57200
 box 0 0 100 100
-use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_25
-timestamp 1788344860
-transform 1 0 20600 0 1 57400
-box 0 0 100 100
 use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_26
 timestamp 1788344860
 transform 1 0 49600 0 1 64100
-box 0 0 100 100
-use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_27
-timestamp 1788344860
-transform 1 0 17100 0 1 57400
 box 0 0 100 100
 use aux_via_M4-M2_0u5  aux_via_M4-M2_0u5_28
 timestamp 1788344860
@@ -1716,6 +1696,26 @@ use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_15
 timestamp 1788344730
 transform 1 0 57400 0 1 64100
 box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_16
+timestamp 1788344730
+transform 1 0 25200 0 1 57000
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_17
+timestamp 1788344730
+transform 1 0 21100 0 1 57200
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_18
+timestamp 1788344730
+transform 1 0 29200 0 1 56800
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_19
+timestamp 1788344730
+transform 1 0 17100 0 1 57400
+box 0 0 100 100
+use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_20
+timestamp 1788344730
+transform 1 0 20600 0 1 57400
+box 0 0 100 100
 use aux_via_M4-M3_0u5  aux_via_M4-M3_0u5_31
 timestamp 1788344730
 transform 1 0 56600 0 1 56600
@@ -1737,7 +1737,7 @@ timestamp 1788344730
 transform 1 0 46500 0 1 57400
 box 0 0 100 100
 use ip_column_mux *columnmux
-timestamp 1788515629
+timestamp 1788523351
 transform 1 0 4974 0 1 58000
 box 26 0 29878 5600
 use ip_column_switch  cswitch_00
@@ -1897,7 +1897,7 @@ timestamp 1788427935
 transform 1 0 61200 0 1 55000
 box 3800 -2000 4300 1000
 use ip_reset_latch  ip_reset_latch_0
-timestamp 1788515310
+timestamp 1788523351
 transform 1 0 60974 0 1 58000
 box 26 0 5910 5600
 use ip_pixel_nd2ps  ipixel_02_16
@@ -3329,7 +3329,7 @@ timestamp 1788271869
 transform 1 0 61200 0 1 55000
 box 800 -2000 3800 1000
 use ip_row_mux  rowmux
-timestamp 1788515629
+timestamp 1788523351
 transform 1 0 35974 0 1 58000
 box 26 0 23942 5600
 << labels >>
