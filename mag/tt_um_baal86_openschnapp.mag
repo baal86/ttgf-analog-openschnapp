@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788779797
+timestamp 1788791298
 << pwell >>
 rect 65000 56420 65500 56500
 rect 64980 56400 65500 56420
@@ -1886,7 +1886,7 @@ timestamp 1788427935
 transform 1 0 62000 0 1 55700
 box 0 300 3000 800
 use ip_current_source  current_source
-timestamp 1788778740
+timestamp 1788791276
 transform 1 0 400 0 1 -500
 box 1600 1800 4300 5300
 use ip_pixel_frame_right  ip_pixel_frame_right_0
