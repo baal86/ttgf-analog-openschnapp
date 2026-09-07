@@ -7,7 +7,7 @@ F {}
 E {}
 B 2 0 300 800 700 {flags=graph
 y1=0
-y2=15u
+y2=1.5u
 ypos1=0
 ypos2=2
 divy=10
@@ -27,9 +27,11 @@ hilight_wave=-1
 dataset=-1
 sweep=1
 mode=Line
-color="4 5"
+color="4 5 6 7"
 node="i(vimir_parax)
-i(vimir)"}
+i(vimir)
+i(vimir_parax1)
+i(vimir1)"}
 T {Nominal} 0 -170 0 0 0.4 0.4 {}
 T {PARAX} 400 -170 0 0 0.4 0.4 {}
 N 160 -120 240 -120 {lab=vref}
@@ -62,6 +64,12 @@ N 100 10 100 40 {lab=#net1}
 N 160 30 160 40 {lab=#net2}
 N 500 10 500 40 {lab=#net3}
 N 560 30 560 40 {lab=#net4}
+N 120 30 120 60 {lab=#net5}
+N 120 -120 120 -30 {lab=vmir}
+N 100 -120 120 -120 {lab=vmir}
+N 520 30 520 60 {lab=#net6}
+N 520 -120 520 -30 {lab=vmir}
+N 500 -120 520 -120 {lab=vmir}
 C {devices/launcher.sym} -595 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -128,3 +136,5 @@ C {ammeter.sym} 100 -20 0 0 {name=Vimir savecurrent=false spice_ignore=0}
 C {ammeter.sym} 160 0 0 0 {name=Viref savecurrent=false spice_ignore=0}
 C {ammeter.sym} 500 -20 0 0 {name=Vimir_parax savecurrent=false spice_ignore=0}
 C {ammeter.sym} 560 0 0 0 {name=Viref_parax savecurrent=false spice_ignore=0}
+C {ammeter.sym} 120 0 0 0 {name=Vimir1 savecurrent=false spice_ignore=0}
+C {ammeter.sym} 520 0 0 0 {name=Vimir_parax1 savecurrent=false spice_ignore=0}
