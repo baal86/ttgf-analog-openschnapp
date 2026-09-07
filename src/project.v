@@ -20,6 +20,7 @@ module tt_um_baal86_openschnapp (
 );
     wire [20:0] column;
     wire        bus;
+    wire        dummy;
     wire        reset;
     wire [20:0] acol;
     wire [16:0] arow;
@@ -71,7 +72,8 @@ module tt_um_baal86_openschnapp (
     ip_current_source current_source(
         .VDD(VDPWR),
         .VSUBS(VGND),
-        .src(bus)
+        .src_a(bus),
+        .src_b(dummy)
     );
 
     ip_column_mux columnmux(
