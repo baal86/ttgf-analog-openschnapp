@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788427935
+timestamp 1788846853
 << pwell >>
 rect 0 220 1500 400
 rect 0 215 130 220
@@ -91,11 +91,11 @@ rect 310 180 315 210
 rect 345 180 350 210
 rect 310 175 350 180
 use diode_nd2ps_03v3_E2JMKK  diode_nd2ps_03v3_E2JMKK_0
-timestamp 1788427860
+timestamp 1788846853
 transform 1 0 475 0 1 295
 box -105 -105 105 105
 use nfet_03v3_K4EN95  M1
-timestamp 1787902964
+timestamp 1788846853
 transform 0 1 226 -1 0 251
 box -81 -96 81 96
 << labels >>
