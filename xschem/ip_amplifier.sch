@@ -10,37 +10,37 @@ N -450 400 -130 400 {lab=VSUBS}
 N -430 -640 -410 -640 {lab=VDD}
 N 250 -20 280 -20 {lab=INN}
 N -30 -640 490 -640 {lab=VDD}
-N 0 -90 0 -50 {lab=#net1}
+N 0 -90 0 -50 {lab=SRCP}
 N 210 10 210 50 {lab=OUTP}
 N 0 10 0 30 {lab=OUTN}
 N 0 30 0 40 {lab=OUTN}
 N 210 30 310 30 {lab=OUTP}
-N 0 30 100 30 {lab=OUTN}
-N 0 -100 0 -90 {lab=#net1}
-N 0 -180 0 -160 {lab=#net2}
-N 0 -180 210 -180 {lab=#net2}
-N 210 -180 210 -160 {lab=#net2}
+N 0 30 90 30 {lab=OUTN}
+N 0 -100 0 -90 {lab=SRCP}
+N 0 -180 0 -160 {lab=#net1}
+N 0 -180 210 -180 {lab=#net1}
+N 210 -180 210 -160 {lab=#net1}
 N -240 -640 -240 -570 {lab=VDD}
 N -70 -20 -40 -20 {lab=INP}
 N -240 -510 -240 -400 {lab=TCOM}
 N 110 -640 110 -570 {lab=VDD}
-N 110 -410 110 -350 {lab=#net3}
-N 110 -510 110 -410 {lab=#net3}
+N 110 -410 110 -350 {lab=#net1}
+N 110 -510 110 -410 {lab=#net1}
 N -120 -540 70 -540 {lab=TCOM}
 N -240 -480 -170 -480 {lab=TCOM}
 N -170 -540 -170 -480 {lab=TCOM}
-N -240 -180 -240 -160 {lab=#net4}
-N -240 -260 -240 -240 {lab=#net5}
-N -240 -340 -240 -320 {lab=#net6}
+N -240 -180 -240 -160 {lab=#net2}
+N -240 -260 -240 -240 {lab=#net3}
+N -240 -340 -240 -320 {lab=#net4}
 N -320 -370 -270 -370 {lab=VSUBS}
 N -320 -290 -260 -290 {lab=VSUBS}
 N -270 -370 -260 -370 {lab=VSUBS}
 N -320 -210 -260 -210 {lab=VSUBS}
 N -320 -130 -260 -130 {lab=VSUBS}
-N -240 -100 -240 20 {lab=#net7}
+N -240 -100 -240 20 {lab=VSUBS}
 N -240 80 -240 160 {lab=VSUBS}
-N 110 -290 110 -180 {lab=#net2}
-N 210 -100 210 -50 {lab=#net8}
+N 110 -290 110 -180 {lab=#net1}
+N 210 -100 210 -50 {lab=#net5}
 N 230 -130 280 -130 {lab=VSUBS}
 N 280 -130 320 -130 {lab=VSUBS}
 N -200 -540 -120 -540 {lab=TCOM}
@@ -51,35 +51,39 @@ N -240 160 -240 270 {lab=VSUBS}
 N -240 390 -240 400 {lab=VSUBS}
 N -240 270 -240 390 {lab=VSUBS}
 N -120 340 -120 400 {lab=VSUBS}
-N -120 250 -120 280 {lab=#net9}
-N -120 160 -120 190 {lab=#net10}
-N -120 70 -120 100 {lab=#net11}
-N -120 70 -60 70 {lab=#net11}
-N -60 70 -60 360 {lab=#net11}
-N -60 360 -0 360 {lab=#net11}
-N 0 340 0 360 {lab=#net11}
-N -0 250 0 280 {lab=#net12}
-N 0 160 0 190 {lab=#net13}
+N -120 250 -120 280 {lab=#net6}
+N -120 160 -120 190 {lab=#net7}
+N -120 70 -120 100 {lab=#net8}
+N -120 70 -60 70 {lab=#net8}
+N -60 70 -60 360 {lab=#net8}
+N -60 360 -0 360 {lab=#net8}
+N 0 340 0 360 {lab=#net8}
+N -0 250 0 280 {lab=#net9}
+N 0 160 0 190 {lab=#net10}
 N -0 60 -0 100 {lab=OUTN}
 N -200 220 -20 220 {lab=VSUBS}
 N -200 130 -20 130 {lab=VSUBS}
 N -200 310 -20 310 {lab=VSUBS}
 N 330 340 330 400 {lab=VSUBS}
-N 330 250 330 280 {lab=#net14}
-N 330 160 330 190 {lab=#net15}
-N 330 70 330 100 {lab=#net16}
-N 270 70 330 70 {lab=#net16}
-N 270 70 270 360 {lab=#net16}
-N 210 360 270 360 {lab=#net16}
-N 210 340 210 360 {lab=#net16}
-N 210 250 210 280 {lab=#net17}
-N 210 160 210 190 {lab=#net18}
+N 330 250 330 280 {lab=#net11}
+N 330 160 330 190 {lab=#net12}
+N 330 70 330 100 {lab=#net13}
+N 270 70 330 70 {lab=#net13}
+N 270 70 270 360 {lab=#net13}
+N 210 360 270 360 {lab=#net13}
+N 210 340 210 360 {lab=#net13}
+N 210 250 210 280 {lab=#net14}
+N 210 160 210 190 {lab=#net15}
 N 210 60 210 100 {lab=OUTP}
 N 210 50 210 60 {lab=OUTP}
 N 230 130 410 130 {lab=VSUBS}
 N 230 220 410 220 {lab=VSUBS}
 N 230 310 410 310 {lab=VSUBS}
 N -130 400 500 400 {lab=VSUBS}
+N 110 -350 110 -290 {lab=#net1}
+N -240 20 -240 80 {lab=VSUBS}
+N 0 -80 90 -80 {lab=SRCP}
+N 120 -80 210 -80 {lab=#net5}
 C {iopin.sym} -430 -640 2 0 {name=p8 lab=VDD}
 C {iopin.sym} -450 400 2 0 {name=p9 lab=VSUBS}
 C {ipin.sym} -70 -20 0 0 {name=p6 lab=INP}
@@ -91,8 +95,6 @@ C {lab_wire.sym} -270 -370 0 0 {name=p4 sig_type=std_logic lab=VSUBS}
 C {lab_wire.sym} -270 -290 0 0 {name=p5 sig_type=std_logic lab=VSUBS}
 C {lab_wire.sym} -270 -210 0 0 {name=p10 sig_type=std_logic lab=VSUBS}
 C {lab_wire.sym} -270 -130 0 0 {name=p11 sig_type=std_logic lab=VSUBS}
-C {ammeter.sym} -240 50 0 0 {name=Vmeas savecurrent=false spice_ignore=0}
-C {ammeter.sym} 110 -320 0 0 {name=Vmeas1 savecurrent=false spice_ignore=0}
 C {lab_wire.sym} 300 -130 0 0 {name=p12 sig_type=std_logic lab=VSUBS}
 C {lab_wire.sym} -40 -130 0 0 {name=p13 sig_type=std_logic lab=VSUBS}
 C {lab_wire.sym} -150 130 0 0 {name=p14 sig_type=std_logic lab=VSUBS}
@@ -269,3 +271,5 @@ L=5e-6
 model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
+C {lab_wire.sym} 70 -80 0 0 {name=p20 sig_type=std_logic lab=SRCP}
+C {lab_wire.sym} 180 -80 0 0 {name=p21 sig_type=std_logic lab=SRCN}

@@ -1,32 +1,30 @@
 ** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_amplifier.sch
 .subckt ip_amplifier VDD OUTP INP INN VSUBS
 *.PININFO VDD:B VSUBS:B INP:I INN:I OUTP:O
-Vmeas net7 VSUBS 0
-Vmeas1 net3 net2 0
 XM4 TCOM TCOM VDD VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=10
-XM3 net3 TCOM VDD VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
+XM3 net1 TCOM VDD VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=5
-XM1 OUTN INP net1 VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
+XM1 OUTN INP SRCP VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=7
-XM2 OUTP INN net8 VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
+XM2 OUTP INN SRCN VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=7
-XR19 net6 TCOM VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
-XR5 net5 net6 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
-XR4 net10 net11 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR2 net9 net10 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR8 VSUBS net9 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR12 net11 net12 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR11 net12 net13 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR10 net13 OUTN VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR13 net18 OUTP VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR3 net17 net18 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR14 net16 net17 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR15 VSUBS net14 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR16 net14 net15 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR17 net15 net16 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR9 net8 net2 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=4.5e-6
-XR1 net1 net2 VSUBS ppolyf_u_1k_6p0 r_width=2e-6 r_length=1e-6
-XR6 net4 net5 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
-XR7 net7 net4 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
+XR19 net4 TCOM VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
+XR5 net3 net4 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
+XR4 net6 net7 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR2 net5 net6 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR8 VSUBS net5 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR12 net7 net8 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR11 net8 net9 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR10 net9 OUTN VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR13 net14 OUTP VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR3 net13 net14 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR14 net12 net13 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR15 VSUBS net10 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR16 net10 net11 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR17 net11 net12 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR9 SRCN net1 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=4.5e-6
+XR1 SRCP net1 VSUBS ppolyf_u_1k_6p0 r_width=2e-6 r_length=1e-6
+XR6 net2 net3 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
+XR7 VSUBS net2 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
 .ends
