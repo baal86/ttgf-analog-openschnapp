@@ -52,6 +52,7 @@ N 530 10 530 70 {lab=VDD}
 N 470 10 470 70 {lab=OUT}
 N 290 -200 320 -200 {lab=VDD}
 N 390 0 470 0 {lab=OUT}
+N 490 -200 490 80 {lab=VDD}
 C {devices/launcher.sym} -515 215 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="

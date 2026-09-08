@@ -115,6 +115,7 @@ N 790 -200 900 -200 {lab=VDD}
 N 900 -200 900 40 {lab=VDD}
 N 660 -200 690 -200 {lab=VDD}
 N 760 0 840 -0 {lab=OUT}
+N 860 -200 860 40 {lab=VDD}
 C {devices/launcher.sym} -435 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -156,7 +157,7 @@ V_INJ INJ X1.siminj 0
 .param int_time=1m
 .param iphoto=10p
 .control
-	foreach iphoto 0p 8p 16p 28p 32p
+	foreach iphoto 0p 8p 16p 24p 32p
 		alterparam iphoto = $iphoto
 		reset
 		op
