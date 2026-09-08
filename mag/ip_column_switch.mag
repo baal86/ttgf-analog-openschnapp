@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788859625
+timestamp 1788859866
 << pwell >>
 rect 0 150 1500 400
 << mvpsubdiff >>
@@ -131,10 +131,10 @@ rect 10 150 40 175
 << via3 >>
 rect 580 180 610 210
 << metal4 >>
-rect 575 210 615 215
+rect 575 210 650 250
 rect 575 180 580 210
-rect 610 180 615 210
-rect 575 175 615 180
+rect 610 180 650 210
+rect 575 175 650 180
 use diode_nd2ps_06v0_E2JMKK  diode_nd2ps_06v0_E2JMKK_0
 timestamp 1788857704
 transform 1 0 748 0 1 283
