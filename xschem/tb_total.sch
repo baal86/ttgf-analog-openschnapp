@@ -5,16 +5,16 @@ V {}
 S {}
 F {}
 E {}
-B 2 710 -730 1510 -330 {flags=graph
+B 2 710 -500 1510 -300 {flags=graph
 y1=0
 y2=2
 ypos1=0
-ypos2=2
+ypos2=1
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.003
+x2=0.0016
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -39,7 +39,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.003
+x2=0.0016
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -377,7 +377,7 @@ only_toplevel=false
 value="
 .control
 	reset
-	tran 1u 3.0m
+	tran 1u 1.6m
 	save all
 	write tb_total.raw
 	quit
