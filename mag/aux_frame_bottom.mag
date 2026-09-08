@@ -1,6 +1,6 @@
 magic
 tech gf180mcuD
-timestamp 1788855357
+timestamp 1788855800
 << pwell >>
 rect 80 -210 380 -200
 << psubdiff >>
@@ -11,7 +11,7 @@ rect 80 -210 380 -208
 << psubdiffcont >>
 rect 98 -208 370 -202
 << metal1 >>
-rect 82 -202 102 -200
+rect 82 -202 88 -200
 rect 80 -208 98 -202
 rect 370 -208 380 -202
 << end >>
