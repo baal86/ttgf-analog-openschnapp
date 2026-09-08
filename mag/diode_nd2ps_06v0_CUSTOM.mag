@@ -1,20 +1,20 @@
 magic
 tech gf180mcuD
-timestamp 1788846853
+timestamp 1788856923
 << pwell >>
 rect -140 -180 160 120
-<< psubdiff >>
+<< mvpsubdiff >>
 rect -140 118 160 120
-rect -140 112 -120 118
-rect 150 112 160 118
+rect -140 112 -126 118
+rect 154 112 160 118
 rect -140 110 160 112
-rect -140 100 -130 110
-rect -140 -170 -138 100
-rect -132 -170 -130 100
-rect -140 -180 -130 -170
-<< psubdiffcont >>
-rect -120 112 150 118
-rect -138 -170 -132 100
+rect -140 106 -130 110
+rect -140 -174 -138 106
+rect -132 -174 -130 106
+rect -140 -180 -130 -174
+<< mvpsubdiffcont >>
+rect -126 112 154 118
+rect -138 -174 -132 106
 << mvndiode >>
 rect -120 -120 150 100
 rect 10 -134 150 -120
@@ -25,14 +25,14 @@ rect 10 -170 150 -140
 rect 16 -140 22 -134
 << metal1 >>
 rect -138 118 -132 120
-rect -140 112 -120 118
-rect 150 112 160 118
-rect -138 100 -132 112
+rect -140 112 -126 118
+rect 154 112 160 118
+rect -138 106 -132 112
 rect 14 -134 24 -132
 rect 14 -140 16 -134
 rect 22 -140 24 -134
 rect 14 -142 24 -140
-rect -138 -180 -132 -170
+rect -138 -180 -132 -174
 << properties >>
 string FIXED_BBOX -140 -180 160 120
 string gencell diode_nd2ps_06v0
