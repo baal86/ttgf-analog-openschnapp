@@ -5,6 +5,54 @@ V {}
 S {}
 F {}
 E {}
+B 2 710 -730 1510 -330 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.003
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=1
+color="4 5 6"
+node="reset
+
+RY[0..3];nry3,nry2,nry1,nry0
+CY[0..3];ncy3,ncy2,ncy1,ncy0"}
+B 2 710 -280 1510 120 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.003
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+node="outp
+sf"
+color="4 5"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N -680 -780 -680 -760 {lab=VDD}
 N -680 -780 -600 -780 {lab=VDD}
 N -680 -560 -680 -540 {lab=0}
@@ -183,6 +231,9 @@ N 690 1010 690 1040 {lab=0}
 N -70 1050 -70 1070 {lab=0}
 N -70 970 -70 990 {lab=VDD}
 N -70 970 10 970 {lab=VDD}
+N -870 -500 -860 -500 {lab=nRY0}
+N 460 940 460 960 {lab=VDD}
+N 460 940 500 940 {lab=VDD}
 C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1}
 C {gnd.sym} -680 -540 0 0 {name=l1 lab=0}
 C {lab_wire.sym} -620 -780 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -306,7 +357,7 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 "
 }
 C {devices/code_shown.sym} -1610 -300 0 0 {name=MODELS only_toplevel=true
-format="tcleval(@value)"
+format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
@@ -320,7 +371,7 @@ tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {simulator_commands_shown.sym} -1610 50 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -1610 20 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -335,7 +386,46 @@ value="
 C {vsource.sym} -70 1020 0 0 {name=V2 value=3.3 savecurrent=false}
 C {gnd.sym} -70 1070 0 0 {name=l24 lab=0}
 C {lab_wire.sym} -10 970 0 0 {name=p50 sig_type=std_logic lab=VDD}
-C {devices/code_shown.sym} -1610 270 0 0 {name=SETUP only_toplevel=false
+C {devices/code_shown.sym} -1610 340 0 0 {name=SETUP only_toplevel=true
 value="
-VnRY0 nRY0 0 PWL(+0 0 +100u 0 +1500 0 +1550u 3.3 +1600u 0)
+astim [nRY3 nRY2 nRY1 nRY0 nCY3 nCY2 nCY1 nCY0 reset] stim
+.model stim d_source input_file=\\"../st_total.txt\\"
+
+RnRY3 nRY3 0 100k
+RnRY2 nRY2 0 100k
+RnRY1 nRY1 0 100k
+RnRY0 nRY0 0 100k
+
+RnCY3 nCY3 0 100k
+RnCY2 nCY2 0 100k
+RnCY1 nCY1 0 100k
+RnCY0 nCY0 0 100k
+
+Rrst  reset 0 100k
+
+IPX1  x1.siminj  0 30p
+IPX2  x2.siminj  0 22p
+IPX3  x3.siminj  0 6p
+IPX4  x4.siminj  0 28p
+IPX5  x5.siminj  0 4p
+IPX6  x6.siminj  0 20p
+IPX7  x7.siminj  0 8p
+IPX8  x8.siminj  0 12p
+IPX9  x9.siminj  0 26p
+IPX10 x10.siminj 0 14p
+IPX11 x11.siminj 0 18p
+IPX12 x12.siminj 0 10p
+IPX13 x13.siminj 0 24p
+IPX14 x14.siminj 0 0p
+IPX15 x15.siminj 0 16p
+IPX16 x16.siminj 0 2p
 "}
+C {noconn.sym} -870 -500 0 0 {name=l25}
+C {noconn.sym} -860 -160 0 0 {name=l26}
+C {noconn.sym} -860 180 0 0 {name=l27}
+C {noconn.sym} -860 520 0 0 {name=l28}
+C {noconn.sym} -850 700 0 0 {name=l29}
+C {noconn.sym} -540 700 0 0 {name=l30}
+C {noconn.sym} -240 700 0 0 {name=l31}
+C {noconn.sym} 60 700 0 0 {name=l32}
+C {noconn.sym} -830 -680 0 0 {name=l33}
