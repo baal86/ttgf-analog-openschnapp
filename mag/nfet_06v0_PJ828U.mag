@@ -1,12 +1,12 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788846853
+timestamp 1788866637
 << pwell >>
-rect -212 -592 212 592
-<< nmos >>
+rect -220 -600 220 600
+<< hvnmos >>
 rect -100 -524 100 476
-<< ndiff >>
+<< mvndiff >>
 rect -188 463 -100 476
 rect -188 -511 -175 463
 rect -129 -511 -100 463
@@ -15,7 +15,7 @@ rect 100 463 188 476
 rect 100 -511 129 463
 rect 175 -511 188 463
 rect 100 -524 188 -511
-<< ndiffc >>
+<< mvndiffc >>
 rect -175 -511 -129 463
 rect 129 -511 175 463
 << polysilicon >>
@@ -34,7 +34,7 @@ rect -175 -522 -129 -511
 rect 129 463 175 474
 rect 129 -522 175 -511
 << properties >>
-string gencell nfet_03v3
+string gencell nfet_06v0
 string library gf180mcu
-string parameters w 5 l 1 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 0 compatible {nfet_03v3 nfet_05v0 nfet_06v0 nfet_06v0_nvt}
+string parameters w 5 l 1 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.7 wmin 0.3 class mosfet full_metal 0 compatible {nfet_03v3 nfet_05v0 nfet_06v0 nfet_06v0_nvt}
 << end >>

@@ -27,7 +27,7 @@ hilight_wave=-1
 dataset=-1
 sweep=1
 mode=Line
-color="4 5 6 7"
+color="4 5 6 21"
 node="i(vimir_parax)
 i(vimir)
 i(vimir_parax1)
@@ -35,12 +35,9 @@ i(vimir1)"}
 T {Nominal} 0 -170 0 0 0.4 0.4 {}
 T {PARAX} 400 -170 0 0 0.4 0.4 {}
 N 160 -120 240 -120 {lab=vref}
-N 160 180 160 230 {lab=vsubs}
-N 160 230 240 230 {lab=vsubs}
-N 240 130 240 140 {lab=GND}
+N 160 180 160 190 {lab=GND}
 N 240 -30 240 -20 {lab=GND}
 N 240 -120 240 -90 {lab=vref}
-N 240 200 240 230 {lab=vsubs}
 N 100 40 100 60 {lab=#net1}
 N 100 -120 100 -110 {lab=vmir}
 N 160 -120 160 -110 {lab=vref}
@@ -51,8 +48,6 @@ N 0 -120 100 -120 {lab=vmir}
 N 160 -110 160 -30 {lab=vref}
 N 100 -110 100 -50 {lab=vmir}
 N 560 -120 640 -120 {lab=vref}
-N 560 180 560 230 {lab=vsubs}
-N 560 230 640 230 {lab=vsubs}
 N 500 40 500 60 {lab=#net3}
 N 500 -120 500 -110 {lab=vmir}
 N 560 -120 560 -110 {lab=vref}
@@ -70,6 +65,7 @@ N 100 -120 120 -120 {lab=vmir}
 N 520 30 520 60 {lab=#net6}
 N 520 -120 520 -30 {lab=vmir}
 N 500 -120 520 -120 {lab=vmir}
+N 560 180 560 190 {lab=GND}
 C {devices/launcher.sym} -595 -95 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -116,10 +112,8 @@ value="
 "}
 C {ip_current_source.sym} 130 120 0 0 {name=x1}
 C {vsource.sym} 240 -60 0 0 {name=V1 value=3.3 savecurrent=false}
-C {vsource.sym} 240 170 0 0 {name=V2 value=0 savecurrent=false}
-C {gnd.sym} 240 130 2 0 {name=l8 lab=GND}
+C {gnd.sym} 160 190 0 0 {name=l8 lab=GND}
 C {gnd.sym} 240 -20 0 0 {name=l1 lab=GND}
-C {lab_wire.sym} 220 230 0 0 {name=p1 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 200 -120 0 0 {name=p2 sig_type=std_logic lab=vref}
 C {vsource.sym} 0 -70 0 0 {name=V3 value=1.5 savecurrent=false}
 C {gnd.sym} 0 -30 0 0 {name=l2 lab=GND}
@@ -128,7 +122,6 @@ C {ip_current_source.sym} 530 120 0 0 {name=x2
 schematic=ip_current_source_parax.sim
 spice_sym_def="tcleval(.include [file normalize ../mag/ip_current_source.sim.spice])"
 tclcommand="textwindow [file normalize ../mag/ip_current_source.sim.spice]"}
-C {lab_wire.sym} 620 230 0 0 {name=p4 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 600 -120 0 0 {name=p5 sig_type=std_logic lab=vref}
 C {lab_wire.sym} 490 -120 0 0 {name=p6 sig_type=std_logic lab=vmir
 }
@@ -138,3 +131,4 @@ C {ammeter.sym} 500 -20 0 0 {name=Vimir_parax savecurrent=false spice_ignore=0}
 C {ammeter.sym} 560 0 0 0 {name=Viref_parax savecurrent=false spice_ignore=0}
 C {ammeter.sym} 120 0 0 0 {name=Vimir1 savecurrent=false spice_ignore=0}
 C {ammeter.sym} 520 0 0 0 {name=Vimir_parax1 savecurrent=false spice_ignore=0}
+C {gnd.sym} 560 190 0 0 {name=l3 lab=GND}
