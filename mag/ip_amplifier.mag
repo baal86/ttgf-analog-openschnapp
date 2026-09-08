@@ -1,19 +1,32 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788872814
+timestamp 1788874539
 << nwell >>
-rect 500 100 4400 1650
-rect 4800 100 8500 1650
+rect 500 1450 4600 1650
+rect 500 1440 580 1450
+rect 590 1440 4600 1450
+rect 500 100 4600 1440
+rect 4900 100 8550 1650
 << pwell >>
 rect 50 50 500 1700
-rect 4400 100 4800 1650
-rect 8500 50 10350 1700
+rect 4600 100 4900 1650
+rect 8550 50 10350 1700
 << mvpsubdiff >>
 rect 0 1700 10400 1750
 rect 0 50 50 1700
 rect 10350 50 10400 1700
 rect 0 0 10400 50
+<< metal1 >>
+rect 150 1600 250 1660
+rect 300 1620 470 1660
+rect 300 1600 400 1620
+rect 430 1440 470 1620
+rect 430 1400 3990 1440
+rect 150 840 250 930
+rect 300 840 400 930
+rect 150 130 400 180
+rect 600 100 4300 300
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_0
 timestamp 1788871742
 transform 1 0 687 0 1 877
@@ -76,63 +89,67 @@ transform 1 0 4187 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_15
 timestamp 1788871742
-transform 1 0 5037 0 1 977
+transform 1 0 5137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_16
 timestamp 1788871742
-transform -1 0 5287 0 -1 827
+transform -1 0 5387 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_17
 timestamp 1788871742
-transform 1 0 5537 0 1 977
+transform 1 0 5637 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_18
 timestamp 1788871742
-transform -1 0 5787 0 -1 827
+transform -1 0 5887 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_19
 timestamp 1788871742
-transform 1 0 6037 0 1 977
+transform 1 0 6137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_20
 timestamp 1788871742
-transform -1 0 6287 0 -1 827
+transform -1 0 6387 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_21
 timestamp 1788871742
-transform 1 0 6537 0 1 977
+transform 1 0 6637 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_22
 timestamp 1788871742
-transform -1 0 6787 0 -1 827
+transform -1 0 6887 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_23
 timestamp 1788871742
-transform 1 0 7037 0 1 977
+transform 1 0 7137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_24
 timestamp 1788871742
-transform -1 0 7287 0 -1 827
+transform -1 0 7387 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_25
 timestamp 1788871742
-transform 1 0 7537 0 1 977
+transform 1 0 7637 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_26
 timestamp 1788871742
-transform -1 0 7787 0 -1 827
+transform -1 0 7887 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_27
 timestamp 1788871742
-transform 1 0 8037 0 1 977
+transform 1 0 8137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_28
 timestamp 1788871742
-transform -1 0 8287 0 -1 827
+transform -1 0 8387 0 -1 827
+box -137 -577 137 577
+use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_29
+timestamp 1788871742
+transform 1 0 4437 0 1 877
 box -137 -577 137 577
 use ppolyf_u_1k_6p0_5XX9NC  ppolyf_u_1k_6p0_5XX9NC_0
 timestamp 1788871842
-transform 1 0 4600 0 1 736
+transform 1 0 4750 0 1 486
 box -50 -286 50 286
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_0
 timestamp 1788871392
@@ -199,7 +216,7 @@ timestamp 1788871392
 transform 0 -1 9861 1 0 350
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_S3CW9G  ppolyf_u_1k_6p0_S3CW9G_0
-timestamp 1788871742
-transform 1 0 4600 0 1 1461
+timestamp 1788873023
+transform 1 0 4750 0 1 1161
 box -100 -111 100 111
 << end >>
