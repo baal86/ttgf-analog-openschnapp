@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788877747
+timestamp 1788878935
 << nwell >>
 rect 500 1450 4600 1650
 rect 500 1440 580 1450
@@ -13,7 +13,9 @@ rect 1370 1320 4600 1400
 rect 500 100 4600 1320
 rect 4900 100 8550 1650
 << pwell >>
-rect 50 50 500 1700
+rect 50 1520 500 1700
+rect 10 1490 500 1520
+rect 50 50 500 1490
 rect 4600 0 4900 1750
 rect 8550 1500 10350 1700
 rect 8550 1400 10390 1500
@@ -47,9 +49,11 @@ rect 10 1710 80 1740
 rect 10320 1710 10390 1740
 rect 10 1670 40 1710
 rect 10360 1670 10390 1710
-rect 150 1590 400 1620
 rect 5070 1570 5120 1580
 rect 4650 1540 4850 1550
+rect 40 1490 250 1520
+rect 300 1490 540 1520
+rect 500 1440 540 1490
 rect 4650 1460 4660 1540
 rect 4840 1460 4850 1540
 rect 5070 1540 5080 1570
@@ -57,7 +61,6 @@ rect 5110 1540 5120 1570
 rect 5070 1530 5120 1540
 rect 5070 1490 8420 1530
 rect 500 1400 4240 1440
-rect 500 930 540 1400
 rect 760 1320 860 1400
 rect 1510 1320 1610 1400
 rect 2260 1320 2360 1400
@@ -145,9 +148,8 @@ rect 8600 1000 8750 1010
 rect 9390 1000 9530 1100
 rect 10190 1000 10220 1300
 rect 150 790 250 930
-rect 300 900 540 930
-rect 300 790 540 830
-rect 500 300 540 790
+rect 300 790 400 930
+rect 500 300 540 830
 rect 5210 790 5260 800
 rect 5250 710 5260 790
 rect 5210 700 5260 710
@@ -213,6 +215,7 @@ rect 3260 300 3360 400
 rect 3590 300 3620 410
 rect 4010 300 4110 400
 rect 4700 340 4800 430
+rect 150 200 400 230
 rect 500 170 4300 300
 rect 4700 260 4710 340
 rect 4790 260 4800 340
@@ -227,7 +230,6 @@ rect 5330 260 5380 270
 rect 5330 230 5340 260
 rect 5370 230 5380 260
 rect 5330 220 5380 230
-rect 150 100 400 130
 rect 500 120 520 170
 rect 570 120 4300 170
 rect 500 100 4300 120
@@ -469,22 +471,22 @@ use ppolyf_u_1k_6p0_5XX9NC  ppolyf_u_1k_6p0_5XX9NC_0
 timestamp 1788871842
 transform 1 0 4750 0 1 686
 box -50 -286 50 286
-use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_0
-timestamp 1788871392
-transform 1 0 200 0 1 461
-box -50 -361 50 361
-use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_1
-timestamp 1788871392
-transform 1 0 200 0 1 1261
-box -50 -361 50 361
-use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_2
-timestamp 1788871392
-transform 1 0 350 0 1 1261
-box -50 -361 50 361
-use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_3
-timestamp 1788871392
-transform 1 0 350 0 1 461
-box -50 -361 50 361
+use ppolyf_u_1k_6p0_7BMBVF  ppolyf_u_1k_6p0_7BMBVF_0
+timestamp 1788878935
+transform 1 0 350 0 1 511
+box -50 -311 50 311
+use ppolyf_u_1k_6p0_7BMBVF  ppolyf_u_1k_6p0_7BMBVF_1
+timestamp 1788878935
+transform 1 0 200 0 1 511
+box -50 -311 50 311
+use ppolyf_u_1k_6p0_7BMBVF  ppolyf_u_1k_6p0_7BMBVF_2
+timestamp 1788878935
+transform 1 0 200 0 1 1211
+box -50 -311 50 311
+use ppolyf_u_1k_6p0_7BMBVF  ppolyf_u_1k_6p0_7BMBVF_3
+timestamp 1788878935
+transform 1 0 350 0 1 1211
+box -50 -311 50 311
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_4
 timestamp 1788871392
 transform 0 -1 9061 1 0 1450
@@ -544,8 +546,6 @@ flabel metal2 5070 1530 5120 1580 0 FreeSans 160 0 0 0 INN
 port 1 nsew
 flabel metal2 8600 700 8700 800 0 FreeSans 160 0 0 0 OUTP
 port 2 nsew
-flabel metal2 8600 1000 8700 1100 0 FreeSans 160 0 0 0 OUTN
-port 3 nsew
 flabel metal2 510 110 580 180 0 FreeSans 160 0 0 0 VDD
 port 4 nsew
 flabel metal1 10360 10 10390 1740 0 FreeSans 160 0 0 0 vsubs
