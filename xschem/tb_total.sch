@@ -46,60 +46,29 @@ xlabmag=1.0
 ylabmag=1.0
 legendmag=1.0
 node="outp
-sf"
-color="4 5"
+sf
+ref"
+color="4 5 1"
 dataset=-1
 unitx=1
 logx=0
 logy=0
 }
-N -680 -780 -680 -760 {lab=VDD}
-N -680 -780 -600 -780 {lab=VDD}
 N -680 -560 -680 -540 {lab=0}
-N -380 -780 -380 -760 {lab=VDD}
-N -380 -780 -300 -780 {lab=VDD}
 N -380 -560 -380 -540 {lab=0}
-N -680 -440 -680 -420 {lab=VDD}
-N -680 -440 -600 -440 {lab=VDD}
 N -680 -220 -680 -200 {lab=0}
-N -380 -440 -380 -420 {lab=VDD}
-N -380 -440 -300 -440 {lab=VDD}
 N -380 -220 -380 -200 {lab=0}
-N -80 -780 -80 -760 {lab=VDD}
-N -80 -780 0 -780 {lab=VDD}
 N -80 -560 -80 -540 {lab=0}
-N 220 -780 220 -760 {lab=VDD}
-N 220 -780 300 -780 {lab=VDD}
 N 220 -560 220 -540 {lab=0}
-N -80 -440 -80 -420 {lab=VDD}
-N -80 -440 0 -440 {lab=VDD}
 N -80 -220 -80 -200 {lab=0}
-N 220 -440 220 -420 {lab=VDD}
-N 220 -440 300 -440 {lab=VDD}
 N 220 -220 220 -200 {lab=0}
-N -680 -100 -680 -80 {lab=VDD}
-N -680 -100 -600 -100 {lab=VDD}
 N -680 120 -680 140 {lab=0}
-N -380 -100 -380 -80 {lab=VDD}
-N -380 -100 -300 -100 {lab=VDD}
 N -380 120 -380 140 {lab=0}
-N -680 240 -680 260 {lab=VDD}
-N -680 240 -600 240 {lab=VDD}
 N -680 460 -680 480 {lab=0}
-N -380 240 -380 260 {lab=VDD}
-N -380 240 -300 240 {lab=VDD}
 N -380 460 -380 480 {lab=0}
-N -80 -100 -80 -80 {lab=VDD}
-N -80 -100 0 -100 {lab=VDD}
 N -80 120 -80 140 {lab=0}
-N 220 -100 220 -80 {lab=VDD}
-N 220 -100 300 -100 {lab=VDD}
 N 220 120 220 140 {lab=0}
-N -80 240 -80 260 {lab=VDD}
-N -80 240 0 240 {lab=VDD}
 N -80 460 -80 480 {lab=0}
-N 220 240 220 260 {lab=VDD}
-N 220 240 300 240 {lab=VDD}
 N 220 460 220 480 {lab=0}
 N -550 -790 -550 600 {lab=cl0}
 N -580 -660 -550 -660 {lab=cl0}
@@ -215,73 +184,73 @@ N -830 340 -780 340 {lab=reset}
 N -530 340 -480 340 {lab=reset}
 N -230 340 -180 340 {lab=reset}
 N 70 340 120 340 {lab=reset}
-N 500 1080 500 1100 {lab=0}
+N 500 1110 500 1130 {lab=0}
 N 440 880 440 960 {lab=sf}
-N 500 940 500 960 {lab=VDD}
-N 500 940 580 940 {lab=VDD}
 N 440 880 640 880 {lab=sf}
 N 640 880 760 880 {lab=sf}
-N 880 800 880 820 {lab=VDD}
-N 880 800 960 800 {lab=VDD}
 N 880 990 880 1010 {lab=0}
 N 1000 900 1080 900 {lab=OUTP}
 N 690 920 760 920 {lab=ref}
-N 690 920 690 950 {lab=ref}
-N 690 1010 690 1040 {lab=0}
-N -70 1050 -70 1070 {lab=0}
-N -70 970 -70 990 {lab=VDD}
-N -70 970 10 970 {lab=VDD}
 N -870 -500 -860 -500 {lab=nRY0}
-N 460 940 460 960 {lab=VDD}
-N 460 940 500 940 {lab=VDD}
+N 460 940 460 960 {lab=ref}
+N 460 620 780 620 {lab=ref}
+N 460 620 460 940 {lab=ref}
+N 460 920 690 920 {lab=ref}
+N 880 510 880 520 {lab=VDD}
+N 980 600 1030 600 {lab=reset}
+N 980 640 1000 640 {lab=VDD}
+N 220 250 220 260 {lab=VDD}
+N -80 250 -80 260 {lab=VDD}
+N -380 250 -380 260 {lab=VDD}
+N -680 250 -680 260 {lab=VDD}
+N -680 -90 -680 -80 {lab=VDD}
+N -380 -90 -380 -80 {lab=VDD}
+N -80 -90 -80 -80 {lab=VDD}
+N 220 -90 220 -80 {lab=VDD}
+N -680 -430 -680 -420 {lab=VDD}
+N -380 -430 -380 -420 {lab=VDD}
+N -80 -430 -80 -420 {lab=VDD}
+N 220 -430 220 -420 {lab=VDD}
+N -680 -770 -680 -760 {lab=VDD}
+N -380 -770 -380 -760 {lab=VDD}
+N -80 -770 -80 -760 {lab=VDD}
+N 220 -770 220 -760 {lab=VDD}
+N 880 810 880 820 {lab=VDD}
+N 500 980 500 990 {lab=VDD}
+N 440 960 440 990 {lab=sf}
+N 460 960 460 990 {lab=ref}
 C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1}
 C {gnd.sym} -680 -540 0 0 {name=l1 lab=0}
-C {lab_wire.sym} -620 -780 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -380 -660 0 0 {name=x2}
 C {gnd.sym} -380 -540 0 0 {name=l2 lab=0}
-C {lab_wire.sym} -320 -780 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -680 -320 0 0 {name=x3}
 C {gnd.sym} -680 -200 0 0 {name=l3 lab=0}
-C {lab_wire.sym} -620 -440 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -380 -320 0 0 {name=x4}
 C {gnd.sym} -380 -200 0 0 {name=l4 lab=0}
-C {lab_wire.sym} -320 -440 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -80 -660 0 0 {name=x5}
 C {gnd.sym} -80 -540 0 0 {name=l5 lab=0}
-C {lab_wire.sym} -20 -780 0 0 {name=p5 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} 220 -660 0 0 {name=x6}
 C {gnd.sym} 220 -540 0 0 {name=l6 lab=0}
-C {lab_wire.sym} 280 -780 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -80 -320 0 0 {name=x7}
 C {gnd.sym} -80 -200 0 0 {name=l7 lab=0}
-C {lab_wire.sym} -20 -440 0 0 {name=p7 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} 220 -320 0 0 {name=x8}
 C {gnd.sym} 220 -200 0 0 {name=l8 lab=0}
-C {lab_wire.sym} 280 -440 0 0 {name=p8 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -680 20 0 0 {name=x9}
 C {gnd.sym} -680 140 0 0 {name=l9 lab=0}
-C {lab_wire.sym} -620 -100 0 0 {name=p9 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -380 20 0 0 {name=x10}
 C {gnd.sym} -380 140 0 0 {name=l10 lab=0}
-C {lab_wire.sym} -320 -100 0 0 {name=p10 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -680 360 0 0 {name=x11}
 C {gnd.sym} -680 480 0 0 {name=l11 lab=0}
-C {lab_wire.sym} -620 240 0 0 {name=p11 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -380 360 0 0 {name=x12}
 C {gnd.sym} -380 480 0 0 {name=l12 lab=0}
-C {lab_wire.sym} -320 240 0 0 {name=p12 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -80 20 0 0 {name=x13}
 C {gnd.sym} -80 140 0 0 {name=l13 lab=0}
-C {lab_wire.sym} -20 -100 0 0 {name=p13 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} 220 20 0 0 {name=x14}
 C {gnd.sym} 220 140 0 0 {name=l14 lab=0}
-C {lab_wire.sym} 280 -100 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} -80 360 0 0 {name=x15}
 C {gnd.sym} -80 480 0 0 {name=l15 lab=0}
-C {lab_wire.sym} -20 240 0 0 {name=p15 sig_type=std_logic lab=VDD}
 C {ip_pixel_nd2ps.sym} 220 360 0 0 {name=x16}
 C {gnd.sym} 220 480 0 0 {name=l16 lab=0}
-C {lab_wire.sym} 280 240 0 0 {name=p16 sig_type=std_logic lab=VDD}
 C {ip_column_switch.sym} -680 660 0 0 {name=x17}
 C {ip_column_switch.sym} -380 660 0 0 {name=x18}
 C {ip_column_switch.sym} -80 660 0 0 {name=x19}
@@ -339,14 +308,10 @@ C {lab_wire.sym} -190 340 0 0 {name=p43 sig_type=std_logic lab=reset
 }
 C {lab_wire.sym} 110 340 0 0 {name=p44 sig_type=std_logic lab=reset
 }
-C {ip_current_source.sym} 470 1020 0 0 {name=x21}
-C {gnd.sym} 500 1100 0 0 {name=l21 lab=0}
-C {lab_wire.sym} 560 940 0 0 {name=p45 sig_type=std_logic lab=VDD}
+C {ip_current_source.sym} 470 1050 0 0 {name=x21}
+C {gnd.sym} 500 1130 0 0 {name=l21 lab=0}
 C {ip_amplifier.sym} 880 900 0 0 {name=x22}
-C {lab_wire.sym} 940 800 0 0 {name=p46 sig_type=std_logic lab=VDD}
 C {gnd.sym} 880 1010 0 0 {name=l22 lab=0}
-C {vsource.sym} 690 980 0 0 {name=V1 value=1.25 savecurrent=false}
-C {gnd.sym} 690 1040 0 0 {name=l23 lab=0}
 C {lab_wire.sym} 1070 900 0 0 {name=p47 sig_type=std_logic lab=OUTP}
 C {lab_wire.sym} 610 880 0 0 {name=p48 sig_type=std_logic lab=sf}
 C {lab_wire.sym} 730 920 0 0 {name=p49 sig_type=std_logic lab=ref}
@@ -383,11 +348,10 @@ value="
 	quit
 .endc
 "}
-C {vsource.sym} -70 1020 0 0 {name=V2 value=3.3 savecurrent=false}
-C {gnd.sym} -70 1070 0 0 {name=l24 lab=0}
-C {lab_wire.sym} -10 970 0 0 {name=p50 sig_type=std_logic lab=VDD}
 C {devices/code_shown.sym} -1610 340 0 0 {name=SETUP only_toplevel=true
 value="
+VVDD VDD 0 3.3
+
 astim [nRY3 nRY2 nRY1 nRY0 nCY3 nCY2 nCY1 nCY0 reset] stim
 .model stim d_source input_file=\\"../st_total.txt\\"
 
@@ -429,3 +393,27 @@ C {noconn.sym} -540 700 0 0 {name=l30}
 C {noconn.sym} -240 700 0 0 {name=l31}
 C {noconn.sym} 60 700 0 0 {name=l32}
 C {noconn.sym} -830 -680 0 0 {name=l33}
+C {ip_pixel_nd2ps.sym} 880 620 0 1 {name=x99}
+C {gnd.sym} 880 720 0 0 {name=l34 lab=0}
+C {vdd.sym} 880 510 0 0 {name=l35 lab=VDD}
+C {lab_wire.sym} 990 600 0 1 {name=p50 sig_type=std_logic lab=reset
+}
+C {vdd.sym} 1000 640 0 0 {name=l37 lab=VDD}
+C {vdd.sym} 220 250 0 0 {name=l38 lab=VDD}
+C {vdd.sym} -80 250 0 0 {name=l39 lab=VDD}
+C {vdd.sym} -380 250 0 0 {name=l40 lab=VDD}
+C {vdd.sym} -680 250 0 0 {name=l41 lab=VDD}
+C {vdd.sym} -680 -90 0 0 {name=l42 lab=VDD}
+C {vdd.sym} -380 -90 0 0 {name=l43 lab=VDD}
+C {vdd.sym} -80 -90 0 0 {name=l44 lab=VDD}
+C {vdd.sym} 220 -90 0 0 {name=l45 lab=VDD}
+C {vdd.sym} -680 -430 0 0 {name=l46 lab=VDD}
+C {vdd.sym} -380 -430 0 0 {name=l47 lab=VDD}
+C {vdd.sym} -80 -430 0 0 {name=l48 lab=VDD}
+C {vdd.sym} 220 -430 0 0 {name=l49 lab=VDD}
+C {vdd.sym} -680 -770 0 0 {name=l50 lab=VDD}
+C {vdd.sym} -380 -770 0 0 {name=l51 lab=VDD}
+C {vdd.sym} -80 -770 0 0 {name=l52 lab=VDD}
+C {vdd.sym} 220 -770 0 0 {name=l53 lab=VDD}
+C {vdd.sym} 880 810 0 0 {name=l54 lab=VDD}
+C {vdd.sym} 500 980 0 0 {name=l55 lab=VDD}
