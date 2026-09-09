@@ -68,12 +68,27 @@ module tt_um_baal86_openschnapp (
     ip_column column19( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[19]),   .bus(bus)   );
     ip_column column20( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[20]),   .bus(bus)   );
 
+    ip_pixel_nd2ps_dummy pixel_dummy(
+        .VDD(VDPWR), 
+        .VSUBS(VGND), 
+        .reset(reset), 
+        .read(VDPWR), 
+        .cl(dummy)
+    );
 
     ip_current_source current_source(
         .VDD(VDPWR),
         .VSUBS(VGND),
         .src_a(bus),
         .src_b(dummy)
+    );
+
+    ip_amplifier amplifier(
+        .VDD(VDPWR),
+        .VSUBS(VGND),
+        .INP(dummy),
+        .INN(bus),
+        .OUTP(ua[1])
     );
 
     ip_column_mux columnmux(

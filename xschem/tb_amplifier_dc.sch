@@ -87,7 +87,7 @@ value="
 
 .control
 	save all
-	repeat 50
+	repeat 10
 		mc_source
 		dc V2 0.0 2.0 0.01
 		write tb_amplifier_dc.raw
