@@ -100,7 +100,7 @@ value="
 
 .control
 	save all
-	repeat 10
+	repeat 30
 		mc_source
 		dc v3 0.0 3.3 0.01	
 		write tb_current_source_dc.raw
