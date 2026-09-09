@@ -5,8 +5,8 @@ import numpy as np
 from matplotlib.lines import Line2D
 
 MIN_VOLTAGE = 0.5
-MIN_CURRENT = 0.8
-MAX_CURRENT = 1.2
+MIN_CURRENT = 0.8e-6
+MAX_CURRENT = 1.3e-6
 
 CURRENTS = ["i(vimir)","i(vimir1)","i(vimir_parax)","i(vimir_parax1)"]
 COLORS   = ["aqua","blue", "teal", "navy"]
