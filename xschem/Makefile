@@ -36,6 +36,5 @@ test/%.html: simulation/%.raw
 clean:
 	rm -f $(RAW_FILES)
 	rm -f $(SPICE_FILES)
-	rm -f $(PARAX_FILES)
 	rm -f test/*.html
 	rm -f test/*.png
