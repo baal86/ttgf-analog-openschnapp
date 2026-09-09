@@ -76,6 +76,14 @@ module tt_um_baal86_openschnapp (
         .src_b(dummy)
     );
 
+    ip_amplifier amplifier(
+        .VDD(VDPWR),
+        .VSUBS(VGND),
+        .INP(dummy),
+        .INN(bus),
+        .OUTP(ua[1])
+    );
+
     ip_column_mux columnmux(
         .clk(clk),
 	    .VDD(VDPWR),
