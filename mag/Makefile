@@ -15,8 +15,6 @@ magic:
 start: $(TEMPLATE_FILE)
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/tt-analog-draw.tcl $(TEMPLATE_FILE) $(PROJECT_NAME)
 
-parax: clean $(PROJECT_NAME).sim.spice
-
 $(PROJECT_NAME).lvs.spice: $(PROJECT_NAME).mag
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_lvs.tcl $(PROJECT_NAME)
 	rm -f *.ext
@@ -34,10 +32,6 @@ drc:
 
 klayout_drc:
 	klayout -b -r $(PDK_ROOT)/gf180mcuD/libs.tech/klayout/tech/drc/gf180mcu.drc -rd input=../gds/$(PROJECT_NAME).gds -rd report=../gds/$(PROJECT_NAME).lyrdb
-
-$(PROJECT_NAME).sim.spice: $(PROJECT_NAME).mag
-	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_sim.tcl $(PROJECT_NAME)
-	rm -f *.ext
 
 lvs.report: $(PROJECT_NAME).lvs.spice ../src/project.v
 	netgen -batch eval "set project $(PROJECT_NAME) ; source tcl/lvs_netgen.tcl"
@@ -106,4 +100,4 @@ update_gds:
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/update_gds_lef.tcl $(PROJECT_NAME)
 
 clean:
-	rm -f lvs.report gdslvs.report *.lvs.spice *.gdslvs.spice *.nodes *.sim
+	rm -f lvs.report gdslvs.report *.lvs.spice *.gdslvs.spice *.nodes
