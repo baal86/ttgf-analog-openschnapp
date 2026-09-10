@@ -1,5 +1,5 @@
 IP_FILES     := $(wildcard ip_*.sch)
-LVS_FILES    := $(IP_FILES:%.sch=simulation/%.lvs.spice)
+LVS_FILES    := $(IP_FILES:%.sch=lvs/%.lvs.spice)
 PARAX_FILES  := $(IP_FILES:%.sch=../mag/%.sim.spice)
 
 TB_FILES     := $(wildcard tb_*.sch)
@@ -13,8 +13,9 @@ lvs: $(LVS_FILES)
 	sed -i "s/area='13.5u \* 13.5u '/area=0.16125n/" lvs/ip_pixel_nd2ps.lvs.spice
 	cp lvs/ip_pixel_nd2ps.lvs.spice lvs/ip_pixel_nd2ps_dummy.lvs.spice
 
-simulation/%.lvs.spice: %.sch
+lvs/%.lvs.spice: %.sch
 	xschem -x -q $< --command "set lvs_netlist 0; set top_is_subckt 1; xschem netlist -file $*.lvs.spice"
+	mv simulation/$*.lvs.spice lvs/$*.lvs.spice
 
 parax: $(PARAX_FILES)
 		
