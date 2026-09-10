@@ -1,5 +1,6 @@
 IP_FILES     := $(wildcard ip_*.sch)
 LVS_FILES    := $(IP_FILES:%.sch=lvs/%.lvs.spice)
+DOC_FILES    := $(IP_FILES:%.sch=docs/%.png)
 PARAX_FILES  := $(IP_FILES:%.sch=parax/%.sim.spice)
 
 TB_FILES     := $(wildcard tb_*.sch)
@@ -55,3 +56,12 @@ cleansim:
 	rm -f test/*.html
 	rm -f test/*.png
 
+
+## Documentation Picture Generation
+cleandocs:
+	rm -f docs/*.png
+
+docs: $(DOC_FILES)
+
+docs/%.png: %.sch
+	xschem -q $< --command "xschem zoom_full; xschem print png docs/$*.png"
