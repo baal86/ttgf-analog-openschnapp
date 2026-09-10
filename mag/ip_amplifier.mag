@@ -1,15 +1,18 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1789018168
+timestamp 1789061443
 << nwell >>
-rect 500 100 4600 1650
+rect 500 300 4450 1650
+rect 500 100 4600 300
 rect 4900 100 8550 1650
 << pwell >>
+rect 4600 1700 4900 1750
 rect 50 1520 500 1700
 rect 10 1490 500 1520
 rect 50 50 500 1490
-rect 4600 0 4900 1750
+rect 4450 300 4900 1700
+rect 4600 0 4900 300
 rect 8550 1500 10350 1700
 rect 8550 1400 10390 1500
 rect 8550 400 10350 1400
@@ -57,11 +60,11 @@ rect 10360 1670 10390 1710
 rect 5100 1590 5150 1600
 rect 5100 1560 5110 1590
 rect 5140 1560 5150 1590
-rect 4650 1540 4850 1550
+rect 4550 1540 4850 1550
 rect 40 1490 250 1520
 rect 300 1490 540 1520
 rect 500 1440 540 1490
-rect 4650 1460 4660 1540
+rect 4550 1460 4660 1540
 rect 4840 1460 4850 1540
 rect 5100 1530 5150 1560
 rect 5100 1490 8420 1530
@@ -71,7 +74,7 @@ rect 1510 1320 1610 1400
 rect 2260 1320 2360 1400
 rect 3010 1320 3110 1400
 rect 3760 1320 3860 1400
-rect 4650 1390 4850 1460
+rect 4550 1390 4850 1460
 rect 5260 1290 5320 1300
 rect 1250 1140 1310 1150
 rect 1250 1060 1260 1140
@@ -93,7 +96,7 @@ rect 4250 1140 4310 1150
 rect 4250 1060 4260 1140
 rect 4300 1060 4310 1140
 rect 4250 1050 4310 1060
-rect 4650 1140 4850 1230
+rect 4550 1140 4850 1230
 rect 5260 1210 5270 1290
 rect 5310 1210 5320 1290
 rect 5260 1200 5320 1210
@@ -125,9 +128,9 @@ rect 8700 1200 8730 1550
 rect 9390 1450 9530 1550
 rect 10190 1450 10360 1550
 rect 9390 1200 9530 1300
-rect 4650 1060 4660 1140
+rect 4550 1060 4660 1140
 rect 4840 1060 4850 1140
-rect 4650 940 4850 1060
+rect 4550 940 4850 1060
 rect 5460 1090 5510 1100
 rect 5500 1010 5510 1090
 rect 5460 1000 5510 1010
@@ -157,6 +160,7 @@ rect 9390 950 9530 1050
 rect 10190 950 10220 1300
 rect 150 790 250 930
 rect 300 790 400 930
+rect 4700 790 4800 940
 rect 5210 790 5260 800
 rect 5250 710 5260 790
 rect 5210 700 5260 710
@@ -367,191 +371,191 @@ rect 510 120 520 170
 rect 570 120 580 170
 rect 510 110 580 120
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_0
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 687 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_1
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 937 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_2
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 1187 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_3
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 1437 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_4
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 1687 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_5
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 1937 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_6
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 2187 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_7
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 2437 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_8
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 2687 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_9
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 2937 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_10
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 3187 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_11
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 3437 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_12
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 3687 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_13
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 3937 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_14
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 4187 0 1 877
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_15
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 5137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_16
-timestamp 1789018168
+timestamp 1789061443
 transform -1 0 5387 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_17
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 5637 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_18
-timestamp 1789018168
+timestamp 1789061443
 transform -1 0 5887 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_19
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 6137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_20
-timestamp 1789018168
+timestamp 1789061443
 transform -1 0 6387 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_21
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 6637 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_22
-timestamp 1789018168
+timestamp 1789061443
 transform -1 0 6887 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_23
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 7137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_24
-timestamp 1789018168
+timestamp 1789061443
 transform -1 0 7387 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_25
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 7637 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_26
-timestamp 1789018168
+timestamp 1789061443
 transform -1 0 7887 0 -1 827
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_27
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 8137 0 1 977
 box -137 -577 137 577
 use pfet_06v0_XLEEUB  pfet_06v0_XLEEUB_28
-timestamp 1789018168
+timestamp 1789061443
 transform -1 0 8387 0 -1 827
 box -137 -577 137 577
+use ppolyf_u_1k_6p0_58HUFD  ppolyf_u_1k_6p0_58HUFD_0
+timestamp 1789061443
+transform 1 0 4700 0 1 1311
+box -150 -111 150 111
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_4
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9061 1 0 1500
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_5
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9061 1 0 1250
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_6
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9061 1 0 1000
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_7
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9861 1 0 1500
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_8
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9861 1 0 1250
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_9
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9861 1 0 1000
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_10
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9061 1 0 250
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_11
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9061 1 0 500
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_12
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9061 1 0 750
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_13
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9861 1 0 750
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_14
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9861 1 0 500
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_15
-timestamp 1789018168
+timestamp 1789061443
 transform 0 -1 9861 1 0 250
 box -50 -361 50 361
-use ppolyf_u_1k_6p0_S3CW9G  R1
-timestamp 1789018168
-transform 1 0 4750 0 1 1311
-box -100 -111 100 111
+use ppolyf_u_1k_6p0_RYHK2T  ppolyf_u_1k_6p0_RYHK2T_0
+timestamp 1789061443
+transform 1 0 4750 0 1 611
+box -50 -211 50 211
 use ppolyf_u_1k_6p0_7BMBVF  R5
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 350 0 1 511
 box -50 -311 50 311
 use ppolyf_u_1k_6p0_7BMBVF  R6
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 200 0 1 511
 box -50 -311 50 311
 use ppolyf_u_1k_6p0_7BMBVF  R7
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 200 0 1 1211
 box -50 -311 50 311
-use ppolyf_u_1k_6p0_5XX9NC  R9
-timestamp 1789018168
-transform 1 0 4750 0 1 686
-box -50 -286 50 286
 use ppolyf_u_1k_6p0_7BMBVF  R19
-timestamp 1789018168
+timestamp 1789061443
 transform 1 0 350 0 1 1211
 box -50 -311 50 311
 << labels >>

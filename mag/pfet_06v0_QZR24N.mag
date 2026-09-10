@@ -1,0 +1,43 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1789046014
+<< error_p >>
+rect -1088 -124 -1054 76
+rect 1054 -124 1088 76
+<< nwell >>
+rect -1174 -254 1174 254
+<< hvpmos >>
+rect -1000 -124 1000 76
+<< mvpdiff >>
+rect -1088 63 -1000 76
+rect -1088 -111 -1075 63
+rect -1029 -111 -1000 63
+rect -1088 -124 -1000 -111
+rect 1000 63 1088 76
+rect 1000 -111 1029 63
+rect 1075 -111 1088 63
+rect 1000 -124 1088 -111
+<< mvpdiffc >>
+rect -1075 -111 -1029 63
+rect 1029 -111 1075 63
+<< polysilicon >>
+rect -1000 155 1000 168
+rect -1000 109 -987 155
+rect 987 109 1000 155
+rect -1000 76 1000 109
+rect -1000 -168 1000 -124
+<< polycontact >>
+rect -987 109 987 155
+<< metal1 >>
+rect -998 109 -987 155
+rect 987 109 998 155
+rect -1075 63 -1029 74
+rect -1075 -122 -1029 -111
+rect 1029 63 1075 74
+rect 1029 -122 1075 -111
+<< properties >>
+string gencell pfet_06v0
+string library gf180mcu
+string parameters w 1 l 10 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.55 wmin 0.3 class mosfet full_metal 0 compatible {pfet_03v3 pfet_05v0 pfet_06v0}
+<< end >>

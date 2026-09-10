@@ -1,0 +1,15 @@
+** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_buffer.sch
+.subckt ip_buffer vdd OUTP INP vsubs
+*.PININFO vsubs:B vdd:B INP:I OUTP:O
+XM1 vsubs INP OUTP OUTP pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=15
+Vmeas net1 net2 0
+XM4 OUTP net1 vdd vdd pfet_06v0 L=2u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=5
+XM2 net1 net1 vdd vdd pfet_06v0 L=2u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XR1 net4 net2 vsubs ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR2 net3 net4 vsubs ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR3 net5 net3 vsubs ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+XR4 vsubs net5 vsubs ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
+.ends
