@@ -32,6 +32,9 @@ N -110 -80 -110 -40 {lab=#net2}
 N 0 -180 0 -160 {lab=OUTP}
 N -0 -100 0 -60 {lab=OUTP}
 N 0 -160 0 -100 {lab=OUTP}
+N -250 -30 -140 -30 {lab=INP}
+N -320 -30 -250 -30 {lab=INP}
+N -320 90 -270 90 {lab=vsubs}
 C {symbols/pfet_06v0.sym} -20 -30 0 0 {name=M1
 L=1u
 W=10u
@@ -46,9 +49,9 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {iopin.sym} -270 90 2 0 {name=p1 lab=vsubs}
+C {iopin.sym} -320 90 2 0 {name=p1 lab=vsubs}
 C {iopin.sym} -270 -260 2 0 {name=p2 lab=vdd}
-C {ipin.sym} -140 -30 0 0 {name=p3 lab=INP}
+C {ipin.sym} -320 -30 0 0 {name=p3 lab=INP}
 C {opin.sym} 90 -80 0 0 {name=p4 lab=OUTP}
 C {res.sym} -110 40 0 0 {name=R1
 value=36k
