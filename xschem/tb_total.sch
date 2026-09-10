@@ -54,6 +54,9 @@ unitx=1
 logx=0
 logy=0
 }
+T {Analog Pin
+Capacitor
+Model} 220 910 0 0 0.4 0.4 {}
 N -680 -560 -680 -540 {lab=0}
 N -380 -560 -380 -540 {lab=0}
 N -680 -220 -680 -200 {lab=0}
@@ -219,6 +222,9 @@ N 880 810 880 820 {lab=VDD}
 N 500 980 500 990 {lab=VDD}
 N 440 960 440 990 {lab=sf}
 N 460 960 460 990 {lab=ref}
+N 350 880 350 900 {lab=sf}
+N 350 900 350 910 {lab=sf}
+N 350 970 350 990 {lab=0}
 C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1}
 C {gnd.sym} -680 -540 0 0 {name=l1 lab=0}
 C {ip_pixel_nd2ps.sym} -380 -660 0 0 {name=x2}
@@ -417,3 +423,9 @@ C {vdd.sym} -80 -770 0 0 {name=l52 lab=VDD}
 C {vdd.sym} 220 -770 0 0 {name=l53 lab=VDD}
 C {vdd.sym} 880 810 0 0 {name=l54 lab=VDD}
 C {vdd.sym} 500 980 0 0 {name=l55 lab=VDD}
+C {capa.sym} 350 940 0 0 {name=C1
+m=1
+value=5p
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} 350 990 0 0 {name=l23 lab=0}
