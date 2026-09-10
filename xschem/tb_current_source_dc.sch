@@ -120,8 +120,8 @@ C {gnd.sym} 0 -30 0 0 {name=l2 lab=GND}
 C {lab_wire.sym} 60 -120 0 0 {name=p3 sig_type=std_logic lab=vmir}
 C {ip_current_source.sym} 530 120 0 0 {name=x2
 schematic=ip_current_source_parax.sim
-spice_sym_def="tcleval(.include [file normalize ../mag/ip_current_source.sim.spice])"
-tclcommand="textwindow [file normalize ../mag/ip_current_source.sim.spice]"}
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_current_source.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_current_source.sim.spice]"}
 C {lab_wire.sym} 600 -120 0 0 {name=p5 sig_type=std_logic lab=vref}
 C {lab_wire.sym} 490 -120 0 0 {name=p6 sig_type=std_logic lab=vmir
 }
