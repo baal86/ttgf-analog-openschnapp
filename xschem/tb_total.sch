@@ -31,8 +31,8 @@ node="reset
 RY[0..3];nry3,nry2,nry1,nry0
 CY[0..3];ncy3,ncy2,ncy1,ncy0"}
 B 2 710 -280 1510 120 {flags=graph
-y1=0
-y2=2
+y1=-1.6e-06
+y2=3
 ypos1=0
 ypos2=2
 divy=5
@@ -45,10 +45,11 @@ subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 legendmag=1.0
-node="outp
+node="out
 sf
-ref"
-color="4 5 1"
+ref
+amp"
+color="4 5 6 7"
 dataset=-1
 unitx=1
 logx=0
@@ -192,7 +193,7 @@ N 440 880 440 960 {lab=sf}
 N 440 880 640 880 {lab=sf}
 N 640 880 760 880 {lab=sf}
 N 880 990 880 1010 {lab=0}
-N 1000 900 1080 900 {lab=OUTP}
+N 1000 900 1080 900 {lab=AMP}
 N 690 920 760 920 {lab=ref}
 N -870 -500 -860 -500 {lab=nRY0}
 N 460 940 460 960 {lab=ref}
@@ -225,6 +226,9 @@ N 460 960 460 990 {lab=ref}
 N 350 880 350 900 {lab=sf}
 N 350 900 350 910 {lab=sf}
 N 350 970 350 990 {lab=0}
+N 1280 900 1380 900 {lab=OUT}
+N 1180 980 1180 1000 {lab=0}
+N 1180 810 1180 820 {lab=VDD}
 C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1}
 C {gnd.sym} -680 -540 0 0 {name=l1 lab=0}
 C {ip_pixel_nd2ps.sym} -380 -660 0 0 {name=x2}
@@ -318,7 +322,7 @@ C {ip_current_source.sym} 470 1050 0 0 {name=x21}
 C {gnd.sym} 500 1130 0 0 {name=l21 lab=0}
 C {ip_amplifier.sym} 880 900 0 0 {name=x22}
 C {gnd.sym} 880 1010 0 0 {name=l22 lab=0}
-C {lab_wire.sym} 1070 900 0 0 {name=p47 sig_type=std_logic lab=OUTP}
+C {lab_wire.sym} 1070 900 0 0 {name=p47 sig_type=std_logic lab=AMP}
 C {lab_wire.sym} 610 880 0 0 {name=p48 sig_type=std_logic lab=sf}
 C {lab_wire.sym} 730 920 0 0 {name=p49 sig_type=std_logic lab=ref}
 C {devices/launcher.sym} -1545 -115 0 0 {name=h1
@@ -429,3 +433,7 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 350 990 0 0 {name=l23 lab=0}
+C {ip_buffer.sym} 1180 900 0 0 {name=x23}
+C {lab_wire.sym} 1370 900 0 0 {name=p1 sig_type=std_logic lab=OUT}
+C {gnd.sym} 1180 1000 0 0 {name=l24 lab=0}
+C {vdd.sym} 1180 810 0 0 {name=l36 lab=VDD}
