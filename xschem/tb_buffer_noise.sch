@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -160 200 640 600 {flags=graph
-y1=-8.1
-y2=-4.7
+y1=-8.3
+y2=-5.1
 ypos1=0
 ypos2=2
 divy=5
@@ -93,7 +93,7 @@ value="
 .control
 	save all
 	
-	foreach bias 2.0 1.5 1.0 0.5 0.0
+	foreach bias 1.5 1.0 0.5 0.0
 		alterparam bias = $bias
 		reset
 		destroy all
