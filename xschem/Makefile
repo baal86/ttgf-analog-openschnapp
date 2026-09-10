@@ -19,10 +19,9 @@ lvs/%.lvs.spice: %.sch
 
 parax: $(PARAX_FILES)
 		
-
 ../mag/%.sim.spice: ../mag/%.mag
 	cd ../mag && magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_sim.tcl $*
-	rm -f *.ext
+	cd ../mag && rm -f *.ext
 
 simulation/%.spice: %.sch 
 	xschem -x -q $< --command "set lvs_netlist 0; set top_is_subckt 0; xschem netlist -file $*.spice"
