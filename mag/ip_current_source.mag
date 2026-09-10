@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788953113
+timestamp 1789018168
 << pwell >>
 rect 800 1350 2200 2650
 rect 800 1300 1600 1350
@@ -106,59 +106,59 @@ rect 940 990 950 1020
 rect 1030 990 1040 1020
 rect 940 980 1040 990
 use nfet_06v0_PJ828U  M1
-timestamp 1788866637
+timestamp 1789018168
 transform 0 -1 1720 1 0 1100
 box -110 -300 110 300
 use nfet_06v0_EXM5W3  M2
-timestamp 1788866637
+timestamp 1789018168
 transform 1 0 1655 0 1 1600
 box -95 -300 95 300
 use nfet_06v0_EXM5W3  M3
-timestamp 1788866637
+timestamp 1789018168
 transform -1 0 1855 0 -1 2250
 box -95 -300 95 300
 use nfet_06v0_ULQ6TN  M4
-timestamp 1788866637
+timestamp 1789018168
 transform 0 1 2055 -1 0 1590
 box -310 -75 310 75
 use nfet_06v0_EXM5W3  M5
-timestamp 1788866637
+timestamp 1789018168
 transform 1 0 1855 0 1 1600
 box -95 -300 95 300
 use nfet_06v0_EXM5W3  M6
-timestamp 1788866637
+timestamp 1789018168
 transform -1 0 1655 0 -1 2250
 box -95 -300 95 300
 use nfet_06v0_ULQ6TN  M7
-timestamp 1788866637
+timestamp 1789018168
 transform 0 1 2055 -1 0 2260
 box -310 -75 310 75
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_0
-timestamp 1788871392
+timestamp 1789018168
 transform 1 0 990 0 1 1391
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_1
-timestamp 1788871392
+timestamp 1789018168
 transform 1 0 1130 0 1 1391
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_2
-timestamp 1788871392
+timestamp 1789018168
 transform 1 0 1270 0 1 1391
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_3
-timestamp 1788871392
+timestamp 1789018168
 transform 1 0 990 0 1 2161
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_4
-timestamp 1788871392
+timestamp 1789018168
 transform 1 0 1130 0 1 2161
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_5
-timestamp 1788871392
+timestamp 1789018168
 transform 1 0 1270 0 1 2161
 box -50 -361 50 361
 use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_6
-timestamp 1788871392
+timestamp 1789018168
 transform 1 0 1410 0 1 2161
 box -50 -361 50 361
 << labels >>
