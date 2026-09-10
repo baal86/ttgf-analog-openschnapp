@@ -10,7 +10,7 @@ MAGIC_RC     := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
 .PHONY: all clean parax
 
 lvs: $(LVS_FILES)
-	sed -i "s/area='13.5u \* 13.5u '/area=0.166n/" simulation/ip_pixel_nd2ps.lvs.spice
+	sed -i "s/area='13.5u \* 13.5u '/area=0.16125n/" simulation/ip_pixel_nd2ps.lvs.spice
 	cp simulation/ip_pixel_nd2ps.lvs.spice simulation/ip_pixel_nd2ps_dummy.lvs.spice
 
 simulation/%.lvs.spice: %.sch
@@ -38,3 +38,6 @@ clean:
 	rm -f $(SPICE_FILES)
 	rm -f test/*.html
 	rm -f test/*.png
+
+cleanlvs:
+	rm -f $(LVS_FILES)

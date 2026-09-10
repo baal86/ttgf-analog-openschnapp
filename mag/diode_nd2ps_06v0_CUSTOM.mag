@@ -1,8 +1,9 @@
 magic
 tech gf180mcuD
-timestamp 1788953390
+timestamp 1789017672
 << pwell >>
-rect -140 -180 160 120
+rect -140 110 160 120
+rect -140 -180 -130 110
 << mvpsubdiff >>
 rect -140 118 160 120
 rect -140 112 -126 118
@@ -16,26 +17,26 @@ rect -140 -180 -130 -174
 rect -126 112 154 118
 rect -138 -174 -132 106
 << mvndiode >>
-rect -120 -120 150 100
-rect 10 -134 150 -120
-rect 10 -140 16 -134
-rect 22 -140 150 -134
-rect 10 -170 150 -140
+rect -120 -110 150 100
+rect 20 -122 150 -110
+rect 20 -128 32 -122
+rect 38 -128 150 -122
+rect 20 -170 150 -128
 << mvndiodec >>
-rect 16 -140 22 -134
+rect 32 -128 38 -122
 << metal1 >>
 rect -138 118 -132 120
 rect -140 112 -126 118
 rect 154 112 160 118
 rect -138 106 -132 112
-rect 14 -134 24 -132
-rect 14 -140 16 -134
-rect 22 -140 24 -134
-rect 14 -142 24 -140
+rect 30 -122 40 -120
+rect 30 -128 32 -122
+rect 38 -128 40 -122
+rect 30 -130 40 -128
 rect -138 -180 -132 -174
 << properties >>
 string FIXED_BBOX -140 -180 160 120
 string gencell diode_nd2ps_06v0
 string library gf180mcu
-string parameters w 13.5 l 13.5 area 166.0 peri 54.0 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 1 erc 1 etc 1 ebc 0 doverlap 0 full_metal 0 compatible {diode_nd2ps_03v3 diode_nd2ps_06v0}
+string parameters w 13.5 l 13.5 area 161.25 peri 54.0 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 1 erc 1 etc 1 ebc 0 doverlap 0 full_metal 0 compatible {diode_nd2ps_03v3 diode_nd2ps_06v0}
 << end >>
