@@ -11,6 +11,6 @@ readnet verilog ../verilog/gl/ip_column_mux.v $source
 readnet verilog ../verilog/gl/ip_reset_latch.v $source
 
 # add any spice files of your analog blocks:
-readnet spice ../xschem/simulation/$project.lvs.spice $source
+readnet spice ../xschem/lvs/$project.lvs.spice $source
 
 lvs "$layout $project" "$source $project" $::env(PDK_ROOT)/$::env(PDK)/libs.tech/netgen/gf180mcuD_setup.tcl lvs.report -blackbox

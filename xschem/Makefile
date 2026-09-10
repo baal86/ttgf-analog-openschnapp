@@ -10,8 +10,8 @@ MAGIC_RC     := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
 .PHONY: all clean parax
 
 lvs: $(LVS_FILES)
-	sed -i "s/area='13.5u \* 13.5u '/area=0.16125n/" simulation/ip_pixel_nd2ps.lvs.spice
-	cp simulation/ip_pixel_nd2ps.lvs.spice simulation/ip_pixel_nd2ps_dummy.lvs.spice
+	sed -i "s/area='13.5u \* 13.5u '/area=0.16125n/" lvs/ip_pixel_nd2ps.lvs.spice
+	cp lvs/ip_pixel_nd2ps.lvs.spice lvs/ip_pixel_nd2ps_dummy.lvs.spice
 
 simulation/%.lvs.spice: %.sch
 	xschem -x -q $< --command "set lvs_netlist 0; set top_is_subckt 1; xschem netlist -file $*.lvs.spice"
