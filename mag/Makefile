@@ -106,4 +106,4 @@ update_gds:
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/update_gds_lef.tcl $(PROJECT_NAME)
 
 clean:
-	rm -f lvs.report gdslvs.report *.lvs.spice *.gdslvs.spice *.nodes
+	rm -f lvs.report gdslvs.report *.lvs.spice *.gdslvs.spice *.nodes *.sim
