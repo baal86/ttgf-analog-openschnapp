@@ -1,7 +1,13 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1789042308
+timestamp 1789049274
+<< error_s >>
+rect 52120 3198 52180 3200
+rect 53520 3198 53580 3200
+rect 54920 3198 54980 3200
+rect 56320 3198 56380 3200
+rect 57720 3198 57780 3200
 << pwell >>
 rect 65000 56420 65500 56500
 rect 64980 56400 65500 56420
@@ -1991,6 +1997,10 @@ use ip_amplifier  ip_amplifier_0
 timestamp 1789042266
 transform 1 0 8600 0 1 1200
 box 0 0 20800 3500
+use ip_buffer  ip_buffer_0
+timestamp 1789048313
+transform 1 0 50400 0 1 1900
+box -1100 -700 15100 2800
 use ip_pixel_frame_right  ip_pixel_frame_right_0
 timestamp 1789018168
 transform 1 0 61200 0 1 7000

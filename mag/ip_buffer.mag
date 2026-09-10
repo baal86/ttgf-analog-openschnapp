@@ -1,0 +1,243 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1789048313
+<< error_s >>
+rect 860 649 890 650
+rect 1560 649 1590 650
+rect 2260 649 2290 650
+rect 2960 649 2990 650
+rect 3660 649 3690 650
+<< nwell >>
+rect 450 -250 3850 1300
+rect 3950 -250 7450 1300
+<< pwell >>
+rect -550 1350 7550 1400
+rect -550 -300 450 1350
+rect 7500 -300 7550 1350
+rect -550 -350 7550 -300
+<< mvpsubdiff >>
+rect -550 1350 7550 1400
+rect -550 -300 -500 1350
+rect 7500 -300 7550 1350
+rect -550 -350 7550 -300
+<< mvnsubdiff >>
+rect 500 1240 3800 1250
+rect 500 1210 600 1240
+rect 3750 1210 3800 1240
+rect 500 1200 3800 1210
+rect 500 1100 510 1200
+rect 540 1100 550 1200
+rect 500 1040 550 1100
+rect 500 -150 510 1040
+rect 540 -150 550 1040
+rect 3750 1150 3800 1200
+rect 3750 -50 3760 1150
+rect 3790 -50 3800 1150
+rect 3750 -150 3800 -50
+rect 500 -160 3800 -150
+rect 500 -190 620 -160
+rect 3770 -190 3800 -160
+rect 500 -200 3800 -190
+rect 4000 1200 7400 1250
+rect 4000 -150 4050 1200
+rect 7350 -150 7400 1200
+rect 4000 -200 7400 -150
+<< mvnsubdiffcont >>
+rect 600 1210 3750 1240
+rect 510 1100 540 1200
+rect 510 -150 540 1040
+rect 3760 -50 3790 1150
+rect 620 -190 3770 -160
+<< metal1 >>
+rect 510 1210 600 1240
+rect 3750 1210 3790 1240
+rect 510 1200 3790 1210
+rect 540 1150 3790 1200
+rect 540 1100 600 1150
+rect -350 750 -320 1100
+rect 350 1090 450 1100
+rect 350 1010 360 1090
+rect 440 1010 450 1090
+rect 350 1000 450 1010
+rect 510 1040 600 1100
+rect 650 1090 3670 1100
+rect 650 1050 660 1090
+rect 800 1050 3670 1090
+rect 650 1040 3670 1050
+rect -350 250 -320 600
+rect 340 500 370 850
+rect 540 1000 600 1040
+rect 540 -50 620 1000
+rect 850 650 900 1010
+rect 850 320 860 650
+rect 890 320 900 650
+rect 850 20 900 320
+rect 930 1000 960 1040
+rect 930 910 970 1000
+rect 930 20 960 910
+rect 1210 -50 1320 1010
+rect 1550 650 1600 1010
+rect 1550 320 1560 650
+rect 1590 320 1600 650
+rect 1550 20 1600 320
+rect 1630 20 1660 1040
+rect 1900 -50 2010 1010
+rect 2250 650 2300 1010
+rect 2250 320 2260 650
+rect 2290 320 2300 650
+rect 2250 20 2300 320
+rect 2330 20 2360 1040
+rect 2610 -50 2720 1010
+rect 2950 650 3000 1010
+rect 2950 320 2960 650
+rect 2990 320 3000 650
+rect 2950 20 3000 320
+rect 3030 20 3060 1040
+rect 3310 -50 3420 1010
+rect 3650 650 3700 1010
+rect 3650 320 3660 650
+rect 3690 320 3700 650
+rect 3650 20 3700 320
+rect 3750 -50 3760 1150
+rect 540 -150 3790 -50
+rect 4050 -150 7350 10
+rect 510 -160 3790 -150
+rect 510 -190 620 -160
+rect 3770 -190 3790 -160
+<< via1 >>
+rect 360 1010 440 1090
+rect 660 1050 800 1090
+rect 860 320 890 650
+rect 1560 320 1590 650
+rect 2260 320 2290 650
+rect 2960 320 2990 650
+rect 3660 320 3690 650
+<< metal2 >>
+rect 350 1090 810 1100
+rect 350 1010 360 1090
+rect 440 1050 660 1090
+rect 800 1050 810 1090
+rect 440 1040 810 1050
+rect 440 1010 450 1040
+rect 350 1000 450 1010
+rect 850 320 860 650
+rect 890 320 1560 650
+rect 1590 320 2260 650
+rect 2290 320 2960 650
+rect 2990 320 3660 650
+rect 3690 320 3750 650
+rect 850 300 3750 320
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_0
+timestamp 1789045960
+transform 1 0 737 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_1
+timestamp 1789045960
+transform 1 0 1087 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_2
+timestamp 1789045960
+transform 1 0 1437 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_3
+timestamp 1789045960
+transform 1 0 1787 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_4
+timestamp 1789045960
+transform 1 0 2137 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_5
+timestamp 1789045960
+transform 1 0 2487 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_6
+timestamp 1789045960
+transform 1 0 2837 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_7
+timestamp 1789045960
+transform 1 0 3187 0 1 527
+box -187 -577 187 577
+use pfet_06v0_HMEB58  pfet_06v0_HMEB58_8
+timestamp 1789045960
+transform 1 0 3537 0 1 527
+box -187 -577 187 577
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_0
+timestamp 1789046014
+transform 0 1 7027 -1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_1
+timestamp 1789046014
+transform 0 1 4227 -1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_2
+timestamp 1789046014
+transform 0 -1 4427 1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_3
+timestamp 1789046014
+transform 0 1 4627 -1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_4
+timestamp 1789046014
+transform 0 -1 4827 1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_5
+timestamp 1789046014
+transform 0 1 5027 -1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_6
+timestamp 1789046014
+transform 0 -1 5227 1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_7
+timestamp 1789046014
+transform 0 1 5427 -1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_8
+timestamp 1789046014
+transform 0 -1 5627 1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_9
+timestamp 1789046014
+transform 0 1 5827 -1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_10
+timestamp 1789046014
+transform 0 -1 6027 1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_11
+timestamp 1789046014
+transform 0 1 6227 -1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_12
+timestamp 1789046014
+transform 0 -1 6827 1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_13
+timestamp 1789046014
+transform 0 -1 6427 1 0 537
+box -587 -127 587 127
+use pfet_06v0_QZR24N  pfet_06v0_QZR24N_14
+timestamp 1789046014
+transform 0 1 6627 -1 0 537
+box -587 -127 587 127
+use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_0
+timestamp 1789018168
+transform 0 -1 11 1 0 800
+box -50 -361 50 361
+use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_1
+timestamp 1789018168
+transform 0 -1 11 1 0 1050
+box -50 -361 50 361
+use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_2
+timestamp 1789018168
+transform 0 -1 11 1 0 550
+box -50 -361 50 361
+use ppolyf_u_1k_6p0_L3QVMB  ppolyf_u_1k_6p0_L3QVMB_3
+timestamp 1789018168
+transform 0 -1 11 1 0 300
+box -50 -361 50 361
+<< end >>
