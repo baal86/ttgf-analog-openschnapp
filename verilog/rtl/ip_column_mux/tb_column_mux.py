@@ -15,14 +15,19 @@ async def apply_and_clock(dut, sel: int) -> int:
     return dut.Y.value
 
 @cocotb.test()
-@cocotb.parametrize(a=range(YLENGTH))
+@cocotb.parametrize(a=range(1,YLENGTH+1))
 async def test_all_codes_enabled(dut,a):
     y = await apply_and_clock(dut,a)
-    assert y == 1 << a
+    assert y == 1 << (a-1)
 
 @cocotb.test()
-@cocotb.parametrize(a=range(YLENGTH))
+@cocotb.parametrize(a=range(1,YLENGTH+1))
 async def test_only_one_bit_set(dut,a):
     y = await apply_and_clock(dut,a)
     popcount = bin(y).count("1")
     assert popcount == 1
+
+@cocotb.test()
+async def test_zero_code_enabled(dut):
+    y = await apply_and_clock(dut,0)
+    assert y == 0

@@ -33,3 +33,5 @@
 1600.0us   0s 1s  0s  0s  0s  0s
 1650.0us   1s 1s  0s  0s  0s  0s
 1700.0us   0s 1s  0s  0s  0s  0s
+1750.0us   1s 1s  0s  0s  0s  1s
+1800.0us   0s 1s  0s  0s  0s  1s

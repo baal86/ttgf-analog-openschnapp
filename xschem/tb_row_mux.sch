@@ -105,7 +105,7 @@ ry0 Y0 0 100k
 
 .control
 	reset
-	tran 1u 1.8m
+	tran 1u 1.9m
 	save all
 	write tb_row_mux.raw
 	quit

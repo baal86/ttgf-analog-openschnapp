@@ -4,7 +4,9 @@ module ip_column_mux (
     output reg  [20:0] Y
 );
     always @(posedge clk) begin
-        Y <= 21'b1 << A; 
+        if (A == 5'b00000)
+            Y <= 21'b0;
+        else
+            Y <= 21'b1 << (A - 1);
     end
-
 endmodule
