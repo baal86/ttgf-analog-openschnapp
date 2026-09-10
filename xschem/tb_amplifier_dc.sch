@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=0	
-y2=2.0
+y1=2.2e-06	
+y2=2.2
 ypos1=0
 ypos2=2
 divy=5
@@ -27,8 +27,8 @@ logy=0
 color="4 5"
 node="out
 x1.outn"
-hcursor1_y=1.0011979
-hcursor2_y=1.8627841}
+hcursor1_y=0.36680281
+hcursor2_y=1.4940826}
 N -410 -640 -30 -640 {lab=VDD}
 N -410 -250 -410 -200 {lab=0}
 N -410 -640 -410 -310 {lab=VDD}
