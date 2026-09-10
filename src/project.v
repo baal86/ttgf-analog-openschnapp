@@ -21,6 +21,7 @@ module tt_um_baal86_openschnapp (
     wire [20:0] column;
     wire        bus;
     wire        dummy;
+    wire        preamp;
     wire        reset;
     wire [20:0] acol;
     wire [16:0] arow;
@@ -83,12 +84,19 @@ module tt_um_baal86_openschnapp (
         .src_b(dummy)
     );
 
+    ip_buffer buffer(
+        .VDD(VDPWR),
+        .VSUBS(VGND),
+        .INP(preamp),
+        .OUTP(ua[1])
+    );
+
     ip_amplifier amplifier(
         .VDD(VDPWR),
         .VSUBS(VGND),
         .INP(dummy),
         .INN(bus),
-        .OUTP(ua[1])
+        .OUTP(preamp)
     );
 
     ip_column_mux columnmux(

@@ -4,3 +4,4 @@
 .include ip_pixel_nd2ps.lvs.spice
 .include ip_pixel_nd2ps_dummy.lvs.spice
 .include ip_amplifier.lvs.spice
+.include ip_buffer.lvs.spice
