@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated.
 
-- [Pixel Calculations](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/pixel/README.md)
+- [Pixel](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/pixel/README.md)
 - [Current Source](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md)
 
 ## How to test
