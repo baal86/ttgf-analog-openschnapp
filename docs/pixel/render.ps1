@@ -1,7 +1,7 @@
 & "$env:LOCALAPPDATA\Programs\CalcpadCE\cli\Cli.exe" calculations.cpd .temp.html -s
 
 $InputFile = '.temp.html'
-$OutputFile = 'info.md'
+$OutputFile = 'README.md'
 
 $content = Get-Content $InputFile -Raw -Encoding UTF8
 $content = $content -replace '(?s)^.*?<body[^>]*>', ''
