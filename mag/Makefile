@@ -2,7 +2,7 @@ PROJECT_NAME ?= tt_um_baal86_openschnapp
 MAGIC_RC := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
 TEMPLATE_FILE := tt_analog_1x2.def
 
-.PHONY: gdslvs lvs magic start png
+.PHONY: lvs magic png gds
 
 png:
 	klayout -b -r tcl/gds2png.py -rd gdsfile=../gds/tt_um_baal86_openschnapp.gds -rd output=temp.png
@@ -44,15 +44,14 @@ $(PROJECT_NAME).gds.lvs.report: $(PROJECT_NAME).gds.lvs.spice ../src/project.v
 	mv lvs.report $@
 	./tcl/check_lvs_report.sh $@
 
-lvs: $(PROJECT_NAME).lvs.report
-	./tcl/check_lvs_report.sh $%
+lvs: $(PROJECT_NAME).lvs.report $(PROJECT_NAME).gds.lvs.report 
 
-gdslvs: gdslvs.report
-	./tcl/check_lvs_report.sh gdslvs.report
-
-update_gds:
+../gds/$(PROJECT_NAME).gds:
 	mkdir -p ../gds ../lef
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/update_gds_lef.tcl $(PROJECT_NAME)
 
+gds:  ../gds/$(PROJECT_NAME).gds
+
 clean:
+	rm -f ../gds/$(PROJECT_NAME).gds
 	rm -f *.fb.txt *.lvs.report *.lvs.spice *.nodes
