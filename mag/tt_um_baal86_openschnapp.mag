@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1789061603
+timestamp 1789107768
 << nwell >>
 rect 58800 1680 58900 1740
 << pwell >>
@@ -1429,6 +1429,10 @@ use aux_frame_bottom  aux_frame_bottom_22
 timestamp 1789061443
 transform 0 -1 6000 1 0 900
 box 800 -2100 3800 -2000
+use aux_schnapp  aux_schnapp_0
+timestamp 1789107741
+transform 0 -1 4158 1 0 58112
+box 108 216 5454 2088
 use aux_via_M4-M1_0u5  aux_via_M4-M1_0u5_0
 timestamp 1789061443
 transform 1 0 64100 0 1 58000
