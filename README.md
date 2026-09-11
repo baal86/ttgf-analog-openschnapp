@@ -1,7 +1,7 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
 # Tiny Tapeout - Openschnapp 3T CMOS Image Sensor
-- [Read the documentation for the project](docs/README.md)
+- [Read the documentation for the project](docs/info.md)
 - [Check the GDS viewer for the current project state](https://baal86.github.io/ttgf-analog-openschnapp/)
 
 Mixed signal design of freely addressable photo diode array. Made as a learning project in the Zero2Asic analog course.
