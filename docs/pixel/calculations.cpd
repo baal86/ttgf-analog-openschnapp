@@ -21,9 +21,10 @@ L_D = 13.5μm
 C_D = CJ_ND2PS*W_D*L_D|fF
 'Resulting diode voltage at full well.'
 V_D = I_PHOTO/C_D*t_MAX|V
-'Sensitivity assuming unity gain source follower.'
-B = V_D/C_WELL|μV/ec
-'Noise estimation from source follower simulation.'
+'Sensitivity with simulated source follower gain.'
+G_SF = 0.75
+B = G_SF*V_D/C_WELL|μV/ec
+'Noise estimation with simulated source follower gain.'
 V_N = 35μV
 N_N = V_N/B|ec
 '<h4>Dark current estimate</h4>'

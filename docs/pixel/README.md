@@ -27,11 +27,12 @@ The `nd2ps` diode pixel. Designed to be infinitely tiled with no routing in magi
 <p><span class="eq"><var>C</var><sub>D</sub> = <var>CJ</var><sub>ND2PS</sub> · <var>W</var><sub>D</sub> · <var>L</var><sub>D</sub> = 1 <i>fF</i><i class="unit"> ∕ </i><i>μm</i><sup class="unit">2</sup> · 13.5 <i>μm</i> · 13.5 <i>μm</i> = 182.25 <i>fF</i></span></p>
 <p>Resulting diode voltage at full well. </p>
 <p><span class="eq"><var>V</var><sub>D</sub> = <var>I</var><sub>PHOTO</sub><em> / </em><var>C</var><sub>D</sub> · <var>t</var><sub>MAX</sub> = 32.04 <i>fA</i><em> / </em>182.25 <i>fF</i> · 1 <i>s</i> = 0.176 <i>V</i></span></p>
-<p>Sensitivity assuming unity gain source follower. </p>
-<p><span class="eq"><var>B</var> = <var>V</var><sub>D</sub><em> / </em><var>C</var><sub>WELL</sub> = 0.176 <i>V</i><em> / </em>32.04 <i>fC</i> = 0.879 <i>μV</i><i class="unit"> ∕ </i><i>ec</i></span></p>
-<p>Noise estimation from source follower simulation. </p>
+<p>Sensitivity with simulated source follower gain. </p>
+<p><span class="eq"><var>G</var><sub>SF</sub> = 0.75</span></p>
+<p><span class="eq"><var>B</var> = <var>G</var><sub>SF</sub> · <var>V</var><sub>D</sub><em> / </em><var>C</var><sub>WELL</sub> = 0.75 · 0.176 <i>V</i><em> / </em>32.04 <i>fC</i> = 0.659 <i>μV</i><i class="unit"> ∕ </i><i>ec</i></span></p>
+<p>Noise estimation with simulated source follower gain. </p>
 <p><span class="eq"><var>V</var><sub>N</sub> = 35 <i>μV</i></span></p>
-<p><span class="eq"><var>N</var><sub>N</sub> = <var>V</var><sub>N</sub><em> / </em><var>B</var> = 35 <i>μV</i><em> / </em>0.879 <i>μV</i><i class="unit"> ∕ </i><i>ec</i> = 39.81 <i>ec</i></span></p>
+<p><span class="eq"><var>N</var><sub>N</sub> = <var>V</var><sub>N</sub><em> / </em><var>B</var> = 35 <i>μV</i><em> / </em>0.659 <i>μV</i><i class="unit"> ∕ </i><i>ec</i> = 53.08 <i>ec</i></span></p>
 <h4>Dark current estimate</h4> 
 <p>Diffusion method only valid around room temperature </p>
 <p><span class="eq"><var>kB</var> = 1.38 · 10<sup>-23</sup> <i>J</i><i class="unit"> ∕ </i><i>K</i> = 8.62×10<sup>-5</sup> <i>eV</i><i class="unit"> ∕ </i><i>K</i></span></p>
