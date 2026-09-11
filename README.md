@@ -8,6 +8,7 @@ Mixed signal design of freely addressable photo diode array. Made as a learning 
 
 - [Pixel Array Current Source](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/current_source)
 - [ND2PS Photo Diode Pixel](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/pixel)
+- [Column Multiplexer](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/column_mux)
 
 
 A snapshot of top level design is shown below.
