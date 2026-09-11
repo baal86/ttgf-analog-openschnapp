@@ -9,10 +9,10 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated.
+A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated. Further documentation for single IP blocks in the folders listed below.
 
-- [Pixel](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/pixel/README.md)
-- [Current Source](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md)
+- [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/pixel/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/pixel/README.md)
+- [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md)
 
 ## How to test
 
@@ -23,7 +23,3 @@ For simple uncorrelated readout:
 - Read out the image sensor:
     - Address the pixel by row and column number.
     - After settling (~100us), sample the analog output.
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
