@@ -49,6 +49,7 @@ simulation/%.raw: simulation/%.spice
 test/%.html: simulation/%.raw
 	pip install pytest-html
 	cd test && pytest $*.py --html=$(notdir $@) --self-contained-html --tb=no
+	cp test/$*.png docs/
 
 cleansim:
 	rm -f $(RAW_FILES)

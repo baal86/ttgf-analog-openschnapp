@@ -57,4 +57,6 @@ def test_plot_current(data,steps):
     ]
 
     plt.legend(handles=handles)
+    plt.xlabel("Bias Voltage [V]")
+    plt.ylabel("Output Current [A]")
     plt.savefig("tb_current_source_dc.png")

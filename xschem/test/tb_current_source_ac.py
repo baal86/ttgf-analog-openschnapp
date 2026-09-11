@@ -59,5 +59,8 @@ def test_plot_impedance(data,steps):
         for impedance, color in zip(IMPEDANCES, COLORS)
     ]
 
+    plt.xlabel("Frequency [Hz]")
+    plt.ylabel("Output Impedance [Ω]")
+
     plt.legend(handles=handles)
     plt.savefig("tb_current_source_ac.png")
