@@ -1,7 +1,9 @@
 .PHONY: gds
 
 gds:
-	$(MAKE) -C xschem lvs
+	$(MAKE) -C xschem cleandocs docs
+	$(MAKE) -C xschem cleanparax parax
+	$(MAKE) -C xschem cleanlvs lvs
 	$(MAKE) -C mag update_gds
 	$(MAKE) -C mag gdslvs
 	$(MAKE) -C mag drc

@@ -64,7 +64,7 @@ cleansim:
 
 ## Documentation Picture Generation
 cleandocs:
-	rm -f docs/*.png
+	rm -f docs/ip*.png
 
 docs: $(DOC_FILES)
 
