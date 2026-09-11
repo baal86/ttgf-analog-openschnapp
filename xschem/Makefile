@@ -17,6 +17,7 @@ cleanlvs:
 lvs: $(LVS_FILES)
 	sed -i "s/area='13.5u \* 13.5u '/area=0.16125n/" lvs/ip_pixel_nd2ps.lvs.spice
 	cp lvs/ip_pixel_nd2ps.lvs.spice lvs/ip_pixel_nd2ps_dummy.lvs.spice
+	sed -i 's/ip_pixel_nd2ps/ip_pixel_nd2ps_dummy/g' lvs/ip_pixel_nd2ps_dummy.lvs.spice
 
 lvs/%.lvs.spice: %.sch
 	xschem -x -q $< --command "set lvs_netlist 0; set top_is_subckt 1; xschem netlist -file $*.lvs.spice"

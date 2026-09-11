@@ -1,10 +1,10 @@
-** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_pixel_nd2ps.sch
-.subckt ip_pixel_nd2ps vdd reset read vsubs cl
+** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_pixel_nd2ps_dummy.sch
+.subckt ip_pixel_nd2ps_dummy vdd reset read vsubs cl
 *.PININFO vdd:B vsubs:B reset:I read:I cl:O
 D2 vsubs siminj diode_nd2ps_06v0 area=0.16125n pj='2*13.5u + 2*13.5u '
-XM4 vdd siminj sfout vsubs nfet_06v0 L=1.0u W=2.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
+XM4 vdd siminj sfout vsubs nfet_06v0 L=1.9u W=3.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM2 vdd reset siminj vsubs nfet_06v0 L=0.7u W=0.30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
+XM2 vdd reset siminj vsubs nfet_06v0 L=1.3u W=0.30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
 XM1 sfout read cl vsubs nfet_06v0 L=0.7u W=0.30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
