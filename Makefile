@@ -1,6 +1,9 @@
 .PHONY: gds
 
 gds:
+	$(MAKE) -C verilog/rtl/ip_column_mux sim cleanbuild build
+	$(MAKE) -C verilog/rtl/ip_row_mux sim cleanbuild build
+	$(MAKE) -C verilog/rtl/ip_reset_latch sim cleanbuild build
 	$(MAKE) -C xschem cleandocs docs
 	$(MAKE) -C xschem cleanparax parax
 	$(MAKE) -C xschem cleanlvs lvs
