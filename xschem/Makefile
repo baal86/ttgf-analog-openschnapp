@@ -55,12 +55,14 @@ test/%.html: simulation/%.raw
 	cd test && pytest $*.py --html=$(notdir $@) --self-contained-html --tb=no
 	cp test/$*.png docs/
 
+test/tb_column_mux_timing.html: simulation/tb_column_mux_timing.raw
+	xschem -q tb_column_mux_timing.sch --command "xschem raw_read simulation/tb_column_mux_timing.raw; xschem print png docs/tb_column_mux_timing.png 900 600 320 -180 1220 420"
+
 cleansim:
 	rm -f $(RAW_FILES)
 	rm -f $(SPICE_FILES)
 	rm -f test/*.html
 	rm -f test/*.png
-
 
 ## Documentation Picture Generation
 cleandocs:

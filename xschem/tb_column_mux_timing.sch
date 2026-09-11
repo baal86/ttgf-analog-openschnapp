@@ -115,7 +115,7 @@ ry0 Y0 0 100k
 	reset
 	tran 1u 2.3m
 	save all
-	write tb_column_mux.raw
+	write tb_column_mux_timing.raw
 	quit
 .endc
 "}
