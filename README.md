@@ -4,7 +4,13 @@
 - [Read the documentation for the project](docs/info.md)
 - [Check the GDS viewer for the current project state](https://baal86.github.io/ttgf-analog-openschnapp/)
 
-Mixed signal design of freely addressable photo diode array. Made as a learning project in the Zero2Asic analog course.
+Mixed signal design of freely addressable photo diode array. Made as a learning project in the Zero2Asic analog course. Documentation per IP block in the `docs` folder:
+
+- [Pixel Array Current Source](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/current_source)
+- [ND2PS Photo Diode Pixel](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/pixel)
+
+
+A snapshot of top level design is shown below.
 
 ![Die Snapshot](docs/snapshot.png)
 
