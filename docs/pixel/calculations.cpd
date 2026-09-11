@@ -17,8 +17,8 @@ I_PHOTO = C_WELL/t_MAX|fA
 '<h4>Diode Voltage and Sensitivity</h4>'
 'Diode capacitance based on size.'
 CJ_ND2PS = 1fF/μm^2
-W_D = 12μm
-L_D = 10μm
+W_D = 13.5μm
+L_D = 13.5μm
 C_D = CJ_ND2PS*W_D*L_D|fF
 'Resulting diode voltage at full well.'
 V_D = I_PHOTO/C_D*t_MAX|V
