@@ -31,18 +31,11 @@ sweep=frequency}
 N 290 -200 290 -100 {lab=VDD}
 N 420 -200 420 -190 {lab=VDD}
 N 320 -200 420 -200 {lab=VDD}
-N 160 180 160 200 {lab=VSS}
-N 290 100 290 200 {lab=VSS}
-N 160 110 160 120 {lab=GND}
 N 420 -130 420 -120 {lab=GND}
-N 130 -20 190 -20 {lab=VSS}
+N 130 -20 190 -20 {lab=GND}
 N 130 20 190 20 {lab=VDD}
-N 290 200 530 200 {lab=VSS}
 N 0 0 190 -0 {lab=INJ}
-N -0 170 0 200 {lab=VSS}
-N 160 200 290 200 {lab=VSS}
 N 0 0 -0 110 {lab=INJ}
-N 0 200 160 200 {lab=VSS}
 N 420 -200 530 -200 {lab=VDD}
 N 470 -0 470 10 {lab=OUT}
 N 470 70 470 80 {lab=OUT}
@@ -53,6 +46,12 @@ N 470 10 470 70 {lab=OUT}
 N 290 -200 320 -200 {lab=VDD}
 N 390 0 470 0 {lab=OUT}
 N 490 -200 490 80 {lab=VDD}
+N -0 170 0 180 {lab=GND}
+N 0 180 0 190 {lab=GND}
+N 290 100 290 110 {lab=GND}
+N 290 110 290 120 {lab=GND}
+N 530 200 530 210 {lab=GND}
+N 530 210 530 220 {lab=GND}
 C {devices/launcher.sym} -515 215 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -61,7 +60,7 @@ set v [xschem raw value total_rms_noise 0]
 puts [format \{Total RMS Noise = %.4g uV\} $v]
 "
 }
-C {devices/code_shown.sym} -570 790 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -580 640 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -72,11 +71,8 @@ value="
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {vsource.sym} 420 -160 0 1 {name=V1 value=3.3 savecurrent=false}
-C {vsource.sym} 160 150 0 0 {name=V3 value=0 savecurrent=false}
 C {gnd.sym} 420 -120 0 1 {name=l1 lab=GND}
-C {gnd.sym} 160 110 2 0 {name=l2 lab=GND}
 C {lab_wire.sym} 380 -200 0 1 {name=p2 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 170 200 2 0 {name=p4 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 160 0 0 0 {name=p6 sig_type=std_logic lab=INJ}
 C {lab_wire.sym} 430 0 0 1 {name=p8 sig_type=std_logic lab=OUT}
 C {simulator_commands_shown.sym} -580 310 0 0 {name=COMMANDS
@@ -86,27 +82,23 @@ value="
 V_INJ INJ X1.siminj 0
 .param bias=1.5
 .control
-	shell rm -f tb_pixel_nd2ps_noise.raw
+	save all
+	reset
+	set sparse
+	noise V(out) V4 dec 1000 0.1 500e3
+	setplot noise1
+	let manual_integral = integ(onoise_spectrum * onoise_spectrum)
+	let total_rms_noise = sqrt(manual_integral[length(manual_integral)-1])*1e6
+	write tb_pixel_nd2ps_noise.raw
 	set appendwrite
-	
-	foreach bias 2.5 2.0 1.5
-		alterparam bias = $bias
-		reset
-		destroy all
-		print @V4[dc]
-		set sparse
-		noise V(out) V4 dec 1000 0.1 500e3
-		setplot noise1
-		let manual_integral = integ(onoise_spectrum * onoise_spectrum)
-		let total_rms_noise = sqrt(manual_integral[length(manual_integral)-1])*1e6
-		save all
-		write tb_pixel_nd2ps_noise.raw
-	end
 	quit
 .endc
 "}
 C {ip_pixel_nd2ps.sym} 290 0 0 0 {name=x1}
-C {lab_wire.sym} 160 -20 0 0 {name=p3 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 160 20 0 0 {name=p5 sig_type=std_logic lab=VDD}
-C {vsource.sym} 0 140 0 1 {name=V4 value="DC \{bias\} AC 1" savecurrent=false}
+C {vsource.sym} 0 140 0 1 {name=V4 value="DC 2.3 AC 1" savecurrent=false}
 C {ip_current_source.sym} 500 140 0 0 {name=x2}
+C {gnd.sym} 0 190 0 1 {name=l2 lab=GND}
+C {gnd.sym} 290 120 0 1 {name=l3 lab=GND}
+C {gnd.sym} 530 220 0 1 {name=l4 lab=GND}
+C {gnd.sym} 130 -20 1 1 {name=l5 lab=GND}

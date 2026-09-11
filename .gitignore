@@ -35,3 +35,5 @@ test/gate_level_netlist.v
 /verilog/rtl/ip_reset_latch/*.xml
 /xschem/test/*.html
 /xschem/test/*.png
+/docs/pixel/.temp.html
+/docs/pixel/calculations.md
