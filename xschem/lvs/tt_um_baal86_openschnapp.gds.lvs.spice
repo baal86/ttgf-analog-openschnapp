@@ -1,0 +1,7 @@
+.include ip_column_switch.lvs.spice
+.include ip_current_source.lvs.spice
+.include ip_pixel_frame_right.lvs.spice
+.include ip_pixel_nd2ps.lvs.spice
+.include ip_pixel_nd2ps_dummy.lvs.spice
+.include ip_amplifier.lvs.spice
+.include ip_buffer.lvs.spice

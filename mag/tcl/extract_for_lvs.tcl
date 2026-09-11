@@ -2,7 +2,11 @@
 set project [lindex $argv $argc-1]
 box 0 0 0 0
 
-load $project.mag
+if {[string match "*.gds" $project]} {
+    gds read $project
+} else {
+    load $project.mag
+}
 
 extract do local
 extract unique notopports
