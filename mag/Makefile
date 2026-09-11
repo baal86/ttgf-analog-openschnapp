@@ -42,6 +42,7 @@ klayout_drc:
 $(PROJECT_NAME).gds.lvs.report: $(PROJECT_NAME).gds.lvs.spice ../src/project.v
 	netgen -batch eval "set project $(PROJECT_NAME).gds ; source tcl/lvs_netgen.tcl"
 	mv lvs.report $@
+	mv ../gds/$(PROJECT_NAME).gds.fb.txt .
 	./tcl/check_lvs_report.sh $@
 
 lvs: $(PROJECT_NAME).lvs.report $(PROJECT_NAME).gds.lvs.report 
@@ -54,4 +55,4 @@ gds:  ../gds/$(PROJECT_NAME).gds
 
 clean:
 	rm -f ../gds/$(PROJECT_NAME).gds
-	rm -f *.fb.txt *.lvs.report *.lvs.spice *.nodes
+	rm -f *.fb.txt *.lvs.report *.lvs.spice *.nodes 

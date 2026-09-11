@@ -37,3 +37,4 @@ test/gate_level_netlist.v
 /xschem/test/*.png
 /docs/pixel/.temp.html
 /docs/pixel/calculations.md
+/mag/tt_um_baal86_openschnapp.gds.fb.txt
