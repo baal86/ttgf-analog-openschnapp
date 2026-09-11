@@ -1,4 +1,9 @@
-<h3>Pixel Calculations</h3> 
+## Pixel Design
+The `nd2ps` diode pixel. Designed to be infinitely tiled with no routing in magic.
+
+![Schematics](../../xschem/docs/ip_pixel_nd2ps.png)
+
+### Calculations
 <p>Generated from calculations.cpd sheet. Use with calcpadCE. </p>
 <h4>Unit Definitions</h4> 
 <p>We operate in the low current domain so we define fX units. </p>
@@ -48,3 +53,5 @@
 <p><span class="eq"><var>I</var><sub>DARK_DIFF</sub> ( <var>T</var> )  = <var>I</var><sub>S</sub> ·  ( <var>T</var><em> / </em><var>T</var><sub>REF</sub> ) <sup><var>XTI</var><em> / </em><var>N</var></sup> · <var>e</var><sup><var>EA</var><em> / </em> ( <var>N</var> · <var>kB</var> · <var>T</var> )  ·  ( <var>T</var><em> / </em><var>T</var><sub>REF</sub> − 1 ) </sup></span></p>
 <p><span class="eq"><var>I</var><sub>DARK_DIFF</sub>  ( <var>T</var><sub>OP</sub> )  = <var>I</var><sub>DARK_DIFF</sub>  ( 293.15 <i>K</i> )  = 0.0235 <i>fA</i></span></p>
 <p><span class="eq"><var>I</var><sub>DARK_DIFF</sub>  ( <var>T</var><sub>OP</sub> )  = <var>I</var><sub>DARK_DIFF</sub>  ( 293.15 <i>K</i> )  = 146.61 <i>ec</i><i class="unit"> ∕ </i><i>s</i></span></p>
+
+### Other stuff
