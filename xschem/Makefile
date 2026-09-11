@@ -6,6 +6,7 @@ PARAX_FILES  := $(IP_FILES:%.sch=parax/%.sim.spice)
 TB_FILES     := $(wildcard tb_*.sch)
 SPICE_FILES  := $(TB_FILES:%.sch=simulation/%.spice)
 RAW_FILES    := $(TB_FILES:%.sch=simulation/%.raw)
+HTML_FILES   := $(TB_FILES:%.sch=test/%.html)
 MAGIC_RC     := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
 
 .PHONY: cleansim cleanlvs cleanparax
@@ -46,6 +47,8 @@ simulation/%.spice: %.sch
 
 simulation/%.raw: simulation/%.spice
 	cd simulation && ngspice -b -r $(notdir $@) $(notdir $<)
+
+test: $(HTML_FILES)
 
 test/%.html: simulation/%.raw
 	pip install pytest-html

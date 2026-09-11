@@ -55,6 +55,12 @@ The `nd2ps` diode pixel. Designed to be infinitely tiled with no routing in magi
 <p><span class="eq"><var>I</var><sub>DARK_DIFF</sub>  ( <var>T</var><sub>OP</sub> )  = <var>I</var><sub>DARK_DIFF</sub>  ( 293.15 <i>K</i> )  = 146.61 <i>ec</i><i class="unit"> ∕ </i><i>s</i></span></p>
 
 ### Source Follower DC Transfer Function
-The source follower DC transfer function is simulated. Choice of MOSFETs for the pixel source follower is very constrained due to available space so some compromise needs to be taken on performance.
+The source follower DC transfer function is simulated. Choice of MOSFETs for the pixel source follower is very constrained due to available space, so some compromise needs to be taken on performance.
 
 ![DC Transfer Function](../../xschem/docs/tb_pixel_nd2ps_dc.png)
+
+
+### Pixel Reset Voltage
+Pixel reset voltage both at the diode and at the output of the source follower is an important parameter for following design.
+
+![Pixel Reset Voltage](../../xschem/docs/tb_pixel_nd2ps_dc_reset.png)
