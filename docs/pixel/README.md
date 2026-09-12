@@ -1,5 +1,6 @@
 ## Pixel Design
 The `nd2ps` diode pixel. Designed to be infinitely tiled with no routing in magic.
+
 ![Schematics](../../xschem/docs/ip_pixel_nd2ps.png)
 
 ### Calculations
@@ -56,16 +57,20 @@ The `nd2ps` diode pixel. Designed to be infinitely tiled with no routing in magi
 
 ### Source Follower DC Transfer Function
 The source follower DC transfer function is simulated. Choice of MOSFETs for the pixel source follower is very constrained due to available space, so some compromise needs to be taken on performance.
+
 ![DC Transfer Function](../../xschem/docs/tb_pixel_nd2ps_dc.png)
 
 ### Pixel Reset Voltage
 Pixel reset voltage both at the diode and at the output of the source follower is an important parameter for following design.
+
 ![Pixel Reset Voltage](../../xschem/docs/tb_pixel_nd2ps_dc_reset.png)
 
 ### Readout Noise
 Readout noise of the source follower and current source is simulated. Note that this does not include kTC noise of the reset process itself.
+
 ![Pixel Readout Noise](../../xschem/docs/tb_pixel_nd2ps_noise.png)
 
 ### Transient Simulation
 A transient simulation of a single pixel is performed. Starting at the nominal reset level (ignoring soft-reset behavior) a compressed integration period of 1ms at various diode currents (higher than normal to compensate for short exposure) is simulated. The lower plot shows the zoomed-in readout phase of the pixel.
+
 ![Transient Simulation](../../xschem/docs/tb_pixel_nd2ps_tran.png)
