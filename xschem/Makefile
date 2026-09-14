@@ -11,7 +11,10 @@ MAGIC_RC     := $(PDK_ROOT)/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
 
 .PHONY: cleansim cleanlvs cleanparax
 
+###################################################################################
 ## LVS Netlist Generation
+###################################################################################
+
 cleanlvs:
 	rm -f $(LVS_FILES)
 
@@ -24,7 +27,10 @@ lvs/%.lvs.spice: %.sch
 	xschem -x -q $< --command "set lvs_netlist 0; set top_is_subckt 1; xschem netlist -file $*.lvs.spice"
 	mv simulation/$*.lvs.spice lvs/$*.lvs.spice
 
+###################################################################################
 ## Parax Simulation Generation
+###################################################################################
+
 cleanparax:
 	rm -f ./parax/*.spice
 	rm -f ./parax/*.sim
@@ -40,8 +46,10 @@ parax/%.sim.spice: ../mag/%.mag
 	rm -f ../mag/$*_parax.ext
 	rm -f ../mag/$*_parax.nodes
 
-
+###################################################################################
 ## Simulation and Test Generation
+###################################################################################
+
 simulation/%.spice: %.sch 
 	xschem -x -q $< --command "set lvs_netlist 0; set top_is_subckt 0; xschem netlist -file $*.spice"
 
@@ -69,7 +77,10 @@ cleansim:
 	rm -f test/*.html
 	rm -f test/*.png
 
+###################################################################################
 ## Documentation Picture Generation
+###################################################################################
+
 cleandocs:
 	rm -f docs/ip*.png
 
