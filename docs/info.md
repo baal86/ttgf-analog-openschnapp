@@ -9,7 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated. Further documentation for single IP blocks in the folders listed below.
+A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated. 
+
+![Block Diagram](block_diagram.png)
+
+
+Further documentation for single IP blocks in the folders listed below.
 
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/pixel/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/pixel/README.md)
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md)
