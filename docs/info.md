@@ -15,6 +15,7 @@ A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully th
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/current_source/README.md)
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_mux/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_mux/README.md)
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/row_mux/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/row_mux/README.md)
+- [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_switch/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_switch/README.md)
 
 ## How to test
 
