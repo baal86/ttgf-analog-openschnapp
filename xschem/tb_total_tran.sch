@@ -437,7 +437,7 @@ value="
 C {devices/code_shown.sym} 1490 -590 0 0 {name=SETUP only_toplevel=true
 value="
 VVDD VDD 0 3.3
-VCLK CLK 0 PULSE (0 3.3 0 1n 1n 5u 10u)
+VCLK CLK 0 PULSE (0 3.3 5u 1n 1n 5u 10u)
 
 astim [RESETA 
 +      nRA4 nRA3 nRA2 nRA1 nRA0 
