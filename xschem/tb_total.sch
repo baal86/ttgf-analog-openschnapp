@@ -5,7 +5,7 @@ V {}
 S {}
 F {}
 E {}
-B 2 710 -280 1510 120 {flags=graph
+B 2 -1950 400 -1150 800 {flags=graph
 y1=-1.6e-06
 y2=3
 ypos1=0
@@ -30,7 +30,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 710 -710 1510 -310 {flags=graph
+B 2 -1950 -60 -1150 340 {flags=graph
 y1=0
 ypos1=0
 ypos2=2
@@ -61,6 +61,9 @@ y2=2.5}
 T {Analog Pin
 Capacitor
 Model} 220 910 0 0 0.4 0.4 {}
+T {Analog Pin
+Capacitor
+Model} 1310 930 0 0 0.4 0.4 {}
 N -680 -560 -680 -540 {lab=0}
 N -380 -560 -380 -540 {lab=0}
 N -680 -220 -680 -200 {lab=0}
@@ -232,6 +235,10 @@ N 350 970 350 990 {lab=0}
 N 1280 900 1380 900 {lab=OUT}
 N 1180 980 1180 1000 {lab=0}
 N 1180 810 1180 820 {lab=VDD}
+N 1440 900 1440 920 {lab=OUT}
+N 1440 920 1440 930 {lab=OUT}
+N 1440 990 1440 1010 {lab=0}
+N 1380 900 1520 900 {lab=OUT}
 C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1
 schematic=ip_pixel_nd2ps_parax.sim
 spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
@@ -394,13 +401,13 @@ C {gnd.sym} 880 1010 0 0 {name=l22 lab=0}
 C {lab_wire.sym} 1070 900 0 0 {name=p47 sig_type=std_logic lab=AMP}
 C {lab_wire.sym} 610 880 0 0 {name=p48 sig_type=std_logic lab=sf}
 C {lab_wire.sym} 730 920 0 0 {name=p49 sig_type=std_logic lab=ref}
-C {devices/launcher.sym} -1855 -645 0 0 {name=h1
+C {devices/launcher.sym} -1845 -445 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -1920 -810 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -1910 -610 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -409,13 +416,13 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 "}
-C {devices/launcher.sym} -1855 -605 0 0 {name=h2
+C {devices/launcher.sym} -1845 -405 0 0 {name=h2
 descr="Annotate"
 tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {simulator_commands_shown.sym} -1920 -510 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -1920 -280 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -427,7 +434,7 @@ value="
 	quit
 .endc
 "}
-C {devices/code_shown.sym} -1920 -280 0 0 {name=SETUP only_toplevel=true
+C {devices/code_shown.sym} 1490 -590 0 0 {name=SETUP only_toplevel=true
 value="
 VVDD VDD 0 3.3
 VCLK CLK 0 PULSE (0 3.3 0 1n 1n 5u 10u)
@@ -543,3 +550,9 @@ tclcommand="textwindow [file normalize ./parax/ip_buffer.sim.spice]"}
 C {lab_wire.sym} 1370 900 0 0 {name=p1 sig_type=std_logic lab=OUT}
 C {gnd.sym} 1180 1000 0 0 {name=l24 lab=0}
 C {vdd.sym} 1180 810 0 0 {name=l36 lab=VDD}
+C {capa.sym} 1440 960 0 0 {name=C2
+m=1
+value=5p
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} 1440 1010 0 0 {name=l56 lab=0}
