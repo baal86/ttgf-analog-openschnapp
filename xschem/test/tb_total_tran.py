@@ -19,20 +19,28 @@ def data():
 def test_plot_samples(data):
     plt.figure()
 
+    
     plot = data.plots[0]
     axis = plot.get_trace(0).get_wave()
     voltage = plot.get_trace("v(out)").get_wave()
 
-    image = [[0.0] * NCOLUMNS for _ in range(NROWS)]
+    rimage =  [[0.0] * NCOLUMNS for _ in range(NROWS)]
+    qimage = [[0] * NCOLUMNS for _ in range(NROWS)]
 
     for y in range(NROWS):
         for x in range(NCOLUMNS):
             IPIX = (x + y * NROWS)
             tst = FIRST_PIXEL + DT_PIXEL * IPIX
             idx = (np.abs(axis - tst * 1e-6)).argmin()
-            val = voltage[idx]
-            image[x][y] = float(val)
+            rval = voltage[idx]
+            rimage[x][y] = float(rval)
+            qval = int(rval / 3.3 * 2**12)
+            qimage[x][y] = float(qval)
 
-    plt.imshow(image)
-
+    plt.subplot(1,2,1)
+    plt.title("Analog Image")
+    plt.imshow(rimage)
+    plt.subplot(1,2,2)
+    plt.title("12-bit Quantized Image")
+    plt.imshow(qimage)
     plt.savefig("tb_total_tran.png")
