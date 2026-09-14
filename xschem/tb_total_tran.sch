@@ -430,7 +430,7 @@ value="
 	reset
 	tran 1u 1.6m
 	save all
-	write tb_total.raw
+	write tb_total_tran.raw
 	quit
 .endc
 "}
