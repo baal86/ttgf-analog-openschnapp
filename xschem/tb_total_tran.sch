@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0016
+x1=0.0010164296
+x2=0.0015407176
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -37,8 +37,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0016
+x1=0.0010164296
+x2=0.0015407176
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -48,7 +48,7 @@ node="clk
 nra[4:0];nra4,nra3,nra2,nra1,nra0
 nry[3:0];nry3,nry2,nry1,nry0
 nca[4:0];nca4,nca3,nca2,nca1,nca0
-ncy[3:0];ncy3,ncy2,ncy1,ncy0
+ncy[5:0];ncy5,ncy4,ncy3,ncy2,ncy1,ncy0
 reseta
 reset"
 color="4 5 6 5 6 5 6"
@@ -60,10 +60,10 @@ digital=1
 y2=2.5}
 T {Analog Pin
 Capacitor
-Model} 220 910 0 0 0.4 0.4 {}
+Model} 1580 910 0 0 0.4 0.4 {}
 T {Analog Pin
 Capacitor
-Model} 1310 930 0 0 0.4 0.4 {}
+Model} 2670 930 0 0 0.4 0.4 {}
 N -680 -560 -680 -540 {lab=0}
 N -380 -560 -380 -540 {lab=0}
 N -680 -220 -680 -200 {lab=0}
@@ -194,21 +194,21 @@ N -830 340 -780 340 {lab=reset}
 N -530 340 -480 340 {lab=reset}
 N -230 340 -180 340 {lab=reset}
 N 70 340 120 340 {lab=reset}
-N 500 1110 500 1130 {lab=0}
-N 440 880 440 960 {lab=sf}
-N 440 880 640 880 {lab=sf}
-N 640 880 760 880 {lab=sf}
-N 880 990 880 1010 {lab=0}
-N 1000 900 1080 900 {lab=AMP}
-N 690 920 760 920 {lab=ref}
+N 1860 1110 1860 1130 {lab=0}
+N 1800 880 1800 960 {lab=sf}
+N 1800 880 2000 880 {lab=sf}
+N 2000 880 2120 880 {lab=sf}
+N 2240 990 2240 1010 {lab=0}
+N 2360 900 2440 900 {lab=AMP}
+N 2050 920 2120 920 {lab=ref}
 N -870 -500 -860 -500 {lab=nRY0}
-N 460 940 460 960 {lab=ref}
-N 460 620 780 620 {lab=ref}
-N 460 620 460 940 {lab=ref}
-N 460 920 690 920 {lab=ref}
-N 880 510 880 520 {lab=VDD}
-N 980 600 1030 600 {lab=reset}
-N 980 640 1000 640 {lab=VDD}
+N 1820 940 1820 960 {lab=ref}
+N 1820 620 2140 620 {lab=ref}
+N 1820 620 1820 940 {lab=ref}
+N 1820 920 2050 920 {lab=ref}
+N 2240 510 2240 520 {lab=VDD}
+N 2340 600 2390 600 {lab=reset}
+N 2340 640 2360 640 {lab=VDD}
 N 220 250 220 260 {lab=VDD}
 N -80 250 -80 260 {lab=VDD}
 N -380 250 -380 260 {lab=VDD}
@@ -225,20 +225,100 @@ N -680 -770 -680 -760 {lab=VDD}
 N -380 -770 -380 -760 {lab=VDD}
 N -80 -770 -80 -760 {lab=VDD}
 N 220 -770 220 -760 {lab=VDD}
-N 880 810 880 820 {lab=VDD}
-N 500 980 500 990 {lab=VDD}
-N 440 960 440 990 {lab=sf}
-N 460 960 460 990 {lab=ref}
-N 350 880 350 900 {lab=sf}
-N 350 900 350 910 {lab=sf}
-N 350 970 350 990 {lab=0}
-N 1280 900 1380 900 {lab=OUT}
-N 1180 980 1180 1000 {lab=0}
-N 1180 810 1180 820 {lab=VDD}
-N 1440 900 1440 920 {lab=OUT}
-N 1440 920 1440 930 {lab=OUT}
-N 1440 990 1440 1010 {lab=0}
-N 1380 900 1520 900 {lab=OUT}
+N 2240 810 2240 820 {lab=VDD}
+N 1860 980 1860 990 {lab=VDD}
+N 1800 960 1800 990 {lab=sf}
+N 1820 960 1820 990 {lab=ref}
+N 1720 880 1720 900 {lab=sf}
+N 1720 900 1720 910 {lab=sf}
+N 1720 970 1720 990 {lab=0}
+N 2640 900 2740 900 {lab=OUT}
+N 2540 980 2540 1000 {lab=0}
+N 2540 810 2540 820 {lab=VDD}
+N 2800 900 2800 920 {lab=OUT}
+N 2800 920 2800 930 {lab=OUT}
+N 2800 990 2800 1010 {lab=0}
+N 2740 900 2880 900 {lab=OUT}
+N 440 880 740 880 {lab=sf}
+N 540 -560 540 -540 {lab=0}
+N 540 -220 540 -200 {lab=0}
+N 540 120 540 140 {lab=0}
+N 540 460 540 480 {lab=0}
+N 670 -790 670 600 {lab=cl4}
+N 640 -660 670 -660 {lab=cl4}
+N 640 -320 670 -320 {lab=cl4}
+N 640 20 670 20 {lab=cl4}
+N 640 360 670 360 {lab=cl4}
+N 420 -510 420 -500 {lab=nRY0}
+N 420 -640 420 -510 {lab=nRY0}
+N 420 -640 440 -640 {lab=nRY0}
+N 420 -170 420 -160 {lab=nRY1}
+N 420 -300 420 -170 {lab=nRY1}
+N 420 -300 440 -300 {lab=nRY1}
+N 420 170 420 180 {lab=nRY2}
+N 420 40 420 170 {lab=nRY2}
+N 420 40 440 40 {lab=nRY2}
+N 420 510 420 520 {lab=nRY3}
+N 420 380 420 510 {lab=nRY3}
+N 420 380 440 380 {lab=nRY3}
+N 640 650 670 650 {lab=cl4}
+N 670 600 670 650 {lab=cl4}
+N 540 760 540 780 {lab=0}
+N 640 720 670 720 {lab=sf}
+N 670 720 670 880 {lab=sf}
+N 390 -680 440 -680 {lab=reset}
+N 390 -340 440 -340 {lab=reset}
+N 390 0 440 0 {lab=reset}
+N 390 340 440 340 {lab=reset}
+N 540 250 540 260 {lab=VDD}
+N 540 -90 540 -80 {lab=VDD}
+N 540 -430 540 -420 {lab=VDD}
+N 540 -770 540 -760 {lab=VDD}
+N 370 700 440 700 {lab=nCY4}
+N 740 880 750 880 {lab=sf}
+N 760 880 1060 880 {lab=sf}
+N 860 -560 860 -540 {lab=0}
+N 860 -220 860 -200 {lab=0}
+N 860 120 860 140 {lab=0}
+N 860 460 860 480 {lab=0}
+N 990 -790 990 600 {lab=cl5}
+N 960 -660 990 -660 {lab=cl5}
+N 960 -320 990 -320 {lab=cl5}
+N 960 20 990 20 {lab=cl5}
+N 960 360 990 360 {lab=cl5}
+N 740 -510 740 -500 {lab=nRY0}
+N 740 -640 740 -510 {lab=nRY0}
+N 740 -640 760 -640 {lab=nRY0}
+N 740 -170 740 -160 {lab=nRY1}
+N 740 -300 740 -170 {lab=nRY1}
+N 740 -300 760 -300 {lab=nRY1}
+N 740 170 740 180 {lab=nRY2}
+N 740 40 740 170 {lab=nRY2}
+N 740 40 760 40 {lab=nRY2}
+N 740 510 740 520 {lab=nRY3}
+N 740 380 740 510 {lab=nRY3}
+N 740 380 760 380 {lab=nRY3}
+N 960 650 990 650 {lab=cl5}
+N 990 600 990 650 {lab=cl5}
+N 860 760 860 780 {lab=0}
+N 960 720 990 720 {lab=sf}
+N 990 720 990 880 {lab=sf}
+N 710 -680 760 -680 {lab=reset}
+N 710 -340 760 -340 {lab=reset}
+N 710 0 760 0 {lab=reset}
+N 710 340 760 340 {lab=reset}
+N 860 250 860 260 {lab=VDD}
+N 860 -90 860 -80 {lab=VDD}
+N 860 -430 860 -420 {lab=VDD}
+N 860 -770 860 -760 {lab=VDD}
+N 690 700 760 700 {lab=nCY5}
+N 1060 880 1070 880 {lab=sf}
+N 750 880 760 880 {lab=sf}
+N 1070 880 1800 880 {lab=sf}
+N 490 520 1050 520 {lab=nRY3}
+N 490 180 1050 180 {lab=nRY2}
+N 490 -160 1050 -160 {lab=nRY1}
+N 490 -500 1050 -500 {lab=nRY0}
 C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1
 schematic=ip_pixel_nd2ps_parax.sim
 spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
@@ -388,19 +468,19 @@ C {lab_wire.sym} -190 340 0 0 {name=p43 sig_type=std_logic lab=reset
 }
 C {lab_wire.sym} 110 340 0 0 {name=p44 sig_type=std_logic lab=reset
 }
-C {ip_current_source.sym} 470 1050 0 0 {name=x21
+C {ip_current_source.sym} 1830 1050 0 0 {name=x21
 schematic=ip_current_source_parax.sim
 spice_sym_def="tcleval(.include [file normalize ./parax/ip_current_source.sim.spice])"
 tclcommand="textwindow [file normalize ./parax/ip_current_source.sim.spice]"}
-C {gnd.sym} 500 1130 0 0 {name=l21 lab=0}
-C {ip_amplifier.sym} 880 900 0 0 {name=x22
+C {gnd.sym} 1860 1130 0 0 {name=l21 lab=0}
+C {ip_amplifier.sym} 2240 900 0 0 {name=x22
 schematic=ip_amplifier_parax.sim
 spice_sym_def="tcleval(.include [file normalize ./parax/ip_amplifier.sim.spice])"
 tclcommand="textwindow [file normalize ./parax/ip_amplifier.sim.spice]"}
-C {gnd.sym} 880 1010 0 0 {name=l22 lab=0}
-C {lab_wire.sym} 1070 900 0 0 {name=p47 sig_type=std_logic lab=AMP}
-C {lab_wire.sym} 610 880 0 0 {name=p48 sig_type=std_logic lab=sf}
-C {lab_wire.sym} 730 920 0 0 {name=p49 sig_type=std_logic lab=ref}
+C {gnd.sym} 2240 1010 0 0 {name=l22 lab=0}
+C {lab_wire.sym} 2430 900 0 0 {name=p47 sig_type=std_logic lab=AMP}
+C {lab_wire.sym} 1970 880 0 0 {name=p48 sig_type=std_logic lab=sf}
+C {lab_wire.sym} 2090 920 0 0 {name=p49 sig_type=std_logic lab=ref}
 C {devices/launcher.sym} -1845 -445 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -476,6 +556,8 @@ RnRY2  nRY2 0 100k
 RnRY1  nRY1 0 100k
 RnRY0  nRY0 0 100k
 
+RnCY5  nCY5 0 100k
+RnCY4  nCY4 0 100k
 RnCY3  nCY3 0 100k
 RnCY2  nCY2 0 100k
 RnCY1  nCY1 0 100k
@@ -500,6 +582,14 @@ IPX13 x13.siminj 0 24p
 IPX14 x14.siminj 0 0p
 IPX15 x15.siminj 0 16p
 IPX16 x16.siminj 0 2p
+IPX24 x24.siminj  0 26p
+IPX25 x25.siminj 0 14p
+IPX26 x26.siminj 0 18p
+IPX27 x27.siminj 0 10p
+IPX29 x29.siminj 0 24p
+IPX30 x30.siminj 0 0p
+IPX31 x31.siminj 0 16p
+IPX32 x32.siminj 0 2p
 "}
 C {noconn.sym} -870 -500 0 0 {name=l25}
 C {noconn.sym} -860 -160 0 0 {name=l26}
@@ -510,15 +600,15 @@ C {noconn.sym} -540 700 0 0 {name=l30}
 C {noconn.sym} -240 700 0 0 {name=l31}
 C {noconn.sym} 60 700 0 0 {name=l32}
 C {noconn.sym} -830 -680 0 0 {name=l33}
-C {ip_pixel_nd2ps.sym} 880 620 0 1 {name=x99
+C {ip_pixel_nd2ps.sym} 2240 620 0 1 {name=x99
 schematic=ip_pixel_nd2ps_parax.sim
 spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
 tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
-C {gnd.sym} 880 720 0 0 {name=l34 lab=0}
-C {vdd.sym} 880 510 0 0 {name=l35 lab=VDD}
-C {lab_wire.sym} 990 600 0 1 {name=p50 sig_type=std_logic lab=reset
+C {gnd.sym} 2240 720 0 0 {name=l34 lab=0}
+C {vdd.sym} 2240 510 0 0 {name=l35 lab=VDD}
+C {lab_wire.sym} 2350 600 0 1 {name=p50 sig_type=std_logic lab=reset
 }
-C {vdd.sym} 1000 640 0 0 {name=l37 lab=VDD}
+C {vdd.sym} 2360 640 0 0 {name=l37 lab=VDD}
 C {vdd.sym} 220 250 0 0 {name=l38 lab=VDD}
 C {vdd.sym} -80 250 0 0 {name=l39 lab=VDD}
 C {vdd.sym} -380 250 0 0 {name=l40 lab=VDD}
@@ -535,24 +625,108 @@ C {vdd.sym} -680 -770 0 0 {name=l50 lab=VDD}
 C {vdd.sym} -380 -770 0 0 {name=l51 lab=VDD}
 C {vdd.sym} -80 -770 0 0 {name=l52 lab=VDD}
 C {vdd.sym} 220 -770 0 0 {name=l53 lab=VDD}
-C {vdd.sym} 880 810 0 0 {name=l54 lab=VDD}
-C {vdd.sym} 500 980 0 0 {name=l55 lab=VDD}
-C {capa.sym} 350 940 0 0 {name=C1
+C {vdd.sym} 2240 810 0 0 {name=l54 lab=VDD}
+C {vdd.sym} 1860 980 0 0 {name=l55 lab=VDD}
+C {capa.sym} 1720 940 0 0 {name=C1
 m=1
 value=5p
 footprint=1206
 device="ceramic capacitor"}
-C {gnd.sym} 350 990 0 0 {name=l23 lab=0}
-C {ip_buffer.sym} 1180 900 0 0 {name=x23
+C {gnd.sym} 1720 990 0 0 {name=l23 lab=0}
+C {ip_buffer.sym} 2540 900 0 0 {name=x23
 schematic=ip_buffer_parax.sim
 spice_sym_def="tcleval(.include [file normalize ./parax/ip_buffer.sim.spice])"
 tclcommand="textwindow [file normalize ./parax/ip_buffer.sim.spice]"}
-C {lab_wire.sym} 1370 900 0 0 {name=p1 sig_type=std_logic lab=OUT}
-C {gnd.sym} 1180 1000 0 0 {name=l24 lab=0}
-C {vdd.sym} 1180 810 0 0 {name=l36 lab=VDD}
-C {capa.sym} 1440 960 0 0 {name=C2
+C {lab_wire.sym} 2730 900 0 0 {name=p1 sig_type=std_logic lab=OUT}
+C {gnd.sym} 2540 1000 0 0 {name=l24 lab=0}
+C {vdd.sym} 2540 810 0 0 {name=l36 lab=VDD}
+C {capa.sym} 2800 960 0 0 {name=C2
 m=1
 value=5p
 footprint=1206
 device="ceramic capacitor"}
-C {gnd.sym} 1440 1010 0 0 {name=l56 lab=0}
+C {gnd.sym} 2800 1010 0 0 {name=l56 lab=0}
+C {ip_pixel_nd2ps.sym} 540 -660 0 0 {name=x24
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 540 -540 0 0 {name=l57 lab=0}
+C {ip_pixel_nd2ps.sym} 540 -320 0 0 {name=x25
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 540 -200 0 0 {name=l58 lab=0}
+C {ip_pixel_nd2ps.sym} 540 20 0 0 {name=x26
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 540 140 0 0 {name=l59 lab=0}
+C {ip_pixel_nd2ps.sym} 540 360 0 0 {name=x27
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 540 480 0 0 {name=l60 lab=0}
+C {ip_column_switch.sym} 540 660 0 0 {name=x28
+schematic=ip_column_switch_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_column_switch.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_column_switch.sim.spice]"}
+C {gnd.sym} 540 780 0 0 {name=l61 lab=0}
+C {lab_wire.sym} 670 610 1 0 {name=p2 sig_type=std_logic lab=cl4
+
+}
+C {lab_wire.sym} 420 700 0 0 {name=p3 sig_type=std_logic lab=nCY4}
+C {lab_wire.sym} 430 -680 0 0 {name=p4 sig_type=std_logic lab=reset
+}
+C {lab_wire.sym} 430 -340 0 0 {name=p5 sig_type=std_logic lab=reset
+}
+C {lab_wire.sym} 430 0 0 0 {name=p6 sig_type=std_logic lab=reset
+}
+C {lab_wire.sym} 430 340 0 0 {name=p7 sig_type=std_logic lab=reset
+}
+C {vdd.sym} 540 250 0 0 {name=l62 lab=VDD}
+C {vdd.sym} 540 -90 0 0 {name=l63 lab=VDD}
+C {vdd.sym} 540 -430 0 0 {name=l64 lab=VDD}
+C {vdd.sym} 540 -770 0 0 {name=l65 lab=VDD}
+C {noconn.sym} 370 700 0 0 {name=l66}
+C {ip_pixel_nd2ps.sym} 860 -660 0 0 {name=x29
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 860 -540 0 0 {name=l67 lab=0}
+C {ip_pixel_nd2ps.sym} 860 -320 0 0 {name=x30
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 860 -200 0 0 {name=l68 lab=0}
+C {ip_pixel_nd2ps.sym} 860 20 0 0 {name=x31
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 860 140 0 0 {name=l69 lab=0}
+C {ip_pixel_nd2ps.sym} 860 360 0 0 {name=x32
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
+C {gnd.sym} 860 480 0 0 {name=l70 lab=0}
+C {ip_column_switch.sym} 860 660 0 0 {name=x33
+schematic=ip_column_switch_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_column_switch.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_column_switch.sim.spice]"}
+C {gnd.sym} 860 780 0 0 {name=l71 lab=0}
+C {lab_wire.sym} 990 610 1 0 {name=p8 sig_type=std_logic lab=cl5
+
+}
+C {lab_wire.sym} 740 700 0 0 {name=p9 sig_type=std_logic lab=nCY5}
+C {lab_wire.sym} 750 -680 0 0 {name=p10 sig_type=std_logic lab=reset
+}
+C {lab_wire.sym} 750 -340 0 0 {name=p11 sig_type=std_logic lab=reset
+}
+C {lab_wire.sym} 750 0 0 0 {name=p12 sig_type=std_logic lab=reset
+}
+C {lab_wire.sym} 750 340 0 0 {name=p13 sig_type=std_logic lab=reset
+}
+C {vdd.sym} 860 250 0 0 {name=l72 lab=VDD}
+C {vdd.sym} 860 -90 0 0 {name=l73 lab=VDD}
+C {vdd.sym} 860 -430 0 0 {name=l74 lab=VDD}
+C {vdd.sym} 860 -770 0 0 {name=l75 lab=VDD}
+C {noconn.sym} 690 700 0 0 {name=l76}
