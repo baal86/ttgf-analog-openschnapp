@@ -3,7 +3,7 @@ from spicelib import RawRead
 import matplotlib.pyplot as plt
 import numpy as np
 
-NROWS    = 4
+NROWS    = 8
 NCOLUMNS = 6
 FIRST_PIXEL = 1213
 DT_PIXEL = 10
