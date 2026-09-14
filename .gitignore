@@ -38,3 +38,5 @@ test/gate_level_netlist.v
 /docs/pixel/.temp.html
 /docs/pixel/calculations.md
 /mag/tt_um_baal86_openschnapp.gds.fb.txt
+/verilog/rtl/aux_total_digital/*.so
+/verilog/rtl/aux_total_digital/aux_total_digital_obj_dir
