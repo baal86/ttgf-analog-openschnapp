@@ -85,12 +85,8 @@ def main():
         sys.exit(1)
 
     in_path = Path(sys.argv[1])
-    if len(sys.argv) == 3:
-        out_path = Path(sys.argv[2])
-    else:
-        out_path = in_path.with_name(f"{in_path.stem}_dedup{in_path.suffix}")
-
-    dedup_raw(in_path, out_path)
+    
+    dedup_raw(in_path, in_path)
 
 
 if __name__ == "__main__":

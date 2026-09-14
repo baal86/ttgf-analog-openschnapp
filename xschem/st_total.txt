@@ -3,39 +3,23 @@
 110.0us   0s  0s  0s  0s  0s  0s  0s  0s  0s  0s  0s
 
 1200.0us  0s  0s  0s  0s  0s  1s  0s  0s  0s  0s  1s
-1210.0us  0s  0s  0s  0s  0s  1s  0s  0s  0s  0s  1s
 1220.0us  0s  0s  0s  0s  1s  0s  0s  0s  0s  0s  1s
-1230.0us  0s  0s  0s  0s  1s  0s  0s  0s  0s  0s  1s
 1240.0us  0s  0s  0s  0s  1s  1s  0s  0s  0s  0s  1s
-1250.0us  0s  0s  0s  0s  1s  1s  0s  0s  0s  0s  1s
 1260.0us  0s  0s  0s  1s  0s  0s  0s  0s  0s  0s  1s
-1270.0us  0s  0s  0s  1s  0s  0s  0s  0s  0s  0s  1s
 
 1280.0us  0s  0s  0s  0s  0s  1s  0s  0s  0s  1s  0s
-1290.0us  0s  0s  0s  0s  0s  1s  0s  0s  0s  1s  0s
 1300.0us  0s  0s  0s  0s  1s  0s  0s  0s  0s  1s  0s
-1310.0us  0s  0s  0s  0s  1s  0s  0s  0s  0s  1s  0s
 1320.0us  0s  0s  0s  0s  1s  1s  0s  0s  0s  1s  0s
-1330.0us  0s  0s  0s  0s  1s  1s  0s  0s  0s  1s  0s
 1340.0us  0s  0s  0s  1s  0s  0s  0s  0s  0s  1s  0s
-1350.0us  0s  0s  0s  1s  0s  0s  0s  0s  0s  1s  0s
 
 1360.0us  0s  0s  0s  0s  0s  1s  0s  0s  0s  1s  1s
-1370.0us  0s  0s  0s  0s  0s  1s  0s  0s  0s  1s  1s
 1380.0us  0s  0s  0s  0s  1s  0s  0s  0s  0s  1s  1s
-1390.0us  0s  0s  0s  0s  1s  0s  0s  0s  0s  1s  1s
 1400.0us  0s  0s  0s  0s  1s  1s  0s  0s  0s  1s  1s
-1410.0us  0s  0s  0s  0s  1s  1s  0s  0s  0s  1s  1s
 1420.0us  0s  0s  0s  1s  0s  0s  0s  0s  0s  1s  1s
-1430.0us  0s  0s  0s  1s  0s  0s  0s  0s  0s  1s  1s
 
 1440.0us  0s  0s  0s  0s  0s  1s  0s  0s  1s  0s  0s
-1450.0us  0s  0s  0s  0s  0s  1s  0s  0s  1s  0s  0s
 1460.0us  0s  0s  0s  0s  1s  0s  0s  0s  1s  0s  0s
-1470.0us  0s  0s  0s  0s  1s  0s  0s  0s  1s  0s  0s
 1480.0us  0s  0s  0s  0s  1s  1s  0s  0s  1s  0s  0s
-1490.0us  0s  0s  0s  0s  1s  1s  0s  0s  1s  0s  0s
 1500.0us  0s  0s  0s  1s  0s  0s  0s  0s  1s  0s  0s
-1510.0us  0s  0s  0s  1s  0s  0s  0s  0s  1s  0s  0s
 
 1520.0us  0s  0s  0s  0s  0s  0s  0s  0s  0s  0s  0s

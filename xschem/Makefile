@@ -71,6 +71,12 @@ test/tb_row_mux_timing.html: simulation/tb_row_mux_timing.raw
 	xschem -q tb_row_mux_timing.sch --command "xschem raw_read simulation/tb_row_mux_timing.raw; xschem print png docs/tb_row_mux_timing.png 900 600 800 -740 1700 -140"
 	touch test/tb_row_mux_timing.html
 
+test/tb_total_tran.html: simulation/tb_total_tran.raw
+	pip install pytest-html
+	python test/dedup_raw.py simulation/tb_total_tran.raw
+	cd test && pytest tb_total_tran.py --html=tb_total_tran.html --self-contained-html --tb=no
+	cp test/tb_total_tran.png docs/
+
 cleansim:
 	rm -f $(RAW_FILES)
 	rm -f $(SPICE_FILES)

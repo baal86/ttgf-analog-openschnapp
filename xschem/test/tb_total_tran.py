@@ -5,8 +5,8 @@ import numpy as np
 
 NROWS    = 4
 NCOLUMNS = 4
-FIRST_PIXEL = 1.215e-3
-DT_PIXEL = 10e-6
+FIRST_PIXEL = 1210
+DT_PIXEL = 20
 
 plt.rcParams['lines.linewidth'] = 0.5
 
@@ -17,16 +17,22 @@ def data():
 
 
 def test_plot_samples(data):
-    plt.figure(figsize= [6.4, 4.8*2])
+    plt.figure()
 
     plot = data.plots[0]
     axis = plot.get_trace(0).get_wave()
     voltage = plot.get_trace("v(out)").get_wave()
 
+    image = [[0.0] * NCOLUMNS for _ in range(NROWS)]
+
     for y in range(NROWS):
         for x in range(NCOLUMNS):
-            tst = FIRST_PIXEL + DT_PIXEL * (x*4 + y)
-            val = voltage[(np.abs(axis - tst)).argmin()]
-            print(val)
+            IPIX = (x + y * NROWS)
+            tst = FIRST_PIXEL + DT_PIXEL * IPIX
+            idx = (np.abs(axis - tst * 1e-6)).argmin()
+            val = voltage[idx]
+            image[x][y] = float(val)
+
+    plt.imshow(image)
 
     plt.savefig("tb_total_tran.png")
