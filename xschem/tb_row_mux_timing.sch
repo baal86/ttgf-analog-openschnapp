@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0018
+x2=0.0019
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -107,7 +107,7 @@ ry0 Y0 0 100k
 	reset
 	tran 1u 1.9m
 	save all
-	write tb_row_mux.raw
+	write tb_row_mux_timing.raw
 	quit
 .endc
 "}

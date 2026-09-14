@@ -57,6 +57,11 @@ test/%.html: simulation/%.raw
 
 test/tb_column_mux_timing.html: simulation/tb_column_mux_timing.raw
 	xschem -q tb_column_mux_timing.sch --command "xschem raw_read simulation/tb_column_mux_timing.raw; xschem print png docs/tb_column_mux_timing.png 900 600 320 -180 1220 420"
+	touch test/tb_column_mux_timing.html
+
+test/tb_row_mux_timing.html: simulation/tb_row_mux_timing.raw
+	xschem -q tb_row_mux_timing.sch --command "xschem raw_read simulation/tb_row_mux_timing.raw; xschem print png docs/tb_row_mux_timing.png 900 600 800 -740 1700 -140"
+	touch test/tb_row_mux_timing.html
 
 cleansim:
 	rm -f $(RAW_FILES)
