@@ -232,42 +232,102 @@ N 350 970 350 990 {lab=0}
 N 1280 900 1380 900 {lab=OUT}
 N 1180 980 1180 1000 {lab=0}
 N 1180 810 1180 820 {lab=VDD}
-C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1}
+C {ip_pixel_nd2ps.sym} -680 -660 0 0 {name=x1
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -680 -540 0 0 {name=l1 lab=0}
-C {ip_pixel_nd2ps.sym} -380 -660 0 0 {name=x2}
+C {ip_pixel_nd2ps.sym} -380 -660 0 0 {name=x2
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -380 -540 0 0 {name=l2 lab=0}
-C {ip_pixel_nd2ps.sym} -680 -320 0 0 {name=x3}
+C {ip_pixel_nd2ps.sym} -680 -320 0 0 {name=x3
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -680 -200 0 0 {name=l3 lab=0}
-C {ip_pixel_nd2ps.sym} -380 -320 0 0 {name=x4}
+C {ip_pixel_nd2ps.sym} -380 -320 0 0 {name=x4
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -380 -200 0 0 {name=l4 lab=0}
-C {ip_pixel_nd2ps.sym} -80 -660 0 0 {name=x5}
+C {ip_pixel_nd2ps.sym} -80 -660 0 0 {name=x5
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -80 -540 0 0 {name=l5 lab=0}
-C {ip_pixel_nd2ps.sym} 220 -660 0 0 {name=x6}
+C {ip_pixel_nd2ps.sym} 220 -660 0 0 {name=x6
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} 220 -540 0 0 {name=l6 lab=0}
-C {ip_pixel_nd2ps.sym} -80 -320 0 0 {name=x7}
+C {ip_pixel_nd2ps.sym} -80 -320 0 0 {name=x7
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -80 -200 0 0 {name=l7 lab=0}
-C {ip_pixel_nd2ps.sym} 220 -320 0 0 {name=x8}
+C {ip_pixel_nd2ps.sym} 220 -320 0 0 {name=x8
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} 220 -200 0 0 {name=l8 lab=0}
-C {ip_pixel_nd2ps.sym} -680 20 0 0 {name=x9}
+C {ip_pixel_nd2ps.sym} -680 20 0 0 {name=x9
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -680 140 0 0 {name=l9 lab=0}
-C {ip_pixel_nd2ps.sym} -380 20 0 0 {name=x10}
+C {ip_pixel_nd2ps.sym} -380 20 0 0 {name=x10
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -380 140 0 0 {name=l10 lab=0}
-C {ip_pixel_nd2ps.sym} -680 360 0 0 {name=x11}
+C {ip_pixel_nd2ps.sym} -680 360 0 0 {name=x11
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -680 480 0 0 {name=l11 lab=0}
-C {ip_pixel_nd2ps.sym} -380 360 0 0 {name=x12}
+C {ip_pixel_nd2ps.sym} -380 360 0 0 {name=x12
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -380 480 0 0 {name=l12 lab=0}
-C {ip_pixel_nd2ps.sym} -80 20 0 0 {name=x13}
+C {ip_pixel_nd2ps.sym} -80 20 0 0 {name=x13
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -80 140 0 0 {name=l13 lab=0}
-C {ip_pixel_nd2ps.sym} 220 20 0 0 {name=x14}
+C {ip_pixel_nd2ps.sym} 220 20 0 0 {name=x14
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} 220 140 0 0 {name=l14 lab=0}
-C {ip_pixel_nd2ps.sym} -80 360 0 0 {name=x15}
+C {ip_pixel_nd2ps.sym} -80 360 0 0 {name=x15
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} -80 480 0 0 {name=l15 lab=0}
-C {ip_pixel_nd2ps.sym} 220 360 0 0 {name=x16}
+C {ip_pixel_nd2ps.sym} 220 360 0 0 {name=x16
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} 220 480 0 0 {name=l16 lab=0}
-C {ip_column_switch.sym} -680 660 0 0 {name=x17}
-C {ip_column_switch.sym} -380 660 0 0 {name=x18}
-C {ip_column_switch.sym} -80 660 0 0 {name=x19}
-C {ip_column_switch.sym} 220 660 0 0 {name=x20}
+C {ip_column_switch.sym} -680 660 0 0 {name=x17
+schematic=ip_column_switch_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_column_switch.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_column_switch.sim.spice]"}
+C {ip_column_switch.sym} -380 660 0 0 {name=x18
+schematic=ip_column_switch_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_column_switch.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_column_switch.sim.spice]"}
+C {ip_column_switch.sym} -80 660 0 0 {name=x19
+schematic=ip_column_switch_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_column_switch.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_column_switch.sim.spice]"}
+C {ip_column_switch.sym} 220 660 0 0 {name=x20
+schematic=ip_column_switch_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_column_switch.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_column_switch.sim.spice]"}
 C {gnd.sym} 220 780 0 0 {name=l17 lab=0}
 C {gnd.sym} -80 780 0 0 {name=l18 lab=0}
 C {gnd.sym} -380 780 0 0 {name=l19 lab=0}
@@ -321,9 +381,15 @@ C {lab_wire.sym} -190 340 0 0 {name=p43 sig_type=std_logic lab=reset
 }
 C {lab_wire.sym} 110 340 0 0 {name=p44 sig_type=std_logic lab=reset
 }
-C {ip_current_source.sym} 470 1050 0 0 {name=x21}
+C {ip_current_source.sym} 470 1050 0 0 {name=x21
+schematic=ip_current_source_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_current_source.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_current_source.sim.spice]"}
 C {gnd.sym} 500 1130 0 0 {name=l21 lab=0}
-C {ip_amplifier.sym} 880 900 0 0 {name=x22}
+C {ip_amplifier.sym} 880 900 0 0 {name=x22
+schematic=ip_amplifier_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_amplifier.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_amplifier.sim.spice]"}
 C {gnd.sym} 880 1010 0 0 {name=l22 lab=0}
 C {lab_wire.sym} 1070 900 0 0 {name=p47 sig_type=std_logic lab=AMP}
 C {lab_wire.sym} 610 880 0 0 {name=p48 sig_type=std_logic lab=sf}
@@ -437,7 +503,10 @@ C {noconn.sym} -540 700 0 0 {name=l30}
 C {noconn.sym} -240 700 0 0 {name=l31}
 C {noconn.sym} 60 700 0 0 {name=l32}
 C {noconn.sym} -830 -680 0 0 {name=l33}
-C {ip_pixel_nd2ps.sym} 880 620 0 1 {name=x99}
+C {ip_pixel_nd2ps.sym} 880 620 0 1 {name=x99
+schematic=ip_pixel_nd2ps_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_pixel_nd2ps.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_pixel_nd2ps.sim.spice]"}
 C {gnd.sym} 880 720 0 0 {name=l34 lab=0}
 C {vdd.sym} 880 510 0 0 {name=l35 lab=VDD}
 C {lab_wire.sym} 990 600 0 1 {name=p50 sig_type=std_logic lab=reset
@@ -467,7 +536,10 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 350 990 0 0 {name=l23 lab=0}
-C {ip_buffer.sym} 1180 900 0 0 {name=x23}
+C {ip_buffer.sym} 1180 900 0 0 {name=x23
+schematic=ip_buffer_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_buffer.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_buffer.sim.spice]"}
 C {lab_wire.sym} 1370 900 0 0 {name=p1 sig_type=std_logic lab=OUT}
 C {gnd.sym} 1180 1000 0 0 {name=l24 lab=0}
 C {vdd.sym} 1180 810 0 0 {name=l36 lab=VDD}
