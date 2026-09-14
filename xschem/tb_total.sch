@@ -30,7 +30,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 -850 930 -50 1330 {flags=graph
+B 2 710 -710 1510 -310 {flags=graph
 y1=0
 ypos1=0
 ypos2=2
@@ -51,7 +51,7 @@ nca[4:0];nca4,nca3,nca2,nca1,nca0
 ncy[3:0];ncy3,ncy2,ncy1,ncy0
 reseta
 reset"
-color="4 5 6 7 8 11 10"
+color="4 5 6 5 6 5 6"
 dataset=-1
 unitx=1
 logx=0
@@ -328,13 +328,13 @@ C {gnd.sym} 880 1010 0 0 {name=l22 lab=0}
 C {lab_wire.sym} 1070 900 0 0 {name=p47 sig_type=std_logic lab=AMP}
 C {lab_wire.sym} 610 880 0 0 {name=p48 sig_type=std_logic lab=sf}
 C {lab_wire.sym} 730 920 0 0 {name=p49 sig_type=std_logic lab=ref}
-C {devices/launcher.sym} -1545 -115 0 0 {name=h1
+C {devices/launcher.sym} -1855 -645 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -1610 -300 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -1920 -810 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -343,13 +343,13 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 "}
-C {devices/launcher.sym} -1545 -75 0 0 {name=h2
+C {devices/launcher.sym} -1855 -605 0 0 {name=h2
 descr="Annotate"
 tclcommand="
 xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {simulator_commands_shown.sym} -1610 20 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} -1920 -510 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -361,7 +361,7 @@ value="
 	quit
 .endc
 "}
-C {devices/code_shown.sym} -2300 230 0 0 {name=SETUP only_toplevel=true
+C {devices/code_shown.sym} -1920 -280 0 0 {name=SETUP only_toplevel=true
 value="
 VVDD VDD 0 3.3
 VCLK CLK 0 PULSE (0 3.3 0 1n 1n 5u 10u)
@@ -382,9 +382,9 @@ acosim[CLK
 +       nCY2  nCY1  nCY0 
 +       nRY16 nRY15 nRY14 nRY13 nRY12 nRY11 
 +       nRY10 nRY9  nRY8  nRY7  nRY6  nRY5
-+       nRY4  nRY3  nRY2  nRY1  nRY0 ] null dut
++       nRY4  nRY3  nRY2  nRY1  nRY0 
++      ] null dut
 .model dut d_cosim simulation=\\"../../verilog/rtl/aux_total_digital/aux_total_digital.so\\"
-
 
 RnRA0  nRA0 0 100k
 RnRA1  nRA1 0 100k
@@ -398,18 +398,18 @@ RnCA2  nCA2 0 100k
 RnCA3  nCA3 0 100k
 RnCA4  nCA4 0 100k
 
-RnRY3 nRY3 0 100k
-RnRY2 nRY2 0 100k
-RnRY1 nRY1 0 100k
-RnRY0 nRY0 0 100k
+RnRY3  nRY3 0 100k
+RnRY2  nRY2 0 100k
+RnRY1  nRY1 0 100k
+RnRY0  nRY0 0 100k
 
-RnCY3 nCY3 0 100k
-RnCY2 nCY2 0 100k
-RnCY1 nCY1 0 100k
-RnCY0 nCY0 0 100k
+RnCY3  nCY3 0 100k
+RnCY2  nCY2 0 100k
+RnCY1  nCY1 0 100k
+RnCY0  nCY0 0 100k
 
-Rrsta reseta 0 100k
-Rrst  reset   0 100k
+Rrsta  reseta 0 100k
+Rrst   reset  0 100k
 
 IPX1  x1.siminj  0 30p
 IPX2  x2.siminj  0 22p
