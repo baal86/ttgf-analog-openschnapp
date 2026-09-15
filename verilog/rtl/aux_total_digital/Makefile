@@ -3,5 +3,5 @@ cleanbuild:
 	rm -f *.so
 
 build:
-	ngspice vlnggen $(PWD)/aux_total_digital.v
+	ngspice vlnggen -- --x-assign 0 --x-initial 0 $(PWD)/aux_total_digital.v
 

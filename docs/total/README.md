@@ -1,5 +1,5 @@
 ## Total Simulation
-A subset of the entire image sensor is simulated. This includes co-simulation of the digital parts.  The exposure time is 1ms, but injection currents are scaled up by x1000 to compensate. Pseudo random currents are injected into the pixels.
+A subset of the entire image sensor is simulated. This includes co-simulation of the digital parts.  The exposure time is 1ms, but injection currents are scaled up to compensate. A test pattern image is injected. The simulation implements correlated double sampling to compensate for the photons caught during integration and to reject kTC noise (not modelled).
 
 A timing diagram of the digital signals, clock, reset, and column/row control is shown below.
 
@@ -14,6 +14,6 @@ The analog signals are shown below:
 
 ![Analog Signals](../../xschem/docs/tb_total_tran.b.png)
 
-The resulting image is shown below, both raw analog and quantized to 12bit @ 3.3V FSR as would be the case for the RP2350 ADC.
+The resulting image is shown below, quantized to 12bit @ 3.3V FSR as would be the case for the RP2350 ADC.
 
 ![Samples Image](../../xschem/docs/tb_total_tran.png)
