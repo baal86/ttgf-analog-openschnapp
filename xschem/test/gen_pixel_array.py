@@ -4,8 +4,8 @@ random.seed(42)
 
 lines = []
 
-NROWS = 8
-NCOLS = 6
+NROWS = 17
+NCOLS = 21
 
 START_T = 1200
 PIXEL_T = 10

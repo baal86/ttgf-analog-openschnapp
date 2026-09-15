@@ -3,8 +3,8 @@ from spicelib import RawRead
 import matplotlib.pyplot as plt
 import numpy as np
 
-NROWS    = 8
-NCOLUMNS = 6
+NROWS    = 17
+NCOLUMNS = 21
 FIRST_PIXEL = 1213
 DT_PIXEL = 10
 
@@ -17,7 +17,7 @@ def data():
 
 
 def test_plot_samples(data):
-    plt.figure()
+    plt.figure(figsize=[6.4*1.5, 4.8])
 
     
     plot = data.plots[0]

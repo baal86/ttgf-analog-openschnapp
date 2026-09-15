@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0018
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -38,15 +38,15 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0018
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 legendmag=1.0
 node="clk
-nry[3:0];nry7,nry6,nry5,nry4,nry3,nry2,nry1,nry0
-ncy[5:0];ncy5,ncy4,ncy3,ncy2,ncy1,ncy0
+nry[16:0];nry16,nry15,nry14,nry13,nry12,nry11,nry10,nry9,nry8,nry7,nry6,nry5,nry4,nry3,nry2,nry1,nry0
+ncy[20:0];ncy20,ncy19,ncy18,ncy17,ncy16,ncy15,ncy14,ncy13,ncy12,ncy11,ncy10,ncy9,ncy8,ncy7,ncy6,ncy5,ncy4,ncy3,ncy2,ncy1,ncy0
 reset"
 color="4 6 6 6"
 dataset=-1
@@ -54,7 +54,7 @@ unitx=1
 logx=0
 logy=0
 digital=1
-y2=4}
+y2=3.5}
 T {Analog Pin
 Capacitor
 Model} -380 550 0 0 0.4 0.4 {}
@@ -131,7 +131,7 @@ value="
 .options reltol=0.005 vntol=10u abstol=10n
 .control
 	reset
-	tran 1u 1.8m
+	tran 1u 5m
 	write tb_total_tran.raw
 	quit
 .endc
