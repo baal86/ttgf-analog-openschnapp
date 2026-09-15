@@ -176,22 +176,6 @@ RnCA2  nCA2 0 100k
 RnCA3  nCA3 0 100k
 RnCA4  nCA4 0 100k
 
-RnRY7  nRY7 0 100k
-RnRY6  nRY6 0 100k
-RnRY5  nRY5 0 100k
-RnRY4  nRY4 0 100k
-RnRY3  nRY3 0 100k
-RnRY2  nRY2 0 100k
-RnRY1  nRY1 0 100k
-RnRY0  nRY0 0 100k
-
-RnCY5  nCY5 0 100k
-RnCY4  nCY4 0 100k
-RnCY3  nCY3 0 100k
-RnCY2  nCY2 0 100k
-RnCY1  nCY1 0 100k
-RnCY0  nCY0 0 100k
-
 Rrsta  reseta 0 100k
 Rrst   reset  0 100k
 
