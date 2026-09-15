@@ -76,7 +76,7 @@ test/tb_row_mux_timing.html: simulation/tb_row_mux_timing.raw
 	touch test/tb_row_mux_timing.html
 
 test/tb_total_tran.html: simulation/tb_total_tran.raw
-	xschem -q tb_total_tran.sch --command "xschem raw_read simulation/tb_total_tran.raw; xschem print png docs/tb_total_tran.a.png 900 450 -1950 -60 -1150 340; xschem print png docs/tb_total_tran.b.png 900 450 -1950 400 -1150 800"
+	xschem -q tb_total_tran.sch --command "xschem raw_read simulation/tb_total_tran.raw; xschem print png docs/tb_total_tran.a.png 900 450 -1950 120 -1150 520; xschem print png docs/tb_total_tran.b.png 900 450 -1950 550 -1150 950"
 	pip install pytest-html
 	cd test && pytest tb_total_tran.py --html=tb_total_tran.html --self-contained-html --tb=no
 	cp test/tb_total_tran.png docs/
