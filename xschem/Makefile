@@ -50,8 +50,12 @@ parax/%.sim.spice: ../mag/%.mag
 ## Simulation and Test Generation
 ###################################################################################
 
-simulation/%.spice: %.sch 
+simulation/%.spice: %.sch parax
 	xschem -x -q $< --command "set lvs_netlist 0; set top_is_subckt 0; xschem netlist -file $*.spice"
+
+simulation/tb_total_tran.spice: tb_total_tran.sch parax
+	python test/gen_pixel_array.py
+	xschem -x -q tb_total_tran.sch --command "set lvs_netlist 0; set top_is_subckt 0; xschem netlist -file tb_total_tran.spice"
 
 simulation/%.raw: simulation/%.spice
 	cd simulation && ngspice -b -r $(notdir $@) $(notdir $<)
