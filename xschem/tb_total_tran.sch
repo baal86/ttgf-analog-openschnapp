@@ -45,19 +45,16 @@ xlabmag=1.0
 ylabmag=1.0
 legendmag=1.0
 node="clk
-nra[4:0];nra4,nra3,nra2,nra1,nra0
 nry[3:0];nry7,nry6,nry5,nry4,nry3,nry2,nry1,nry0
-nca[4:0];nca4,nca3,nca2,nca1,nca0
 ncy[5:0];ncy5,ncy4,ncy3,ncy2,ncy1,ncy0
-reseta
 reset"
-color="4 5 6 5 6 5 6"
+color="4 6 6 6"
 dataset=-1
 unitx=1
 logx=0
 logy=0
 digital=1
-y2=2.5}
+y2=4}
 T {Analog Pin
 Capacitor
 Model} -380 550 0 0 0.4 0.4 {}
@@ -131,53 +128,39 @@ C {simulator_commands_shown.sym} -1920 -280 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+.options reltol=0.005 vntol=10u abstol=10n
 .control
 	reset
 	tran 1u 1.8m
-	save all
 	write tb_total_tran.raw
 	quit
 .endc
 "}
 C {devices/code_shown.sym} -1020 -780 0 0 {name=SETUP only_toplevel=true
 value="
+
 VVDD VDD 0 3.3
 VCLK CLK 0 PULSE (0 3.3 5u 1n 1n 5u 10u)
 
 astim [RESETA 
-+      nRA4 nRA3 nRA2 nRA1 nRA0 
-+      nCA4 nCA3 nCA2 nCA1 nCA0] stim
++      dRA4 dRA3 dRA2 dRA1 dRA0 
++      dCA4 dCA3 dCA2 dCA1 dCA0] stim
 .model stim d_source input_file=\\"../st_total.txt\\"
 
 acosim[CLK 
-+      nCA4 nCA3 nCA2 nCA1 nCA0 
-+      nRA4 nRA3 nRA2 nRA1 nRA0 
++      dCA4 dCA3 dCA2 dCA1 dCA0 
++      dRA4 dRA3 dRA2 dRA1 dRA0 
 +      RESETA] 
-+      [reset
-+       nCY20 nCY19 nCY18 nCY17 nCY16 nCY15
-+       nCY14 nCY13 nCY12 nCY11 nCY10 nCY9 
-+       nCY8  nCY7  nCY6  nCY5  nCY4  nCY3 
-+       nCY2  nCY1  nCY0 
-+       nRY16 nRY15 nRY14 nRY13 nRY12 nRY11 
-+       nRY10 nRY9  nRY8  nRY7  nRY6  nRY5
-+       nRY4  nRY3  nRY2  nRY1  nRY0 
++      [dreset
++       dCY20 dCY19 dCY18 dCY17 dCY16 dCY15
++       dCY14 dCY13 dCY12 dCY11 dCY10 dCY9 
++       dCY8  dCY7  dCY6  dCY5  dCY4  dCY3 
++       dCY2  dCY1  dCY0 
++       dRY16 dRY15 dRY14 dRY13 dRY12 dRY11 
++       dRY10 dRY9  dRY8  dRY7  dRY6  dRY5
++       dRY4  dRY3  dRY2  dRY1  dRY0 
 +      ] null dut
 .model dut d_cosim simulation=\\"../../verilog/rtl/aux_total_digital/aux_total_digital.so\\"
-
-RnRA0  nRA0 0 100k
-RnRA1  nRA1 0 100k
-RnRA2  nRA2 0 100k
-RnRA3  nRA3 0 100k
-RnRA4  nRA4 0 100k
-
-RnCA0  nCA0 0 100k
-RnCA1  nCA1 0 100k
-RnCA2  nCA2 0 100k
-RnCA3  nCA3 0 100k
-RnCA4  nCA4 0 100k
-
-Rrsta  reseta 0 100k
-Rrst   reset  0 100k
 
 .include pixels.spice
 "}

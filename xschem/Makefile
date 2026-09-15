@@ -79,7 +79,6 @@ test/tb_total_tran.html: simulation/tb_total_tran.raw
 	xschem -q tb_total_tran.sch --command "xschem raw_read simulation/tb_total_tran.raw; xschem print png docs/tb_total_tran.a.png 900 450 -1950 -60 -1150 340"
 	xschem -q tb_total_tran.sch --command "xschem raw_read simulation/tb_total_tran.raw; xschem print png docs/tb_total_tran.b.png 900 450 -1950 400 -1150 800"
 	pip install pytest-html
-	python test/dedup_raw.py simulation/tb_total_tran.raw
 	cd test && pytest tb_total_tran.py --html=tb_total_tran.html --self-contained-html --tb=no
 	cp test/tb_total_tran.png docs/
 

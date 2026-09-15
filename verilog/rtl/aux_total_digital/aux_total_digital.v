@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 `default_nettype none
 `include "../ip_row_mux/ip_row_mux.v"
 `include "../ip_column_mux/ip_column_mux.v"
