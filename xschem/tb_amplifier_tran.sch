@@ -6,14 +6,14 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=1.8	
+y1=0.72	
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.1473429e-05
-x2=0.00013176117
+x1=-5e-06
+x2=9.5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,7 +27,7 @@ color="4 5"
 node="outb
 outa"
 hcursor2_y=1.8627841
-y2=2.5}
+y2=2.1}
 N -360 -80 -360 -60 {lab=SIG}
 N -360 -60 -360 -50 {lab=SIG}
 N -360 -50 -360 -30 {lab=SIG}
@@ -35,61 +35,67 @@ N -360 -120 -360 -80 {lab=SIG}
 N -360 -160 -360 -120 {lab=SIG}
 N -360 -30 -360 20 {lab=SIG}
 N -360 80 -360 120 {lab=0}
-N -60 -160 -50 -160 {lab=#net1}
-N 190 -140 280 -140 {lab=OUTB}
-N 220 -300 260 -300 {lab=OUTB}
-N 260 -260 260 -140 {lab=OUTB}
-N 160 -300 220 -300 {lab=OUTB}
-N 560 -140 560 -110 {lab=OUTB}
-N 560 -50 560 -10 {lab=0}
-N 490 -140 490 -110 {lab=OUTB}
-N 490 -50 490 -10 {lab=0}
-N -80 -120 -80 -90 {lab=#net2}
-N -80 -120 -50 -120 {lab=#net2}
-N 50 -300 160 -300 {lab=OUTB}
-N -80 -300 -10 -300 {lab=#net1}
-N -80 -260 -80 -160 {lab=#net1}
-N -80 -160 -60 -160 {lab=#net1}
-N -140 -160 -80 -160 {lab=#net1}
 N -250 -160 -200 -160 {lab=SIG}
-N -80 -300 -80 -260 {lab=#net1}
-N 260 -300 260 -260 {lab=OUTB}
-N 70 -50 70 -40 {lab=0}
-N 70 -230 70 -220 {lab=VDD}
-N -50 -160 0 -160 {lab=#net1}
-N -50 -120 0 -120 {lab=#net2}
-N 140 -140 190 -140 {lab=OUTB}
 N -300 -160 -250 -160 {lab=SIG}
 N -360 -160 -300 -160 {lab=SIG}
-N 490 -140 670 -140 {lab=OUTB}
-N 340 -140 490 -140 {lab=OUTB}
-N 280 -140 340 -140 {lab=OUTB}
-N -60 -520 -50 -520 {lab=OUTA}
-N 190 -500 280 -500 {lab=OUTA}
-N 220 -660 260 -660 {lab=OUTA}
-N 260 -620 260 -500 {lab=OUTA}
-N 160 -660 220 -660 {lab=OUTA}
-N 50 -660 160 -660 {lab=OUTA}
-N -80 -660 -10 -660 {lab=OUTA}
-N -80 -620 -80 -520 {lab=OUTA}
-N -80 -660 -80 -620 {lab=OUTA}
-N 260 -660 260 -620 {lab=OUTA}
-N 70 -410 70 -400 {lab=0}
-N 70 -590 70 -580 {lab=VDD}
-N -50 -520 0 -520 {lab=OUTA}
-N -50 -480 0 -480 {lab=SIG}
-N 140 -500 190 -500 {lab=OUTA}
-N -10 -660 50 -660 {lab=OUTA}
-N -80 -520 -60 -520 {lab=OUTA}
-N -360 -480 -50 -480 {lab=SIG}
-N -360 -480 -360 -160 {lab=SIG}
-N 280 -500 320 -500 {lab=OUTA}
-N 320 -500 320 -470 {lab=OUTA}
-N 320 -410 320 -370 {lab=0}
-N 400 -500 400 -470 {lab=OUTA}
-N 400 -410 400 -370 {lab=0}
-N 320 -500 430 -500 {lab=OUTA}
-C {devices/launcher.sym} -1085 -545 0 0 {name=h1
+N 490 -180 700 -180 {lab=OUTA}
+N 150 -200 160 -200 {lab=OUTA}
+N 400 -180 490 -180 {lab=OUTA}
+N 430 -340 470 -340 {lab=OUTA}
+N 370 -340 430 -340 {lab=OUTA}
+N 600 -180 600 -150 {lab=OUTA}
+N 600 -90 600 -50 {lab=0}
+N 260 -340 370 -340 {lab=OUTA}
+N 130 -340 200 -340 {lab=OUTA}
+N 130 -300 130 -200 {lab=OUTA}
+N 130 -200 150 -200 {lab=OUTA}
+N 130 -340 130 -300 {lab=OUTA}
+N 470 -340 470 -300 {lab=OUTA}
+N 280 -90 280 -80 {lab=0}
+N 280 -270 280 -260 {lab=VDD}
+N 350 -180 400 -180 {lab=OUTA}
+N 110 -160 150 -160 {lab=SIG}
+N 180 -160 210 -160 {lab=SIG}
+N -20 -160 110 -160 {lab=SIG}
+N 160 -200 210 -200 {lab=OUTA}
+N 470 -240 470 -180 {lab=OUTA}
+N 150 -160 180 -160 {lab=SIG}
+N 200 -340 260 -340 {lab=OUTA}
+N 490 230 700 230 {lab=OUTB}
+N 400 230 490 230 {lab=OUTB}
+N 430 70 470 70 {lab=OUTB}
+N 370 70 430 70 {lab=OUTB}
+N 600 230 600 260 {lab=OUTB}
+N 600 320 600 360 {lab=0}
+N 470 70 470 110 {lab=OUTB}
+N 280 320 280 330 {lab=0}
+N 280 140 280 150 {lab=VDD}
+N 350 230 400 230 {lab=OUTB}
+N 470 170 470 230 {lab=OUTB}
+N 350 -120 370 -120 {lab=#net1}
+N 430 -120 460 -120 {lab=#net2}
+N -140 -160 -20 -160 {lab=SIG}
+N -40 -160 -40 210 {lab=SIG}
+N 130 70 310 70 {lab=#net3}
+N 130 70 130 210 {lab=#net3}
+N 130 210 210 210 {lab=#net3}
+N 80 210 130 210 {lab=#net3}
+N -40 210 20 210 {lab=SIG}
+N 140 250 140 270 {lab=#net4}
+N 140 250 210 250 {lab=#net4}
+N 140 330 140 340 {lab=0}
+N 550 230 550 260 {lab=OUTB}
+N 550 320 550 360 {lab=0}
+N 350 290 370 290 {lab=#net5}
+N 430 290 460 290 {lab=#net6}
+N 470 -310 470 -240 {lab=OUTA}
+N 470 110 470 170 {lab=OUTB}
+N -200 -160 -140 -160 {lab=SIG}
+N 370 20 470 20 {lab=FBB}
+N 470 20 470 70 {lab=FBB}
+N 130 20 310 20 {lab=#net3}
+N 130 20 130 70 {lab=#net3}
+C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
@@ -118,57 +124,77 @@ V_DD VDD 0 3.3
 
 .control
 	save all
-	tran 100n 100u
+	tran 1n 100u
 	write tb_amplifier_tran.raw
 	set appendwrite
 	quit
 .endc
 "}
-C {vsource.sym} -360 50 0 0 {name=V2 value="PULSE(2.0 1.9 0.0 1n 1n 5u 10u)" savecurrent=false}
+C {vsource.sym} -360 50 0 0 {name=V2 value="PULSE(1.0 0.75 0.0 1n 1n 5u 10u)" savecurrent=false}
 C {gnd.sym} -360 120 0 0 {name=l2 lab=0
 value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
 C {lab_wire.sym} -310 -160 0 1 {name=p3 sig_type=std_logic lab=SIG}
-C {ip_amplifier.sym} 70 -140 0 0 {name=x2}
-C {gnd.sym} 70 -40 0 0 {name=l4 lab=0}
-C {lab_wire.sym} 620 -140 0 0 {name=p4 sig_type=std_logic lab=OUTB}
-C {res.sym} 560 -80 0 0 {name=R2
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {gnd.sym} 560 -10 0 0 {name=l7 lab=0}
-C {capa.sym} 490 -80 0 0 {name=C2
-m=1
-value=5p
-footprint=1206
-device="ceramic capacitor"}
-C {gnd.sym} 490 -10 0 0 {name=l8 lab=0}
-C {vsource.sym} -80 -60 0 0 {name=V3 value=2.0 savecurrent=false}
-C {gnd.sym} -80 -30 0 0 {name=l9 lab=0}
-C {res.sym} -170 -160 1 0 {name=R3
+C {ip_amplifier.sym} 280 -180 0 0 {name=x1}
+C {gnd.sym} 280 -80 0 0 {name=l3 lab=0}
+C {lab_wire.sym} 660 -180 0 0 {name=p4 sig_type=std_logic lab=OUTA}
+C {res.sym} 600 -120 0 0 {name=R6
 value=10k
 footprint=1206
 device=resistor
 m=1}
-C {res.sym} 20 -300 1 0 {name=R4
-value=40k
-footprint=1206
-device=resistor
-m=1}
-C {vdd.sym} 70 -230 0 0 {name=l11 lab=VDD}
-C {ip_amplifier.sym} 70 -500 0 0 {name=x1}
-C {gnd.sym} 70 -400 0 0 {name=l1 lab=0}
-C {vdd.sym} 70 -590 0 0 {name=l5 lab=VDD}
-C {res.sym} 320 -440 0 0 {name=R1
+C {gnd.sym} 600 -50 0 0 {name=l5 lab=0}
+C {vdd.sym} 280 -270 0 0 {name=l6 lab=VDD}
+C {ngspice_probe.sym} 130 -160 0 0 {name=r7}
+C {ip_amplifier.sym} 280 230 0 0 {name=x3}
+C {gnd.sym} 280 330 0 0 {name=l10 lab=0}
+C {lab_wire.sym} 660 230 0 0 {name=p6 sig_type=std_logic lab=OUTB}
+C {res.sym} 600 290 0 0 {name=R8
 value=100k
 footprint=1206
 device=resistor
 m=1}
-C {gnd.sym} 320 -370 0 0 {name=l3 lab=0}
-C {capa.sym} 400 -440 0 0 {name=C1
+C {gnd.sym} 600 360 0 0 {name=l12 lab=0}
+C {vdd.sym} 280 140 0 0 {name=l13 lab=VDD}
+C {capa.sym} 400 -120 1 0 {name=C1
 m=1
-value=10f
+value=0.9p
 footprint=1206
 device="ceramic capacitor"}
-C {gnd.sym} 400 -370 0 0 {name=l6 lab=0}
-C {lab_wire.sym} 370 -500 0 0 {name=p1 sig_type=std_logic lab=OUTA}
+C {res.sym} 460 -150 0 0 {name=R9
+value=15k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 340 70 1 0 {name=R10
+value=40k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 50 210 1 0 {name=R11
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {vsource.sym} 140 300 0 0 {name=V6 value="DC 1.0" savecurrent=false}
+C {gnd.sym} 140 340 0 0 {name=l14 lab=0}
+C {capa.sym} 550 290 2 0 {name=C3
+m=1
+value=5p
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} 550 360 0 0 {name=l15 lab=0}
+C {capa.sym} 400 290 3 0 {name=C4
+m=1
+value=0.9p
+footprint=1206
+device="ceramic capacitor"}
+C {res.sym} 460 260 0 0 {name=R1
+value=15k
+footprint=1206
+device=resistor
+m=1}
+C {capa.sym} 340 20 3 0 {name=C2
+m=1
+value=0.9p
+footprint=1206
+device="ceramic capacitor"}
