@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=0	
-y2=0.01
+y1=0.06	
+y2=3.4
 ypos1=0
 ypos2=2
 divy=5
@@ -24,8 +24,33 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=out
+color="4 5"
+node="out
+x1.on"
+}
+B 2 -380 -1120 420 -720 {flags=graph
+y1=1.4e-11
+y2=9.9e-06
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=2
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+node="i(v.x1.vmeas2)
+i(v.x1.vmeas1)
+i(v.x1.vmeas)"
+color="4 5 6"
+dataset=-1
+unitx=1
+logx=0
+logy=0
 }
 N -410 -640 -30 -640 {lab=VDD}
 N -410 -250 -410 -200 {lab=0}
@@ -35,18 +60,20 @@ N 210 -640 210 -500 {lab=VDD}
 N 210 -330 210 -300 {lab=0}
 N -10 -340 -10 -330 {lab=DUMMY}
 N -10 -270 -10 -250 {lab=0}
-N 80 -400 90 -400 {lab=SIG}
+N 80 -400 90 -400 {lab=DUMMY}
 N -140 -360 -140 -340 {lab=SIG}
 N -140 -340 -140 -330 {lab=SIG}
 N -140 -270 -140 -250 {lab=0}
 N -140 -400 -140 -360 {lab=SIG}
 N 330 -420 540 -420 {lab=OUT}
-N -10 -440 80 -440 {lab=DUMMY}
-N 80 -440 90 -440 {lab=DUMMY}
-N -140 -400 80 -400 {lab=SIG}
-N -10 -440 -10 -340 {lab=DUMMY}
+N -10 -440 80 -440 {lab=SIG}
+N 80 -440 90 -440 {lab=SIG}
 N 220 -640 400 -640 {lab=VDD}
 N 210 -640 220 -640 {lab=VDD}
+N -10 -400 80 -400 {lab=DUMMY}
+N -10 -400 -10 -340 {lab=DUMMY}
+N -140 -440 -140 -400 {lab=SIG}
+N -140 -440 -10 -440 {lab=SIG}
 C {vsource.sym} -410 -280 0 0 {name=V1 value=3.3 savecurrent=false}
 C {gnd.sym} -410 -200 0 0 {name=l3 lab=0}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
@@ -94,8 +121,8 @@ C {vsource.sym} -10 -300 0 0 {name=V3 value=1.0 savecurrent=false}
 C {gnd.sym} -10 -250 0 0 {name=l4 lab=0}
 C {vsource.sym} -140 -300 0 0 {name=V2 value=1.0 savecurrent=false}
 C {gnd.sym} -140 -250 0 0 {name=l2 lab=0}
-C {lab_wire.sym} 10 -440 0 1 {name=p2 sig_type=std_logic lab=DUMMY}
-C {lab_wire.sym} -120 -400 0 1 {name=p3 sig_type=std_logic lab=SIG}
+C {lab_wire.sym} 10 -400 0 1 {name=p2 sig_type=std_logic lab=DUMMY}
+C {lab_wire.sym} -120 -440 0 1 {name=p3 sig_type=std_logic lab=SIG}
 C {devices/launcher.sym} -1075 -505 0 0 {name=h2
 descr="Annotate"
 tclcommand="
