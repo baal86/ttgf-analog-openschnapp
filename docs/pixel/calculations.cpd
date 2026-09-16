@@ -5,46 +5,101 @@
 .fA = 0.001pA
 .fC = 0.001pC
 .fF = 0.001pF
+
 '<h4>Photo Current Calculation</h4>'
 'The desired full-well capacity is defined. All calculations in electrons since QE cannot be estimated and will be poor due to <i>metal5</i> and lack of AR-coating and passivation.'
 N_WELL = 200000
 C_WELL = N_WELL*1ec|fC
+
 'Typical integration time to fill the well from experience with similar test setups.'
 t_MAX = 1s
+
 'Resulting photo current for full well within one second:'
 I_PHOTO = C_WELL/t_MAX|fA
+
 '<h4>Diode Voltage and Sensitivity</h4>'
 'Diode capacitance based on size.'
 CJ_ND2PS = 1fF/μm^2
 W_D = 13.5μm
 L_D = 13.5μm
 C_D = CJ_ND2PS*W_D*L_D|fF
+
 'Resulting diode voltage at full well.'
 V_D = I_PHOTO/C_D*t_MAX|V
+
 'Sensitivity with simulated source follower gain.'
 G_SF = 0.75
 B = G_SF*V_D/C_WELL|μV/ec
+
 'Noise estimation with simulated source follower gain.'
 V_N = 35μV
 N_N = V_N/B|ec
+
 '<h4>Dark current estimate</h4>'
 'Diffusion method only valid around room temperature'
 kB = 1.380649*10^-23*J/K|eV/K
 T_OP = 293.15K
 T_REF = 298.15K
+
 'Reference temperature from GF180 spice model.'
 'Area and perimeter dependent current. Parameters frm GF180 diode spice model'
 I_SA = 2.2959*10^-7A/m^2
 A = W_D*L_D
 J_SW = 2.1207*10^-13A/m
 P = 2*W_D + 2*L_D
+
 'Total base current.'
 I_S = I_SA*A + J_SW*P
+
 'Exponential parameters'
 XTI = 3
 N = 1.01
 EA = 1.17eV
+
 'Resulting dark-current according to diffusion method:'
 I_DARK_DIFF(T) = I_S*(T/T_REF)^(XTI/N)*e^(EA/(N*kB*T)*(T/T_REF - 1))
 I_DARK_DIFF(T_OP)|fA
 I_DARK_DIFF(T_OP)|ec/s
+
+'<h4>Source Follower</h4>'
+'The source follower parameters are calculated.'
+
+'Process parameters for the gf180mcuD 6.0V NFET:'
+C_OX = 0.00227pF/μm^2
+V_TH0 = 0.67315V
+μ_N = 525cm^2/(V*s)
+k_n = μ_N*C_OX|μA/V^2
+n = 1.59'(Slope factor)'
+φ_F = 0.431V
+γ = 0.9V^(1/2)
+
+'Thermal voltage'
+T = 300K
+k_B = 1.380649*10^-23*J/K
+ec = 1.602176634*10^-19*C
+V_T = k_B*T/ec
+
+'Chosen width and length of the source follower FET chosen to balance space efficiency:'
+W = 3.5μm
+L = 1.9μm
+
+'Specific current'
+I_SPEC = 2*n*k_n*W/L*V_T^2
+
+'Bias current, iteratively set. Inversion coefficient confirms moderate inversion (0.1 < IC < 10)'
+I_D = 1μA
+IC = I_D/I_SPEC
+
+'Calculating gm at given bias current, considering inversion coefficient.'
+g′_m = 1/(n*V_T)*(1 - e^(-sqrt(IC)))/sqrt(IC)|V^-1
+g_m = g′_m*I_D|μA/V
+g_mb = 0.2*g_m
+
+'Calculating voltage gain and output impedance.'
+A_v = g_m/(g_m + g_mb)
+R_OUT = 1/(g_m + g_mb)|kΩ
+
+'Iteratively determining output voltage considering the body effect. 2.3V is the simulated typical reset voltage.'
+V′_OUT = 1.1V
+V_OUT(V_IN) = V_IN - V_TH0 - γ*(sqrt(2*φ_F + V′_OUT) - sqrt(2*φ_F)) - 2*n*V_T*ln(e^sqrt(IC) - 1)
+V_OUT(2.3V)
