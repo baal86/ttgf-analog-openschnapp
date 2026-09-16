@@ -59,7 +59,7 @@ N 450 -610 450 -600 {lab=VDD}
 N 660 -640 660 -600 {lab=VDD}
 N 450 -540 450 -440 {lab=#net10}
 N 660 -540 660 -440 {lab=#net11}
-N 490 -570 620 -570 {lab=#net12}
+N 490 -570 620 -570 {lab=#net10}
 N 0 100 0 180 {lab=#net9}
 N 210 100 210 140 {lab=#net8}
 N 0 10 0 40 {lab=#net9}
@@ -67,57 +67,67 @@ N 210 10 210 40 {lab=#net8}
 N 210 40 210 100 {lab=#net8}
 N 0 40 -0 100 {lab=#net9}
 N 210 140 210 160 {lab=#net8}
-N 450 -10 450 10 {lab=ON}
-N 450 -80 450 -10 {lab=ON}
-N 0 -180 210 -180 {lab=#net13}
-N 560 -410 620 -410 {lab=#net14}
-N 210 -180 210 -150 {lab=#net13}
-N -0 -180 -0 -150 {lab=#net13}
-N -0 -90 -0 -50 {lab=#net13}
-N 210 -90 210 -50 {lab=#net13}
-N 660 -70 660 10 {lab=OUTP}
-N 660 -100 700 -100 {lab=OUTP}
+N 450 -10 450 10 {lab=#net10}
+N 450 -80 450 -10 {lab=#net10}
+N 0 -180 210 -180 {lab=#net7}
+N 210 -180 210 -150 {lab=#net7}
+N -0 -180 -0 -150 {lab=#net7}
+N -0 -90 -0 -50 {lab=#net7}
+N 210 -90 210 -50 {lab=#net7}
+N 660 -70 660 10 {lab=#net11}
 N 210 160 450 160 {lab=#net8}
 N -0 180 660 180 {lab=#net9}
 N 450 160 450 250 {lab=#net8}
 N 450 70 450 80 {lab=#net8}
-N 490 -410 560 -410 {lab=#net14}
-N 210 -150 210 -90 {lab=#net13}
-N -0 -150 -0 -90 {lab=#net13}
+N 210 -150 210 -90 {lab=#net7}
+N -0 -150 -0 -90 {lab=#net7}
 N 660 340 660 400 {lab=VSUBS}
 N 450 340 450 400 {lab=VSUBS}
-N 110 -250 110 -180 {lab=#net13}
-N 110 -260 110 -250 {lab=#net13}
-N 660 -380 660 -290 {lab=#net15}
+N 110 -250 110 -180 {lab=#net7}
+N 660 -380 660 -290 {lab=#net11}
 N 110 -410 110 -320 {lab=#net7}
-N 450 -250 450 -140 {lab=#net14}
-N 450 -380 450 -320 {lab=#net12}
-N 450 -320 450 -310 {lab=#net12}
-N 510 -570 510 -330 {lab=#net12}
-N 450 -330 510 -330 {lab=#net12}
-N 450 -210 540 -210 {lab=#net14}
-N 540 -410 540 -210 {lab=#net14}
+N 450 -250 450 -140 {lab=#net10}
+N 450 -380 450 -320 {lab=#net10}
 N 660 140 660 190 {lab=#net9}
 N 450 140 450 160 {lab=#net8}
 N 660 100 660 140 {lab=#net9}
 N 450 80 450 140 {lab=#net8}
-N 660 -230 660 -190 {lab=OUTP}
-N 660 -130 660 -70 {lab=OUTP}
+N 660 -130 660 -70 {lab=#net11}
 N 810 400 930 400 {lab=VSUBS}
 N 690 -640 1000 -640 {lab=VDD}
-N 700 -100 940 -100 {lab=OUTP}
-N 660 -190 660 -130 {lab=OUTP}
+N 660 -190 660 -130 {lab=#net11}
+N 450 -440 450 -380 {lab=#net10}
+N 660 -440 660 -380 {lab=#net11}
+N 450 -320 450 -260 {lab=#net10}
+N 450 -260 450 -250 {lab=#net10}
+N 110 -320 110 -250 {lab=#net7}
+N 450 -140 450 -80 {lab=#net10}
+N 660 -290 660 -190 {lab=#net11}
+N 840 -640 840 -600 {lab=VDD}
+N 450 -500 510 -500 {lab=#net10}
+N 510 -570 510 -500 {lab=#net10}
+N 660 -460 800 -460 {lab=#net11}
+N 840 -600 840 -490 {lab=VDD}
+N 840 -430 840 -240 {lab=OUTP}
+N 660 180 730 180 {lab=#net9}
+N 730 180 790 180 {lab=#net9}
+N 790 180 800 180 {lab=#net9}
+N 840 -240 840 150 {lab=OUTP}
+N 840 -160 950 -160 {lab=OUTP}
+N 840 210 840 400 {lab=VSUBS}
+N 790 -160 840 -160 {lab=OUTP}
+N 660 -160 730 -160 {lab=#net11}
 C {iopin.sym} -430 -640 2 0 {name=p8 lab=VDD}
 C {iopin.sym} -450 400 2 0 {name=p9 lab=VSUBS}
 C {ipin.sym} -70 -20 0 0 {name=p6 lab=INP}
 C {ipin.sym} 280 -20 2 0 {name=p7 lab=INN}
-C {opin.sym} 940 -100 0 0 {name=p3 lab=OUTP}
+C {opin.sym} 950 -160 0 0 {name=p3 lab=OUTP}
 C {symbols/pfet3_06v0.sym} -20 -20 0 0 {name=M1
-L=3u
-W=20u
+L=2u
+W=40u
 body=VDD
 nf=1
-m=10
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -128,11 +138,11 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} 230 -20 0 1 {name=M2
-L=3u
-W=20u
+L=2u
+W=40u
 body=VDD
 nf=1
-m=10
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -144,7 +154,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 640 310 0 0 {name=M5
 L=5u
-W=5u
+W=10u
 body=vsubs
 nf=1
 m=1
@@ -159,7 +169,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 470 310 0 1 {name=M6
 L=5u
-W=5u
+W=10u
 body=vsubs
 nf=1
 m=1
@@ -174,7 +184,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -370 310 0 1 {name=M3
 L=5u
-W=5u
+W=10u
 body=vsubs
 nf=1
 m=1
@@ -189,7 +199,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -270 310 0 0 {name=M4
 L=5u
-W=5u
+W=10u
 body=vsubs
 nf=1
 m=1
@@ -204,7 +214,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -370 200 0 1 {name=M7
 L=2u
-W=10u
+W=100u
 body=vsubs
 nf=1
 m=1
@@ -219,7 +229,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -270 200 0 0 {name=M8
 L=2u
-W=10u
+W=100u
 body=vsubs
 nf=1
 m=1
@@ -232,10 +242,10 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {isource.sym} -390 -80 0 0 {name=I0 value=5u}
+C {isource.sym} -390 -80 0 0 {name=I0 value=20u}
 C {symbols/pfet3_06v0.sym} -230 -570 0 1 {name=M9
 L=5u
-W=15u
+W=30u
 body=VDD
 nf=1
 m=1
@@ -250,10 +260,10 @@ spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -140 -570 0 0 {name=M10
 L=5u
-W=15u
+W=30u
 body=VDD
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -265,7 +275,7 @@ spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -230 -470 0 1 {name=M11
 L=2u
-W=20u
+W=100u
 body=VDD
 nf=1
 m=1
@@ -280,10 +290,10 @@ spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -140 -470 0 0 {name=M12
 L=2u
-W=20u
+W=100u
 body=VDD
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -295,10 +305,10 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 470 40 0 1 {name=M13
 L=2u
-W=20u
+W=100u
 body=vsubs
 nf=1
-m=5
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -310,10 +320,10 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 640 40 0 0 {name=M14
 L=2u
-W=20u
+W=100u
 body=vsubs
 nf=1
-m=5
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -324,11 +334,11 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} 470 -570 0 1 {name=M15
-L=5u
-W=20u
+L=3u
+W=60u
 body=VDD
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -339,41 +349,11 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} 640 -570 0 0 {name=M16
-L=5u
-W=20u
+L=3u
+W=60u
 body=VDD
 nf=1
-m=2
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=pfet_06v0
-spiceprefix=X
-}
-C {symbols/pfet3_06v0.sym} 640 -410 0 0 {name=M17
-L=2u
-W=20u
-body=VDD
-nf=1
-m=5
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=pfet_06v0
-spiceprefix=X
-}
-C {symbols/pfet3_06v0.sym} 470 -410 0 1 {name=M18
-L=2u
-W=20u
-body=VDD
-nf=1
-m=5
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -384,15 +364,40 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {ngspice_probe.sym} 560 -570 0 0 {name=r2}
-C {ngspice_probe.sym} 560 -410 0 0 {name=r3}
 C {ngspice_probe.sym} 540 40 0 0 {name=r4}
 C {ngspice_probe.sym} -230 -410 0 0 {name=r5}
-C {ammeter.sym} 110 -290 0 0 {name=Vmeas savecurrent=false spice_ignore=0}
-C {ammeter.sym} 450 -110 0 0 {name=Vmeas1 savecurrent=false spice_ignore=0}
-C {ammeter.sym} 660 -260 0 0 {name=Vmeas2 savecurrent=false spice_ignore=0}
-C {res.sym} 450 -280 0 0 {name=R1
-value=50k
+C {symbols/pfet3_06v0.sym} 820 -460 0 0 {name=M17
+L=0.5u
+W=90u
+body=VDD
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_06v0
+spiceprefix=X
+}
+C {symbols/nfet3_06v0.sym} 820 180 0 0 {name=M18
+L=5u
+W=30u
+body=vsubs
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_06v0
+spiceprefix=X
+}
+C {capa.sym} 760 -160 1 0 {name=C1
+m=1
+value=1p
 footprint=1206
-device=resistor
-m=1}
-C {lab_wire.sym} 450 -40 0 0 {name=p1 sig_type=std_logic lab=ON}
+device="ceramic capacitor"}
