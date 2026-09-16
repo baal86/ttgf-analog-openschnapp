@@ -117,17 +117,13 @@ N -390 -390 -390 -320 {lab=#net16}
 N -390 -640 -390 -450 {lab=VDD}
 N -250 130 -250 150 {lab=#net4}
 N -250 -440 -250 70 {lab=#net7}
-N 870 -160 900 -160 {lab=OUTP}
 N 900 -160 1010 -160 {lab=OUTP}
 N 660 -290 660 -130 {lab=#net12}
 N 660 -380 660 -290 {lab=#net12}
 N 800 -460 830 -460 {lab=#net12}
 N 790 180 820 180 {lab=#net10}
 N 810 400 840 400 {lab=VSUBS}
-N 660 -160 700 -160 {lab=#net12}
-N 700 -160 720 -160 {lab=#net12}
-N 720 -160 730 -160 {lab=#net12}
-N 790 -160 870 -160 {lab=OUTP}
+N 870 -160 900 -160 {lab=OUTP}
 C {iopin.sym} -430 -640 2 0 {name=p8 lab=VDD}
 C {iopin.sym} -450 400 2 0 {name=p9 lab=VSUBS}
 C {ipin.sym} -70 -20 0 0 {name=p6 lab=INP}
@@ -164,8 +160,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 640 310 0 0 {name=M5
-L=3u
-W=3u
+L=1u
+W=5u
 body=vsubs
 nf=1
 m=1
@@ -179,8 +175,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 470 310 0 1 {name=M6
-L=3u
-W=3u
+L=1u
+W=5u
 body=vsubs
 nf=1
 m=1
@@ -318,7 +314,7 @@ L=0.7u
 W=7u
 body=vsubs
 nf=1
-m=5
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -333,7 +329,7 @@ L=0.7u
 W=7u
 body=vsubs
 nf=1
-m=5
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -434,9 +430,3 @@ m=1}
 C {lab_wire.sym} -410 -130 3 0 {name=p1 sig_type=std_logic lab=vsubs}
 C {ammeter.sym} -390 -420 0 0 {name=Vmeas savecurrent=false spice_ignore=0}
 C {ammeter.sym} -250 100 0 0 {name=Vmeas1 savecurrent=false spice_ignore=0}
-C {symbols/cap_nmos_03v3.sym} 760 -160 3 0 {name=C1
-W=15e-6
-L=15e-6
-model=cap_nmos_03v3
-spiceprefix=X
-m=1}
