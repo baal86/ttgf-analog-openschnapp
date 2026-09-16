@@ -123,8 +123,8 @@ C {ipin.sym} -70 -20 0 0 {name=p6 lab=INP}
 C {ipin.sym} 280 -20 2 0 {name=p7 lab=INN}
 C {opin.sym} 950 -160 0 0 {name=p3 lab=OUTP}
 C {symbols/pfet3_06v0.sym} -20 -20 0 0 {name=M1
-L=2u
-W=40u
+L=0.7u
+W=14u
 body=VDD
 nf=1
 m=1
@@ -138,8 +138,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} 230 -20 0 1 {name=M2
-L=2u
-W=40u
+L=0.7u
+W=14u
 body=VDD
 nf=1
 m=1
@@ -153,8 +153,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 640 310 0 0 {name=M5
-L=5u
-W=10u
+L=1u
+W=5u
 body=vsubs
 nf=1
 m=1
@@ -168,8 +168,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 470 310 0 1 {name=M6
-L=5u
-W=10u
+L=1u
+W=5u
 body=vsubs
 nf=1
 m=1
@@ -183,8 +183,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -370 310 0 1 {name=M3
-L=5u
-W=10u
+L=1u
+W=5u
 body=vsubs
 nf=1
 m=1
@@ -198,8 +198,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -270 310 0 0 {name=M4
-L=5u
-W=10u
+L=1u
+W=5u
 body=vsubs
 nf=1
 m=1
@@ -213,8 +213,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -370 200 0 1 {name=M7
-L=2u
-W=100u
+L=0.7u
+W=35u
 body=vsubs
 nf=1
 m=1
@@ -228,8 +228,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} -270 200 0 0 {name=M8
-L=2u
-W=100u
+L=0.7u
+W=35u
 body=vsubs
 nf=1
 m=1
@@ -244,8 +244,8 @@ spiceprefix=X
 }
 C {isource.sym} -390 -80 0 0 {name=I0 value=20u}
 C {symbols/pfet3_06v0.sym} -230 -570 0 1 {name=M9
-L=5u
-W=30u
+L=1u
+W=6u
 body=VDD
 nf=1
 m=1
@@ -259,8 +259,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -140 -570 0 0 {name=M10
-L=5u
-W=30u
+L=1u
+W=6u
 body=VDD
 nf=1
 m=1
@@ -274,8 +274,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -230 -470 0 1 {name=M11
-L=2u
-W=100u
+L=0.7u
+W=35u
 body=VDD
 nf=1
 m=1
@@ -289,8 +289,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -140 -470 0 0 {name=M12
-L=2u
-W=100u
+L=0.7u
+W=35u
 body=VDD
 nf=1
 m=1
@@ -304,8 +304,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 470 40 0 1 {name=M13
-L=2u
-W=100u
+L=0.7u
+W=35u
 body=vsubs
 nf=1
 m=1
@@ -319,8 +319,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 640 40 0 0 {name=M14
-L=2u
-W=100u
+L=0.7u
+W=35u
 body=vsubs
 nf=1
 m=1
@@ -334,8 +334,8 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} 470 -570 0 1 {name=M15
-L=3u
-W=60u
+L=0.7u
+W=14u
 body=VDD
 nf=1
 m=1
@@ -349,8 +349,8 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} 640 -570 0 0 {name=M16
-L=3u
-W=60u
+L=0.7u
+W=14u
 body=VDD
 nf=1
 m=1
@@ -368,7 +368,7 @@ C {ngspice_probe.sym} 540 40 0 0 {name=r4}
 C {ngspice_probe.sym} -230 -410 0 0 {name=r5}
 C {symbols/pfet3_06v0.sym} 820 -460 0 0 {name=M17
 L=0.5u
-W=90u
+W=30u
 body=VDD
 nf=1
 m=1
@@ -383,7 +383,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_06v0.sym} 820 180 0 0 {name=M18
 L=5u
-W=30u
+W=10u
 body=vsubs
 nf=1
 m=1
@@ -398,6 +398,6 @@ spiceprefix=X
 }
 C {capa.sym} 760 -160 1 0 {name=C1
 m=1
-value=1p
+value=5p
 footprint=1206
 device="ceramic capacitor"}
