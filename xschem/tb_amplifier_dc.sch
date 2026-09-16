@@ -82,8 +82,7 @@ N 200 -350 200 -340 {lab=0}
 N 610 -450 610 -420 {lab=OUTB}
 N 610 -360 610 -320 {lab=0}
 N 410 -390 430 -390 {lab=#net5}
-N 490 -390 520 -390 {lab=OUTB}
-N 520 -450 520 -390 {lab=OUTB}
+N 490 -390 520 -390 {lab=#net6}
 N 530 -990 530 -920 {lab=OUTA}
 N 530 -570 530 -510 {lab=OUTB}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
@@ -92,26 +91,35 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -1150 -100 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -1160 70 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
-.inc $::180MCU_MODELS/design.spice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice statistical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
-.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
 C {simulator_commands_shown.sym} -1150 -350 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
 V_DD VDD 0 3.3
+.param sw_stat_global   = 1
+.param sw_stat_mismatch = 1
+.param mc_skew          = 1
+.param res_mc_skew=3
+.param cap_mc_skew=3
+.param fnoicor=0
 
 .control
 	save all
-	dc V2 0 2.5 0.01
-	write tb_amplifier_dc.raw
+	repeat 10
+		mc_source
+		dc V2 0 1.8 0.01
+		write tb_amplifier_dc.raw		
+		set appendwrite
+		reset
+	end
 	quit
 .endc
 "}
@@ -178,3 +186,8 @@ value=0.9p
 footprint=1206
 device="ceramic capacitor"}
 C {vsource.sym} -80 -720 0 0 {name=V2 value="DC 1.0" savecurrent=false}
+C {res.sym} 520 -420 0 0 {name=R1
+value=5k
+footprint=1206
+device=resistor
+m=1}

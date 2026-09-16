@@ -144,7 +144,6 @@ device=resistor
 m=1}
 C {gnd.sym} 600 -50 0 0 {name=l5 lab=0}
 C {vdd.sym} 280 -270 0 0 {name=l6 lab=VDD}
-C {ngspice_probe.sym} 130 -160 0 0 {name=r7}
 C {ip_amplifier.sym} 280 230 0 0 {name=x3}
 C {gnd.sym} 280 330 0 0 {name=l10 lab=0}
 C {lab_wire.sym} 660 230 0 0 {name=p6 sig_type=std_logic lab=OUTB}
