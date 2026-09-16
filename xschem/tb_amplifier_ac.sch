@@ -5,9 +5,9 @@ V {}
 S {}
 F {}
 E {}
-B 2 -1220 -1120 -420 -720 {flags=graph
-y1=-2.6	
-y2=2.3
+B 2 -1120 -1020 -320 -620 {flags=graph
+y1=-1.3	
+y2=3.6
 ypos1=0
 ypos2=2
 divy=5
@@ -25,44 +25,38 @@ unitx=1
 logx=1
 logy=1
 color=4
-node=out
+node="out fb /"
 sim_type=ac}
-N -70 -60 -70 -40 {lab=SIG}
-N -70 -40 -70 -30 {lab=SIG}
-N -70 30 -70 50 {lab=0}
-N -70 -100 -70 -60 {lab=SIG}
-N -70 -120 -70 -100 {lab=SIG}
+N 120 -20 120 0 {lab=SIG}
+N 120 0 120 10 {lab=SIG}
+N 120 70 120 90 {lab=0}
+N 120 -60 120 -20 {lab=SIG}
+N 120 -80 120 -60 {lab=SIG}
 N 630 -100 840 -100 {lab=OUT}
-N 290 -120 300 -120 {lab=#net1}
+N 290 -120 300 -120 {lab=FB}
 N 540 -100 630 -100 {lab=OUT}
-N 570 -260 610 -260 {lab=OUT}
-N 510 -260 570 -260 {lab=OUT}
+N 570 -260 610 -260 {lab=FB}
+N 510 -260 570 -260 {lab=FB}
 N 740 -100 740 -70 {lab=OUT}
 N 740 -10 740 30 {lab=0}
 N 670 -100 670 -70 {lab=OUT}
 N 670 -10 670 30 {lab=0}
-N 180 100 180 130 {lab=#net2}
-N 400 -260 510 -260 {lab=OUT}
-N 270 -260 340 -260 {lab=#net1}
-N 270 -220 270 -120 {lab=#net1}
-N 270 -120 290 -120 {lab=#net1}
-N 210 -120 270 -120 {lab=#net1}
-N 100 -120 150 -120 {lab=SIG}
-N 270 -260 270 -220 {lab=#net1}
-N 610 -260 610 -220 {lab=OUT}
+N 400 -260 510 -260 {lab=FB}
+N 270 -260 340 -260 {lab=FB}
+N 270 -220 270 -120 {lab=FB}
+N 270 -120 290 -120 {lab=FB}
+N 270 -260 270 -220 {lab=FB}
+N 610 -260 610 -220 {lab=FB}
 N 420 -10 420 -0 {lab=0}
 N 420 -190 420 -180 {lab=VDD}
 N 490 -100 540 -100 {lab=OUT}
-N 60 -120 100 -120 {lab=SIG}
-N 190 100 310 100 {lab=#net2}
-N 310 100 320 100 {lab=#net2}
-N 320 -80 320 100 {lab=#net2}
-N 320 -80 350 -80 {lab=#net2}
-N 180 100 190 100 {lab=#net2}
-N -70 -120 60 -120 {lab=SIG}
-N 300 -120 350 -120 {lab=#net1}
+N 250 -80 290 -80 {lab=SIG}
+N 320 -80 350 -80 {lab=SIG}
+N 120 -80 250 -80 {lab=SIG}
+N 300 -120 350 -120 {lab=FB}
 N 610 -160 610 -100 {lab=OUT}
-N 610 -220 610 -160 {lab=OUT}
+N 290 -80 320 -80 {lab=SIG}
+N 340 -260 400 -260 {lab=FB}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -89,13 +83,13 @@ V_DD VDD 0 3.3
 	save all
 	ac dec 1000 1 100e6
 	write tb_amplifier_ac.raw
-	set appendwrite
-	quit
+	settype phase out
+	plot cph(out)
 .endc
 "}
-C {vsource.sym} -70 0 0 0 {name=V2 value="DC 2.0 AC 1" savecurrent=false}
-C {gnd.sym} -70 50 0 0 {name=l2 lab=0}
-C {lab_wire.sym} -50 -120 0 1 {name=p3 sig_type=std_logic lab=SIG}
+C {vsource.sym} 120 40 0 0 {name=V2 value="DC 2.0" savecurrent=false}
+C {gnd.sym} 120 90 0 0 {name=l2 lab=0}
+C {lab_wire.sym} 140 -80 0 1 {name=p3 sig_type=std_logic lab=SIG}
 C {devices/launcher.sym} -1075 -505 0 0 {name=h2
 descr="Annotate"
 tclcommand="
@@ -117,18 +111,7 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 670 30 0 0 {name=l8 lab=0}
-C {vsource.sym} 180 160 0 0 {name=V3 value=2.0 savecurrent=false}
-C {gnd.sym} 180 190 0 0 {name=l9 lab=0}
-C {res.sym} 180 -120 1 0 {name=R3
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 370 -260 1 0 {name=R4
-value=40k
-footprint=1206
-device=resistor
-m=1}
 C {vdd.sym} 420 -190 0 0 {name=l11 lab=VDD}
-C {ngspice_probe.sym} 80 -120 0 0 {name=r1}
-C {ngspice_probe.sym} 220 100 0 0 {name=r5}
+C {ngspice_probe.sym} 270 -80 0 0 {name=r1}
+C {vsource.sym} 610 -190 0 0 {name=V1 value="AC 1" savecurrent=false}
+C {lab_wire.sym} 570 -260 0 0 {name=p1 sig_type=std_logic lab=FB}
