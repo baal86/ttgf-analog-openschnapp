@@ -476,12 +476,12 @@ C {lab_wire.sym} 410 180 0 0 {name=p16 sig_type=std_logic lab=DRAIN_P}
 C {lab_wire.sym} 410 160 0 0 {name=p17 sig_type=std_logic lab=DRAIN_N}
 C {symbols/cap_pmos_03v3.sym} 1830 -440 2 0 {name=C1
 W=12e-6
-L=18e-6
+L=12e-6
 model=cap_pmos_03v3
 spiceprefix=X
 m=1}
 C {symbols/cap_pmos_03v3.sym} 1670 -190 0 0 {name=C2
-W=18e-6
+W=12e-6
 L=12e-6
 model=cap_pmos_03v3
 spiceprefix=X
