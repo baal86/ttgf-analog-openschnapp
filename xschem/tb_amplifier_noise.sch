@@ -6,7 +6,7 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=-35	
+y1=-7.7	
 ypos1=0
 ypos2=2
 divy=5
@@ -26,37 +26,33 @@ logy=1
 color=4
 node=onoise_spectrum
 hcursor2_y=1.8627841
-y2=-34}
-N -140 -300 -140 -260 {lab=0}
-N -140 -400 -140 -360 {lab=SIG}
+y2=-4.5}
 N 510 -380 720 -380 {lab=OUT}
 N 170 -400 180 -400 {lab=#net1}
 N 420 -380 510 -380 {lab=OUT}
-N 450 -540 490 -540 {lab=OUT}
 N 490 -500 490 -380 {lab=OUT}
-N 390 -540 450 -540 {lab=OUT}
 N 620 -380 620 -350 {lab=OUT}
 N 620 -290 620 -250 {lab=0}
-N 550 -380 550 -350 {lab=OUT}
-N 550 -290 550 -250 {lab=0}
-N 150 -360 150 -330 {lab=#net2}
-N 150 -360 180 -360 {lab=#net2}
-N 280 -540 390 -540 {lab=OUT}
-N 150 -540 220 -540 {lab=#net1}
+N -110 -400 -110 -370 {lab=#net2}
 N 150 -500 150 -400 {lab=#net1}
 N 150 -400 170 -400 {lab=#net1}
-N 90 -400 150 -400 {lab=#net1}
-N -20 -400 30 -400 {lab=SIG}
 N 150 -540 150 -500 {lab=#net1}
-N 490 -540 490 -500 {lab=OUT}
 N 300 -290 300 -280 {lab=0}
 N 300 -470 300 -460 {lab=VDD}
 N 180 -400 230 -400 {lab=#net1}
-N 180 -360 230 -360 {lab=#net2}
+N 180 -360 230 -360 {lab=#net3}
 N 370 -380 420 -380 {lab=OUT}
-N -130 -400 -20 -400 {lab=SIG}
-N -140 -400 -130 -400 {lab=SIG}
-C {devices/launcher.sym} -1095 -395 0 0 {name=h1
+N 490 -540 490 -500 {lab=OUT}
+N -110 -400 -10 -400 {lab=#net2}
+N 50 -400 150 -400 {lab=#net1}
+N 150 -570 150 -540 {lab=#net1}
+N 150 -570 290 -570 {lab=#net1}
+N 350 -570 490 -570 {lab=OUT}
+N 490 -570 490 -540 {lab=OUT}
+N 150 -360 180 -360 {lab=#net3}
+N 150 -360 150 -310 {lab=#net3}
+N 150 -250 150 -230 {lab=0}
+C {devices/launcher.sym} -1105 -395 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
@@ -99,34 +95,27 @@ V_DD VDD 0 3.3
 	quit
 .endc
 "}
-C {vsource.sym} -140 -330 0 0 {name=V2 value="DC 1.25 AC 1" savecurrent=false}
-C {gnd.sym} -140 -260 0 0 {name=l2 lab=0}
-C {lab_wire.sym} -90 -400 0 1 {name=p3 sig_type=std_logic lab=SIG}
+C {vsource.sym} -110 -340 0 0 {name=V2 value="DC 0.8 AC 1" savecurrent=false}
 C {ip_amplifier.sym} 300 -380 0 0 {name=x2}
 C {gnd.sym} 300 -280 0 0 {name=l4 lab=0}
 C {lab_wire.sym} 680 -380 0 0 {name=p2 sig_type=std_logic lab=OUT}
 C {res.sym} 620 -320 0 0 {name=R2
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {gnd.sym} 620 -250 0 0 {name=l7 lab=0}
-C {capa.sym} 550 -320 0 0 {name=C2
-m=1
-value=5p
-footprint=1206
-device="ceramic capacitor"}
-C {gnd.sym} 550 -250 0 0 {name=l8 lab=0}
-C {vsource.sym} 150 -300 0 0 {name=V3 value=1.0 savecurrent=false}
-C {gnd.sym} 150 -270 0 0 {name=l9 lab=0}
-C {res.sym} 60 -400 1 0 {name=R3
 value=10k
 footprint=1206
 device=resistor
 m=1}
-C {res.sym} 250 -540 1 0 {name=R4
+C {gnd.sym} 620 -250 0 0 {name=l7 lab=0}
+C {gnd.sym} -110 -310 0 0 {name=l9 lab=0}
+C {vdd.sym} 300 -470 0 0 {name=l11 lab=VDD}
+C {res.sym} 320 -570 1 0 {name=R1
 value=40k
 footprint=1206
 device=resistor
 m=1}
-C {vdd.sym} 300 -470 0 0 {name=l11 lab=VDD}
+C {res.sym} 20 -400 1 0 {name=R3
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {vsource.sym} 150 -280 0 0 {name=V1 value="DC 1.0" savecurrent=false}
+C {gnd.sym} 150 -230 0 0 {name=l1 lab=0}

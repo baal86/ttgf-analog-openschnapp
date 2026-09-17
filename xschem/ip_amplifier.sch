@@ -124,7 +124,23 @@ N 800 -460 830 -460 {lab=COMP}
 N 790 180 820 180 {lab=#net10}
 N 810 400 840 400 {lab=VSUBS}
 N 870 -160 900 -160 {lab=OUTP}
-N 660 -160 680 -160 {lab=COMP}
+N 1670 -260 1670 -220 {lab=#net16}
+N 1670 -160 1670 -130 {lab=OUTP}
+N 1670 -400 1670 -390 {lab=#net17}
+N 1670 -330 1670 -320 {lab=#net16}
+N 1670 -490 1670 -460 {lab=COMP}
+N 1830 -300 1830 -290 {lab=#net18}
+N 1830 -230 1830 -220 {lab=OUTP}
+N 1830 -490 1830 -470 {lab=COMP}
+N 1830 -410 1830 -360 {lab=#net19}
+N 1670 -130 1830 -130 {lab=OUTP}
+N 1830 -160 1830 -130 {lab=OUTP}
+N 1520 -490 1830 -490 {lab=COMP}
+N 1520 -130 1670 -130 {lab=OUTP}
+N 1830 -220 1830 -160 {lab=OUTP}
+N 1810 -330 1810 -260 {lab=vsubs}
+N 1670 -320 1670 -260 {lab=#net16}
+N 1650 -430 1650 -360 {lab=vsubs}
 C {iopin.sym} -430 -640 2 0 {name=p8 lab=VDD}
 C {iopin.sym} -450 400 2 0 {name=p9 lab=VSUBS}
 C {ipin.sym} -70 -20 0 0 {name=p6 lab=INP}
@@ -431,4 +447,46 @@ m=1}
 C {lab_wire.sym} -410 -130 3 0 {name=p1 sig_type=std_logic lab=vsubs}
 C {ammeter.sym} -390 -420 0 0 {name=Vmeas savecurrent=false spice_ignore=0}
 C {ammeter.sym} -250 100 0 0 {name=Vmeas1 savecurrent=false spice_ignore=0}
-C {opin.sym} 680 -160 0 0 {name=p2 lab=COMP}
+C {ngspice_probe.sym} 660 -90 0 0 {name=r9}
+C {ngspice_probe.sym} 870 -90 0 0 {name=r10}
+C {symbols/cap_nmos_03v3.sym} 1670 -190 2 0 {name=C1
+W=12e-6
+L=18e-6
+model=cap_nmos_03v3
+spiceprefix=X
+m=1}
+C {symbols/cap_nmos_03v3.sym} 1830 -440 0 0 {name=C2
+W=12e-6
+L=18e-6
+model=cap_nmos_03v3
+spiceprefix=X
+m=1}
+C {lab_wire.sym} 660 -160 3 0 {name=p2 sig_type=std_logic lab=COMP}
+C {symbols/ppolyf_u_1k_6p0.sym} 1670 -360 0 0 {name=R12
+W=1e-6
+L=5e-6
+model=ppolyf_u_1k_6p0
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k_6p0.sym} 1670 -430 0 0 {name=R13
+W=1e-6
+L=5e-6
+model=ppolyf_u_1k_6p0
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k_6p0.sym} 1830 -260 0 0 {name=R15
+W=1e-6
+L=5e-6
+model=ppolyf_u_1k_6p0
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k_6p0.sym} 1830 -330 0 0 {name=R16
+W=1e-6
+L=5e-6
+model=ppolyf_u_1k_6p0
+spiceprefix=X
+m=1}
+C {lab_wire.sym} 1570 -490 0 0 {name=p4 sig_type=std_logic lab=COMP}
+C {lab_wire.sym} 1570 -130 0 0 {name=p5 sig_type=std_logic lab=OUTP}
+C {lab_wire.sym} 1650 -420 3 0 {name=p10 sig_type=std_logic lab=vsubs}
+C {lab_wire.sym} 1810 -320 3 0 {name=p11 sig_type=std_logic lab=vsubs}

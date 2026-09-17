@@ -67,22 +67,18 @@ N 340 -360 340 -350 {lab=0}
 N 340 -540 340 -530 {lab=VDD}
 N 410 -450 460 -450 {lab=OUTB}
 N 530 -510 530 -450 {lab=OUTB}
-N 410 -800 430 -800 {lab=#net1}
-N 490 -800 520 -800 {lab=#net2}
 N -80 -840 40 -840 {lab=SIG}
 N 20 -840 20 -470 {lab=SIG}
-N 190 -610 370 -610 {lab=#net3}
-N 190 -610 190 -470 {lab=#net3}
-N 190 -470 270 -470 {lab=#net3}
-N 140 -470 190 -470 {lab=#net3}
+N 190 -610 370 -610 {lab=#net1}
+N 190 -610 190 -470 {lab=#net1}
+N 190 -470 270 -470 {lab=#net1}
+N 140 -470 190 -470 {lab=#net1}
 N 20 -470 80 -470 {lab=SIG}
-N 200 -430 200 -410 {lab=#net4}
-N 200 -430 270 -430 {lab=#net4}
+N 200 -430 200 -410 {lab=#net2}
+N 200 -430 270 -430 {lab=#net2}
 N 200 -350 200 -340 {lab=0}
 N 610 -450 610 -420 {lab=OUTB}
 N 610 -360 610 -320 {lab=0}
-N 410 -390 430 -390 {lab=#net5}
-N 490 -390 520 -390 {lab=#net6}
 N 530 -990 530 -920 {lab=OUTA}
 N 530 -570 530 -510 {lab=OUTB}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
@@ -113,7 +109,7 @@ V_DD VDD 0 3.3
 
 .control
 	save all
-	repeat 10
+	repeat 3
 		mc_source
 		dc V2 0 1.8 0.01
 		write tb_amplifier_dc.raw		
@@ -152,16 +148,6 @@ device=resistor
 m=1}
 C {gnd.sym} 660 -320 0 0 {name=l12 lab=0}
 C {vdd.sym} 340 -540 0 0 {name=l13 lab=VDD}
-C {capa.sym} 460 -800 1 0 {name=C1
-m=1
-value=0.9p
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 520 -830 0 0 {name=R9
-value=5k
-footprint=1206
-device=resistor
-m=1}
 C {res.sym} 400 -610 1 0 {name=R10
 value=40k
 footprint=1206
@@ -180,14 +166,4 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 610 -320 0 0 {name=l15 lab=0}
-C {capa.sym} 460 -390 3 0 {name=C4
-m=1
-value=0.9p
-footprint=1206
-device="ceramic capacitor"}
 C {vsource.sym} -80 -720 0 0 {name=V2 value="DC 1.0" savecurrent=false}
-C {res.sym} 520 -420 0 0 {name=R1
-value=5k
-footprint=1206
-device=resistor
-m=1}

@@ -72,29 +72,25 @@ N 280 320 280 330 {lab=0}
 N 280 140 280 150 {lab=VDD}
 N 350 230 400 230 {lab=OUTB}
 N 470 170 470 230 {lab=OUTB}
-N 350 -120 370 -120 {lab=#net1}
-N 430 -120 460 -120 {lab=#net2}
 N -140 -160 -20 -160 {lab=SIG}
 N -40 -160 -40 210 {lab=SIG}
-N 130 70 310 70 {lab=#net3}
-N 130 70 130 210 {lab=#net3}
-N 130 210 210 210 {lab=#net3}
-N 80 210 130 210 {lab=#net3}
+N 130 70 310 70 {lab=#net1}
+N 130 70 130 210 {lab=#net1}
+N 130 210 210 210 {lab=#net1}
+N 80 210 130 210 {lab=#net1}
 N -40 210 20 210 {lab=SIG}
-N 140 250 140 270 {lab=#net4}
-N 140 250 210 250 {lab=#net4}
+N 140 250 140 270 {lab=#net2}
+N 140 250 210 250 {lab=#net2}
 N 140 330 140 340 {lab=0}
 N 550 230 550 260 {lab=OUTB}
 N 550 320 550 360 {lab=0}
-N 350 290 370 290 {lab=#net5}
-N 430 290 460 290 {lab=#net6}
 N 470 -310 470 -240 {lab=OUTA}
 N 470 110 470 170 {lab=OUTB}
 N -200 -160 -140 -160 {lab=SIG}
-N 370 20 470 20 {lab=FBB}
-N 470 20 470 70 {lab=FBB}
-N 130 20 310 20 {lab=#net3}
-N 130 20 130 70 {lab=#net3}
+N 370 20 470 20 {lab=OUTB}
+N 470 20 470 70 {lab=OUTB}
+N 130 20 310 20 {lab=#net1}
+N 130 20 130 70 {lab=#net1}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -121,7 +117,9 @@ simulator=ngspice
 only_toplevel=false 
 value="
 V_DD VDD 0 3.3
-
+.option klu
+.option reltol=0.005 
+.option abstol=10u
 .control
 	save all
 	tran 1n 100u
@@ -154,16 +152,6 @@ device=resistor
 m=1}
 C {gnd.sym} 600 360 0 0 {name=l12 lab=0}
 C {vdd.sym} 280 140 0 0 {name=l13 lab=VDD}
-C {capa.sym} 400 -120 1 0 {name=C1
-m=1
-value=0.9p
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 460 -150 0 0 {name=R9
-value=15k
-footprint=1206
-device=resistor
-m=1}
 C {res.sym} 340 70 1 0 {name=R10
 value=40k
 footprint=1206
@@ -182,16 +170,6 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 550 360 0 0 {name=l15 lab=0}
-C {capa.sym} 400 290 3 0 {name=C4
-m=1
-value=0.9p
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 460 260 0 0 {name=R1
-value=15k
-footprint=1206
-device=resistor
-m=1}
 C {capa.sym} 340 20 3 0 {name=C2
 m=1
 value=0.9p

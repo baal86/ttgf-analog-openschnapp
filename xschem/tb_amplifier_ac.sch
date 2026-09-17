@@ -66,26 +66,22 @@ N 420 400 420 410 {lab=0}
 N 420 220 420 230 {lab=VDD}
 N 490 310 540 310 {lab=OUTB}
 N 610 250 610 310 {lab=OUTB}
-N 490 -40 510 -40 {lab=#net1}
-N 570 -40 600 -40 {lab=#net2}
 N 0 -80 120 -80 {lab=SIG}
 N 100 -80 100 290 {lab=SIG}
-N 270 150 450 150 {lab=#net3}
-N 270 150 270 290 {lab=#net3}
-N 270 290 350 290 {lab=#net3}
-N 220 290 270 290 {lab=#net3}
+N 270 150 450 150 {lab=#net1}
+N 270 150 270 290 {lab=#net1}
+N 270 290 350 290 {lab=#net1}
+N 220 290 270 290 {lab=#net1}
 N 100 290 160 290 {lab=SIG}
-N 280 330 280 350 {lab=#net4}
-N 280 330 350 330 {lab=#net4}
+N 280 330 280 350 {lab=#net2}
+N 280 330 350 330 {lab=#net2}
 N 280 410 280 420 {lab=0}
 N 690 310 690 340 {lab=OUTB}
 N 690 400 690 440 {lab=0}
-N 490 370 510 370 {lab=#net5}
-N 570 370 600 370 {lab=#net6}
 N 510 100 610 100 {lab=FBB}
 N 610 100 610 150 {lab=FBB}
-N 270 100 450 100 {lab=#net3}
-N 270 100 270 150 {lab=#net3}
+N 270 100 450 100 {lab=#net1}
+N 270 100 270 150 {lab=#net1}
 C {devices/launcher.sym} -815 -465 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -110,7 +106,7 @@ V_DD VDD 0 3.3
 
 .control
 	save all
-	ac dec 1000 1 100e6
+	ac dec 1000 1 1e9
 	write tb_amplifier_ac.raw
 
 	plot 20*log10(abs(v(outa) / v(fba))) 180/pi*ph(v(outa) / v(fba))
@@ -131,7 +127,7 @@ C {ip_amplifier.sym} 420 -100 0 0 {name=x2}
 C {gnd.sym} 420 0 0 0 {name=l4 lab=0}
 C {lab_wire.sym} 800 -100 0 0 {name=p2 sig_type=std_logic lab=OUTA}
 C {res.sym} 740 -40 0 0 {name=R2
-value=100k
+value=10k
 footprint=1206
 device=resistor
 m=1}
@@ -152,16 +148,6 @@ C {gnd.sym} 740 440 0 0 {name=l3 lab=0}
 C {vdd.sym} 420 220 0 0 {name=l5 lab=VDD}
 C {vsource.sym} 610 220 0 0 {name=V3 value="AC 1" savecurrent=false}
 C {lab_wire.sym} 570 150 0 0 {name=p5 sig_type=std_logic lab=FBB}
-C {capa.sym} 540 -40 1 0 {name=C1
-m=1
-value=0.9p
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 600 -70 0 0 {name=R5
-value=15k
-footprint=1206
-device=resistor
-m=1}
 C {res.sym} 480 150 1 0 {name=R4
 value=40k
 footprint=1206
@@ -180,16 +166,6 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 690 440 0 0 {name=l8 lab=0}
-C {capa.sym} 540 370 3 0 {name=C3
-m=1
-value=0.9p
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 600 340 0 0 {name=R7
-value=15k
-footprint=1206
-device=resistor
-m=1}
 C {capa.sym} 480 100 3 0 {name=C4
 m=1
 value=0.9p
