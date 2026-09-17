@@ -40,3 +40,7 @@ test/gate_level_netlist.v
 /mag/tt_um_baal86_openschnapp.gds.fb.txt
 /verilog/rtl/aux_total_digital/*.so
 /verilog/rtl/aux_total_digital/aux_total_digital_obj_dir
+/xschem/parax/*.spice
+/xschem/parax/*.sim
+/xschem/st_total.txt
+/xschem/simulation/pixels.spice

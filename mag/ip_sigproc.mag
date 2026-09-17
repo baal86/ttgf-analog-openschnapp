@@ -1,0 +1,41 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1789654496
+use ip_amplifier  ip_amplifier_0
+timestamp 1789654443
+transform 1 0 0 0 1 0
+box 0 0 12150 1750
+use ip_amplifier  ip_amplifier_1
+timestamp 1789654443
+transform 1 0 12505 0 1 -20
+box 0 0 12150 1750
+use pmoscap_3p3_XWX73L  pmoscap_3p3_XWX73L_0
+timestamp 1789654443
+transform 1 0 26982 0 1 902
+box -687 -677 687 677
+use pmoscap_3p3_XWX73L  pmoscap_3p3_XWX73L_1
+timestamp 1789654443
+transform 1 0 28567 0 1 902
+box -687 -677 687 677
+use ppolyf_u_1k_UYZ7SP  ppolyf_u_1k_UYZ7SP_0
+timestamp 1789654443
+transform 1 0 25005 0 1 821
+box -50 -561 50 561
+use ppolyf_u_1k_UYZ7SP  ppolyf_u_1k_UYZ7SP_1
+timestamp 1789654443
+transform 1 0 25230 0 1 836
+box -50 -561 50 561
+use ppolyf_u_1k_UYZ7SP  ppolyf_u_1k_UYZ7SP_2
+timestamp 1789654443
+transform 1 0 25480 0 1 836
+box -50 -561 50 561
+use ppolyf_u_1k_UYZ7SP  ppolyf_u_1k_UYZ7SP_3
+timestamp 1789654443
+transform 1 0 25740 0 1 821
+box -50 -561 50 561
+use ppolyf_u_1k_UYZ7SP  ppolyf_u_1k_UYZ7SP_4
+timestamp 1789654443
+transform 1 0 25995 0 1 881
+box -50 -561 50 561
+<< end >>
