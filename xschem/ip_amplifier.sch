@@ -300,10 +300,10 @@ spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -230 -470 0 1 {name=M11
 L=0.7u
-W=14u
+W=12u
 body=VDD
 nf=1
-m=2
+m=3
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -315,10 +315,10 @@ spiceprefix=X
 }
 C {symbols/pfet3_06v0.sym} -140 -470 0 0 {name=M12
 L=0.7u
-W=14u
+W=12u
 body=VDD
 nf=1
-m=2
+m=3
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -451,32 +451,32 @@ C {ammeter.sym} -390 -420 0 0 {name=Vmeas savecurrent=false spice_ignore=0}
 C {ammeter.sym} -250 100 0 0 {name=Vmeas1 savecurrent=false spice_ignore=0}
 C {ngspice_probe.sym} 660 -90 0 0 {name=r9}
 C {ngspice_probe.sym} 870 -90 0 0 {name=r10}
-C {symbols/cap_nmos_03v3.sym} 1670 -190 2 0 {name=C1
-W=12e-6
-L=18e-6
-model=cap_nmos_03v3
-spiceprefix=X
-m=1}
-C {symbols/cap_nmos_03v3.sym} 1830 -440 0 0 {name=C2
-W=12e-6
-L=18e-6
-model=cap_nmos_03v3
-spiceprefix=X
-m=1}
 C {lab_wire.sym} 660 -160 3 0 {name=p2 sig_type=std_logic lab=COMP}
-C {symbols/ppolyf_u_1k_6p0.sym} 1670 -360 0 0 {name=R12
-W=1e-6
-L=10e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} 1830 -330 0 0 {name=R16
-W=1e-6
-L=10e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
 C {lab_wire.sym} 1570 -490 0 0 {name=p4 sig_type=std_logic lab=COMP}
 C {lab_wire.sym} 1570 -130 0 0 {name=p5 sig_type=std_logic lab=OUTP}
 C {lab_wire.sym} 1650 -420 3 0 {name=p10 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 1810 -320 3 0 {name=p11 sig_type=std_logic lab=vsubs}
+C {symbols/cap_pmos_03v3.sym} 1670 -190 0 0 {name=C3
+W=12e-6
+L=18e-6
+model=cap_pmos_03v3
+spiceprefix=X
+m=1}
+C {symbols/cap_pmos_03v3.sym} 1830 -440 2 0 {name=C1
+W=18e-6
+L=12e-6
+model=cap_pmos_03v3
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k.sym} 1670 -360 0 0 {name=R11
+W=1e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k.sym} 1830 -330 0 0 {name=R12
+W=1e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
