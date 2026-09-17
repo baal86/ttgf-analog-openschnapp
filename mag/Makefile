@@ -81,6 +81,8 @@ gds:  ../gds/$(PROJECT_NAME).gds
 # Clean target
 ###################################################################################
 
-clean:
-	rm -f ../gds/$(PROJECT_NAME).gds
+cleanlvs:
 	rm -f *.fb.txt *.lvs.report *.lvs.spice *.nodes 
+
+cleangds:
+	rm -f ../gds/$(PROJECT_NAME).gds
