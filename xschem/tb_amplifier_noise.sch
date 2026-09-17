@@ -6,7 +6,7 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=-7.7	
+y1=-7.6	
 ypos1=0
 ypos2=2
 divy=5
@@ -23,10 +23,11 @@ dataset=-1
 unitx=1
 logx=1
 logy=1
-color=4
-node=onoise_spectrum
+color="4 5"
+node="onoise_spectrum
+inoise_spectrum"
 hcursor2_y=1.8627841
-y2=-4.5}
+y2=-3.8}
 N 510 -380 720 -380 {lab=OUT}
 N 170 -400 180 -400 {lab=#net1}
 N 420 -380 510 -380 {lab=OUT}

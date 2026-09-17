@@ -109,7 +109,7 @@ V_DD VDD 0 3.3
 
 .control
 	save all
-	repeat 3
+	repeat 1
 		mc_source
 		dc V2 0 1.8 0.01
 		write tb_amplifier_dc.raw		
