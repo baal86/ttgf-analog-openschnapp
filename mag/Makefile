@@ -30,6 +30,7 @@ magic:
 
 %.lvs.spice: %.mag
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_lvs.tcl $*
+	sed -i '/^\.subckt pmoscap_3p3_XWX73L[[:space:]]/,/^\.ends/ s/c_length=6u/c_length=12u/' $@
 	rm -f *.ext
 
 $(PROJECT_NAME).gds.lvs.spice: ../gds/$(PROJECT_NAME).gds
