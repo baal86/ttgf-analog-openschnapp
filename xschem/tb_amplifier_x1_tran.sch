@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.9635492e-05
-x2=2.0356068e-05
+x1=0
+x2=50e-6
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -75,7 +75,7 @@ value="
 C {devices/launcher.sym} -1075 -505 0 0 {name=h2
 descr="Annotate"
 tclcommand="
-xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].op.raw
 "
 }
 C {simulator_commands_shown.sym} -1150 -350 0 0 {name=COMMANDS
@@ -86,8 +86,10 @@ V_DD VDD 0 3.3
 .option klu
 .option reltol=0.005
 .option abstol=100n
-.save v(out)
+.save all
 .control
+	op
+	write tb_amplifier_x1_tran.op.raw
 	tran 10n 50u
 	write tb_amplifier_x1_tran.raw
 	set appendwrite
