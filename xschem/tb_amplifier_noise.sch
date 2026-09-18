@@ -23,36 +23,29 @@ dataset=-1
 unitx=1
 logx=1
 logy=1
-color="4 5"
-node="onoise_spectrum
-inoise_spectrum"
+color=4
+node=onoise_spectrum
 hcursor2_y=1.8627841
 y2=-3.8}
-N 510 -380 720 -380 {lab=OUT}
-N 170 -400 180 -400 {lab=#net1}
+N 170 -400 180 -400 {lab=OUT}
 N 420 -380 510 -380 {lab=OUT}
 N 490 -500 490 -380 {lab=OUT}
-N 620 -380 620 -350 {lab=OUT}
-N 620 -290 620 -250 {lab=0}
-N -110 -400 -110 -370 {lab=#net2}
-N 150 -500 150 -400 {lab=#net1}
-N 150 -400 170 -400 {lab=#net1}
-N 150 -540 150 -500 {lab=#net1}
+N 130 -360 130 -330 {lab=#net1}
+N 150 -500 150 -400 {lab=OUT}
+N 150 -400 170 -400 {lab=OUT}
+N 150 -540 150 -500 {lab=OUT}
 N 300 -290 300 -280 {lab=0}
 N 300 -470 300 -460 {lab=VDD}
-N 180 -400 230 -400 {lab=#net1}
-N 180 -360 230 -360 {lab=#net3}
+N 180 -400 230 -400 {lab=OUT}
 N 370 -380 420 -380 {lab=OUT}
 N 490 -540 490 -500 {lab=OUT}
-N -110 -400 -10 -400 {lab=#net2}
-N 50 -400 150 -400 {lab=#net1}
-N 150 -570 150 -540 {lab=#net1}
-N 150 -570 290 -570 {lab=#net1}
+N 130 -360 230 -360 {lab=#net1}
+N 150 -570 150 -540 {lab=OUT}
+N 150 -570 290 -570 {lab=OUT}
 N 350 -570 490 -570 {lab=OUT}
 N 490 -570 490 -540 {lab=OUT}
-N 150 -360 180 -360 {lab=#net3}
-N 150 -360 150 -310 {lab=#net3}
-N 150 -250 150 -230 {lab=0}
+N 290 -570 350 -570 {lab=OUT}
+N 510 -380 710 -380 {lab=OUT}
 C {devices/launcher.sym} -1105 -395 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -96,27 +89,9 @@ V_DD VDD 0 3.3
 	quit
 .endc
 "}
-C {vsource.sym} -110 -340 0 0 {name=V2 value="DC 0.8 AC 1" savecurrent=false}
+C {vsource.sym} 130 -300 0 0 {name=V2 value="DC 1.0 AC 1" savecurrent=false}
 C {ip_amplifier.sym} 300 -380 0 0 {name=x2}
 C {gnd.sym} 300 -280 0 0 {name=l4 lab=0}
 C {lab_wire.sym} 680 -380 0 0 {name=p2 sig_type=std_logic lab=OUT}
-C {res.sym} 620 -320 0 0 {name=R2
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {gnd.sym} 620 -250 0 0 {name=l7 lab=0}
-C {gnd.sym} -110 -310 0 0 {name=l9 lab=0}
+C {gnd.sym} 130 -270 0 0 {name=l9 lab=0}
 C {vdd.sym} 300 -470 0 0 {name=l11 lab=VDD}
-C {res.sym} 320 -570 1 0 {name=R1
-value=40k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 20 -400 1 0 {name=R3
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {vsource.sym} 150 -280 0 0 {name=V1 value="DC 1.0" savecurrent=false}
-C {gnd.sym} 150 -230 0 0 {name=l1 lab=0}

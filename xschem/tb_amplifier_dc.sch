@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=0.001	
-y2=3.3
+y1=3	
+y2=3.2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=2.5
+x2=1.8
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -56,31 +56,8 @@ N 220 -880 270 -880 {lab=OUTA}
 N 530 -920 530 -860 {lab=OUTA}
 N 210 -840 240 -840 {lab=SIG}
 N 260 -1020 320 -1020 {lab=OUTA}
-N 550 -450 760 -450 {lab=OUTB}
-N 460 -450 550 -450 {lab=OUTB}
-N 490 -610 530 -610 {lab=OUTB}
-N 430 -610 490 -610 {lab=OUTB}
-N 660 -450 660 -420 {lab=OUTB}
-N 660 -360 660 -320 {lab=0}
-N 530 -610 530 -570 {lab=OUTB}
-N 340 -360 340 -350 {lab=0}
-N 340 -540 340 -530 {lab=VDD}
-N 410 -450 460 -450 {lab=OUTB}
-N 530 -510 530 -450 {lab=OUTB}
 N -80 -840 40 -840 {lab=SIG}
-N 20 -840 20 -470 {lab=SIG}
-N 190 -610 370 -610 {lab=#net1}
-N 190 -610 190 -470 {lab=#net1}
-N 190 -470 270 -470 {lab=#net1}
-N 140 -470 190 -470 {lab=#net1}
-N 20 -470 80 -470 {lab=SIG}
-N 200 -430 200 -410 {lab=#net2}
-N 200 -430 270 -430 {lab=#net2}
-N 200 -350 200 -340 {lab=0}
-N 610 -450 610 -420 {lab=OUTB}
-N 610 -360 610 -320 {lab=0}
 N 530 -990 530 -920 {lab=OUTA}
-N 530 -570 530 -510 {lab=OUTB}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -138,32 +115,4 @@ m=1}
 C {gnd.sym} 660 -730 0 0 {name=l5 lab=0}
 C {vdd.sym} 340 -950 0 0 {name=l6 lab=VDD}
 C {ngspice_probe.sym} 190 -840 0 0 {name=r7}
-C {ip_amplifier.sym} 340 -450 0 0 {name=x3}
-C {gnd.sym} 340 -350 0 0 {name=l10 lab=0}
-C {lab_wire.sym} 720 -450 0 0 {name=p6 sig_type=std_logic lab=OUTB}
-C {res.sym} 660 -390 0 0 {name=R8
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {gnd.sym} 660 -320 0 0 {name=l12 lab=0}
-C {vdd.sym} 340 -540 0 0 {name=l13 lab=VDD}
-C {res.sym} 400 -610 1 0 {name=R10
-value=40k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 110 -470 1 0 {name=R11
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {vsource.sym} 200 -380 0 0 {name=V6 value="DC 1.0" savecurrent=false}
-C {gnd.sym} 200 -340 0 0 {name=l14 lab=0}
-C {capa.sym} 610 -390 2 0 {name=C3
-m=1
-value=5p
-footprint=1206
-device="ceramic capacitor"}
-C {gnd.sym} 610 -320 0 0 {name=l15 lab=0}
 C {vsource.sym} -80 -720 0 0 {name=V2 value="DC 1.0" savecurrent=false}
