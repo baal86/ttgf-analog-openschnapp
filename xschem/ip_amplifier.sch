@@ -98,7 +98,7 @@ N 880 90 880 190 {lab=#net9}
 N 850 130 880 130 {lab=#net9}
 N 790 130 850 130 {lab=#net9}
 N 620 130 730 130 {lab=VDD}
-N 700 110 760 110 {lab=vdd}
+N 700 110 760 110 {lab=vsubs}
 N -390 -320 -390 -120 {lab=#net7}
 N -410 -170 -410 -80 {lab=vsubs}
 N 900 270 1020 270 {lab=OUTP}
@@ -332,13 +332,13 @@ C {lab_wire.sym} 660 270 0 0 {name=p5 sig_type=std_logic lab=OUTP}
 C {lab_wire.sym} -330 120 0 0 {name=p12 sig_type=std_logic lab=NBIAS}
 C {lab_wire.sym} 50 -410 0 0 {name=p13 sig_type=std_logic lab=COMMON}
 C {symbols/cap_pmos_03v3.sym} 880 220 0 0 {name=C1
-W=13e-6
+W=13.5e-6
 L=18e-6
 model=cap_pmos_03v3
 spiceprefix=X
 m=1}
 C {symbols/cap_pmos_03v3.sym} 880 60 2 0 {name=C2
-W=13e-6
+W=13.5e-6
 L=18e-6
 model=cap_pmos_03v3
 spiceprefix=X
@@ -349,12 +349,12 @@ C {lab_wire.sym} 660 -20 0 0 {name=p4 sig_type=std_logic lab=COMP}
 C {ammeter.sym} 460 -270 0 0 {name=Vmeas3 savecurrent=false spice_ignore=0}
 C {symbols/ppolyf_u_1k.sym} 760 130 1 0 {name=R2
 W=1e-6
-L=80e-6
+L=96e-6
 model=ppolyf_u_1k
 spiceprefix=X
 m=1}
 C {lab_wire.sym} 670 130 0 0 {name=p10 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 730 110 0 0 {name=p11 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 730 110 0 0 {name=p11 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} -410 -150 3 0 {name=p1 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 100 -520 0 0 {name=p15 sig_type=std_logic lab=PBIAS}
 C {lab_wire.sym} 80 -180 0 0 {name=p16 sig_type=std_logic lab=COMMON_}

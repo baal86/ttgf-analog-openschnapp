@@ -1,3 +1,15 @@
+** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_sigproc.sch
+.subckt ip_sigproc vdd outp sig ref vsubs
+*.PININFO sig:I ref:I vdd:B vsubs:B outp:O
+x1 vdd net2 sig net2 vsubs ip_amplifier
+x2 vdd net1 ref net3 vsubs ip_amplifier
+XR1 net2 net3 vsubs ppolyf_u_1k_6p0 r_width=1e-6 r_length=15e-6
+XR2 net3 net1 vsubs ppolyf_u_1k_6p0 r_width=1e-6 r_length=60e-6
+XR3 net1 outp vsubs ppolyf_u_1k_6p0 r_width=2e-6 r_length=1e-6
+.ends
+
+* expanding   symbol:  ip_amplifier.sym # of pins=5
+** sym_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_amplifier.sym
 ** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_amplifier.sch
 .subckt ip_amplifier VDD OUTP INP INN VSUBS
 *.PININFO VDD:B VSUBS:B INP:I INN:I OUTP:O
@@ -38,3 +50,4 @@ Vmeas2 COMMON COMMON_ 0
 Vmeas3 net8 OUTP 0
 XR2 VDD net9 vsubs ppolyf_u_1k r_width=1e-6 r_length=96e-6
 .ends
+
