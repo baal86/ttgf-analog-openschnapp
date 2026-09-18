@@ -41,27 +41,27 @@ C {ipin.sym} 250 40 0 0 {name=p2 lab=ref}
 C {iopin.sym} -160 -490 2 0 {name=p3 lab=vdd}
 C {iopin.sym} -150 290 2 0 {name=p4 lab=vsubs}
 C {opin.sym} 660 20 0 0 {name=p5 lab=outp}
-C {symbols/ppolyf_u_1k.sym} 180 0 1 0 {name=R1
-W=1e-6
-L=15e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k.sym} 400 -170 1 0 {name=R2
-W=1e-6
-L=60e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k.sym} 570 20 1 0 {name=R3
-W=10e-6
-L=5e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
 C {lab_wire.sym} 240 -20 0 0 {name=p6 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 460 -190 0 0 {name=p7 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 630 0 0 0 {name=p8 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 70 -130 0 0 {name=p9 sig_type=std_logic lab=s1_out}
 C {lab_wire.sym} 340 -170 0 0 {name=p10 sig_type=std_logic lab=s2_fb}
 C {lab_wire.sym} 510 -170 0 0 {name=p11 sig_type=std_logic lab=s2_out}
+C {symbols/ppolyf_u_1k.sym} 180 0 1 0 {name=R4
+W=1e-6
+L=15e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k.sym} 400 -170 1 0 {name=R1
+W=1e-6
+L=60e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k.sym} 570 20 1 0 {name=R2
+W=10e-6
+L=5e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}

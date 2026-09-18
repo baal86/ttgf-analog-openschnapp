@@ -3,9 +3,9 @@
 *.PININFO sig:I ref:I vdd:B vsubs:B outp:O
 x1 vdd s1_out sig s1_out vsubs ip_amplifier
 x2 vdd s2_out ref s2_fb vsubs ip_amplifier
-XR1 s1_out s2_fb vsubs ppolyf_u_1k r_width=1e-6 r_length=15e-6
-XR2 s2_fb s2_out vsubs ppolyf_u_1k r_width=1e-6 r_length=60e-6
-XR3 s2_out outp vsubs ppolyf_u_1k r_width=10e-6 r_length=5e-6
+XR4 s1_out s2_fb vsubs ppolyf_u_1k r_width=1e-6 r_length=15e-6
+XR1 s2_fb s2_out vsubs ppolyf_u_1k r_width=1e-6 r_length=60e-6
+XR2 s2_out outp vsubs ppolyf_u_1k r_width=10e-6 r_length=5e-6
 .ends
 
 * expanding   symbol:  ip_amplifier.sym # of pins=5
