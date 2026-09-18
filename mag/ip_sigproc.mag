@@ -159,7 +159,4 @@ flabel metal3 4640 950 4820 1190 0 FreeSans 800 0 0 0 SIG
 port 6 nsew
 flabel metal2 12460 0 14020 150 0 FreeSans 800 0 0 0 VDD
 port 7 nsew
-flabel metal3 17630 415 18045 490 0 FreeSans 800 0 0 0 s2_fb
-flabel metal2 21630 760 22285 1090 0 FreeSans 800 0 0 0 s1_out
-flabel metal2 7010 655 7320 1150 0 FreeSans 800 0 0 0 s1_out
 << end >>
