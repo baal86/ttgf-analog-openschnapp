@@ -618,13 +618,13 @@ transform 1 0 9940 0 1 861
 box -50 -661 50 661
 << labels >>
 flabel metal2 5150 590 6140 1160 0 FreeSans 1600 0 0 0 OUTP
-port 1 nsew
-flabel metal3 4880 950 4960 1190 0 FreeSans 400 90 0 0 INP
 port 2 nsew
-flabel metal3 4880 560 4960 800 0 FreeSans 400 90 0 0 INN
+flabel metal3 4880 950 4960 1190 0 FreeSans 400 90 0 0 INP
 port 3 nsew
-flabel metal2 1930 0 6220 150 0 FreeSans 560 0 0 0 VDD
+flabel metal3 4880 560 4960 800 0 FreeSans 400 90 0 0 INN
 port 4 nsew
+flabel metal2 1930 0 6220 150 0 FreeSans 560 0 0 0 VDD
+port 1 nsew
 flabel metal1 10 1710 270 1740 0 FreeSans 400 0 0 0 vsubs
 port 5 nsew
 << end >>

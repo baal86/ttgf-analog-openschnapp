@@ -116,18 +116,6 @@ rect 13920 490 19060 500
 rect 13920 410 13930 490
 rect 14000 410 19060 490
 rect 13920 400 19060 410
-use ip_amplifier  ip_amplifier_0
-timestamp 1789735961
-transform 1 0 0 0 1 0
-box 0 0 12150 1750
-use ip_amplifier  ip_amplifier_1
-timestamp 1789735961
-transform 1 0 14100 0 1 0
-box 0 0 12150 1750
-use ppolyf_u_1k_3VBTFY  ppolyf_u_1k_3VBTFY_0
-timestamp 1789736873
-transform 0 1 13111 -1 0 250
-box -50 -811 50 811
 use ppolyf_u_1k_3VBTFY  ppolyf_u_1k_3VBTFY_1
 timestamp 1789736873
 transform 0 -1 13111 1 0 1050
@@ -144,14 +132,26 @@ use ppolyf_u_1k_3VBTFY  ppolyf_u_1k_3VBTFY_5
 timestamp 1789736873
 transform 0 -1 13111 1 0 650
 box -50 -811 50 811
-use ppolyf_u_1k_KUBX3W  ppolyf_u_1k_KUBX3W_0
+use ppolyf_u_1k_3VBTFY  R1
+timestamp 1789736873
+transform 0 1 13111 -1 0 250
+box -50 -811 50 811
+use ppolyf_u_1k_KUBX3W  R3
 timestamp 1789738238
 transform 0 -1 26611 1 0 900
 box -500 -311 500 311
+use ip_amplifier  X1
+timestamp 1789735961
+transform 1 0 0 0 1 0
+box 0 0 12150 1750
+use ip_amplifier  X2
+timestamp 1789735961
+transform 1 0 14100 0 1 0
+box 0 0 12150 1750
 << labels >>
 flabel metal3 18980 950 19060 1190 0 FreeSans 800 0 0 0 REF
 port 1 nsew
-flabel metal1 12140 1710 12450 1740 0 FreeSans 800 0 0 0 vsubs
+flabel metal1 12140 1710 12450 1740 0 FreeSans 800 0 0 0 VSUBS
 port 3 nsew
 flabel metal1 26300 190 26950 350 0 FreeSans 800 0 0 0 OUTP
 port 5 nsew

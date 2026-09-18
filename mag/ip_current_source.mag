@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1789653655
+timestamp 1789740048
 << pwell >>
 rect 800 1350 2200 2650
 rect 800 1300 1600 1350
@@ -106,7 +106,7 @@ rect 940 990 950 1020
 rect 1030 990 1040 1020
 rect 940 980 1040 990
 use nfet_06v0_PJ828U  M1
-timestamp 1789627787
+timestamp 1789722395
 transform 0 -1 1720 1 0 1100
 box -110 -300 110 300
 use nfet_06v0_EXM5W3  M2
