@@ -109,10 +109,10 @@ C {ipin.sym} 280 -20 2 0 {name=p7 lab=INN}
 C {opin.sym} 600 -160 0 0 {name=p3 lab=OUTP}
 C {symbols/pfet3_03v3.sym} -20 -20 0 0 {name=M1
 L=5u
-W=11.0u
+W=18.0u
 body=VDD
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -124,10 +124,10 @@ spiceprefix=X
 }
 C {symbols/pfet3_03v3.sym} 230 -20 0 1 {name=M2
 L=5u
-W=11.0u
+W=18.0u
 body=VDD
 nf=1
-m=2
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -138,8 +138,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet3_03v3.sym} -370 310 0 1 {name=M3
-L=1u
-W=7u
+L=2u
+W=6u
 body=vsubs
 nf=1
 m=2
@@ -153,8 +153,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet3_03v3.sym} -270 310 0 0 {name=M4
-L=1u
-W=7u
+L=2u
+W=6u
 body=vsubs
 nf=1
 m=1
@@ -168,8 +168,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet3_03v3.sym} -370 200 0 1 {name=M7
-L=0.7u
-W=7u
+L=0.5u
+W=6u
 body=vsubs
 nf=1
 m=4
@@ -183,8 +183,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet3_03v3.sym} -270 200 0 0 {name=M8
-L=0.7u
-W=7u
+L=0.5u
+W=6u
 body=vsubs
 nf=1
 m=4
@@ -198,7 +198,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet3_03v3.sym} -230 -570 0 1 {name=M9
-L=1u
+L=2u
 W=6u
 body=VDD
 nf=1
@@ -213,7 +213,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet3_03v3.sym} -140 -570 0 0 {name=M10
-L=1u
+L=2u
 W=6u
 body=VDD
 nf=1
@@ -228,11 +228,11 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet3_03v3.sym} -230 -470 0 1 {name=M11
-L=0.7u
-W=12u
+L=0.5u
+W=6u
 body=VDD
 nf=1
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -243,11 +243,11 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet3_03v3.sym} -140 -470 0 0 {name=M12
-L=0.7u
-W=12u
+L=0.5u
+W=6u
 body=VDD
 nf=1
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -259,7 +259,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_03v3.sym} 20 300 0 1 {name=M13
 L=5u
-W=11u
+W=6u
 body=vsubs
 nf=1
 m=1
@@ -274,7 +274,7 @@ spiceprefix=X
 }
 C {symbols/nfet3_03v3.sym} 190 300 0 0 {name=M14
 L=5u
-W=11u
+W=6u
 body=vsubs
 nf=1
 m=1
@@ -289,7 +289,7 @@ spiceprefix=X
 }
 C {ngspice_probe.sym} -230 -410 0 0 {name=r5}
 C {symbols/pfet3_03v3.sym} 440 -520 0 0 {name=M17
-L=0.7u
+L=0.5u
 W=12u
 body=VDD
 nf=1
@@ -304,11 +304,11 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet3_03v3.sym} 440 180 0 0 {name=M18
-L=0.7u
+L=0.5u
 W=12u
 body=vsubs
 nf=1
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -332,14 +332,14 @@ C {lab_wire.sym} 660 270 0 0 {name=p5 sig_type=std_logic lab=OUTP}
 C {lab_wire.sym} -330 120 0 0 {name=p12 sig_type=std_logic lab=NBIAS}
 C {lab_wire.sym} 50 -410 0 0 {name=p13 sig_type=std_logic lab=COMMON}
 C {symbols/cap_pmos_03v3.sym} 880 220 0 0 {name=C1
-W=24e-6
-L=12e-6
+W=13e-6
+L=18e-6
 model=cap_pmos_03v3
 spiceprefix=X
 m=1}
 C {symbols/cap_pmos_03v3.sym} 880 60 2 0 {name=C2
-W=24e-6
-L=12e-6
+W=13e-6
+L=18e-6
 model=cap_pmos_03v3
 spiceprefix=X
 m=1}
