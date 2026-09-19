@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_amplifier.sch
-.subckt ip_amplifier VDD OUTP INP INN VSUBS
+.subckt ip_amplifier VDD VSUBS INP INN OUTP
 *.PININFO VDD:B VSUBS:B INP:I INN:I OUTP:O
 XM1 COMP INP COMMON_ VDD pfet_03v3 L=5u W=18.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
