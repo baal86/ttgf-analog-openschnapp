@@ -6,14 +6,13 @@ S {}
 F {}
 E {}
 B 2 -420 -990 380 -590 {flags=graph
-y1=-0.079	
-y2=0.0057
+y1=-180	
 ypos1=0
 ypos2=2
 divy=5
-subdivy=8
+subdivy=4
 unity=1
-x1=0
+x1=3
 x2=9
 divx=5
 subdivx=8
@@ -23,10 +22,32 @@ legendmag=1.0
 dataset=-1
 unitx=1
 logx=1
-logy=1
+logy=0
+sim_type=ac
+color=7
+node=ph(oltf)
+y2=180}
+B 2 -423.0622682802731 -1410 376.9377317197269 -1010 {flags=graph
+y1=-2
+y2=5
+ypos1=0
+ypos2=2
+divy=5
+subdivy=8
+unity=1
+x1=3
+divx=5
+subdivx=8
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+node=oltf
 color=4
-node=out
-sim_type=ac}
+dataset=-1
+unitx=1
+logx=1
+logy=1
+x2=9}
 N 0 -20 0 0 {lab=SIG}
 N 0 0 0 10 {lab=SIG}
 N 0 70 0 90 {lab=0}
@@ -62,14 +83,12 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -890 -20 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -880 190 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
-.inc $::180MCU_MODELS/design.spice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice statistical
+.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
-.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 "}
 C {simulator_commands_shown.sym} -890 -320 0 0 {name=COMMANDS
@@ -78,15 +97,29 @@ only_toplevel=false
 value="
 V_DD VDD 0 3.3
 
-.control
-	save all
-	op
-	write tb_amplifier_x1_ac.bias.raw
-	ac dec 1000 1 1e9
-	write tb_amplifier_x1_ac.raw
+# Global parameters typically sourced from design.ngspice
+.param sw_stat_global   = 1
+.param sw_stat_mismatch = 1
+.param mc_skew          = 1
+.param res_mc_skew=3
+.param cap_mc_skew=3
+.param fnoicor=0
 
-	plot 20*log10(abs(v(out) / v(fb))) 180/pi*ph(v(out) / v(fb))
-	#quit
+.control
+	op
+	write tb_amplifier_x1_ac.op.raw
+  	foreach t_val -10 0 10 20 30
+    		set temp = $t_val
+		repeat 10
+			mc_source
+			ac dec 1000 1000 1e9
+			let oltf = v(out) / v(fb)
+			write tb_amplifier_x1_ac.raw
+			set appendwrite
+			reset
+		end
+	end
+	quit
 .endc
 "}
 C {vsource.sym} 0 40 0 0 {name=V2 value="DC 1.0" savecurrent=false}
@@ -95,7 +128,7 @@ C {lab_wire.sym} 20 -80 0 1 {name=p3 sig_type=std_logic lab=SIG}
 C {devices/launcher.sym} -815 -425 0 0 {name=h2
 descr="Annotate"
 tclcommand="
-xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].bias.raw
+xschem annotate_op $netlist_dir/[file tail [file rootname [xschem get current_name]]].op.raw
 "
 }
 C {ip_amplifier.sym} 420 -100 0 0 {name=x2}
