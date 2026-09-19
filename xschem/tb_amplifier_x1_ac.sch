@@ -83,7 +83,7 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
-C {devices/code_shown.sym} -880 190 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -880 240 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .lib $::180MCU_MODELS/sm141064.ngspice statistical
@@ -105,12 +105,14 @@ V_DD VDD 0 3.3
 .param cap_mc_skew=3
 .param fnoicor=0
 
+.param bias=1.0
+
 .control
 	op
 	write tb_amplifier_x1_ac.op.raw
-  	foreach t_val -10 0 10 20 30
-    		set temp = $t_val
-		repeat 10
+  	foreach v_bias 0.5 1.0 1.5 2.0
+    		alterparam bias=$v_bias
+		repeat 25
 			mc_source
 			ac dec 1000 1000 1e9
 			let oltf = v(out) / v(fb)
@@ -122,7 +124,7 @@ V_DD VDD 0 3.3
 	quit
 .endc
 "}
-C {vsource.sym} 0 40 0 0 {name=V2 value="DC 1.0" savecurrent=false}
+C {vsource.sym} 0 40 0 0 {name=V2 value="DC \{bias\}" savecurrent=false}
 C {gnd.sym} 0 90 0 0 {name=l2 lab=0}
 C {lab_wire.sym} 20 -80 0 1 {name=p3 sig_type=std_logic lab=SIG}
 C {devices/launcher.sym} -815 -425 0 0 {name=h2
