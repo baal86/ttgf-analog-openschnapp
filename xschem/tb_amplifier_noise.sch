@@ -6,7 +6,7 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=-7.5	
+y1=-7.6	
 ypos1=0
 ypos2=2
 divy=5
@@ -26,36 +26,18 @@ logy=1
 color=4
 node=onoise_spectrum
 hcursor2_y=1.8627841
-y2=-4.2}
-N -410 -640 -30 -640 {lab=VDD}
-N -410 -250 -410 -200 {lab=0}
-N -410 -640 -410 -310 {lab=VDD}
-N -30 -640 210 -640 {lab=VDD}
-N 210 -640 210 -500 {lab=VDD}
-N 210 -330 210 -300 {lab=0}
-N 330 -420 370 -420 {lab=OUT}
-N 370 -420 480 -420 {lab=OUT}
-N -10 -360 -10 -340 {lab=DUMMY}
-N -10 -340 -10 -330 {lab=DUMMY}
-N -10 -270 -10 -250 {lab=0}
-N 480 -420 510 -420 {lab=OUT}
-N 510 -420 550 -420 {lab=OUT}
-N -10 -400 -10 -360 {lab=DUMMY}
-N -10 -400 80 -400 {lab=DUMMY}
-N 80 -400 90 -400 {lab=DUMMY}
-N 70 -440 90 -440 {lab=SIG}
-N -140 -360 -140 -340 {lab=SIG}
-N -140 -340 -140 -330 {lab=SIG}
-N -140 -270 -140 -250 {lab=SIG}
-N -140 -400 -140 -360 {lab=SIG}
-N -140 -440 -140 -400 {lab=SIG}
-N -140 -440 70 -440 {lab=SIG}
-N -140 -250 -140 -200 {lab=SIG}
-N -140 -330 -140 -270 {lab=SIG}
-N -140 -140 -140 -100 {lab=0}
-C {vsource.sym} -410 -280 0 0 {name=V1 value=3.3 savecurrent=false}
-C {gnd.sym} -410 -200 0 0 {name=l3 lab=0}
-C {devices/launcher.sym} -1095 -395 0 0 {name=h1
+y2=-3.8}
+N 490 -380 710 -380 {lab=OUT}
+N 130 -360 130 -330 {lab=#net1}
+N 150 -400 230 -400 {lab=OUT}
+N 300 -290 300 -280 {lab=0}
+N 300 -470 300 -460 {lab=VDD}
+N 370 -380 490 -380 {lab=OUT}
+N 130 -360 230 -360 {lab=#net1}
+N 150 -570 150 -400 {lab=OUT}
+N 150 -570 490 -570 {lab=OUT}
+N 490 -570 490 -380 {lab=OUT}
+C {devices/launcher.sym} -1105 -395 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
@@ -75,6 +57,7 @@ C {simulator_commands_shown.sym} -1160 -300 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+V_DD VDD 0 3.3
 .param sw_stat_global   = 1
 .param sw_stat_mismatch = 1
 .param mc_skew          = 1
@@ -97,13 +80,9 @@ value="
 	quit
 .endc
 "}
-C {lab_wire.sym} -380 -640 0 1 {name=p5 sig_type=std_logic lab=VDD}
-C {ip_amplifier.sym} 210 -420 0 0 {name=x1}
-C {gnd.sym} 210 -300 0 0 {name=l1 lab=0}
-C {lab_wire.sym} 500 -420 0 0 {name=p1 sig_type=std_logic lab=OUT}
-C {vsource.sym} -10 -300 0 0 {name=V3 value=1.25 savecurrent=false}
-C {gnd.sym} -10 -250 0 0 {name=l4 lab=0}
-C {vsource.sym} -140 -170 0 0 {name=V2 value="DC 1.25 AC 1" savecurrent=false}
-C {gnd.sym} -140 -100 0 0 {name=l2 lab=0}
-C {lab_wire.sym} 20 -400 0 1 {name=p2 sig_type=std_logic lab=DUMMY}
-C {lab_wire.sym} -90 -440 0 1 {name=p3 sig_type=std_logic lab=SIG}
+C {vsource.sym} 130 -300 0 0 {name=V2 value="DC 1.0 AC 1" savecurrent=false}
+C {ip_amplifier.sym} 300 -380 0 0 {name=x2}
+C {gnd.sym} 300 -280 0 0 {name=l4 lab=0}
+C {lab_wire.sym} 680 -380 0 0 {name=p2 sig_type=std_logic lab=OUT}
+C {gnd.sym} 130 -270 0 0 {name=l9 lab=0}
+C {vdd.sym} 300 -470 0 0 {name=l11 lab=VDD}

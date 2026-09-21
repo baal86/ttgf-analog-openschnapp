@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -1950 550 -1150 950 {flags=graph
-y1=-1.6e-06
-y2=3
+y1=-0.3
+y2=3.6
 ypos1=0
 ypos2=2
 divy=5
@@ -22,9 +22,8 @@ ylabmag=1.0
 legendmag=1.0
 node="out
 sf
-ref
-amp"
-color="4 5 6 7"
+ref"
+color="4 5 6"
 dataset=-1
 unitx=1
 logx=0
@@ -62,13 +61,11 @@ Capacitor
 Model} -1010 350 0 0 0.4 0.4 {}
 T {Analog Pin
 Capacitor
-Model} 80 370 0 0 0.4 0.4 {}
+Model} -90 390 0 0 0.4 0.4 {}
 N -730 550 -730 570 {lab=0}
 N -790 320 -790 400 {lab=sf}
 N -790 320 -590 320 {lab=sf}
 N -590 320 -470 320 {lab=sf}
-N -350 430 -350 450 {lab=0}
-N -230 340 -150 340 {lab=AMP}
 N -540 360 -470 360 {lab=ref}
 N -770 380 -770 400 {lab=ref}
 N -770 60 -450 60 {lab=ref}
@@ -77,32 +74,30 @@ N -770 360 -540 360 {lab=ref}
 N -350 -50 -350 -40 {lab=VDD}
 N -250 40 -200 40 {lab=reset}
 N -250 80 -230 80 {lab=VDD}
-N -350 250 -350 260 {lab=VDD}
 N -730 420 -730 430 {lab=VDD}
 N -790 400 -790 430 {lab=sf}
 N -770 400 -770 430 {lab=ref}
 N -870 320 -870 340 {lab=sf}
 N -870 340 -870 350 {lab=sf}
 N -870 410 -870 430 {lab=0}
-N 50 340 150 340 {lab=OUT}
-N -50 420 -50 440 {lab=0}
-N -50 250 -50 260 {lab=VDD}
-N 210 340 210 360 {lab=OUT}
-N 210 360 210 370 {lab=OUT}
-N 210 430 210 450 {lab=0}
-N 150 340 290 340 {lab=OUT}
+N -120 360 -20 360 {lab=OUT}
+N -280 250 -280 260 {lab=VDD}
+N 40 360 40 380 {lab=OUT}
+N 40 380 40 390 {lab=OUT}
+N 40 450 40 470 {lab=0}
+N -20 360 120 360 {lab=OUT}
 N -970 320 -790 320 {lab=sf}
+N -470 320 -420 320 {lab=sf}
+N -470 360 -460 360 {lab=ref}
+N -460 360 -460 420 {lab=ref}
+N -460 420 -420 420 {lab=ref}
+N -280 480 -280 500 {lab=0}
+N -140 360 -120 360 {lab=OUT}
 C {ip_current_source.sym} -760 490 0 0 {name=x21
 schematic=ip_current_source_parax.sim
 spice_sym_def="tcleval(.include [file normalize ./parax/ip_current_source.sim.spice])"
 tclcommand="textwindow [file normalize ./parax/ip_current_source.sim.spice]"}
 C {gnd.sym} -730 570 0 0 {name=l21 lab=0}
-C {ip_amplifier.sym} -350 340 0 0 {name=x22
-schematic=ip_amplifier_parax.sim
-spice_sym_def="tcleval(.include [file normalize ./parax/ip_amplifier.sim.spice])"
-tclcommand="textwindow [file normalize ./parax/ip_amplifier.sim.spice]"}
-C {gnd.sym} -350 450 0 0 {name=l22 lab=0}
-C {lab_wire.sym} -160 340 0 0 {name=p47 sig_type=std_logic lab=AMP}
 C {lab_wire.sym} -930 320 0 0 {name=p48 sig_type=std_logic lab=sf}
 C {lab_wire.sym} -500 360 0 0 {name=p49 sig_type=std_logic lab=ref}
 C {devices/launcher.sym} -1985 -605 0 0 {name=h1
@@ -191,7 +186,6 @@ C {vdd.sym} -350 -50 0 0 {name=l35 lab=VDD}
 C {lab_wire.sym} -240 40 0 1 {name=p50 sig_type=std_logic lab=reset
 }
 C {vdd.sym} -230 80 0 0 {name=l37 lab=VDD}
-C {vdd.sym} -350 250 0 0 {name=l54 lab=VDD}
 C {vdd.sym} -730 420 0 0 {name=l55 lab=VDD}
 C {capa.sym} -870 380 0 0 {name=C1
 m=1
@@ -199,17 +193,14 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} -870 430 0 0 {name=l23 lab=0}
-C {ip_buffer.sym} -50 340 0 0 {name=x23
-schematic=ip_buffer_parax.sim
-spice_sym_def="tcleval(.include [file normalize ./parax/ip_buffer.sim.spice])"
-tclcommand="textwindow [file normalize ./parax/ip_buffer.sim.spice]"}
-C {lab_wire.sym} 140 340 0 0 {name=p1 sig_type=std_logic lab=OUT}
-C {gnd.sym} -50 440 0 0 {name=l24 lab=0}
-C {vdd.sym} -50 250 0 0 {name=l36 lab=VDD}
-C {capa.sym} 210 400 0 0 {name=C2
+C {lab_wire.sym} -30 360 0 0 {name=p1 sig_type=std_logic lab=OUT}
+C {vdd.sym} -280 250 0 0 {name=l36 lab=VDD}
+C {capa.sym} 40 420 0 0 {name=C2
 m=1
 value=5p
 footprint=1206
 device="ceramic capacitor"}
-C {gnd.sym} 210 450 0 0 {name=l56 lab=0}
+C {gnd.sym} 40 470 0 0 {name=l56 lab=0}
 C {noconn.sym} -200 40 2 0 {name=l1}
+C {ip_sigproc.sym} -280 360 0 0 {name=x1}
+C {gnd.sym} -280 500 0 0 {name=l2 lab=0}

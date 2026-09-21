@@ -1,31 +1,40 @@
 ** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_amplifier.sch
-.subckt ip_amplifier VDD OUTP INP INN VSUBS
+.subckt ip_amplifier VDD VSUBS INP INN OUTP
 *.PININFO VDD:B VSUBS:B INP:I INN:I OUTP:O
-XM4 TCOM TCOM VDD VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=10
-XM3 net15 TCOM VDD VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=5
-XM1 OUTN INP SRCP VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=7
-XM2 OUTP INN SRCN VDD pfet_06v0 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=7
-XR19 net4 TCOM VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
-XR5 net3 net4 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
-XR4 net6 net7 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR2 net5 net6 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR8 VSUBS net5 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR12 net7 net8 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR11 net8 net9 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR10 net9 OUTN VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR13 net14 OUTP VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR3 net13 net14 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR14 net12 net13 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR15 VSUBS net10 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR16 net10 net11 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR17 net11 net12 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=6e-6
-XR9 SRCN net1 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=3.0e-6
-XR1 SRCP net1 VSUBS ppolyf_u_1k_6p0 r_width=3e-6 r_length=1e-6
-XR6 net2 net3 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
-XR7 VSUBS net2 VSUBS ppolyf_u_1k_6p0 r_width=1e-6 r_length=5e-6
-Vmeas net15 net1 0
+XM1 COMP INP COMMON_ VDD pfet_03v3 L=5u W=18.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM2 net6 INN COMMON_ VDD pfet_03v3 L=5u W=18.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM3 net2 NBIAS VSUBS vsubs nfet_03v3 L=2u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 net1 NBIAS VSUBS vsubs nfet_03v3 L=2u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM7 NBIAS NBIAS net2 vsubs nfet_03v3 L=0.5u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM8 net3 NBIAS net1 vsubs nfet_03v3 L=0.5u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM9 net4 PBIAS VDD VDD pfet_03v3 L=2u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM10 net5 PBIAS VDD VDD pfet_03v3 L=2u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM11 PBIAS PBIAS net4 VDD pfet_03v3 L=0.5u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM12 COMMON PBIAS net5 VDD pfet_03v3 L=0.5u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM13 COMP net6 VSUBS vsubs nfet_03v3 L=5u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM14 net6 net6 VSUBS vsubs nfet_03v3 L=5u W=6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM17 net8 PBIAS VDD VDD pfet_03v3 L=0.5u W=12u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM18 OUTP COMP VSUBS vsubs nfet_03v3 L=0.5u W=12u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XR3 NBIAS net7 vsubs ppolyf_u_1k r_width=1e-6 r_length=48e-6
+Vmeas VDD net7 0
+Vmeas1 PBIAS net3 0
+XC1 OUTP net9 cap_pmos_03v3 c_width=13.5e-6 c_length=18e-6
+XC2 COMP net9 cap_pmos_03v3 c_width=13.5e-6 c_length=18e-6
+Vmeas2 COMMON COMMON_ 0
+Vmeas3 net8 OUTP 0
+XR2 VDD net9 vsubs ppolyf_u_1k r_width=1e-6 r_length=96e-6
 .ends

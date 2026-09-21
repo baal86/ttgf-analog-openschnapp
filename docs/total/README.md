@@ -9,7 +9,6 @@ The analog signals are shown below:
 
 - `ref` is the voltage of the reference pixel.
 - `sf` is the unbuffered pixel voltage at the current source.
-- `amp` is the amplified and reference corrected voltage.
 - `out` is the buffered video output.
 
 ![Analog Signals](../../xschem/docs/tb_total_tran.b.png)

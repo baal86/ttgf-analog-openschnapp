@@ -30,6 +30,7 @@ magic:
 
 %.lvs.spice: %.mag
 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_lvs.tcl $*
+	sed -i '/^\.subckt pmoscap_3p3_U5JGFU[[:space:]]/,/^\.ends/ s/c_length=11.25u/c_length=18u/' $@
 	rm -f *.ext
 
 $(PROJECT_NAME).gds.lvs.spice: ../gds/$(PROJECT_NAME).gds
@@ -81,6 +82,8 @@ gds:  ../gds/$(PROJECT_NAME).gds
 # Clean target
 ###################################################################################
 
-clean:
-	rm -f ../gds/$(PROJECT_NAME).gds
+cleanlvs:
 	rm -f *.fb.txt *.lvs.report *.lvs.spice *.nodes 
+
+cleangds:
+	rm -f ../gds/$(PROJECT_NAME).gds
