@@ -49,8 +49,7 @@ $(PROJECT_NAME).gds.lvs.report: $(PROJECT_NAME).gds.lvs.spice ../src/project.v
 	mv ../gds/$(PROJECT_NAME).gds.fb.txt .
 	./tcl/check_lvs_report.sh $@
 
-lvs: $(PROJECT_NAME).lvs.report $(PROJECT_NAME).gds.lvs.report 
-
+lvs: $(PROJECT_NAME).lvs.report $(PROJECT_NAME).gds.lvs.report
 
 ###################################################################################
 # DRC and Antenna Checks
@@ -83,7 +82,14 @@ gds:  ../gds/$(PROJECT_NAME).gds
 ###################################################################################
 
 cleanlvs:
-	rm -f *.fb.txt *.lvs.report *.lvs.spice *.nodes 
+	rm -f *.fb.txt *.lvs.report *.lvs.spice *.nodes
 
 cleangds:
 	rm -f ../gds/$(PROJECT_NAME).gds
+
+###################################################################################
+# Check primitive components
+###################################################################################
+
+checkusage:
+	python tcl/check_usage.py

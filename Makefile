@@ -7,6 +7,7 @@ all:
 	$(MAKE) -C xschem cleandocs docs
 	$(MAKE) -C xschem cleanparax parax
 	$(MAKE) -C xschem cleanlvs lvs
+	$(MAKE) -C mag checkusage
 	$(MAKE) -C mag cleanlvs cleangds
 	$(MAKE) -C mag gds
 	$(MAKE) -C mag png
