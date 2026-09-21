@@ -1,0 +1,90 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1789981740
+<< pwell >>
+rect -50 40 800 1400
+rect -80 -50 800 40
+rect -80 -70 60 -50
+rect 660 -60 800 -50
+<< mvpsubdiff >>
+rect -100 1370 -50 1400
+rect -100 -20 -90 1370
+rect -60 -20 -50 1370
+rect -100 -50 -50 -20
+rect -100 -60 800 -50
+rect -100 -90 -20 -60
+rect 770 -90 800 -60
+rect -100 -100 800 -90
+<< mvpsubdiffcont >>
+rect -90 -20 -60 1370
+rect -20 -90 770 -60
+<< metal1 >>
+rect -90 1370 810 1400
+rect -60 1330 810 1370
+rect -60 190 670 1330
+rect -60 110 210 190
+rect 390 110 670 190
+rect -60 30 670 110
+rect 700 1290 750 1300
+rect 700 70 710 1290
+rect 740 70 750 1290
+rect 700 60 750 70
+rect 780 30 810 1330
+rect -60 -20 810 30
+rect -90 -60 810 -20
+rect -90 -90 -20 -60
+rect 770 -90 810 -60
+rect -90 -100 810 -90
+<< via1 >>
+rect 210 110 390 190
+rect 710 70 740 1290
+<< metal2 >>
+rect -90 1290 810 1400
+rect -90 230 710 1290
+rect -90 70 170 230
+rect 200 190 400 200
+rect 200 110 210 190
+rect 390 110 400 190
+rect 200 100 400 110
+rect 430 70 710 230
+rect 740 70 810 1290
+rect -90 0 810 70
+rect -100 -10 810 0
+rect -100 -90 -90 -10
+rect 90 -90 810 -10
+rect -100 -100 810 -90
+<< via2 >>
+rect 210 110 390 190
+rect -90 -90 90 -10
+<< metal3 >>
+rect 200 190 400 200
+rect 200 110 210 190
+rect 390 110 400 190
+rect 200 100 400 110
+rect -100 -10 100 0
+rect -100 -90 -90 -10
+rect 90 -90 100 -10
+rect -100 -100 100 -90
+<< via3 >>
+rect 210 110 390 190
+rect -90 -90 90 -10
+<< metal4 >>
+rect 200 190 400 200
+rect 200 110 210 190
+rect 390 110 400 190
+rect 200 100 400 110
+rect -100 -10 100 0
+rect -100 -90 -90 -10
+rect 90 -90 100 -10
+rect -100 -100 100 -90
+use nmoscap_3p3_DSBNEK  nmoscap_3p3_DSBNEK_0
+timestamp 1789980988
+transform 0 1 371 -1 0 681
+box -681 -371 681 371
+<< labels >>
+flabel metal4 200 100 400 200 0 FreeSans 800 0 0 0 VSUBS
+port 0 nsew
+flabel metal4 -100 -100 100 0 0 FreeSans 800 0 0 0 VDD
+port 1 nsew
+<< end >>

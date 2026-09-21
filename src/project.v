@@ -68,6 +68,24 @@ module tt_um_baal86_openschnapp (
     ip_column column19( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[19]),   .bus(bus)   );
     ip_column column20( .VGND(VGND),    .VDPWR(VDPWR),  .arow(arow[16:0]),  .reset(reset),  .enable(acol[20]),   .bus(bus)   );
 
+    ip_psucap_l psucapl_0(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_1(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_2(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_3(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_4(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_5(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_6(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_7(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_8(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_9(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_10(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_11(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_12(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_13(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_14(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_15(.VDD(VDPWR),.VSUBS(VGND));
+    ip_psucap_l psucapl_16(.VDD(VDPWR),.VSUBS(VGND));
+
     ip_pixel_nd2ps_dummy pixel_dummy(
         .VDD(VDPWR), 
         .VSUBS(VGND), 
@@ -143,3 +161,4 @@ module tt_um_baal86_openschnapp (
     assign uio_oe[7] = VGND;
 
 endmodule
+
