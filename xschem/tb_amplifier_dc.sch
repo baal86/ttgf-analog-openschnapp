@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=0.04	
-y2=1.8
+y1=0.054	
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.8
+x2=2
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -24,8 +24,9 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=out
+color="4 14"
+node="out
+out_parax"
 }
 N -80 -780 -80 -760 {lab=SIG}
 N -80 -760 -80 -750 {lab=SIG}
