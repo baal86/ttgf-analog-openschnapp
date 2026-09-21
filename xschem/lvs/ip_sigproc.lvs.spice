@@ -4,7 +4,7 @@
 x1 vdd vsubs sig s1_out s1_out ip_amplifier
 x2 vdd vsubs ref s2_fb s2_out ip_amplifier
 XR4 s1_out s2_fb vsubs ppolyf_u_1k r_width=1e-6 r_length=15e-6
-XR1 s2_fb s2_out vsubs ppolyf_u_1k r_width=1e-6 r_length=60e-6
+XR1 s2_fb s2_out vsubs ppolyf_u_1k r_width=1e-6 r_length=150e-6
 XR2 s2_out outp vsubs ppolyf_u_1k r_width=10e-6 r_length=5e-6
 .ends
 

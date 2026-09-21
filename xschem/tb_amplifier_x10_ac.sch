@@ -115,6 +115,7 @@ N 940 -100 940 -70 {lab=#net1}
 N 940 340 940 370 {lab=#net3}
 N 1070 -100 1140 -100 {lab=LOAD}
 N 1070 340 1140 340 {lab=LOAD_PARAX}
+N 180 320 190 320 {lab=SIG}
 C {devices/launcher.sym} -815 -465 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -147,7 +148,7 @@ V_DD VDD 0 3.3
 
 .control
 	op
-	write tb_amplifier_x4_ac.op.raw
+	write tb_amplifier_x10_ac.op.raw
   	foreach v_bias 0.5 1.0 1.5
     		alterparam bias=$v_bias
 		repeat 10
@@ -155,7 +156,7 @@ V_DD VDD 0 3.3
 			ac dec 1000 1000 1e9
 			let oltf = v(out) / v(fb)
 			let oltf_parax = v(out_parax) / v(fb_parax)
-			write tb_amplifier_x4_ac.raw
+			write tb_amplifier_x10_ac.raw
 			set appendwrite
 			reset
 		end
@@ -197,7 +198,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 940 30 0 0 {name=l1 lab=0}
 C {res.sym} 480 -260 1 0 {name=R4
-value=60k
+value=150k
 footprint=1206
 device=resistor
 m=1}
@@ -206,7 +207,7 @@ value=15k
 footprint=1206
 device=resistor
 m=1}
-C {vsource.sym} 90 -120 1 0 {name=V3 value="DC -0.2" savecurrent=false}
+C {vsource.sym} 90 -120 1 0 {name=V3 value="DC -0.05" savecurrent=false}
 C {lab_wire.sym} 140 -120 0 1 {name=p4 sig_type=std_logic lab=SIG}
 C {gnd.sym} 420 440 0 0 {name=l3 lab=0}
 C {lab_wire.sym} 1200 340 0 0 {name=p5 sig_type=std_logic lab=LOAD_PARAX}
@@ -232,7 +233,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 940 470 0 0 {name=l8 lab=0}
 C {res.sym} 480 180 1 0 {name=R9
-value=60k
+value=150k
 footprint=1206
 device=resistor
 m=1}
