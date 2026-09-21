@@ -64,7 +64,8 @@ drc:
 klayout_drc:
 	klayout -b -r $(PDK_ROOT)/gf180mcuD/libs.tech/klayout/tech/drc/gf180mcu.drc -rd input=../gds/$(PROJECT_NAME).gds -rd report=../gds/$(PROJECT_NAME).lyrdb
 
-
+klayout_density:
+	klayout -b -r tcl/check_density.py -rd gdsfile=../gds/tt_um_baal86_openschnapp.gds
 
 ###################################################################################
 # GDS Export
