@@ -1,4 +1,0 @@
-| units: 0.5 tech: gf180mcuD format: MIT
-x read vsubs l=0 w=0 x=3996 y=-1463 diode_nd2ps_06v0
-x reset vsubs l=0 w=0 x=3996 y=376 diode_nd2ps_06v0
-R vsubs 178
