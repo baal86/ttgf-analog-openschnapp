@@ -1,0 +1,14 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1789999470
+use nmoscap_3p3_CUSTM3  nmoscap_3p3_CUSTM3_0
+timestamp 1789999358
+transform 1 0 2600 0 1 799
+box -2600 -800 3800 3400
+<< labels >>
+flabel space 1300 1600 2900 2400 0 FreeSans 1600 0 0 0 VSUBS
+port 0 nsew
+flabel space 400 3899 6000 3999 0 FreeSans 1600 0 0 0 VDD
+port 1 nsew
+<< end >>

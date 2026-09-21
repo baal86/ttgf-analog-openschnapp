@@ -86,6 +86,8 @@ module tt_um_baal86_openschnapp (
     ip_psucap_l psucapl_15(.VDD(VDPWR),.VSUBS(VGND));
     ip_psucap_l psucapl_16(.VDD(VDPWR),.VSUBS(VGND));
 
+    ip_psucap_br psucapl_br(.VDD(VDPWR),.VSUBS(VGND));
+
     ip_pixel_nd2ps_dummy pixel_dummy(
         .VDD(VDPWR), 
         .VSUBS(VGND), 
