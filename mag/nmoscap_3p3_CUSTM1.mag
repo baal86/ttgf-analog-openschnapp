@@ -1,0 +1,71 @@
+magic
+tech gf180mcuD
+timestamp 1789990856
+<< pwell >>
+rect -330 -80 -160 210
+<< ndiff >>
+rect -310 198 -180 200
+rect -310 193 -304 198
+rect -186 193 -180 198
+rect -310 190 -180 193
+rect -310 -63 -180 -60
+rect -310 -68 -304 -63
+rect -186 -68 -180 -63
+rect -310 -70 -180 -68
+<< ndiffc >>
+rect -304 193 -186 198
+rect -304 -68 -186 -63
+<< mvpsubdiff >>
+rect -340 218 -160 220
+rect -340 212 -324 218
+rect -166 212 -160 218
+rect -340 210 -160 212
+rect -340 204 -330 210
+rect -340 -74 -338 204
+rect -332 -74 -330 204
+rect -340 -80 -330 -74
+<< mvpsubdiffcont >>
+rect -324 212 -166 218
+rect -338 -74 -332 204
+<< nmoscap >>
+rect -310 -60 -180 190
+<< polysilicon >>
+rect -322 188 -310 190
+rect -322 -58 -320 188
+rect -314 -58 -310 188
+rect -322 -60 -310 -58
+rect -180 -60 -170 190
+<< polycontact >>
+rect -320 -58 -314 188
+<< metal1 >>
+rect -338 218 -158 220
+rect -338 212 -324 218
+rect -166 212 -158 218
+rect -338 204 -158 212
+rect -332 198 -158 204
+rect -332 196 -304 198
+rect -332 -66 -330 196
+rect -306 193 -304 196
+rect -186 193 -158 198
+rect -322 188 -312 190
+rect -322 -58 -320 188
+rect -314 -58 -312 188
+rect -322 -60 -312 -58
+rect -306 -63 -158 193
+rect -306 -66 -304 -63
+rect -332 -68 -304 -66
+rect -186 -68 -158 -63
+rect -332 -74 -158 -68
+rect -338 -80 -158 -74
+<< via1 >>
+rect -320 -58 -314 188
+<< metal2 >>
+rect -322 188 -312 190
+rect -322 -58 -320 188
+rect -314 -58 -312 188
+rect -322 -60 -312 -58
+<< properties >>
+string gencell nmoscap_3p3
+string library gf180mcu
+string parameters w 6.5 l 12.5 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 0 compatible {nmoscap_3p3 nmoscap_6p0}
+<< end >>
