@@ -12,67 +12,35 @@ N 150 -70 150 -0 {lab=vsubs}
 N 0 -160 70 -160 {lab=refin}
 N 0 0 150 -0 {lab=vsubs}
 N -0 -180 -0 -160 {lab=refin}
-N -70 -550 -30 -550 {lab=vsubs}
-N -30 -550 -20 -550 {lab=vsubs}
+N -70 -520 -30 -520 {lab=vsubs}
+N -30 -520 -20 -520 {lab=vsubs}
 N 150 -240 150 -130 {lab=#net1}
 N 150 -430 150 -400 {lab=src_a}
 N -0 -320 -0 -180 {lab=refin}
-N -70 -620 -30 -620 {lab=vsubs}
-N -30 -620 -20 -620 {lab=vsubs}
-N -70 -690 -30 -690 {lab=vsubs}
-N -30 -690 -20 -690 {lab=vsubs}
-N 0 -660 0 -650 {lab=#net2}
-N 0 -590 0 -580 {lab=#net3}
-N 150 -220 260 -220 {lab=#net1}
-N 260 -240 260 -220 {lab=#net1}
 N 150 -320 150 -300 {lab=src_a}
-N 150 -320 260 -320 {lab=src_a}
-N 260 -320 260 -300 {lab=src_a}
 N 150 -400 150 -320 {lab=src_a}
 N 100 -270 220 -270 {lab=refin}
 N 0 -270 100 -270 {lab=refin}
 N 520 -430 520 -400 {lab=src_b}
-N 520 -220 630 -220 {lab=#net4}
-N 630 -240 630 -220 {lab=#net4}
 N 520 -320 520 -300 {lab=src_b}
-N 520 -320 630 -320 {lab=src_b}
-N 630 -320 630 -300 {lab=src_b}
 N 520 -400 520 -320 {lab=src_b}
 N 290 0 930 0 {lab=vsubs}
 N 520 -430 630 -430 {lab=src_b}
 N 630 -430 660 -430 {lab=src_b}
-N 220 -270 590 -270 {lab=refin}
+N 220 -270 480 -270 {lab=refin}
 N 70 -100 100 -100 {lab=refin}
 N 40 -100 70 -100 {lab=refin}
 N -0 -70 -0 -0 {lab=vsubs}
 N 0 -160 0 -130 {lab=refin}
 N 520 -70 520 -0 {lab=vsubs}
 N 100 -100 480 -100 {lab=refin}
-N 520 -240 520 -130 {lab=#net4}
-N 370 -550 410 -550 {lab=vsubs}
-N 410 -550 420 -550 {lab=vsubs}
-N 140 -550 180 -550 {lab=vsubs}
-N 180 -550 190 -550 {lab=vsubs}
-N 140 -620 180 -620 {lab=vsubs}
-N 180 -620 190 -620 {lab=vsubs}
-N 140 -690 180 -690 {lab=vsubs}
-N 180 -690 190 -690 {lab=vsubs}
-N 210 -660 210 -650 {lab=#net5}
-N 210 -590 210 -580 {lab=#net6}
-N -0 -520 0 -320 {lab=refin}
-N 0 -740 210 -740 {lab=#net7}
-N 210 -740 210 -720 {lab=#net7}
-N 210 -520 210 -500 {lab=#net8}
-N 210 -500 440 -500 {lab=#net8}
-N 440 -520 440 -500 {lab=#net8}
-N 440 -720 440 -580 {lab=vdd}
-N 0 -740 0 -720 {lab=#net7}
-C {iopin.sym} 440 -720 1 1 {name=p0 lab=vdd}
+N 520 -240 520 -130 {lab=#net2}
+N 0 -580 0 -550 {lab=vdd}
+N 0 -490 -0 -320 {lab=refin}
+C {iopin.sym} 0 -580 1 1 {name=p0 lab=vdd}
 C {iopin.sym} 930 0 2 1 {name=p2 lab=vsubs}
 C {ipin.sym} 290 -430 0 1 {name=p3 lab=src_a}
-C {lab_wire.sym} -70 -550 0 1 {name=p7 sig_type=std_logic lab=vsubs}
-C {lab_wire.sym} -70 -620 0 1 {name=p8 sig_type=std_logic lab=vsubs}
-C {lab_wire.sym} -70 -690 0 1 {name=p9 sig_type=std_logic lab=vsubs}
+C {lab_wire.sym} -70 -520 0 1 {name=p7 sig_type=std_logic lab=vsubs}
 C {lab_wire.sym} 60 -270 0 0 {name=p13 sig_type=std_logic lab=refin}
 C {ipin.sym} 660 -430 0 1 {name=p1 lab=src_b}
 C {symbols/nfet3_06v0.sym} 20 -100 0 1 {name=M8
@@ -95,22 +63,7 @@ L=0.7u
 W=5u
 body=vsubs
 nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_06v0
-spiceprefix=X
-}
-C {symbols/nfet3_06v0.sym} 240 -270 0 0 {name=M2
-L=0.7u
-W=5u
-body=vsubs
-nf=1
-m=1
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -125,22 +78,7 @@ L=0.7u
 W=5u
 body=vsubs
 nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_06v0
-spiceprefix=X
-}
-C {symbols/nfet3_06v0.sym} 610 -270 0 0 {name=M6
-L=0.7u
-W=5u
-body=vsubs
-nf=1
-m=1
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -180,49 +118,9 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {symbols/ppolyf_u_1k_6p0.sym} 0 -690 0 0 {name=R3
+C {symbols/ppolyf_u_1k_6p0.sym} 0 -520 0 0 {name=R5
 W=1e-6
-L=6e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} 0 -620 0 0 {name=R4
-W=1e-6
-L=6e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} 0 -550 0 0 {name=R5
-W=1e-6
-L=6e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {lab_wire.sym} 370 -550 0 1 {name=p4 sig_type=std_logic lab=vsubs}
-C {lab_wire.sym} 140 -550 0 1 {name=p10 sig_type=std_logic lab=vsubs}
-C {lab_wire.sym} 140 -620 0 1 {name=p11 sig_type=std_logic lab=vsubs}
-C {lab_wire.sym} 140 -690 0 1 {name=p12 sig_type=std_logic lab=vsubs}
-C {symbols/ppolyf_u_1k_6p0.sym} 210 -550 0 0 {name=R1
-W=1e-6
-L=6e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} 210 -620 0 0 {name=R2
-W=1e-6
-L=6e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} 210 -690 0 0 {name=R6
-W=1e-6
-L=6e-6
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} 440 -550 0 0 {name=R7
-W=1e-6
-L=6e-6
+L=42e-6
 model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
