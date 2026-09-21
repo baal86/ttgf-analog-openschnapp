@@ -23,8 +23,9 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=out
+color="4 14"
+node="out
+out_parax"
 hcursor2_y=1.8627841
 y2=1.1}
 N -360 -80 -360 -60 {lab=SIG}
@@ -57,6 +58,27 @@ N -140 -160 -20 -160 {lab=SIG}
 N 240 -310 240 -240 {lab=OUT}
 N -200 -160 -140 -160 {lab=SIG}
 N 240 -340 240 -310 {lab=OUT}
+N 260 180 470 180 {lab=OUT_PARAX}
+N -80 160 -70 160 {lab=OUT_PARAX}
+N 170 180 260 180 {lab=OUT_PARAX}
+N 200 20 240 20 {lab=OUT_PARAX}
+N 140 20 200 20 {lab=OUT_PARAX}
+N 30 20 140 20 {lab=OUT_PARAX}
+N -100 20 -30 20 {lab=OUT_PARAX}
+N -100 60 -100 160 {lab=OUT_PARAX}
+N -100 160 -80 160 {lab=OUT_PARAX}
+N -100 20 -100 60 {lab=OUT_PARAX}
+N 50 270 50 280 {lab=0}
+N 50 90 50 100 {lab=VDD}
+N 120 180 170 180 {lab=OUT_PARAX}
+N -70 160 -20 160 {lab=OUT_PARAX}
+N 240 120 240 180 {lab=OUT_PARAX}
+N -30 20 30 20 {lab=OUT_PARAX}
+N -140 200 -20 200 {lab=SIG}
+N 240 50 240 120 {lab=OUT_PARAX}
+N -200 200 -140 200 {lab=SIG}
+N 240 20 240 50 {lab=OUT_PARAX}
+N -200 -160 -200 200 {lab=SIG}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -104,3 +126,10 @@ C {ip_amplifier.sym} 50 -180 0 0 {name=x1}
 C {gnd.sym} 50 -80 0 0 {name=l3 lab=0}
 C {lab_wire.sym} 430 -180 0 0 {name=p4 sig_type=std_logic lab=OUT}
 C {vdd.sym} 50 -270 0 0 {name=l6 lab=VDD}
+C {gnd.sym} 50 280 0 0 {name=l1 lab=0}
+C {lab_wire.sym} 430 180 0 0 {name=p1 sig_type=std_logic lab=OUT_PARAX}
+C {vdd.sym} 50 90 0 0 {name=l4 lab=VDD}
+C {ip_amplifier.sym} 50 180 0 0 {name=x3
+schematic=ip_amplifier_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_amplifier.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_amplifier.sim.spice]"}

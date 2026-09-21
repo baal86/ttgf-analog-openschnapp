@@ -23,8 +23,9 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=out
+color="4 14"
+node="out
+out_parax"
 y2=2.4}
 N -400 -120 -400 -100 {lab=SIG}
 N -400 -100 -400 -90 {lab=SIG}
@@ -60,6 +61,32 @@ N -100 -60 -100 -40 {lab=0}
 N 320 -180 460 -180 {lab=OUT}
 N 370 -180 370 -150 {lab=OUT}
 N 370 -90 370 -80 {lab=0}
+N -80 180 -70 180 {lab=#net4}
+N 170 200 260 200 {lab=#net5}
+N -100 80 -100 180 {lab=#net4}
+N -100 180 -80 180 {lab=#net4}
+N -100 40 -100 80 {lab=#net4}
+N 50 290 50 300 {lab=0}
+N 50 110 50 120 {lab=VDD}
+N 120 200 170 200 {lab=#net5}
+N -70 180 -20 180 {lab=#net4}
+N 240 140 240 200 {lab=#net5}
+N 240 70 240 140 {lab=#net5}
+N 240 40 240 70 {lab=#net5}
+N -180 180 -100 180 {lab=#net4}
+N -100 10 20 10 {lab=#net4}
+N -100 10 -100 40 {lab=#net4}
+N 90 10 240 10 {lab=#net5}
+N 240 10 240 40 {lab=#net5}
+N 20 10 30 10 {lab=#net4}
+N -100 220 -20 220 {lab=#net6}
+N -100 220 -100 260 {lab=#net6}
+N -100 320 -100 340 {lab=0}
+N 320 200 460 200 {lab=OUT_PARAX}
+N 370 200 370 230 {lab=OUT_PARAX}
+N 370 290 370 300 {lab=0}
+N -300 180 -240 180 {lab=SIG}
+N -300 -200 -300 180 {lab=SIG}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -105,12 +132,12 @@ C {gnd.sym} 50 -80 0 0 {name=l3 lab=0}
 C {lab_wire.sym} 430 -180 0 0 {name=p4 sig_type=std_logic lab=OUT}
 C {vdd.sym} 50 -270 0 0 {name=l6 lab=VDD}
 C {res.sym} -210 -200 1 0 {name=R1
-value=10k
+value=15k
 footprint=1206
 device=resistor
 m=1}
 C {res.sym} 60 -370 1 0 {name=R2
-value=40k
+value=60k
 footprint=1206
 device=resistor
 m=1}
@@ -128,3 +155,34 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 370 -80 0 0 {name=l4 lab=0}
+C {gnd.sym} 50 300 0 0 {name=l5 lab=0}
+C {lab_wire.sym} 430 200 0 0 {name=p1 sig_type=std_logic lab=OUT_PARAX}
+C {vdd.sym} 50 110 0 0 {name=l7 lab=VDD}
+C {res.sym} -210 180 1 0 {name=R4
+value=15k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 60 10 1 0 {name=R5
+value=60k
+footprint=1206
+device=resistor
+m=1}
+C {vsource.sym} -100 290 0 0 {name=V3 value=1 savecurrent=false}
+C {gnd.sym} -100 340 0 0 {name=l8 lab=0
+value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
+C {res.sym} 290 200 1 0 {name=R6
+value=1000
+footprint=1206
+device=resistor
+m=1}
+C {capa.sym} 370 260 0 0 {name=C2
+m=1
+value=5p
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} 370 300 0 0 {name=l9 lab=0}
+C {ip_amplifier.sym} 50 200 0 0 {name=x3
+schematic=ip_amplifier_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_amplifier.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_amplifier.sim.spice]"}

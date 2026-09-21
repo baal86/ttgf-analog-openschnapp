@@ -1,0 +1,8 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x en cl bus vsubs s=8800,376 d=8800,376 l=140 w=100 x=460 y=426 nfet_06v0
+x en bus cl vsubs s=8800,376 d=8800,376 l=140 w=100 x=850 y=426 nfet_06v0
+x en vsubs l=0 w=0 x=1446 y=516 diode_nd2ps_06v0
+R bus 41
+R cl 40
+R en 50
+R vsubs 297

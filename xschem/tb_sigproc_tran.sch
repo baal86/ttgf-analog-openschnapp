@@ -6,14 +6,14 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=0	
+y1=0.81	
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=6.5490328e-06
-x2=3.59591e-05
+x1=0
+x2=5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -23,9 +23,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=out
-y2=2.5}
+color="4 14"
+node="out
+out_parax"
+y2=2.2}
 N -360 -80 -360 -60 {lab=SIG}
 N -360 -60 -360 -50 {lab=SIG}
 N -360 -50 -360 -30 {lab=SIG}
@@ -49,6 +50,19 @@ N 380 -120 380 -90 {lab=OUT}
 N 380 -30 380 20 {lab=0}
 N 260 -120 270 -120 {lab=OUT}
 N 120 -0 120 40 {lab=0}
+N 410 280 620 280 {lab=OUT_PARAX}
+N 320 280 410 280 {lab=OUT_PARAX}
+N 270 280 320 280 {lab=OUT_PARAX}
+N 120 130 120 180 {lab=VDD}
+N -60 340 -60 360 {lab=#net2}
+N -60 340 -20 340 {lab=#net2}
+N -60 420 -60 430 {lab=0}
+N 380 280 380 310 {lab=OUT_PARAX}
+N 380 370 380 420 {lab=0}
+N 260 280 270 280 {lab=OUT_PARAX}
+N 120 400 120 440 {lab=0}
+N -120 240 -20 240 {lab=SIG}
+N -120 -160 -120 240 {lab=SIG}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -78,7 +92,7 @@ V_DD VDD 0 3.3
 .option klu
 .option reltol=0.005
 .option abstol=100n
-.save v(out)
+.save v(out) v(out_parax)
 .control
 	tran 10n 50u
 	write tb_sigproc_tran.raw
@@ -104,4 +118,23 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 380 20 0 0 {name=l5 lab=0
+value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
+C {lab_wire.sym} 580 280 0 0 {name=p1 sig_type=std_logic lab=OUT_PARAX
+}
+C {ip_sigproc.sym} 120 280 0 0 {name=x2
+schematic=ip_sigproc_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_sigproc.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_sigproc.sim.spice]"}
+C {gnd.sym} 120 440 0 0 {name=l6 lab=0
+value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
+C {vdd.sym} 120 130 0 0 {name=l7 lab=VDD}
+C {vsource.sym} -60 390 0 0 {name=V3 value=1 savecurrent=false}
+C {gnd.sym} -60 430 0 0 {name=l8 lab=0
+value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
+C {capa.sym} 380 340 0 0 {name=C2
+m=1
+value=5p
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} 380 420 0 0 {name=l9 lab=0
 value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}

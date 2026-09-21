@@ -1,0 +1,9 @@
+* NGSPICE file created from ip_pixel_frame_right_parax.ext - technology: gf180mcuD
+
+.subckt ip_pixel_frame_right_parax reset read vsubs
+D0 vsubs read diode_nd2ps_06v0 pj=2u area=0.25p
+D1 vsubs reset diode_nd2ps_06v0 pj=2u area=0.25p
+C0 read vsubs 0.64605f
+C1 reset vsubs 0.64591f
+.ends
+

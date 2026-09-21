@@ -57,6 +57,31 @@ N 260 -1020 320 -1020 {lab=OUT}
 N -80 -840 40 -840 {lab=SIG}
 N 530 -990 530 -920 {lab=OUT}
 N 530 -1020 530 -990 {lab=OUT}
+N 550 -500 760 -500 {lab=OUT_PARAX}
+N 210 -520 220 -520 {lab=OUT_PARAX}
+N 460 -500 550 -500 {lab=OUT_PARAX}
+N 490 -660 530 -660 {lab=OUT_PARAX}
+N 430 -660 490 -660 {lab=OUT_PARAX}
+N 660 -500 660 -470 {lab=OUT_PARAX}
+N 660 -410 660 -370 {lab=0}
+N 320 -660 430 -660 {lab=OUT_PARAX}
+N 190 -660 260 -660 {lab=OUT_PARAX}
+N 190 -620 190 -520 {lab=OUT_PARAX}
+N 190 -520 210 -520 {lab=OUT_PARAX}
+N 190 -660 190 -620 {lab=OUT_PARAX}
+N 340 -410 340 -400 {lab=0}
+N 340 -590 340 -580 {lab=VDD}
+N 410 -500 460 -500 {lab=OUT_PARAX}
+N 170 -480 210 -480 {lab=SIG}
+N 240 -480 270 -480 {lab=SIG}
+N 220 -520 270 -520 {lab=OUT_PARAX}
+N 530 -560 530 -500 {lab=OUT_PARAX}
+N 210 -480 240 -480 {lab=SIG}
+N 260 -660 320 -660 {lab=OUT_PARAX}
+N 530 -630 530 -560 {lab=OUT_PARAX}
+N 530 -660 530 -630 {lab=OUT_PARAX}
+N 100 -480 170 -480 {lab=SIG}
+N 100 -840 100 -480 {lab=SIG}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -117,3 +142,17 @@ C {gnd.sym} 660 -730 0 0 {name=l5 lab=0}
 C {vdd.sym} 340 -950 0 0 {name=l6 lab=VDD}
 C {ngspice_probe.sym} 190 -840 0 0 {name=r7}
 C {vsource.sym} -80 -720 0 0 {name=V2 value="DC 1.0" savecurrent=false}
+C {gnd.sym} 340 -400 0 0 {name=l2 lab=0}
+C {lab_wire.sym} 720 -500 0 0 {name=p2 sig_type=std_logic lab=OUT_PARAX}
+C {res.sym} 660 -440 0 0 {name=R1
+value=100k
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} 660 -370 0 0 {name=l4 lab=0}
+C {vdd.sym} 340 -590 0 0 {name=l7 lab=VDD}
+C {ngspice_probe.sym} 190 -480 0 0 {name=r2}
+C {ip_amplifier.sym} 340 -500 0 0 {name=x3
+schematic=ip_amplifier_parax.sim
+spice_sym_def="tcleval(.include [file normalize ./parax/ip_amplifier.sim.spice])"
+tclcommand="textwindow [file normalize ./parax/ip_amplifier.sim.spice]"}
