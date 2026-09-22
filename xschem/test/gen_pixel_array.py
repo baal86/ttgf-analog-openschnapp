@@ -26,8 +26,8 @@ NROWS = 17
 NCOLS = 21
 
 START_T = 200
-CDS_T   = 3000
-PIXEL_T = 4
+CDS_T   = 5000
+PIXEL_T = 10
 
 index = 100
 

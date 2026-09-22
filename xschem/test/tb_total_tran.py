@@ -6,8 +6,8 @@ import numpy as np
 NROWS    = 17
 NCOLUMNS = 21
 FIRST_PIXEL = 200
-DT_PIXEL = 4
-CDS_TIME = 3000
+DT_PIXEL = 10
+CDS_TIME = 5000
 
 plt.rcParams['lines.linewidth'] = 0.5
 

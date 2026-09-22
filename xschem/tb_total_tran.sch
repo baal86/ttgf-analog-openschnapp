@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0052
+x2=9e-3
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -37,7 +37,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0052
+x2=0.009
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -126,8 +126,8 @@ simulator=ngspice
 only_toplevel=false 
 value="
 .option klu
-.option reltol=0.05 
-.option abstol=100u
+.option reltol=0.075 
+.option abstol=200u
 .save none
 
 .save V(nRA0) V(nRA1) V(nRA2) V(nRA3) V(nRA4)
@@ -144,7 +144,7 @@ value="
 .save V(out) V(sf) V(ref) V(amp)
 .control
 	reset
-	tran 100n 5.2m 0 100n
+	tran 1u 9m
 	write tb_total_tran.raw
 	quit
 .endc
