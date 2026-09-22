@@ -9,10 +9,9 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated. Most pixels are masked by `metal5` but the available pixels should allow characterization of the image sensor.
+A classic 3T CMOS image sensor. Diode performance will be poor, but hopefully the readout can be demonstrated. Most pixels are masked by `metal5`, but the available pixels should allow characterization of the image sensor.
 
 ![Block Diagram](block_diagram.png)
-
 
 Further documentation for single IP blocks in the folders listed below.
 
@@ -21,6 +20,7 @@ Further documentation for single IP blocks in the folders listed below.
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_mux/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_mux/README.md)
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/row_mux/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/row_mux/README.md)
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_switch/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/column_switch/README.md)
+- [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/amplifier/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/amplifier/README.md)
 - [https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/total/README.md](https://github.com/baal86/ttgf-analog-openschnapp/blob/main/docs/total/README.md)
 
 ## How to test
