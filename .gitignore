@@ -44,3 +44,4 @@ test/gate_level_netlist.v
 /xschem/parax/*.sim
 /xschem/st_total.txt
 /xschem/simulation/pixels.spice
+/xschem/simulation/*.spice

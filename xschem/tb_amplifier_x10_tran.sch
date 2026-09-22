@@ -6,7 +6,7 @@ S {}
 F {}
 E {}
 B 2 -1220 -1120 -420 -720 {flags=graph
-y1=0.72	
+y1=0	
 ypos1=0
 ypos2=2
 divy=5
@@ -23,10 +23,11 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 14"
+color="4 14 6"
 node="out
-out_parax"
-y2=3.3}
+out_parax
+sig"
+y2=2.3}
 N -400 -120 -400 -100 {lab=SIG}
 N -400 -100 -400 -90 {lab=SIG}
 N -400 -90 -400 -70 {lab=SIG}
@@ -123,7 +124,7 @@ V_DD VDD 0 3.3
 	quit
 .endc
 "}
-C {vsource.sym} -400 10 0 0 {name=V2 value="PULSE(1.0 0.9 0.0 1n 1n 5u 10u)" savecurrent=false}
+C {vsource.sym} -400 10 0 0 {name=V2 value="PULSE(1.0 0.9 0.0 50n 50n 5u 10u)" savecurrent=false}
 C {gnd.sym} -400 80 0 0 {name=l2 lab=0
 value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
 C {lab_wire.sym} -350 -200 0 1 {name=p3 sig_type=std_logic lab=SIG}
