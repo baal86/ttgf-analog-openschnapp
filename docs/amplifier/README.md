@@ -27,3 +27,8 @@ For the voltage follower configuration a $0.75V$ to $1V$ rectangular signal repr
 For the inverting configuration a $0.9V$ to $1V$ rectangular signal representative of the image sensor source follower is simulated with `IN+` fixed at the dummy pixel level of `1V`. Observed overshoot is acceptable, no oscillation. Likely the overshoot is caused by limited slew rate of the amplifier.
 
 ![x10 Mode](../../xschem/docs/tb_amplifier_x10_tran.png)
+
+### Noise Simulation
+Input referenced noise is simulated. We are severely space limited with the amplifier so degrading noise performance of the pixels ($~36\mu V_{RMS}$) is accepted. The unbuffered output of the source follower is available on an analog I/O pin so noise characteristics of the source follower and pixel can be characterized that way.
+
+![Amplifier Noise](../../xschem/docs/tb_amplifier_noise.png)
