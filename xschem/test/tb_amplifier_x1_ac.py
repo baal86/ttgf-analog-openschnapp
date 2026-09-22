@@ -80,4 +80,5 @@ def test_plot_impedance(data,bandwidth,phase_margin):
     ]
 
     plt.legend(handles=handles)
+    fig.suptitle("Amplifier, G=1 Voltage Follower Configuration")
     plt.savefig("tb_amplifier_x1_ac.png")

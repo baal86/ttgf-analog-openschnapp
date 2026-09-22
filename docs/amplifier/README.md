@@ -13,10 +13,6 @@ DC bias for both configurations is simulated in the 0.5V to 1.5V range which is 
 
 ![x1 Mode](../../xschem/docs/tb_amplifier_x1_ac.png)
 
-*Voltage Follower Configuration* 
-
 ![x10 Mode](../../xschem/docs/tb_amplifier_x10_ac.png)
-
-*x10 Gain Inverting Amplifier Configuration* 
 
 For both configurations a minimum phase margin of $45\deg$ is required with a typical goal of $60\deg$. Gain bandwidth product is design to be $>10MHz$.

@@ -36,7 +36,7 @@ cleanparax:
 	rm -f ./parax/*.sim
 
 parax: $(PARAX_FILES)
-		
+
 parax/%.sim.spice: ../mag/%.mag
 	cd ../mag && magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/extract_for_sim.tcl $*
 	cd ../mag && rm -f $*.ext
