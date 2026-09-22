@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_psucap_br.sch
 .subckt ip_psucap_br VDD VSUBS
 *.PININFO VDD:B VSUBS:B
-XC1 VDD VSUBS cap_nmos_03v3 c_width=17.5e-6 c_length=29e-6
+XC1 VDD VSUBS cap_nmos_03v3 c_width=17.5e-6 c_length=28.5e-6
 .ends
