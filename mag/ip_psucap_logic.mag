@@ -1,0 +1,13 @@
+magic
+tech gf180mcuD
+timestamp 1790144971
+use nmoscap_3p3_CUSTM4  nmoscap_3p3_CUSTM4_0
+timestamp 1790144895
+transform 1 0 120 0 1 60
+box -140 -80 -60 320
+<< labels >>
+flabel space -20 -20 60 -10 0 FreeSans 80 0 0 0 vsubs
+port 0 nsew
+flabel space -20 370 60 380 0 FreeSans 80 0 0 0 vdd
+port 1 nsew
+<< end >>

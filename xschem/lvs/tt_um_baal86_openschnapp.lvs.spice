@@ -7,3 +7,4 @@
 .include ip_sicproc.lvs.spice
 .include ip_psucap_l.lvs.spice
 .include ip_psucap_br.lvs.spice
+.include ip_psucap_logic.lvs.spice
