@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1790166392
+timestamp 1790166957
 << pwell >>
 rect 450 -1000 1180 -670
 << metal1 >>
@@ -110,7 +110,7 @@ rect 410 -960 440 -820
 rect 995 -960 1065 -945
 rect 400 -990 1900 -960
 use diode_nd2ps_06v0_CUSTOM  D1
-timestamp 1790166392
+timestamp 1790166555
 transform 1 0 1100 0 1 -100
 box -700 -900 800 600
 use nfet_06v0_569J58  M1
