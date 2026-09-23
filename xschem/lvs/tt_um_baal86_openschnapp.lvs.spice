@@ -8,3 +8,4 @@
 .include ip_psucap_l.lvs.spice
 .include ip_psucap_br.lvs.spice
 .include ip_psucap_logic.lvs.spice
+.include ip_psucap_bottom.lvs.spice

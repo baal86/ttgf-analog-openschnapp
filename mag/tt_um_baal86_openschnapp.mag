@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1790148781
+timestamp 1790152647
 << pwell >>
 rect 65000 56420 65500 56500
 rect 64980 56400 65500 56420
@@ -110,10 +110,14 @@ rect 4720 1380 8620 1720
 rect 4700 1320 8620 1380
 rect 200 1300 8620 1320
 rect 62780 1300 62920 4720
-rect 200 1000 65500 1300
-rect 200 700 63100 1000
-rect 200 620 65500 700
-rect 200 200 69200 620
+rect 200 1200 65500 1300
+rect 200 400 2000 1200
+rect 62000 1000 65500 1200
+rect 62000 900 63100 1000
+rect 45800 700 63100 900
+rect 45800 620 65500 700
+rect 45800 400 69200 620
+rect 200 200 69200 400
 << via1 >>
 rect 220 62660 580 63380
 rect 820 58220 1180 58780
@@ -1383,6 +1387,66 @@ use ip_pixel_nd2ps_dummy  ip_pixel_nd2ps_dummy_0
 timestamp 1790143328
 transform 1 0 4200 0 1 3800
 box 800 -2000 3800 1000
+use ip_psucap_bottom  ip_psucap_bottom_0
+timestamp 1790152647
+transform 1 0 2000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_1
+timestamp 1790152647
+transform 1 0 6000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_2
+timestamp 1790152647
+transform 1 0 10000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_3
+timestamp 1790152647
+transform 1 0 14000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_4
+timestamp 1790152647
+transform 1 0 18000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_5
+timestamp 1790152647
+transform 1 0 22000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_6
+timestamp 1790152647
+transform 1 0 26000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_7
+timestamp 1790152647
+transform 1 0 30000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_8
+timestamp 1790152647
+transform 1 0 34000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_9
+timestamp 1790152647
+transform 1 0 38000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_10
+timestamp 1790152647
+transform 1 0 42000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_11
+timestamp 1790152647
+transform 1 0 46000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_12
+timestamp 1790152647
+transform 1 0 50000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_13
+timestamp 1790152647
+transform 1 0 54000 0 1 201
+box 0 -1 4000 1000
+use ip_psucap_bottom  ip_psucap_bottom_14
+timestamp 1790152647
+transform 1 0 58000 0 1 201
+box 0 -1 4000 1000
 use ip_psucap_br  ip_psucap_br_0
 timestamp 1790143609
 transform -1 0 69200 0 -1 4799

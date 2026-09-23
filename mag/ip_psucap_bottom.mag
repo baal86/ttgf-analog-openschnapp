@@ -1,0 +1,23 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1790152647
+<< metal1 >>
+rect 0 0 4000 700
+<< via1 >>
+rect 80 820 3920 920
+<< metal2 >>
+rect 0 920 4000 1000
+rect 0 820 80 920
+rect 3920 820 4000 920
+rect 0 800 4000 820
+use nmoscap_3p3_CUSTM5  nmoscap_3p3_CUSTM5_0
+timestamp 1790152635
+transform 1 0 400 0 1 799
+box -400 -800 3600 200
+<< labels >>
+flabel metal2 0 800 4000 1000 0 FreeSans 800 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 0 4000 200 0 FreeSans 800 0 0 0 VSUBS
+port 1 nsew
+<< end >>
