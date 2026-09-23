@@ -1,9 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1790143328
+timestamp 1790143609
 use nmoscap_3p3_CUSTM3  nmoscap_3p3_CUSTM3_0
-timestamp 1790143328
+timestamp 1790143609
 transform 1 0 2600 0 1 799
 box -2600 -800 3700 3400
 << labels >>
