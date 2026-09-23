@@ -14,4 +14,5 @@ all:
 	$(MAKE) -C mag lvs
 	$(MAKE) -C mag drc
 	$(MAKE) -C mag klayout_drc
+	$(MAKE) -C mag klayout_density
 
