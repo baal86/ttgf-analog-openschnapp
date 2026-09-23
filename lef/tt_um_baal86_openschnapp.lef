@@ -560,7 +560,7 @@ MACRO tt_um_baal86_openschnapp
       LAYER Metal1 ;
         RECT 1.000 1.000 346.000 324.000 ;
       LAYER Metal2 ;
-        RECT 1.000 1.000 346.000 324.000 ;
+        RECT 1.000 1.000 346.000 325.000 ;
       LAYER Metal3 ;
         RECT 1.000 1.500 346.000 324.000 ;
       LAYER Metal4 ;
