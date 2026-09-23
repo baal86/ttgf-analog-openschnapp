@@ -1,20 +1,33 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1790148583
+timestamp 1790166392
 << pwell >>
 rect 450 -1000 1180 -670
 << metal1 >>
 rect 400 490 450 500
 rect 1200 490 1900 500
-rect 400 450 1900 490
-rect 400 -650 450 450
+rect 400 480 950 490
+rect 1000 480 1900 490
+rect 400 420 1900 480
+rect 400 190 480 420
+rect 1870 190 1900 420
+rect 400 160 1900 190
+rect 400 -110 480 160
+rect 1870 -110 1900 160
+rect 400 -140 1900 -110
+rect 400 -410 480 -140
+rect 1870 -410 1900 -140
+rect 400 -440 1900 -410
+rect 400 -650 480 -440
 rect 400 -1000 440 -650
+rect 1050 -690 1100 -600
 rect 530 -695 980 -690
 rect 530 -715 650 -695
-rect 1010 -700 1300 -690
 rect 530 -765 555 -715
-rect 1010 -740 1270 -700
+rect 1010 -740 1110 -690
+rect 1870 -710 1900 -440
+rect 1200 -740 1900 -710
 rect 470 -785 510 -780
 rect 470 -815 475 -785
 rect 505 -815 510 -785
@@ -24,7 +37,6 @@ rect 520 -895 565 -890
 rect 520 -925 525 -895
 rect 560 -925 565 -895
 rect 1010 -920 1040 -740
-rect 1250 -750 1300 -740
 rect 1125 -770 1165 -765
 rect 1125 -800 1130 -770
 rect 1160 -800 1165 -770
@@ -34,6 +46,8 @@ rect 635 -950 980 -935
 rect 1080 -950 1110 -920
 rect 635 -980 1000 -950
 rect 1060 -980 1110 -950
+rect 1870 -970 1900 -740
+rect 1200 -1000 1900 -970
 << via1 >>
 rect 475 -815 505 -785
 rect 525 -925 560 -895
@@ -96,19 +110,19 @@ rect 410 -960 440 -820
 rect 995 -960 1065 -945
 rect 400 -990 1900 -960
 use diode_nd2ps_06v0_CUSTOM  D1
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 1100 0 1 -100
 box -700 -900 800 600
 use nfet_06v0_569J58  M1
-timestamp 1790143328
+timestamp 1790166392
 transform 0 1 1105 -1 0 -828
 box -147 -65 147 65
 use nfet_06v0_G9TRTN  M2
-timestamp 1790143328
+timestamp 1790166392
 transform 0 1 820 -1 0 -825
 box -155 -225 155 225
 use nfet_06v0_XGQPTS  M3
-timestamp 1790143328
+timestamp 1790166392
 transform 0 -1 530 1 0 -828
 box -117 -65 117 65
 << labels >>
@@ -122,5 +136,5 @@ flabel metal3 520 -930 565 -890 0 FreeSans 160 0 0 0 cl
 port 24 nsew
 flabel metal4 470 -820 510 -780 0 FreeSans 160 0 0 0 read
 port 25 nsew
-flabel metal1 1020 -730 1160 -710 0 FreeSans 160 0 0 0 siminj
+flabel metal1 1020 -730 1110 -710 0 FreeSans 160 0 0 0 siminj
 << end >>

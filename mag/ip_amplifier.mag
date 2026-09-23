@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1790143328
+timestamp 1790166392
 << nwell >>
 rect 1950 80 5500 1670
 rect 6850 70 12080 1680
@@ -456,183 +456,183 @@ rect 4850 560 4860 790
 rect 4940 560 4950 790
 rect 4850 550 4950 560
 use nfet_03v3_75AVKX  nfet_03v3_75AVKX_0
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 6281 0 1 896
 box -81 -646 81 646
 use nfet_03v3_75AVKX  nfet_03v3_75AVKX_1
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 6431 0 1 896
 box -81 -646 81 646
 use nfet_03v3_75AVKX  nfet_03v3_75AVKX_2
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 6581 0 1 896
 box -81 -646 81 646
 use nfet_03v3_75AVKX  nfet_03v3_75AVKX_3
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 6731 0 1 896
 box -81 -646 81 646
 use nfet_03v3_HJ7J7F  nfet_03v3_HJ7J7F_0
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 1456 0 -1 1296
 box -156 -346 156 346
 use nfet_03v3_HJ7J7F  nfet_03v3_HJ7J7F_1
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 1756 0 -1 1296
 box -156 -346 156 346
 use nfet_03v3_HJ7J7F  nfet_03v3_HJ7J7F_2
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 1456 0 1 496
 box -156 -346 156 346
 use nfet_03v3_KLLMMW  nfet_03v3_KLLMMW_0
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 5866 0 1 496
 box -306 -346 306 346
 use nfet_03v3_KLLMMW  nfet_03v3_KLLMMW_2
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 5866 0 -1 1226
 box -306 -346 306 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_0
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 781 0 1 496
 box -81 -346 81 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_1
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 931 0 1 496
 box -81 -346 81 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_2
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 1081 0 1 496
 box -81 -346 81 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_3
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 1231 0 1 496
 box -81 -346 81 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_4
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 781 0 -1 1296
 box -81 -346 81 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_5
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 931 0 -1 1296
 box -81 -346 81 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_6
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 1081 0 -1 1296
 box -81 -346 81 346
 use nfet_03v3_NN9S9P  nfet_03v3_NN9S9P_7
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 1231 0 -1 1296
 box -81 -346 81 346
 use pfet_03v3_9AWAE3  pfet_03v3_9AWAE3_0
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 2837 0 -1 1227
 box -187 -377 187 377
 use pfet_03v3_9AWAE3  pfet_03v3_9AWAE3_1
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 2837 0 1 527
 box -187 -377 187 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_0
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 2162 0 1 527
 box -112 -377 112 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_1
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 2162 0 -1 1227
 box -112 -377 112 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_2
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 2312 0 -1 1227
 box -112 -377 112 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_3
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 2462 0 -1 1227
 box -112 -377 112 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_4
-timestamp 1790143328
+timestamp 1790166392
 transform -1 0 2612 0 -1 1227
 box -112 -377 112 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_5
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 2312 0 1 527
 box -112 -377 112 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_6
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 2462 0 1 527
 box -112 -377 112 377
 use pfet_03v3_38XGKA  pfet_03v3_38XGKA_7
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 2612 0 1 527
 box -112 -377 112 377
 use pfet_03v3_QS4RDL  pfet_03v3_QS4RDL_0
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 5112 0 1 877
 box -112 -677 112 677
 use pfet_03v3_QS4RDL  pfet_03v3_QS4RDL_1
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 5262 0 1 877
 box -112 -677 112 677
 use pfet_03v3_RTLRYF  pfet_03v3_RTLRYF_0
-timestamp 1790143328
+timestamp 1790166392
 transform 0 1 3977 -1 0 1192
 box -337 -977 337 977
 use pfet_03v3_RTLRYF  pfet_03v3_RTLRYF_1
-timestamp 1790143328
+timestamp 1790166392
 transform 0 1 3977 -1 0 562
 box -337 -977 337 977
 use pmoscap_3p3_U5JGFU  pmoscap_3p3_U5JGFU_0
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 7897 0 1 862
 box -987 -752 987 752
 use pmoscap_3p3_U5JGFU  pmoscap_3p3_U5JGFU_1
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 11017 0 1 862
 box -987 -752 987 752
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_0
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 170 0 1 861
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_1
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 310 0 1 861
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_2
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 450 0 1 861
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_3
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 590 0 1 861
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_4
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 8970 0 1 871
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_5
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 9110 0 1 871
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_6
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 9250 0 1 871
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_7
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 9390 0 1 871
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_8
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 9530 0 1 871
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_9
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 9670 0 1 871
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_10
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 9810 0 1 871
 box -50 -661 50 661
 use ppolyf_u_1k_LAFHKN  ppolyf_u_1k_LAFHKN_11
-timestamp 1790143328
+timestamp 1790166392
 transform 1 0 9950 0 1 871
 box -50 -661 50 661
 << labels >>
