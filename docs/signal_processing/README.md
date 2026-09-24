@@ -9,6 +9,6 @@ Using the basic OP-amp building block, a signal processing chain is built, conta
 ### Transient Simulation
 The transient behavior is simulated for the worst case detector signal with a swing of $0.1V$ relative to a dummy pixel reference of $1.0V$. The OP amp has been thoroughly simulated so here only the correct choice of POLY resistors needs to be validated.
 
-> ![Testbench Viewer](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_sigproc_tran.sch)
+> View the test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_sigproc_tran.sch)
 
 ![Signal Processing](../../xschem/docs/tb_sigproc_tran.png)
