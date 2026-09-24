@@ -16,6 +16,7 @@ Documentation per IP block in the `docs` folder:
 - [Row Multiplexer](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/row_mux)
 - [Column Switch](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/column_switch)
 - [Amplifier](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/amplifier)
+- [Signal Processing](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/signal_processing)
 - [Total Simulation](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/total)
 
 

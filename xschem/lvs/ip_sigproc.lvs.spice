@@ -1,7 +1,7 @@
 ** sch_path: /foss/designs/ttgf-analog-openschnapp/xschem/ip_sigproc.sch
 .subckt ip_sigproc vdd outp sig ref vsubs
 *.PININFO sig:I ref:I vdd:B vsubs:B outp:O
-x1 vdd vsubs sig s1_out s1_out ip_amplifier
+x1 net1 vsubs sig s1_out s1_out ip_amplifier
 x2 vdd vsubs ref s2_fb s2_out ip_amplifier
 XR4 s1_out s2_fb vsubs ppolyf_u_1k r_width=1e-6 r_length=15e-6
 XR1 s2_fb s2_out vsubs ppolyf_u_1k r_width=1e-6 r_length=150e-6
