@@ -133,14 +133,14 @@ transform 0 -1 530 1 0 -828
 box -117 -65 117 65
 << labels >>
 flabel metal1 410 -990 440 -960 0 FreeSans 160 0 0 0 vsubs
-port 21 nsew
+port 3 nsew
 flabel metal4 1125 -805 1165 -765 0 FreeSans 160 0 0 0 reset
-port 23 nsew
+port 1 nsew
 flabel metal3 520 -930 565 -890 0 FreeSans 160 0 0 0 cl
-port 24 nsew
+port 4 nsew
 flabel metal4 470 -820 510 -780 0 FreeSans 160 0 0 0 read
-port 25 nsew
+port 2 nsew
 flabel metal1 1020 -730 1110 -710 0 FreeSans 160 0 0 0 siminj
 flabel metal2 1000 -980 1060 -950 0 FreeSans 160 0 0 0 vdd
-port 22 nsew
+port 0 nsew
 << end >>
