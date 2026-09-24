@@ -1,6 +1,8 @@
 ## Total Simulation
 A subset of the entire image sensor is simulated. This includes co-simulation of the digital parts.  The exposure time is 5ms, but injection currents are scaled up to compensate. A test pattern image is injected. The simulation implements correlated double sampling to compensate for the photons caught during integration and to reject kTC noise (not modelled).
 
+> View the test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_total_tran.sch)
+
 A timing diagram of the digital signals, clock, reset, and column/row control is shown below.
 
 ![Timing Diagram](../../xschem/docs/tb_total_tran.a.png)

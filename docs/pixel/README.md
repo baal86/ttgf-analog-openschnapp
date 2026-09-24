@@ -111,21 +111,33 @@ The `nd2ps` diode pixel. Designed to be infinitely tiled with no routing in magi
 <p><span class="eq"><var>V</var><sub>OUT</sub>  ( 2.3 <i>V</i> )  = 1.1 <i>V</i></span></p>
 
 ### Source Follower DC Transfer Function
+
 The source follower DC transfer function is simulated. Choice of MOSFETs for the pixel source follower is very constrained due to available space, so some compromise needs to be taken on performance.
+
+> View the test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_pixel_nd2ps_dc.sch)
 
 ![DC Transfer Function](../../xschem/docs/tb_pixel_nd2ps_dc.png)
 
 ### Pixel Reset Voltage
+
+> View the test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_pixel_nd2ps_dc_reset.sch)
+
 Pixel reset voltage both at the diode and at the output of the source follower is an important parameter for following design.
 
 ![Pixel Reset Voltage](../../xschem/docs/tb_pixel_nd2ps_dc_reset.png)
 
 ### Readout Noise
+
+> View the test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_pixel_nd2ps_noise.sch)
+
 Readout noise of the source follower and current source is simulated. Note that this does not include kTC noise of the reset process itself.
 
 ![Pixel Readout Noise](../../xschem/docs/tb_pixel_nd2ps_noise.png)
 
 ### Transient Simulation
+
+> View the test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_pixel_nd2ps_tran.sch)
+
 A transient simulation of a single pixel is performed. Starting at the nominal reset level (ignoring soft-reset behavior) a compressed integration period of 1ms at various diode currents (higher than normal to compensate for short exposure) is simulated. The lower plot shows the zoomed-in readout phase of the pixel.
 
 ![Transient Simulation](../../xschem/docs/tb_pixel_nd2ps_tran.png)

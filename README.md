@@ -3,6 +3,7 @@
 # Tiny Tapeout - Openschnapp 3T CMOS Image Sensor
 - [Read the documentation for the project](docs/info.md)
 - [Check the GDS viewer for the current project state](https://baal86.github.io/ttgf-analog-openschnapp/)
+- [View Tiny Tapeout GF26c shuttle](https://app.tinytapeout.com/shuttles/ttgf26c)
 
 Mixed signal design of freely addressable photo diode array. Made as a learning project in the Zero2Asic analog course. 
 
@@ -18,8 +19,6 @@ Documentation per IP block in the `docs` folder:
 - [Amplifier](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/amplifier)
 - [Signal Processing](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/signal_processing)
 - [Total Simulation](https://github.com/baal86/ttgf-analog-openschnapp/tree/main/docs/total)
-
-
 
 A snapshot of top level design is shown below.
 

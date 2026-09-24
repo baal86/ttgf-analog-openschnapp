@@ -9,7 +9,12 @@ The amplifier is simulated to work in two modes needed for the signal processing
 - x10 Gain inverting amplifier with 1.0V offset voltage.
 
 ### DC Transfer Function
+
 A DC transfer function is simulated to test for the valid I/O range.
+
+> View the gain x1 test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_amplifier_x1_dc.sch)
+
+> View the gain x10 test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_amplifier_x10_dc.sch)
 
 In unity gain mode the amplifier operates within $0.1V$ of VSS and $0.6V$ of VDD. The amplifier is design for low input voltages closer to VSS than VDD (thus choosing PMOS input devices) so the upper range is not thoroughly characterized.
 
@@ -20,7 +25,12 @@ In inverting mode The $0.8V$ to $1.01V$ range around a $1.0V$ reference connecte
 ![x1 Mode](../../xschem/docs/tb_amplifier_x10_dc.png)
 
 ### Stability Simulation
+
 DC bias for both configurations is simulated in the 0.5V to 1.5V range which is most useful for the signals at hand.
+
+> View the gain x1 test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_amplifier_x1_ac.sch)
+
+> View the gain x10 test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_amplifier_x10_ac.sch)
 
 ![x1 Mode](../../xschem/docs/tb_amplifier_x1_ac.png)
 
@@ -29,6 +39,11 @@ DC bias for both configurations is simulated in the 0.5V to 1.5V range which is 
 For both configurations a minimum phase margin of $45\deg$ is required with a typical goal of $60\deg$. Gain bandwidth product is design to be $>10MHz$.
 
 ### Transient Simulation
+
+> View the gain x1 test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_amplifier_x1_tran.sch)
+
+> View the gain x10 test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_amplifier_x10_tran.sch)
+
 The transient behavior is simulated for both relevant configurations.
 
 For the voltage follower configuration a $0.75V$ to $1V$ rectangular signal representative of the image sensor source follower is simulated. Observed overshoot is acceptable, no oscillation.
@@ -40,6 +55,9 @@ For the inverting configuration a $0.9V$ to $1V$ rectangular signal representati
 ![x10 Mode](../../xschem/docs/tb_amplifier_x10_tran.png)
 
 ### Noise Simulation
+
+> View the test-bench on [https://xschem-viewer.com](https://xschem-viewer.com/?file=https%3A%2F%2Fgithub.com%2Fbaal86%2Fttgf-analog-openschnapp%2Fblob%2Fmain%2Fxschem%2Ftb_amplifier_noise.sch)
+
 Input referenced noise is simulated. We are severely space limited with the amplifier so degrading noise performance of the pixels ($~36\mu V_{RMS}$) is accepted. The unbuffered output of the source follower is available on an analog I/O pin so noise characteristics of the source follower and pixel can be characterized that way.
 
 ![Amplifier Noise](../../xschem/docs/tb_amplifier_noise.png)
