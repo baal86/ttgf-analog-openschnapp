@@ -27,6 +27,29 @@ color="4 14"
 node="out
 out_parax"
 y2=2.3}
+B 2 -380 -1120 420 -720 {flags=graph
+y1=0.0012
+y2=0.0013
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.0001
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+node="I_SUPPLY; i(v_dda) -1 *
+I_SUPPLY_PARAX; i(v_ddb) -1 *"
+color="4 14"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N -360 -80 -360 -60 {lab=SIG}
 N -360 -60 -360 -50 {lab=SIG}
 N -360 -50 -360 -30 {lab=SIG}
@@ -42,7 +65,6 @@ N 320 -120 410 -120 {lab=OUT}
 N 270 -120 320 -120 {lab=OUT}
 N -140 -160 -20 -160 {lab=SIG}
 N -200 -160 -140 -160 {lab=SIG}
-N 120 -270 120 -220 {lab=VDD}
 N -60 -60 -60 -40 {lab=REF}
 N -60 -60 -20 -60 {lab=REF}
 N -60 20 -60 30 {lab=0}
@@ -53,7 +75,7 @@ N 120 -0 120 40 {lab=0}
 N 410 280 620 280 {lab=OUT_PARAX}
 N 320 280 410 280 {lab=OUT_PARAX}
 N 270 280 320 280 {lab=OUT_PARAX}
-N 120 130 120 180 {lab=VDD}
+N 120 130 120 180 {lab=VDD_B}
 N -60 340 -60 360 {lab=#net1}
 N -60 340 -20 340 {lab=#net1}
 N -60 420 -60 430 {lab=0}
@@ -63,6 +85,8 @@ N 260 280 270 280 {lab=OUT_PARAX}
 N 120 400 120 440 {lab=0}
 N -120 240 -20 240 {lab=SIG}
 N -120 -160 -120 240 {lab=SIG}
+N 120 -270 120 -250 {lab=VDD_A}
+N 120 -250 120 -220 {lab=VDD_A}
 C {devices/launcher.sym} -1075 -545 0 0 {name=h1
 descr="Load Waveforms"
 tclcommand="
@@ -88,12 +112,13 @@ C {simulator_commands_shown.sym} -1150 -350 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
-V_DD VDD 0 3.3
+V_DDA VDD_A 0 3.3
+V_DDB VDD_B 0 3.3
 .option klu
 .option reltol=0.005
 .option abstol=100n
-.save v(out) v(out_parax) v(sig) v(ref)
 .control
+	save all
 	tran 10n 100u
 	write tb_sigproc_tran.raw
 	set appendwrite
@@ -108,7 +133,7 @@ C {lab_wire.sym} 580 -120 0 0 {name=p4 sig_type=std_logic lab=OUT}
 C {ip_sigproc.sym} 120 -120 0 0 {name=x1}
 C {gnd.sym} 120 40 0 0 {name=l1 lab=0
 value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
-C {vdd.sym} 120 -270 0 0 {name=l3 lab=VDD}
+C {vdd.sym} 120 -270 0 0 {name=l3 lab=VDD_A}
 C {vsource.sym} -60 -10 0 0 {name=V1 value=1 savecurrent=false}
 C {gnd.sym} -60 30 0 0 {name=l4 lab=0
 value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
@@ -127,7 +152,7 @@ spice_sym_def="tcleval(.include [file normalize ./parax/ip_sigproc.sim.spice])"
 tclcommand="textwindow [file normalize ./parax/ip_sigproc.sim.spice]"}
 C {gnd.sym} 120 440 0 0 {name=l6 lab=0
 value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
-C {vdd.sym} 120 130 0 0 {name=l7 lab=VDD}
+C {vdd.sym} 120 130 0 0 {name=l7 lab=VDD_B}
 C {vsource.sym} -60 390 0 0 {name=V3 value=1 savecurrent=false}
 C {gnd.sym} -60 430 0 0 {name=l8 lab=0
 value="PULSE(1.0 0.5 0.0 1n 1n 5u 10u)"}
