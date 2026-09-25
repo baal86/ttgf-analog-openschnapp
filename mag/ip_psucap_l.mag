@@ -1,6 +1,6 @@
 magic
 tech gf180mcuD
-timestamp 1790320876
+timestamp 1790325955
 << pwell >>
 rect -18 250 162 280
 rect -18 248 138 250
@@ -57,7 +57,7 @@ rect -20 -18 -18 -2
 rect 18 -18 20 -2
 rect -20 -20 20 -18
 use nmoscap_3p3_CUSTM1  nmoscap_3p3_CUSTM1_0
-timestamp 1790233395
+timestamp 1790325955
 transform 1 0 320 0 1 60
 box -340 -80 -158 220
 << labels >>
